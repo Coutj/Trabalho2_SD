@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Calculadora.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Soma4Alg.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Soma4Alg.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Soma4Alg.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Soma4Alg.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Soma4Alg.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Soma4Alg.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Soma4Alg.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Soma4Alg.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Soma4Alg.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Soma4Alg.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Soma4Alg.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Soma4Alg.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Soma4Alg.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Soma4Alg.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Soma4Alg.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Soma4Alg.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Soma4Alg.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Soma4Alg.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Soma4Alg.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Soma4Alg_beh.prj"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Soma4Alg_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Soma4Alg_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Soma4Alg_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Soma4Alg_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Soma4Alg_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Soma4Alg_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Soma4Alg_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Soma4Alg_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Soma4Alg_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Soma4Alg_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Soma4Alg_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Soma4Alg_par.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Soma4Alg_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Soma4Alg_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Soma4Alg_usage.xml"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Soma4Alg_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Soma4Alg_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Somador.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Somador.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Somador.lso"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Somador.ncd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Somador.ngc"/>
+    <file xil_pn:fileType="FILE_NGD" xil_pn:name="Somador.ngd"/>
+    <file xil_pn:fileType="FILE_NGR" xil_pn:name="Somador.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Somador.pad"/>
+    <file xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Somador.par"/>
+    <file xil_pn:fileType="FILE_PCF" xil_pn:name="Somador.pcf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Somador.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Somador.ptwx"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Somador.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Somador.syr"/>
+    <file xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Somador.twr"/>
+    <file xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Somador.twx"/>
+    <file xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Somador.unroutes"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Somador.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Somador.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Somador1Alg.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Somador1Alg.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Somador1Alg.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Somador1Alg.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Somador1Alg.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Somador1Alg.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Somador1Alg.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Somador1Alg.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Somador1Alg.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Somador1Alg.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Somador1Alg.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Somador1Alg.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Somador1Alg.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Somador1Alg.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Somador1Alg.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Somador1Alg.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Somador1Alg_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Somador1Alg_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Somador1Alg_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Somador1Alg_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Somador1Alg_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Somador1Alg_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Somador1Alg_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Somador1Alg_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Somador1Alg_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Somador1Alg_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Somador_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Somador_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Somador_map.map"/>
+    <file xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Somador_map.mrp"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Somador_map.ncd"/>
+    <file xil_pn:fileType="FILE_NGM" xil_pn:name="Somador_map.ngm"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Somador_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Somador_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Somador_pad.csv"/>
+    <file xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Somador_pad.txt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Somador_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Somador_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Somador_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Somador_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Somador_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Somador_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1542992252" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1542992252">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992456" xil_pn:in_ck="-8172317061557849833" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1542992456">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Soma4Alg.vhd"/>
+      <outfile xil_pn:name="Somador1Alg.vhd"/>
+      <outfile xil_pn:name="Types.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992369" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3345743977028631906" xil_pn:start_ts="1542992369">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992369" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5401267290059269094" xil_pn:start_ts="1542992369">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992252" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1949744305891774816" xil_pn:start_ts="1542992252">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992456" xil_pn:in_ck="-8172317061557849833" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1542992456">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Soma4Alg.vhd"/>
+      <outfile xil_pn:name="Somador1Alg.vhd"/>
+      <outfile xil_pn:name="Types.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992462" xil_pn:in_ck="-8172317061557849833" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2456196968983587606" xil_pn:start_ts="1542992456">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Soma4Alg_beh.prj"/>
+      <outfile xil_pn:name="Soma4Alg_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992568" xil_pn:in_ck="8751990719343246096" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7254051597434640877" xil_pn:start_ts="1542992567">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Soma4Alg_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1542985117" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1542985117">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542989345" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1100248709579140922" xil_pn:start_ts="1542989345">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542989345" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1949744305891774816" xil_pn:start_ts="1542989345">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542989345" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1542989345">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542989345" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3345743977028631906" xil_pn:start_ts="1542989345">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542989345" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="9102341965431189672" xil_pn:start_ts="1542989345">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542989345" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1661714986256942934" xil_pn:start_ts="1542989345">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992403" xil_pn:in_ck="-8172317061557849833" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1488346266939046609" xil_pn:start_ts="1542992389">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Soma4Alg.lso"/>
+      <outfile xil_pn:name="Soma4Alg.ngc"/>
+      <outfile xil_pn:name="Soma4Alg.ngr"/>
+      <outfile xil_pn:name="Soma4Alg.prj"/>
+      <outfile xil_pn:name="Soma4Alg.stx"/>
+      <outfile xil_pn:name="Soma4Alg.syr"/>
+      <outfile xil_pn:name="Soma4Alg.xst"/>
+      <outfile xil_pn:name="Soma4Alg_beh.prj"/>
+      <outfile xil_pn:name="Soma4Alg_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1542989352" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-848465495368512951" xil_pn:start_ts="1542989352">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992411" xil_pn:in_ck="-2068329115066004071" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1364672850487833325" xil_pn:start_ts="1542992403">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Soma4Alg.bld"/>
+      <outfile xil_pn:name="Soma4Alg.ngd"/>
+      <outfile xil_pn:name="Soma4Alg_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992421" xil_pn:in_ck="1936481082866547168" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1542992411">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Soma4Alg.pcf"/>
+      <outfile xil_pn:name="Soma4Alg_map.map"/>
+      <outfile xil_pn:name="Soma4Alg_map.mrp"/>
+      <outfile xil_pn:name="Soma4Alg_map.ncd"/>
+      <outfile xil_pn:name="Soma4Alg_map.ngm"/>
+      <outfile xil_pn:name="Soma4Alg_map.xrpt"/>
+      <outfile xil_pn:name="Soma4Alg_summary.xml"/>
+      <outfile xil_pn:name="Soma4Alg_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992444" xil_pn:in_ck="-7692519953855973646" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1542992421">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Soma4Alg.ncd"/>
+      <outfile xil_pn:name="Soma4Alg.pad"/>
+      <outfile xil_pn:name="Soma4Alg.par"/>
+      <outfile xil_pn:name="Soma4Alg.ptwx"/>
+      <outfile xil_pn:name="Soma4Alg.unroutes"/>
+      <outfile xil_pn:name="Soma4Alg.xpi"/>
+      <outfile xil_pn:name="Soma4Alg_pad.csv"/>
+      <outfile xil_pn:name="Soma4Alg_pad.txt"/>
+      <outfile xil_pn:name="Soma4Alg_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1542992444" xil_pn:in_ck="-1208946609990225576" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1542992438">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Soma4Alg.twr"/>
+      <outfile xil_pn:name="Soma4Alg.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>
