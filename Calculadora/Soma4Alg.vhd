@@ -33,10 +33,10 @@ use IEEE.std_logic_unsigned.all;
 
 entity Soma4Alg is
 	port (
-				carryIn				: 	in std_logic;
-				numA, numB			:	in std_logic_vector (3 downto 0);
-				result				:	out std_logic_vector (3 downto 0);
-				carryOutSaida		:	out std_logic
+				carryIn				: 	in std_logic	 := '0';
+				numA, numB			:	in std_logic_vector (4 downto 0) := (others => '0');
+				result				:	out std_logic_vector (4 downto 0) := (others => '0');
+				carryOutSaida		:	out std_logic := '0'
 	);
 
 end Soma4Alg;
@@ -44,38 +44,25 @@ end Soma4Alg;
 architecture Soma4AlgArch of Soma4Alg is
 
 
-component Somador1Alg is
-	
-	port (	
-				carryIn	: 	in std_logic;
-				numA		:	in std_logic_vector  (3 downto 0);
-				numB		:	in	std_logic_vector  (3 downto 0);
-				result	: 	out std_logic_vector (3 downto 0);
-				carryOut	: 	out std_logic	
-				
-	);
-
-end component;
-
-	signal resultParcial, resultParcial2	: std_logic_vector (3 downto 0);
+	signal resultParcial	: std_logic_vector (4 downto 0);
 	
 
 begin
 	
-	resultParcial <= numA + numB;
-	result <= resultParcial2;
+	resultParcial <= numA + numB + carryIn;
+	
 	-- FALTOU CARRYOUT 
 	
 	Soma1Algarismo : process is
 	begin
 	
-	
 		if (resultParcial  >= "1010") then
 			
-				resultParcial2 <= resultParcial + "0110";			
+				result <= resultParcial + "0110";
+				carryOutSaida <= resultParcial(4) ;
 				
 		else
-				resultParcial2 <= resultParcial;
+				result <= resultParcial;
 			
 		end if;
 	

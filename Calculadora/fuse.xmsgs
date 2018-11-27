@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1369" delta="unknown" >"/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" Line 69: Possible infinite loop; process does not have a wait statement
+<msg type="warning" file="HDLCompiler" num="1369" delta="unknown" >"/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" Line 56: Possible infinite loop; process does not have a wait statement
 </msg>
 
 </messages>
