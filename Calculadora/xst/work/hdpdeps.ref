@@ -1,11 +1,11 @@
 V3 12
-FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd 2018/11/27.16:31:44 P.20131013
-EN work/Soma4Alg 1543336309 \
+FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd 2018/11/28.11:20:54 P.20131013
+EN work/Soma4Alg 1543404086 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd \
-      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
-AR work/Soma4Alg/Soma4AlgArch 1543336310 \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Soma4Alg/Soma4AlgArch 1543404087 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd \
-      EN work/Soma4Alg 1543336309
+      EN work/Soma4Alg 1543404086
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador.vhd 2018/11/23.14:58:57 P.20131013
 EN work/Somador 1542985144 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador.vhd \

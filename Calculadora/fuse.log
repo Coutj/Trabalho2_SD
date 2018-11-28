@@ -4,20 +4,18 @@ Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" into library work
-WARNING:HDLCompiler:1369 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" Line 56: Possible infinite loop; process does not have a wait statement
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 84672 KB
-Fuse CPU Usage: 1240 ms
+Fuse Memory Usage: 85036 KB
+Fuse CPU Usage: 1560 ms
 Compiling package standard
 Compiling package std_logic_1164
-Compiling package std_logic_arith
-Compiling package std_logic_unsigned
+Compiling package numeric_std
 Compiling architecture soma4algarch of entity soma4alg
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 5 VHDL Units
+Compiled 4 VHDL Units
 Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg_isim_beh.exe
-Fuse Memory Usage: 657052 KB
-Fuse CPU Usage: 1320 ms
-GCC CPU Usage: 330 ms
+Fuse Memory Usage: 657136 KB
+Fuse CPU Usage: 1650 ms
+GCC CPU Usage: 250 ms

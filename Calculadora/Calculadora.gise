@@ -143,17 +143,20 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543336652" xil_pn:in_ck="2795194905395285778" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543336652">
+    <transform xil_pn:end_ts="1543403927" xil_pn:in_ck="4370197685894472136" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543403927">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Soma4Alg.vhd"/>
-      <outfile xil_pn:name="Somador1Alg.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1542992369" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3345743977028631906" xil_pn:start_ts="1542992369">
+    <transform xil_pn:end_ts="1543338242" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3345743977028631906" xil_pn:start_ts="1543338242">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1542992369" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5401267290059269094" xil_pn:start_ts="1542992369">
+    <transform xil_pn:end_ts="1543338242" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5401267290059269094" xil_pn:start_ts="1543338242">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -161,16 +164,23 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543336652" xil_pn:in_ck="2795194905395285778" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543336652">
+    <transform xil_pn:end_ts="1543403927" xil_pn:in_ck="4370197685894472136" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543403927">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Soma4Alg.vhd"/>
-      <outfile xil_pn:name="Somador1Alg.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1543336868" xil_pn:in_ck="2795194905395285778" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2456196968983587606" xil_pn:start_ts="1543336863">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Soma4Alg.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1543403930" xil_pn:in_ck="4370197685894472136" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2456196968983587606" xil_pn:start_ts="1543403927">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Soma4Alg_beh.prj"/>
       <outfile xil_pn:name="Soma4Alg_isim_beh.exe"/>
@@ -179,9 +189,12 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1543336868" xil_pn:in_ck="8751990719343246096" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7254051597434640877" xil_pn:start_ts="1543336868">
+    <transform xil_pn:end_ts="1543403930" xil_pn:in_ck="8751990719343246096" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7254051597434640877" xil_pn:start_ts="1543403930">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Soma4Alg_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
@@ -214,7 +227,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543336313" xil_pn:in_ck="2795194905395285778" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8485333155799418787" xil_pn:start_ts="1543336304">
+    <transform xil_pn:end_ts="1543404090" xil_pn:in_ck="4370197685894472136" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8485333155799418787" xil_pn:start_ts="1543404055">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -238,7 +251,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543336318" xil_pn:in_ck="-2068329115066004071" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1364672850487833325" xil_pn:start_ts="1543336313">
+    <transform xil_pn:end_ts="1543404098" xil_pn:in_ck="-2068329115066004071" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1364672850487833325" xil_pn:start_ts="1543404090">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Soma4Alg.bld"/>
@@ -247,7 +260,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1543336325" xil_pn:in_ck="1936481082866547168" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1543336318">
+    <transform xil_pn:end_ts="1543404106" xil_pn:in_ck="1936481082866547168" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1543404098">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -261,7 +274,7 @@
       <outfile xil_pn:name="Soma4Alg_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1543336340" xil_pn:in_ck="-7692519953855973646" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1543336325">
+    <transform xil_pn:end_ts="1543404123" xil_pn:in_ck="-7692519953855973646" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1543404106">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Soma4Alg.ncd"/>
@@ -275,7 +288,7 @@
       <outfile xil_pn:name="Soma4Alg_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1543336340" xil_pn:in_ck="-1208946609990225576" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1543336336">
+    <transform xil_pn:end_ts="1543404123" xil_pn:in_ck="-1208946609990225576" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1543404118">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Soma4Alg.twr"/>

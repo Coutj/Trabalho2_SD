@@ -11,8 +11,5 @@
 <msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador1Alg.vhd&quot; into library work</arg>
-</msg>
-
 </messages>
 

@@ -1,10 +1,29 @@
 Command line:
    Soma4Alg_isim_beh.exe
      -simmode  gui
-     -simrunnum  0
-     -socket  35367
+     -simrunnum  1
+     -socket  60493
 
-Tue Nov 27 16:41:11 2018
+Wed Nov 28 11:18:53 2018
 
 
- Elaboration Time: 0.09 sec
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 202.494 Meg
+
+ Total Signals          : 6
+ Total Nets             : 22
+ Total Signal Drivers   : 3
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 2
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 505
+Total Line Count : 5
+
+ Total Simulation Time: 0.09 sec
+
+ Current Memory Usage: 277.996 Meg
+
+Wed Nov 28 11:25:06 2018
+
