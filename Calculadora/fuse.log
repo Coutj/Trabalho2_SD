@@ -1,24 +1,22 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteSomadorCompleto_isim_beh.exe -prj /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteSomadorCompleto_beh.prj work.TesteSomadorCompleto 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicador_isim_beh.exe -prj /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicador_beh.prj work.TesteMultiplicador 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" into library work
-Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd" into library work
-Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteSomadorCompleto.vhd" into library work
+Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd" into library work
+Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicador.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 85036 KB
-Fuse CPU Usage: 1370 ms
+Fuse Memory Usage: 85048 KB
+Fuse CPU Usage: 1460 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
-Compiling architecture soma4algarch of entity Soma4Alg [soma4alg_default]
-Compiling architecture somacompletaarch of entity SomaCompleta [somacompleta_default]
-Compiling architecture behavior of entity testesomadorcompleto
+Compiling architecture multiplicadorarch of entity Multiplicador [multiplicador_default]
+Compiling architecture behavior of entity testemultiplicador
 Time Resolution for simulation is 1ps.
-Compiled 8 VHDL Units
-Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteSomadorCompleto_isim_beh.exe
-Fuse Memory Usage: 656668 KB
-Fuse CPU Usage: 1460 ms
-GCC CPU Usage: 380 ms
+Compiled 6 VHDL Units
+Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicador_isim_beh.exe
+Fuse Memory Usage: 656596 KB
+Fuse CPU Usage: 1560 ms
+GCC CPU Usage: 300 ms

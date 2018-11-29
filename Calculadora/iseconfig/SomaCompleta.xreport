@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-11-29T16:04:31</DateModified>
-  <ModuleName>Soma4Alg</ModuleName>
-  <SummaryTimeStamp>2018-11-29T16:01:44</SummaryTimeStamp>
+  <DateModified>2018-11-29T21:13:08</DateModified>
+  <ModuleName>Multiplicador</ModuleName>
+  <SummaryTimeStamp>2018-11-29T21:08:23</SummaryTimeStamp>
   <SavedFilePath>/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/iseconfig/SomaCompleta.xreport</SavedFilePath>
   <ImplementationReportsDirectory>/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/</ImplementationReportsDirectory>
-  <DateInitialized>2018-11-29T15:34:28</DateInitialized>
+  <DateInitialized>2018-11-29T20:05:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

@@ -1,5 +1,7 @@
 EN soma4alg NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd sub00/vhpl06 1543517046
 AR somacompleta somacompletaarch /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd sub00/vhpl09 1543517049
+AR multiplicador multiplicadorarch /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd sub00/vhpl11 1543526430
+EN multiplicador NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd sub00/vhpl10 1543526429
 EN somador1alg NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador1Alg.vhd sub00/vhpl02 1542991646
 AR somador somadorarch /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador.vhd sub00/vhpl01 1542985145
 EN somacompleta NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd sub00/vhpl08 1543517048

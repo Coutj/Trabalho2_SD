@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteSomadorCompleto.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicador.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

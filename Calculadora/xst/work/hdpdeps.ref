@@ -1,4 +1,11 @@
-V3 16
+V3 19
+FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd 2018/11/29.21:20:25 P.20131013
+EN work/Multiplicador 1543526429 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/Multiplicador/MultiplicadorArch 1543526430 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd \
+      EN work/Multiplicador 1543526429
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd 2018/11/29.18:44:02 P.20131013
 EN work/Soma4Alg 1543517046 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd \
