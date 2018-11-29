@@ -43,11 +43,11 @@ architecture SomaCompletaArch of SomaCompleta is
 
 	component Soma4Alg is
 		port (
-					carryIn				: 	in std_logic_vector (0 to 0) := (others => '0');
-					numA				:	in std_logic_vector (3 downto 0) := (others => '0');
-					numB					:	in std_logic_vector (3 downto 0) := (others => '0');
-					result				:	out std_logic_vector (3 downto 0) := (others => '0');
-					carryOutSaida		:	out std_logic_vector (0 to 0) := (others => '0')
+				carryIn				: 	in std_logic_vector (0 to 0) := (others => '0');
+				numA					:	in std_logic_vector (3 downto 0) := (others => '0');
+				numB					:	in std_logic_vector (3 downto 0) := (others => '0');
+				result				:	out std_logic_vector (3 downto 0) := (others => '0');
+				carryOutSaida		:	out std_logic_vector (0 to 0) := (others => '0')
 		);
 
 	end component;

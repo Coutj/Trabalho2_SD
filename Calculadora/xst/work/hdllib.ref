@@ -1,10 +1,10 @@
-EN soma4alg NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd sub00/vhpl06 1543512408
-AR somacompleta somacompletaarch /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd sub00/vhpl09 1543504696
+EN soma4alg NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd sub00/vhpl06 1543517046
+AR somacompleta somacompletaarch /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd sub00/vhpl09 1543517049
 EN somador1alg NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador1Alg.vhd sub00/vhpl02 1542991646
 AR somador somadorarch /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador.vhd sub00/vhpl01 1542985145
-EN somacompleta NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd sub00/vhpl08 1543504695
+EN somacompleta NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd sub00/vhpl08 1543517048
 PB types types /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Types.vhd sub00/vhpl05 1542992137
 EN somador NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador.vhd sub00/vhpl00 1542985144
 PH types NULL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Types.vhd sub00/vhpl04 1542992136
-AR soma4alg soma4algarch /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd sub00/vhpl07 1543512409
+AR soma4alg soma4algarch /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd sub00/vhpl07 1543517047
 AR somador1alg somador1algarch /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador1Alg.vhd sub00/vhpl03 1542991647

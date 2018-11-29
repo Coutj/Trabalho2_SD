@@ -29,17 +29,14 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Soma4Alg.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Soma4Alg.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Soma4Alg.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Soma4Alg.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Soma4Alg.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Soma4Alg.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Soma4Alg.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Soma4Alg.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Soma4Alg.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Soma4Alg.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Soma4Alg.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Soma4Alg.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Soma4Alg.unroutes" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Soma4Alg.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Soma4Alg.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Soma4Alg_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Soma4Alg_guide.ncd" xil_pn:origination="imported"/>
@@ -48,15 +45,10 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Soma4Alg_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Soma4Alg_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Soma4Alg_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Soma4Alg_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Soma4Alg_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Soma4Alg_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Soma4Alg_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Soma4Alg_par.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Soma4Alg_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Soma4Alg_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Soma4Alg_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Soma4Alg_usage.xml"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Soma4Alg_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Soma4Alg_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="SomaCompleta.bld"/>
@@ -66,14 +58,17 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="SomaCompleta.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="SomaCompleta.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="SomaCompleta.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="SomaCompleta.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="SomaCompleta.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="SomaCompleta.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SomaCompleta.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="SomaCompleta.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="SomaCompleta.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="SomaCompleta.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="SomaCompleta.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="SomaCompleta.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="SomaCompleta.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="SomaCompleta.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="SomaCompleta.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="SomaCompleta_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="SomaCompleta_guide.ncd" xil_pn:origination="imported"/>
@@ -82,9 +77,14 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="SomaCompleta_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="SomaCompleta_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="SomaCompleta_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SomaCompleta_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SomaCompleta_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="SomaCompleta_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="SomaCompleta_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SomaCompleta_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="SomaCompleta_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="SomaCompleta_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="SomaCompleta_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SomaCompleta_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="SomaCompleta_xst.xrpt"/>
     <file xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Somador.bld"/>
@@ -148,6 +148,9 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Somador_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Somador_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Somador_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TesteSomadorCompleto_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TesteSomadorCompleto_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TesteSomadorCompleto_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Teste_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Teste_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="Teste_isim_beh.wdb"/>
@@ -173,50 +176,50 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543512458" xil_pn:in_ck="9218255857702962802" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543512458">
+    <transform xil_pn:end_ts="1543517998" xil_pn:in_ck="263521905663007978" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543517998">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Soma4Alg.vhd"/>
       <outfile xil_pn:name="SomaCompleta.vhd"/>
-      <outfile xil_pn:name="Teste.vhd"/>
+      <outfile xil_pn:name="TesteSomadorCompleto.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1543511425" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="8779723441686325381" xil_pn:start_ts="1543511425">
+    <transform xil_pn:end_ts="1543517460" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3874900023916878269" xil_pn:start_ts="1543517460">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543511425" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-9020373152833903955" xil_pn:start_ts="1543511425">
+    <transform xil_pn:end_ts="1543517460" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6224231996214483685" xil_pn:start_ts="1543517460">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543505715" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1949744305891774816" xil_pn:start_ts="1543505715">
+    <transform xil_pn:end_ts="1543517269" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="495765544937797658" xil_pn:start_ts="1543517269">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543512458" xil_pn:in_ck="9218255857702962802" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543512458">
+    <transform xil_pn:end_ts="1543517998" xil_pn:in_ck="263521905663007978" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543517998">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Soma4Alg.vhd"/>
       <outfile xil_pn:name="SomaCompleta.vhd"/>
-      <outfile xil_pn:name="Teste.vhd"/>
+      <outfile xil_pn:name="TesteSomadorCompleto.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1543512461" xil_pn:in_ck="9218255857702962802" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1130244873160500702" xil_pn:start_ts="1543512458">
+    <transform xil_pn:end_ts="1543518001" xil_pn:in_ck="263521905663007978" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5528824475284152174" xil_pn:start_ts="1543517998">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Teste_beh.prj"/>
-      <outfile xil_pn:name="Teste_isim_beh.exe"/>
+      <outfile xil_pn:name="TesteSomadorCompleto_beh.prj"/>
+      <outfile xil_pn:name="TesteSomadorCompleto_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1543512461" xil_pn:in_ck="2609458185035763448" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3993379283449548129" xil_pn:start_ts="1543512461">
+    <transform xil_pn:end_ts="1543518001" xil_pn:in_ck="-5361091665287263856" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-4774151504987960815" xil_pn:start_ts="1543518001">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Teste_isim_beh.wdb"/>
+      <outfile xil_pn:name="TesteSomadorCompleto_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -224,94 +227,94 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543507473" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1100248709579140922" xil_pn:start_ts="1543507473">
+    <transform xil_pn:end_ts="1543516258" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5549899898735782080" xil_pn:start_ts="1543516258">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543507473" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1949744305891774816" xil_pn:start_ts="1543507473">
+    <transform xil_pn:end_ts="1543516258" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="495765544937797658" xil_pn:start_ts="1543516258">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543507473" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1543507473">
+    <transform xil_pn:end_ts="1543516258" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1543516258">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543507473" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-3345743977028631906" xil_pn:start_ts="1543507473">
+    <transform xil_pn:end_ts="1543516258" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="596119734703485592" xil_pn:start_ts="1543516258">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543507473" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="9102341965431189672" xil_pn:start_ts="1543507473">
+    <transform xil_pn:end_ts="1543516258" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="9102341965431189672" xil_pn:start_ts="1543516258">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543507473" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-1661714986256942934" xil_pn:start_ts="1543507473">
+    <transform xil_pn:end_ts="1543516258" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3392804441185449628" xil_pn:start_ts="1543516258">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543512411" xil_pn:in_ck="-1660319635015930627" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8485333155799418787" xil_pn:start_ts="1543512401">
+    <transform xil_pn:end_ts="1543517049" xil_pn:in_ck="-1660319635015930627" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-7848132852378693865" xil_pn:start_ts="1543517042">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Soma4Alg.lso"/>
-      <outfile xil_pn:name="Soma4Alg.ngc"/>
       <outfile xil_pn:name="Soma4Alg.ngr"/>
-      <outfile xil_pn:name="Soma4Alg.prj"/>
-      <outfile xil_pn:name="Soma4Alg.stx"/>
-      <outfile xil_pn:name="Soma4Alg.syr"/>
-      <outfile xil_pn:name="Soma4Alg.xst"/>
-      <outfile xil_pn:name="Soma4Alg_stx_beh.prj"/>
-      <outfile xil_pn:name="Soma4Alg_xst.xrpt"/>
+      <outfile xil_pn:name="SomaCompleta.lso"/>
+      <outfile xil_pn:name="SomaCompleta.ngc"/>
+      <outfile xil_pn:name="SomaCompleta.ngr"/>
+      <outfile xil_pn:name="SomaCompleta.prj"/>
+      <outfile xil_pn:name="SomaCompleta.stx"/>
+      <outfile xil_pn:name="SomaCompleta.syr"/>
+      <outfile xil_pn:name="SomaCompleta.xst"/>
+      <outfile xil_pn:name="SomaCompleta_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1543505677" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-848465495368512951" xil_pn:start_ts="1543505677">
+    <transform xil_pn:end_ts="1543516266" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-5965908984663376061" xil_pn:start_ts="1543516266">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543512417" xil_pn:in_ck="-1663778789377105308" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1364672850487833325" xil_pn:start_ts="1543512411">
+    <transform xil_pn:end_ts="1543517056" xil_pn:in_ck="-1663778789377105308" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3587467002070463271" xil_pn:start_ts="1543517049">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Soma4Alg.bld"/>
-      <outfile xil_pn:name="Soma4Alg.ngd"/>
-      <outfile xil_pn:name="Soma4Alg_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="SomaCompleta.bld"/>
+      <outfile xil_pn:name="SomaCompleta.ngd"/>
+      <outfile xil_pn:name="SomaCompleta_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1543512425" xil_pn:in_ck="694757529758553964" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1543512417">
+    <transform xil_pn:end_ts="1543517065" xil_pn:in_ck="694757529758553964" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1543517056">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Soma4Alg.pcf"/>
-      <outfile xil_pn:name="Soma4Alg_map.map"/>
-      <outfile xil_pn:name="Soma4Alg_map.mrp"/>
-      <outfile xil_pn:name="Soma4Alg_map.ncd"/>
-      <outfile xil_pn:name="Soma4Alg_map.ngm"/>
-      <outfile xil_pn:name="Soma4Alg_map.xrpt"/>
-      <outfile xil_pn:name="Soma4Alg_summary.xml"/>
-      <outfile xil_pn:name="Soma4Alg_usage.xml"/>
+      <outfile xil_pn:name="SomaCompleta.pcf"/>
+      <outfile xil_pn:name="SomaCompleta_map.map"/>
+      <outfile xil_pn:name="SomaCompleta_map.mrp"/>
+      <outfile xil_pn:name="SomaCompleta_map.ncd"/>
+      <outfile xil_pn:name="SomaCompleta_map.ngm"/>
+      <outfile xil_pn:name="SomaCompleta_map.xrpt"/>
+      <outfile xil_pn:name="SomaCompleta_summary.xml"/>
+      <outfile xil_pn:name="SomaCompleta_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1543512440" xil_pn:in_ck="-1096015597096401673" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1543512425">
+    <transform xil_pn:end_ts="1543517080" xil_pn:in_ck="-1096015597096401673" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1543517065">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Soma4Alg.ncd"/>
-      <outfile xil_pn:name="Soma4Alg.pad"/>
-      <outfile xil_pn:name="Soma4Alg.par"/>
-      <outfile xil_pn:name="Soma4Alg.ptwx"/>
-      <outfile xil_pn:name="Soma4Alg.unroutes"/>
-      <outfile xil_pn:name="Soma4Alg.xpi"/>
-      <outfile xil_pn:name="Soma4Alg_pad.csv"/>
-      <outfile xil_pn:name="Soma4Alg_pad.txt"/>
-      <outfile xil_pn:name="Soma4Alg_par.xrpt"/>
+      <outfile xil_pn:name="SomaCompleta.ncd"/>
+      <outfile xil_pn:name="SomaCompleta.pad"/>
+      <outfile xil_pn:name="SomaCompleta.par"/>
+      <outfile xil_pn:name="SomaCompleta.ptwx"/>
+      <outfile xil_pn:name="SomaCompleta.unroutes"/>
+      <outfile xil_pn:name="SomaCompleta.xpi"/>
+      <outfile xil_pn:name="SomaCompleta_pad.csv"/>
+      <outfile xil_pn:name="SomaCompleta_pad.txt"/>
+      <outfile xil_pn:name="SomaCompleta_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1543512440" xil_pn:in_ck="-8667283103535677728" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1543512436">
+    <transform xil_pn:end_ts="1543517080" xil_pn:in_ck="-8667283103535677728" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1543517077">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Soma4Alg.twr"/>
-      <outfile xil_pn:name="Soma4Alg.twx"/>
+      <outfile xil_pn:name="SomaCompleta.twr"/>
+      <outfile xil_pn:name="SomaCompleta.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>

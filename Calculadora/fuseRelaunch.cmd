@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Teste_isim_beh.exe" -prj "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Teste_beh.prj" "work.Teste" 
+-intstyle "ise" -incremental -o "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteSomadorCompleto_isim_beh.exe" -prj "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteSomadorCompleto_beh.prj" "work.TesteSomadorCompleto" 

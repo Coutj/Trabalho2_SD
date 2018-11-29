@@ -34,8 +34,8 @@ use ieee.numeric_std.all;
 entity Soma4Alg is
 	port (
 				carryIn				: 	in std_logic_vector (0 to 0) := (others => '0');
-				numA					:	in std_logic_vector (4 downto 0) := (others => '0');
-				numB					:	in std_logic_vector (4 downto 0) := (others => '0');
+				numA					:	in std_logic_vector (3 downto 0) := (others => '0');
+				numB					:	in std_logic_vector (3 downto 0) := (others => '0');
 				result				:	out std_logic_vector (3 downto 0) := (others => '0');
 				carryOutSaida		:	out std_logic_vector (0 to 0) := (others => '0')
 	);
@@ -46,11 +46,15 @@ architecture Soma4AlgArch of Soma4Alg is
 
 	
 	signal resultParcial, resultParcial2 : std_logic_vector (4 downto 0) := (others => '0');
+	signal numero1, numero2 : std_logic_vector (4 downto 0) :=  (others => '0');
 	signal seis : std_logic_vector (4 downto 0) := "00110";
 	
 begin
 
-	resultParcial(4 downto 0) <= std_logic_vector(unsigned (numA) + unsigned (numB) + unsigned(carryIn) );
+	numero1 	<= '0'&numA;
+	numero2	<=	'0'&numB;
+	
+	resultParcial(4 downto 0) <= std_logic_vector(unsigned (numero1) + unsigned (numero2) + unsigned(carryIn) );
 	result <= resultParcial2(3 downto 0);
 	carryOutSaida (0) <= resultParcial2(4);
 	
