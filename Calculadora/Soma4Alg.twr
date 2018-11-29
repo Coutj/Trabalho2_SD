@@ -39,313 +39,68 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Clock numA<0> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    8.605(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock numA<1> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    8.566(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock numA<2> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    8.943(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock numA<3> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    8.845(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock numA<4> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    7.859(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock numB<0> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    8.608(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock numB<1> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    8.455(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock numB<2> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    8.359(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock numB<3> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    8.481(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock numB<4> to Pad
--------------+------------+------------------------+--------+
-             | clk (edge) |                        | Clock  |
-Destination  |   to PAD   |Internal Clock(s)       | Phase  |
--------------+------------+------------------------+--------+
-carryOutSaida|    8.112(F)|carryOutSaida_cmp_ge0000|   0.000|
--------------+------------+------------------------+--------+
-
-Clock to Setup on destination clock numA<0>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    1.331|    1.331|
-numA<1>        |         |         |    1.380|    1.380|
-numA<2>        |         |         |    1.833|    1.833|
-numA<3>        |         |         |    1.773|    1.773|
-numA<4>        |         |         |    0.787|    0.787|
-numB<0>        |         |         |    1.334|    1.334|
-numB<1>        |         |         |    1.269|    1.269|
-numB<2>        |         |         |    1.249|    1.249|
-numB<3>        |         |         |    1.409|    1.409|
-numB<4>        |         |         |    1.040|    1.040|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock numA<1>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    1.295|    1.295|
-numA<1>        |         |         |    1.344|    1.344|
-numA<2>        |         |         |    1.797|    1.797|
-numA<3>        |         |         |    1.737|    1.737|
-numA<4>        |         |         |    0.751|    0.751|
-numB<0>        |         |         |    1.298|    1.298|
-numB<1>        |         |         |    1.233|    1.233|
-numB<2>        |         |         |    1.213|    1.213|
-numB<3>        |         |         |    1.373|    1.373|
-numB<4>        |         |         |    1.004|    1.004|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock numA<2>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    1.060|    1.060|
-numA<1>        |         |         |    1.109|    1.109|
-numA<2>        |         |         |    1.562|    1.562|
-numA<3>        |         |         |    1.502|    1.502|
-numA<4>        |         |         |    0.516|    0.516|
-numB<0>        |         |         |    1.063|    1.063|
-numB<1>        |         |         |    0.998|    0.998|
-numB<2>        |         |         |    0.978|    0.978|
-numB<3>        |         |         |    1.138|    1.138|
-numB<4>        |         |         |    0.769|    0.769|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock numA<3>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    0.833|    0.833|
-numA<1>        |         |         |    0.882|    0.882|
-numA<2>        |         |         |    1.335|    1.335|
-numA<3>        |         |         |    1.275|    1.275|
-numA<4>        |         |         |    0.289|    0.289|
-numB<0>        |         |         |    0.836|    0.836|
-numB<1>        |         |         |    0.771|    0.771|
-numB<2>        |         |         |    0.751|    0.751|
-numB<3>        |         |         |    0.911|    0.911|
-numB<4>        |         |         |    0.542|    0.542|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock numA<4>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    1.278|    1.278|
-numA<1>        |         |         |    1.327|    1.327|
-numA<2>        |         |         |    1.780|    1.780|
-numA<3>        |         |         |    1.720|    1.720|
-numA<4>        |         |         |    0.734|    0.734|
-numB<0>        |         |         |    1.281|    1.281|
-numB<1>        |         |         |    1.216|    1.216|
-numB<2>        |         |         |    1.196|    1.196|
-numB<3>        |         |         |    1.356|    1.356|
-numB<4>        |         |         |    0.987|    0.987|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock numB<0>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    1.019|    1.019|
-numA<1>        |         |         |    1.068|    1.068|
-numA<2>        |         |         |    1.521|    1.521|
-numA<3>        |         |         |    1.461|    1.461|
-numA<4>        |         |         |    0.475|    0.475|
-numB<0>        |         |         |    1.022|    1.022|
-numB<1>        |         |         |    0.957|    0.957|
-numB<2>        |         |         |    0.937|    0.937|
-numB<3>        |         |         |    1.097|    1.097|
-numB<4>        |         |         |    0.728|    0.728|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock numB<1>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    1.106|    1.106|
-numA<1>        |         |         |    1.155|    1.155|
-numA<2>        |         |         |    1.608|    1.608|
-numA<3>        |         |         |    1.548|    1.548|
-numA<4>        |         |         |    0.562|    0.562|
-numB<0>        |         |         |    1.109|    1.109|
-numB<1>        |         |         |    1.044|    1.044|
-numB<2>        |         |         |    1.024|    1.024|
-numB<3>        |         |         |    1.184|    1.184|
-numB<4>        |         |         |    0.815|    0.815|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock numB<2>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    1.527|    1.527|
-numA<1>        |         |         |    1.576|    1.576|
-numA<2>        |         |         |    2.029|    2.029|
-numA<3>        |         |         |    1.969|    1.969|
-numA<4>        |         |         |    0.983|    0.983|
-numB<0>        |         |         |    1.530|    1.530|
-numB<1>        |         |         |    1.465|    1.465|
-numB<2>        |         |         |    1.445|    1.445|
-numB<3>        |         |         |    1.605|    1.605|
-numB<4>        |         |         |    1.236|    1.236|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock numB<3>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    1.124|    1.124|
-numA<1>        |         |         |    1.173|    1.173|
-numA<2>        |         |         |    1.626|    1.626|
-numA<3>        |         |         |    1.566|    1.566|
-numA<4>        |         |         |    0.580|    0.580|
-numB<0>        |         |         |    1.127|    1.127|
-numB<1>        |         |         |    1.062|    1.062|
-numB<2>        |         |         |    1.042|    1.042|
-numB<3>        |         |         |    1.202|    1.202|
-numB<4>        |         |         |    0.833|    0.833|
----------------+---------+---------+---------+---------+
-
-Clock to Setup on destination clock numB<4>
----------------+---------+---------+---------+---------+
-               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
-Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
----------------+---------+---------+---------+---------+
-numA<0>        |         |         |    1.076|    1.076|
-numA<1>        |         |         |    1.125|    1.125|
-numA<2>        |         |         |    1.578|    1.578|
-numA<3>        |         |         |    1.518|    1.518|
-numA<4>        |         |         |    0.532|    0.532|
-numB<0>        |         |         |    1.079|    1.079|
-numB<1>        |         |         |    1.014|    1.014|
-numB<2>        |         |         |    0.994|    0.994|
-numB<3>        |         |         |    1.154|    1.154|
-numB<4>        |         |         |    0.785|    0.785|
----------------+---------+---------+---------+---------+
-
 Pad to Pad
----------------+---------------+---------+
-Source Pad     |Destination Pad|  Delay  |
----------------+---------------+---------+
-numA<0>        |result<0>      |    7.320|
-numA<0>        |result<1>      |    9.616|
-numA<0>        |result<2>      |    9.316|
-numA<0>        |result<3>      |    9.508|
-numA<0>        |result<4>      |    9.361|
-numA<1>        |result<1>      |    9.332|
-numA<1>        |result<2>      |    9.240|
-numA<1>        |result<3>      |    9.270|
-numA<1>        |result<4>      |    9.077|
-numA<2>        |result<1>      |    9.709|
-numA<2>        |result<2>      |    9.617|
-numA<2>        |result<3>      |    9.647|
-numA<2>        |result<4>      |    9.454|
-numA<3>        |result<1>      |    9.561|
-numA<3>        |result<2>      |    9.520|
-numA<3>        |result<3>      |    9.454|
-numA<3>        |result<4>      |    9.306|
-numA<4>        |result<1>      |    8.575|
-numA<4>        |result<2>      |    8.534|
-numA<4>        |result<3>      |    8.468|
-numA<4>        |result<4>      |    8.320|
-numB<0>        |result<0>      |    7.323|
-numB<0>        |result<1>      |    9.619|
-numB<0>        |result<2>      |    9.319|
-numB<0>        |result<3>      |    9.511|
-numB<0>        |result<4>      |    9.364|
-numB<1>        |result<1>      |    9.221|
-numB<1>        |result<2>      |    9.129|
-numB<1>        |result<3>      |    9.159|
-numB<1>        |result<4>      |    8.966|
-numB<2>        |result<1>      |    9.125|
-numB<2>        |result<2>      |    9.033|
-numB<2>        |result<3>      |    9.063|
-numB<2>        |result<4>      |    8.870|
-numB<3>        |result<1>      |    9.197|
-numB<3>        |result<2>      |    9.156|
-numB<3>        |result<3>      |    9.090|
-numB<3>        |result<4>      |    8.942|
-numB<4>        |result<1>      |    8.828|
-numB<4>        |result<2>      |    8.787|
-numB<4>        |result<3>      |    8.721|
-numB<4>        |result<4>      |    8.573|
----------------+---------------+---------+
+---------------+----------------+---------+
+Source Pad     |Destination Pad |  Delay  |
+---------------+----------------+---------+
+carryIn<0>     |carryOutSaida<0>|    9.282|
+carryIn<0>     |result<0>       |    7.751|
+carryIn<0>     |result<1>       |    9.307|
+carryIn<0>     |result<2>       |    9.369|
+carryIn<0>     |result<3>       |    9.791|
+numA<0>        |carryOutSaida<0>|    9.593|
+numA<0>        |result<0>       |    7.462|
+numA<0>        |result<1>       |    9.618|
+numA<0>        |result<2>       |    9.680|
+numA<0>        |result<3>       |   10.102|
+numA<1>        |carryOutSaida<0>|    9.846|
+numA<1>        |result<1>       |    9.871|
+numA<1>        |result<2>       |    9.933|
+numA<1>        |result<3>       |   10.355|
+numA<2>        |carryOutSaida<0>|    9.670|
+numA<2>        |result<1>       |    9.695|
+numA<2>        |result<2>       |    9.757|
+numA<2>        |result<3>       |   10.179|
+numA<3>        |carryOutSaida<0>|    9.992|
+numA<3>        |result<1>       |   10.017|
+numA<3>        |result<2>       |   10.079|
+numA<3>        |result<3>       |   10.501|
+numA<4>        |carryOutSaida<0>|    9.214|
+numA<4>        |result<1>       |    9.239|
+numA<4>        |result<2>       |    9.301|
+numA<4>        |result<3>       |    9.723|
+numB<0>        |carryOutSaida<0>|    9.968|
+numB<0>        |result<0>       |    7.837|
+numB<0>        |result<1>       |    9.993|
+numB<0>        |result<2>       |   10.055|
+numB<0>        |result<3>       |   10.477|
+numB<1>        |carryOutSaida<0>|   10.012|
+numB<1>        |result<1>       |   10.037|
+numB<1>        |result<2>       |   10.099|
+numB<1>        |result<3>       |   10.521|
+numB<2>        |carryOutSaida<0>|    9.610|
+numB<2>        |result<1>       |    9.635|
+numB<2>        |result<2>       |    9.697|
+numB<2>        |result<3>       |   10.119|
+numB<3>        |carryOutSaida<0>|    9.619|
+numB<3>        |result<1>       |    9.644|
+numB<3>        |result<2>       |    9.706|
+numB<3>        |result<3>       |   10.128|
+numB<4>        |carryOutSaida<0>|    8.721|
+numB<4>        |result<1>       |    8.746|
+numB<4>        |result<2>       |    8.808|
+numB<4>        |result<3>       |    9.230|
+---------------+----------------+---------+
 
 
-Analysis completed Wed Nov 28 11:22:03 2018 
+Analysis completed Thu Nov 29 17:27:19 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 366 MB
+Peak Memory Usage: 365 MB
 
 
 

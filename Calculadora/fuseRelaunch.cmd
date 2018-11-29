@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg_isim_beh.exe" -prj "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg_beh.prj" "work.Soma4Alg" 
+-intstyle "ise" -incremental -o "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Teste_isim_beh.exe" -prj "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Teste_beh.prj" "work.Teste" 

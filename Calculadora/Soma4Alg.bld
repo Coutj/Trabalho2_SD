@@ -26,7 +26,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 385148 kilobytes
+Total memory usage is 385136 kilobytes
 
 Writing NGD file "Soma4Alg.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec

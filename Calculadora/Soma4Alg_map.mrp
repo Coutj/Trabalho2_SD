@@ -9,27 +9,26 @@ Target Device  : xc3s700an
 Target Package : fgg484
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Wed Nov 28 11:21:40 2018
+Mapped Date    : Thu Nov 29 17:27:00 2018
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    1
+Number of warnings:    0
 Logic Utilization:
-  Number of 4 input LUTs:                10 out of  11,776    1%
+  Number of 4 input LUTs:                 9 out of  11,776    1%
 Logic Distribution:
-  Number of occupied Slices:              6 out of   5,888    1%
-    Number of Slices containing only related logic:       6 out of       6 100%
-    Number of Slices containing unrelated logic:          0 out of       6   0%
+  Number of occupied Slices:              5 out of   5,888    1%
+    Number of Slices containing only related logic:       5 out of       5 100%
+    Number of Slices containing unrelated logic:          0 out of       5   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          10 out of  11,776    1%
+  Total Number of 4 input LUTs:           9 out of  11,776    1%
   Number of bonded IOBs:                 16 out of     372    4%
-    IOB Latches:                          1
 
-Average Fanout of Non-Clock Nets:                1.81
+Average Fanout of Non-Clock Nets:                1.55
 
 Peak Memory Usage:  629 MB
-Total REAL time to MAP completion:  5 secs 
+Total REAL time to MAP completion:  4 secs 
 Total CPU time to MAP completion:   3 secs 
 
 NOTES:
@@ -71,13 +70,9 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:372 - Gated clock. Clock net carryOutSaida_cmp_ge0000 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network carryIn<0> has no load.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
    rate limited output drivers. The delay on speed critical single ended outputs
@@ -85,14 +80,9 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   1 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
-
-Optimized Block(s):
-TYPE 		BLOCK
-GND 		XST_GND
 
 Section 6 - IOB Properties
 --------------------------
@@ -101,7 +91,8 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
 |                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| carryOutSaida                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| carryIn<0>                         | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| carryOutSaida<0>                   | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | numA<0>                            | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
 | numA<1>                            | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
 | numA<2>                            | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
@@ -116,7 +107,6 @@ Section 6 - IOB Properties
 | result<1>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | result<2>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | result<3>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
-| result<4>                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

@@ -34,9 +34,10 @@ use ieee.numeric_std.all;
 entity Soma4Alg is
 	port (
 				carryIn				: 	in std_logic_vector (0 to 0) := (others => '0');
-				numA, numB			:	in std_logic_vector (4 downto 0) := (others => '0');
-				result				:	out std_logic_vector (4 downto 0) := (others => '0');
-				carryOutSaida		:	out std_logic := '0'
+				numA					:	in std_logic_vector (4 downto 0) := (others => '0');
+				numB					:	in std_logic_vector (4 downto 0) := (others => '0');
+				result				:	out std_logic_vector (3 downto 0) := (others => '0');
+				carryOutSaida		:	out std_logic_vector (0 to 0) := (others => '0')
 	);
 
 end Soma4Alg;
@@ -44,29 +45,26 @@ end Soma4Alg;
 architecture Soma4AlgArch of Soma4Alg is
 
 	
-	signal resultParcial : std_logic_vector (4 downto 0);
-
-
+	signal resultParcial, resultParcial2 : std_logic_vector (4 downto 0) := (others => '0');
+	signal seis : std_logic_vector (4 downto 0) := "00110";
+	
 begin
-	
-	resultParcial <= std_logic_vector(unsigned (numA) + unsigned (numB) + unsigned(carryIn)*10);
-	
-	
-	
-	
-	corrigeBCD : process (numA, numB, carryIn) is
-	begin
 
+	resultParcial(4 downto 0) <= std_logic_vector(unsigned (numA) + unsigned (numB) + unsigned(carryIn) );
+	result <= resultParcial2(3 downto 0);
+	carryOutSaida (0) <= resultParcial2(4);
 	
-		if (resultParcial  >= "01010") then
-			
-				result <= std_logic_vector (unsigned(resultParcial) + "0110");
-				carryOutSaida <= resultParcial(4);
-		else
+	corrigeBCD : process (numA, numB, carryIn, resultParcial) is
+	begin	
 		
-				result <= resultParcial;
-			
+		
+		if (resultParcial  >= "01010") then
+				resultParcial2 <= std_logic_vector (unsigned(resultParcial) + unsigned(seis));
+		else
+				resultParcial2 <= resultParcial;
 		end if;
+		
+		
 	
 	end process corrigeBCD;
 

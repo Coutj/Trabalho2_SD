@@ -1,21 +1,22 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg_isim_beh.exe -prj /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg_beh.prj work.Soma4Alg 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Teste_isim_beh.exe -prj /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Teste_beh.prj work.Teste 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
 Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" into library work
+Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Teste.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 85036 KB
-Fuse CPU Usage: 1560 ms
+Fuse Memory Usage: 85048 KB
+Fuse CPU Usage: 1540 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
-Compiling architecture soma4algarch of entity soma4alg
+Compiling architecture soma4algarch of entity Soma4Alg [soma4alg_default]
+Compiling architecture behavior of entity teste
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
-Compiled 4 VHDL Units
-Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg_isim_beh.exe
-Fuse Memory Usage: 657136 KB
-Fuse CPU Usage: 1650 ms
-GCC CPU Usage: 250 ms
+Compiled 6 VHDL Units
+Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Teste_isim_beh.exe
+Fuse Memory Usage: 656580 KB
+Fuse CPU Usage: 1640 ms
+GCC CPU Usage: 330 ms

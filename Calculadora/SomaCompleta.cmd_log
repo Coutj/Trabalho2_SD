@@ -1,0 +1,95 @@
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 
+xst -intstyle ise -ifn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.xst" -ofn "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 SomaCompleta.ngc SomaCompleta.ngd  
+map -intstyle ise -p xc3s700an-fgg484-4 -cm area -ir off -pr off -c 100 -o SomaCompleta_map.ncd SomaCompleta.ngd SomaCompleta.pcf 
+par -w -intstyle ise -ol high -t 1 SomaCompleta_map.ncd SomaCompleta.ncd SomaCompleta.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SomaCompleta.twx SomaCompleta.ncd -o SomaCompleta.twr SomaCompleta.pcf 

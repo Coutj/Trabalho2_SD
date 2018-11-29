@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> 
 Reading design: Soma4Alg.prj
@@ -122,7 +122,7 @@ Analyzing hierarchy for entity <Soma4Alg> in library <work> (architecture <soma4
 =========================================================================
 Analyzing Entity <Soma4Alg> in library <work> (Architecture <soma4algarch>).
 WARNING:Xst:819 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" line 57: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <resultParcial>
+   <seis>
 Entity <Soma4Alg> analyzed. Unit <Soma4Alg> generated.
 
 
@@ -134,11 +134,10 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <Soma4Alg>.
     Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd".
-WARNING:Xst:647 - Input <carryIn<0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:737 - Found 1-bit latch for signal <carryOutSaida>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 5-bit comparator greatequal for signal <carryOutSaida$cmp_ge0000> created at line 61.
-    Found 5-bit adder for signal <result$addsub0000> created at line 63.
-    Found 5-bit adder for signal <resultParcial>.
+WARNING:Xst:653 - Signal <seis> is used but never assigned. This sourceless signal will be automatically connected to value 00110.
+    Found 5-bit adder carry in for signal <resultParcial>.
+    Found 5-bit adder for signal <resultParcial2$addsub0000> created at line 62.
+    Found 5-bit comparator greatequal for signal <resultParcial2$cmp_ge0000> created at line 61.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
@@ -150,9 +149,8 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 5-bit adder                                           : 2
-# Latches                                              : 1
- 1-bit latch                                           : 1
+ 5-bit adder                                           : 1
+ 5-bit adder carry in                                  : 1
 # Comparators                                          : 1
  5-bit comparator greatequal                           : 1
 
@@ -168,9 +166,8 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 2
- 5-bit adder                                           : 2
-# Latches                                              : 1
- 1-bit latch                                           : 1
+ 5-bit adder                                           : 1
+ 5-bit adder carry in                                  : 1
 # Comparators                                          : 1
  5-bit comparator greatequal                           : 1
 
@@ -216,20 +213,17 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 17
+# IOs                              : 16
 
 Cell Usage :
-# BELS                             : 20
-#      GND                         : 1
+# BELS                             : 18
 #      LUT2                        : 5
-#      LUT4                        : 5
+#      LUT4                        : 4
 #      MUXCY                       : 4
 #      XORCY                       : 5
-# FlipFlops/Latches                : 1
-#      LD                          : 1
 # IO Buffers                       : 16
-#      IBUF                        : 10
-#      OBUF                        : 6
+#      IBUF                        : 11
+#      OBUF                        : 5
 =========================================================================
 
 Device utilization summary:
@@ -237,11 +231,10 @@ Device utilization summary:
 
 Selected Device : 3s700anfgg484-4 
 
- Number of Slices:                        6  out of   5888     0%  
- Number of 4 input LUTs:                 10  out of  11776     0%  
- Number of IOs:                          17
+ Number of Slices:                        5  out of   5888     0%  
+ Number of 4 input LUTs:                  9  out of  11776     0%  
+ Number of IOs:                          16
  Number of bonded IOBs:                  16  out of    372     4%  
-    IOB Flip Flops:                       1
 
 ---------------------------
 Partition Resource Summary:
@@ -261,15 +254,7 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------------------------+------------------------+-------+
-Clock Signal                                         | Clock buffer(FF name)  | Load  |
------------------------------------------------------+------------------------+-------+
-carryOutSaida_cmp_ge0000(carryOutSaida_cmp_ge00001:O)| NONE(*)(carryOutSaida) | 1     |
------------------------------------------------------+------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+No clock signals found in this design
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -280,67 +265,23 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 3.983ns
-   Maximum output required time after clock: 5.668ns
-   Maximum combinational path delay: 10.131ns
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 9.984ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'carryOutSaida_cmp_ge0000'
-  Total number of paths / destination ports: 14 / 1
--------------------------------------------------------------------------
-Offset:              3.983ns (Levels of Logic = 7)
-  Source:            numA<0> (PAD)
-  Destination:       carryOutSaida (LATCH)
-  Destination Clock: carryOutSaida_cmp_ge0000 falling
-
-  Data Path: numA<0> to carryOutSaida
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             1   0.849   0.563  numA_0_IBUF (numA_0_IBUF)
-     LUT2:I0->O            1   0.648   0.000  Madd_resultParcial_lut<0> (Madd_resultParcial_lut<0>)
-     MUXCY:S->O            1   0.632   0.000  Madd_resultParcial_cy<0> (Madd_resultParcial_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  Madd_resultParcial_cy<1> (Madd_resultParcial_cy<1>)
-     MUXCY:CI->O           1   0.065   0.000  Madd_resultParcial_cy<2> (Madd_resultParcial_cy<2>)
-     MUXCY:CI->O           0   0.065   0.000  Madd_resultParcial_cy<3> (Madd_resultParcial_cy<3>)
-     XORCY:CI->O           6   0.844   0.000  Madd_resultParcial_xor<4> (Madd_result_addsub0000_lut<4>)
-     LD:D                      0.252          carryOutSaida
-    ----------------------------------------
-    Total                      3.983ns (3.420ns logic, 0.563ns route)
-                                       (85.9% logic, 14.1% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'carryOutSaida_cmp_ge0000'
-  Total number of paths / destination ports: 1 / 1
--------------------------------------------------------------------------
-Offset:              5.668ns (Levels of Logic = 1)
-  Source:            carryOutSaida (LATCH)
-  Destination:       carryOutSaida (PAD)
-  Source Clock:      carryOutSaida_cmp_ge0000 falling
-
-  Data Path: carryOutSaida to carryOutSaida
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     LD:G->Q               1   0.728   0.420  carryOutSaida (carryOutSaida_OBUF)
-     OBUF:I->O                 4.520          carryOutSaida_OBUF (carryOutSaida)
-    ----------------------------------------
-    Total                      5.668ns (5.248ns logic, 0.420ns route)
-                                       (92.6% logic, 7.4% route)
-
-=========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 154 / 5
+  Total number of paths / destination ports: 171 / 5
 -------------------------------------------------------------------------
-Delay:               10.131ns (Levels of Logic = 9)
+Delay:               9.984ns (Levels of Logic = 8)
   Source:            numA<0> (PAD)
-  Destination:       result<4> (PAD)
+  Destination:       result<3> (PAD)
 
-  Data Path: numA<0> to result<4>
+  Data Path: numA<0> to result<3>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
@@ -349,26 +290,25 @@ Delay:               10.131ns (Levels of Logic = 9)
      MUXCY:S->O            1   0.632   0.000  Madd_resultParcial_cy<0> (Madd_resultParcial_cy<0>)
      MUXCY:CI->O           1   0.065   0.000  Madd_resultParcial_cy<1> (Madd_resultParcial_cy<1>)
      MUXCY:CI->O           1   0.065   0.000  Madd_resultParcial_cy<2> (Madd_resultParcial_cy<2>)
-     MUXCY:CI->O           0   0.065   0.000  Madd_resultParcial_cy<3> (Madd_resultParcial_cy<3>)
-     XORCY:CI->O           6   0.844   0.812  Madd_resultParcial_xor<4> (Madd_result_addsub0000_lut<4>)
-     LUT4:I0->O            1   0.648   0.420  result<4>1 (result_4_OBUF)
-     OBUF:I->O                 4.520          result_4_OBUF (result<4>)
+     XORCY:CI->O           4   0.844   0.730  Madd_resultParcial_xor<3> (Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I0->O            1   0.648   0.420  resultParcial2<3>1 (result_3_OBUF)
+     OBUF:I->O                 4.520          result_3_OBUF (result<3>)
     ----------------------------------------
-    Total                     10.131ns (8.336ns logic, 1.795ns route)
-                                       (82.3% logic, 17.7% route)
+    Total                      9.984ns (8.271ns logic, 1.713ns route)
+                                       (82.8% logic, 17.2% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 4.73 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.19 secs
  
 --> 
 
 
-Total memory usage is 500744 kilobytes
+Total memory usage is 500640 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    3 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
 
