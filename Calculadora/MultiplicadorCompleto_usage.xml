@@ -4,34 +4,34 @@
      changes made to this file may result in unpredictable
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
-<DeviceUsageSummary rev="8">
-<DesignStatistics TimeStamp="Fri Nov 30 11:28:47 2018"><group name="MiscellaneousStatistics">
-<item name="AGG_BONDED_IO" rev="8">
+<DeviceUsageSummary rev="14">
+<DesignStatistics TimeStamp="Fri Nov 30 14:30:19 2018"><group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="14">
 <attrib name="value" value="52"/></item>
-<item name="AGG_IO" rev="8">
+<item name="AGG_IO" rev="14">
 <attrib name="value" value="52"/></item>
-<item name="AGG_SLICE" rev="8">
-<attrib name="value" value="176"/></item>
-<item name="NUM_4_INPUT_LUT" rev="8">
-<attrib name="value" value="339"/></item>
-<item name="NUM_BONDED_IBUF" rev="8">
+<item name="AGG_SLICE" rev="14">
+<attrib name="value" value="147"/></item>
+<item name="NUM_4_INPUT_LUT" rev="14">
+<attrib name="value" value="275"/></item>
+<item name="NUM_BONDED_IBUF" rev="14">
 <attrib name="value" value="20"/></item>
-<item name="NUM_BONDED_IOB" rev="8">
+<item name="NUM_BONDED_IOB" rev="14">
 <attrib name="value" value="32"/></item>
-<item name="NUM_CYMUX" rev="8">
-<attrib name="value" value="36"/></item>
-<item name="NUM_IOB_LATCH" rev="8">
+<item name="NUM_CYMUX" rev="14">
+<attrib name="value" value="32"/></item>
+<item name="NUM_IOB_LATCH" rev="14">
 <attrib name="value" value="8"/></item>
-<item name="NUM_LUT_RT" rev="8">
+<item name="NUM_LUT_RT" rev="14">
 <attrib name="value" value="8"/></item>
-<item name="NUM_MULT18X18SIO" rev="8">
+<item name="NUM_MULT18X18SIO" rev="14">
 <attrib name="value" value="4"/></item>
-<item name="NUM_SLICEL" rev="8">
-<attrib name="value" value="176"/></item>
-<item name="NUM_SLICE_LATCH" rev="8">
+<item name="NUM_SLICEL" rev="14">
+<attrib name="value" value="147"/></item>
+<item name="NUM_SLICE_LATCH" rev="14">
 <attrib name="value" value="24"/></item>
-<item name="NUM_XOR" rev="8">
-<attrib name="value" value="40"/></item>
+<item name="NUM_XOR" rev="14">
+<attrib name="value" value="33"/></item>
 </group>
 </DesignStatistics>
 <CmdHistory>

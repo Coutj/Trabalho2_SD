@@ -5,39 +5,432 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;seis&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd</arg>&quot; line <arg fmt="%d" index="2">61</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd</arg>&quot; line <arg fmt="%d" index="2">61</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;seis&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">seis</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0110</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">seis</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0110</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="737" delta="new" >Found <arg fmt="%d" index="1">8</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">resultParcial2</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">8</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">resultParcial2</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">seis</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00110</arg>.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">seis</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00110</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">numA&lt;15:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">numA&lt;7:4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">linha1&lt;31:20&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000000000000</arg>.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">resultParcial1Linha4&lt;3:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">carryOut3&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">resultParcial1Linha3&lt;3:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">carryIn&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">resultParcial1Linha2&lt;3:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">auxResult&lt;31:12&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">linha4&lt;31:20&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">000000000000</arg>.
 </msg>
 
-<msg type="info" file="Xst" num="1767" delta="new" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+<msg type="warning" file="Xst" num="1780" delta="new" >Signal &lt;<arg fmt="%s" index="1">linha3&lt;31:20&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">linha3&lt;19:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">linha2&lt;31:20&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">linha2&lt;19:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">linha1&lt;31:20&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">linha1&lt;19:0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">carryOut3Linha4&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">carryOut3Linha3&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">carryOut3Linha2&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">carryOut3Linha1&lt;0&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="old" >Signal &lt;<arg fmt="%s" index="1">carryIn&lt;0&gt;</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">auxResultLinha4&lt;31:12&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">auxResultLinha3&lt;31:12&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">auxResultLinha2&lt;31:12&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">auxResultLinha1&lt;31:12&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mult1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mult2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mult3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mult4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SomaResultsParciais1</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SomaResultsParciais2</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SomaResultsParciais3</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mult5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mult6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mult7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">mult8</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SomaResultsParciais4</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SomaResultsParciais5</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">SomaResultsParciais6</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">mult9</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">mult10</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">mult11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">mult12</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">SomaResultsParciais7</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">SomaResultsParciais8</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">SomaResultsParciais9</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="old" >Unit &lt;<arg fmt="%s" index="1">MultiplicadorCompleto</arg>&gt;: instances &lt;<arg fmt="%s" index="2">mult9</arg>&gt;, &lt;<arg fmt="%s" index="3">mult13</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Multiplicador</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="new" >Unit &lt;<arg fmt="%s" index="1">MultiplicadorCompleto</arg>&gt;: instances &lt;<arg fmt="%s" index="2">mult10</arg>&gt;, &lt;<arg fmt="%s" index="3">mult14</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Multiplicador</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="1989" delta="old" >Unit &lt;<arg fmt="%s" index="1">MultiplicadorCompleto</arg>&gt;: instances &lt;<arg fmt="%s" index="2">mult11</arg>&gt;, &lt;<arg fmt="%s" index="3">mult15</arg>&gt; of unit &lt;<arg fmt="%s" index="4">Multiplicador</arg>&gt; are equivalent, second instance is removed
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult12/Mmult_resultParcial</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult8/Mmult_resultParcial</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult7/Mmult_resultParcial</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult6/Mmult_resultParcial</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult5/Mmult_resultParcial</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult4/Mmult_resultParcial</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult3/Mmult_resultParcial</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult2/Mmult_resultParcial</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult1/Mmult_resultParcial</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult1/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult1/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult1/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult1/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult1/resultParcial2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult1/resultParcial2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult1/resultParcial2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult1/resultParcial2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult2/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult2/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult2/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult2/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult2/resultParcial2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult2/resultParcial2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult2/resultParcial2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult2/resultParcial2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult3/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult3/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult3/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult3/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult3/resultParcial2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult3/resultParcial2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult3/resultParcial2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult3/resultParcial2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult4/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult4/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult4/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult4/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult4/resultParcial2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult4/resultParcial2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult4/resultParcial2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult4/resultParcial2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult5/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult5/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult5/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult5/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult5/resultParcial2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult5/resultParcial2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult5/resultParcial2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult5/resultParcial2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult6/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult6/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult6/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult6/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult6/resultParcial2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult6/resultParcial2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult6/resultParcial2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult6/resultParcial2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult7/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult7/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult7/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult7/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult7/resultParcial2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult7/resultParcial2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult7/resultParcial2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult7/resultParcial2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult8/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult8/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult8/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult8/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult8/resultParcial2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult8/resultParcial2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult8/resultParcial2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult8/resultParcial2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult9/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult9/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult9/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult9/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult12/resultParcial2_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult12/resultParcial2_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult12/resultParcial2_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult12/resultParcial2_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult12/resultParcial2_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult12/resultParcial2_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult12/resultParcial2_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">mult12/resultParcial2_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">MultiplicadorCompleto</arg>&gt;.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

@@ -1,0 +1,29 @@
+Command line:
+   SomaCompleta_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  45439
+
+Fri Nov 30 13:42:23 2018
+
+
+ Elaboration Time: 0.04 sec
+
+ Current Memory Usage: 202.494 Meg
+
+ Total Signals          : 49
+ Total Nets             : 177
+ Total Signal Drivers   : 27
+ Total Blocks           : 7
+ Total Primitive Blocks : 6
+ Total Processes        : 26
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 660
+Total Line Count : 34
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 277.996 Meg
+
+Fri Nov 30 13:42:37 2018
+

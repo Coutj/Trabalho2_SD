@@ -10,7 +10,7 @@ Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Te
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 85052 KB
-Fuse CPU Usage: 1760 ms
+Fuse CPU Usage: 1560 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -19,8 +19,9 @@ Compiling architecture soma4algarch of entity Soma4Alg [soma4alg_default]
 Compiling architecture multiplicadorcompletoarch of entity MultiplicadorCompleto [multiplicadorcompleto_default]
 Compiling architecture behavior of entity testemultiplicadorcompleto
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 10 VHDL Units
 Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicadorCompleto_isim_beh.exe
-Fuse Memory Usage: 656740 KB
-Fuse CPU Usage: 1880 ms
-GCC CPU Usage: 570 ms
+Fuse Memory Usage: 656892 KB
+Fuse CPU Usage: 1670 ms
+GCC CPU Usage: 550 ms
