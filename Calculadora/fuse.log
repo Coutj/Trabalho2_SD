@@ -1,22 +1,26 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicador_isim_beh.exe -prj /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicador_beh.prj work.TesteMultiplicador 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicadorCompleto_isim_beh.exe -prj /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicadorCompleto_beh.prj work.TesteMultiplicadorCompleto 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" into library work
 Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd" into library work
-Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicador.vhd" into library work
+Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd" into library work
+Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicadorCompleto.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 85048 KB
-Fuse CPU Usage: 1460 ms
+Fuse Memory Usage: 85052 KB
+Fuse CPU Usage: 1760 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
 Compiling architecture multiplicadorarch of entity Multiplicador [multiplicador_default]
-Compiling architecture behavior of entity testemultiplicador
+Compiling architecture soma4algarch of entity Soma4Alg [soma4alg_default]
+Compiling architecture multiplicadorcompletoarch of entity MultiplicadorCompleto [multiplicadorcompleto_default]
+Compiling architecture behavior of entity testemultiplicadorcompleto
 Time Resolution for simulation is 1ps.
-Compiled 6 VHDL Units
-Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicador_isim_beh.exe
-Fuse Memory Usage: 656596 KB
-Fuse CPU Usage: 1560 ms
-GCC CPU Usage: 300 ms
+Compiled 10 VHDL Units
+Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicadorCompleto_isim_beh.exe
+Fuse Memory Usage: 656740 KB
+Fuse CPU Usage: 1880 ms
+GCC CPU Usage: 570 ms

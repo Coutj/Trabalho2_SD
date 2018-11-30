@@ -1,0 +1,708 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> 
+Reading design: MultiplicadorCompleto.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "MultiplicadorCompleto.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "MultiplicadorCompleto"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : MultiplicadorCompleto
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd" in Library work.
+Architecture multiplicadorarch of Entity multiplicador is up to date.
+Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" in Library work.
+Architecture soma4algarch of Entity soma4alg is up to date.
+Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd" in Library work.
+Entity <multiplicadorcompleto> compiled.
+Entity <multiplicadorcompleto> (Architecture <multiplicadorcompletoarch>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <MultiplicadorCompleto> in library <work> (architecture <multiplicadorcompletoarch>).
+
+Analyzing hierarchy for entity <Multiplicador> in library <work> (architecture <multiplicadorarch>).
+
+Analyzing hierarchy for entity <Soma4Alg> in library <work> (architecture <soma4algarch>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <MultiplicadorCompleto> in library <work> (Architecture <multiplicadorcompletoarch>).
+Entity <MultiplicadorCompleto> analyzed. Unit <MultiplicadorCompleto> generated.
+
+Analyzing Entity <Multiplicador> in library <work> (Architecture <multiplicadorarch>).
+WARNING:Xst:819 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd" line 54: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <seis>
+Entity <Multiplicador> analyzed. Unit <Multiplicador> generated.
+
+Analyzing Entity <Soma4Alg> in library <work> (Architecture <soma4algarch>).
+WARNING:Xst:819 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" line 61: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <seis>
+Entity <Soma4Alg> analyzed. Unit <Soma4Alg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Multiplicador>.
+    Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd".
+WARNING:Xst:653 - Signal <seis> is used but never assigned. This sourceless signal will be automatically connected to value 0110.
+WARNING:Xst:737 - Found 8-bit latch for signal <resultParcial2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit adder for signal <mux0000$addsub0000>.
+    Found 8-bit comparator lessequal for signal <mux0000$cmp_le0000> created at line 57.
+    Found 4x4-bit multiplier for signal <mux0000$share0001>.
+    Found 4x4-bit multiplier for signal <resultParcial>.
+    Found 8-bit adder for signal <resultParcial2$addsub0000> created at line 91.
+    Found 8-bit comparator greatequal for signal <resultParcial2$cmp_ge0000> created at line 87.
+    Found 8-bit comparator greatequal for signal <resultParcial2$cmp_ge0001> created at line 59.
+    Found 8-bit comparator greatequal for signal <resultParcial2$cmp_ge0002> created at line 63.
+    Found 8-bit comparator greatequal for signal <resultParcial2$cmp_ge0003> created at line 67.
+    Found 8-bit comparator greatequal for signal <resultParcial2$cmp_ge0004> created at line 71.
+    Found 8-bit comparator greatequal for signal <resultParcial2$cmp_ge0005> created at line 75.
+    Found 8-bit comparator greatequal for signal <resultParcial2$cmp_ge0006> created at line 79.
+    Found 8-bit comparator greatequal for signal <resultParcial2$cmp_ge0007> created at line 83.
+    Found 8-bit comparator lessequal for signal <resultParcial2$cmp_le0000> created at line 87.
+    Found 8-bit comparator lessequal for signal <resultParcial2$cmp_le0001> created at line 59.
+    Found 8-bit comparator lessequal for signal <resultParcial2$cmp_le0002> created at line 63.
+    Found 8-bit comparator lessequal for signal <resultParcial2$cmp_le0003> created at line 67.
+    Found 8-bit comparator lessequal for signal <resultParcial2$cmp_le0004> created at line 71.
+    Found 8-bit comparator lessequal for signal <resultParcial2$cmp_le0005> created at line 75.
+    Found 8-bit comparator lessequal for signal <resultParcial2$cmp_le0006> created at line 79.
+    Found 8-bit comparator lessequal for signal <resultParcial2$cmp_le0007> created at line 83.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Multiplier(s).
+	inferred  17 Comparator(s).
+Unit <Multiplicador> synthesized.
+
+
+Synthesizing Unit <Soma4Alg>.
+    Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd".
+WARNING:Xst:653 - Signal <seis> is used but never assigned. This sourceless signal will be automatically connected to value 00110.
+    Found 5-bit adder carry in for signal <resultParcial>.
+    Found 5-bit adder for signal <resultParcial2$addsub0000> created at line 66.
+    Found 5-bit comparator greatequal for signal <resultParcial2$cmp_ge0000> created at line 65.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Soma4Alg> synthesized.
+
+
+Synthesizing Unit <MultiplicadorCompleto>.
+    Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd".
+WARNING:Xst:647 - Input <numA<15:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <linha1<31:20>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000.
+WARNING:Xst:646 - Signal <carryOut3<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <carryIn<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <auxResult<31:12>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <MultiplicadorCompleto> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 8
+ 4x4-bit multiplier                                    : 8
+# Adders/Subtractors                                   : 14
+ 5-bit adder                                           : 3
+ 5-bit adder carry in                                  : 3
+ 8-bit adder                                           : 8
+# Latches                                              : 4
+ 8-bit latch                                           : 4
+# Comparators                                          : 71
+ 5-bit comparator greatequal                           : 3
+ 8-bit comparator greatequal                           : 32
+ 8-bit comparator lessequal                            : 36
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 8
+ 4x4-bit multiplier                                    : 8
+# Adders/Subtractors                                   : 14
+ 5-bit adder                                           : 3
+ 5-bit adder carry in                                  : 3
+ 8-bit adder                                           : 8
+# Latches                                              : 4
+ 8-bit latch                                           : 4
+# Comparators                                          : 71
+ 5-bit comparator greatequal                           : 3
+ 8-bit comparator greatequal                           : 32
+ 8-bit comparator lessequal                            : 36
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MultiplicadorCompleto> ...
+
+Optimizing unit <Soma4Alg> ...
+
+Optimizing unit <Multiplicador> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MultiplicadorCompleto, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : MultiplicadorCompleto.ngr
+Top Level Output File Name         : MultiplicadorCompleto
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 64
+
+Cell Usage :
+# BELS                             : 444
+#      GND                         : 1
+#      LUT1                        : 12
+#      LUT2                        : 60
+#      LUT3                        : 40
+#      LUT4                        : 227
+#      MUXCY                       : 40
+#      MUXF5                       : 20
+#      XORCY                       : 44
+# FlipFlops/Latches                : 32
+#      LDCPE                       : 32
+# IO Buffers                       : 52
+#      IBUF                        : 20
+#      OBUF                        : 32
+# MULTs                            : 4
+#      MULT18X18SIO                : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                      191  out of   5888     3%  
+ Number of Slice Flip Flops:             24  out of  11776     0%  
+ Number of 4 input LUTs:                339  out of  11776     2%  
+ Number of IOs:                          64
+ Number of bonded IOBs:                  52  out of    372    13%  
+    IOB Flip Flops:                       8
+ Number of MULT18X18SIOs:                 4  out of     20    20%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------------+--------------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)          | Load  |
+-------------------------------------------------------------------+--------------------------------+-------+
+mult4/resultParcial2_cmp_ge0000(mult4/resultParcial2_cmp_ge00001:O)| NONE(*)(mult4/resultParcial2_7)| 8     |
+mult3/resultParcial2_cmp_ge0000(mult3/resultParcial2_cmp_ge00001:O)| NONE(*)(mult3/resultParcial2_7)| 8     |
+mult2/resultParcial2_cmp_ge0000(mult2/resultParcial2_cmp_ge00001:O)| NONE(*)(mult2/resultParcial2_7)| 8     |
+mult1/resultParcial2_cmp_ge0000(mult1/resultParcial2_cmp_ge00001:O)| NONE(*)(mult1/resultParcial2_7)| 8     |
+-------------------------------------------------------------------+--------------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------------------------------------+-----------------------------+-------+
+Control Signal                                                        | Buffer(FF name)             | Load  |
+----------------------------------------------------------------------+-----------------------------+-------+
+mult1/resultParcial2_0__and0000(mult1/resultParcial2_0__and00001:O)   | NONE(mult1/resultParcial2_0)| 1     |
+mult1/resultParcial2_0__and0001(mult1/resultParcial2_0__and00011:O)   | NONE(mult1/resultParcial2_0)| 1     |
+mult1/resultParcial2_1__and0000(mult1/resultParcial2_1__and00001:O)   | NONE(mult1/resultParcial2_1)| 1     |
+mult1/resultParcial2_1__and0001(mult1/resultParcial2_1__and00011:O)   | NONE(mult1/resultParcial2_1)| 1     |
+mult1/resultParcial2_2__and0000(mult1/resultParcial2_2__and00001:O)   | NONE(mult1/resultParcial2_2)| 1     |
+mult1/resultParcial2_2__and0001(mult1/resultParcial2_2__and00011:O)   | NONE(mult1/resultParcial2_2)| 1     |
+mult1/resultParcial2_3__and0000(mult1/resultParcial2_3__and00001:O)   | NONE(mult1/resultParcial2_3)| 1     |
+mult1/resultParcial2_3__and0001(mult1/resultParcial2_3__and00011:O)   | NONE(mult1/resultParcial2_3)| 1     |
+mult1/resultParcial2_4__and0000(mult1/resultParcial2_4__and00001:O)   | NONE(mult1/resultParcial2_4)| 1     |
+mult1/resultParcial2_4__and0001(mult1/resultParcial2_4__and00011:O)   | NONE(mult1/resultParcial2_4)| 1     |
+mult1/resultParcial2_5__and0000(mult1/resultParcial2_5__and00002_f5:O)| NONE(mult1/resultParcial2_5)| 1     |
+mult1/resultParcial2_5__and0001(mult1/resultParcial2_5__and00011:O)   | NONE(mult1/resultParcial2_5)| 1     |
+mult1/resultParcial2_6__and0000(mult1/resultParcial2_6__and00001:O)   | NONE(mult1/resultParcial2_6)| 1     |
+mult1/resultParcial2_6__and0001(mult1/resultParcial2_6__and0001_f5:O) | NONE(mult1/resultParcial2_6)| 1     |
+mult1/resultParcial2_7__and0000(mult1/resultParcial2_7__and00002:O)   | NONE(mult1/resultParcial2_7)| 1     |
+mult1/resultParcial2_7__and0001(mult1/resultParcial2_7__and00011:O)   | NONE(mult1/resultParcial2_7)| 1     |
+mult2/resultParcial2_0__and0000(mult2/resultParcial2_0__and00001:O)   | NONE(mult2/resultParcial2_0)| 1     |
+mult2/resultParcial2_0__and0001(mult2/resultParcial2_0__and00011:O)   | NONE(mult2/resultParcial2_0)| 1     |
+mult2/resultParcial2_1__and0000(mult2/resultParcial2_1__and00001:O)   | NONE(mult2/resultParcial2_1)| 1     |
+mult2/resultParcial2_1__and0001(mult2/resultParcial2_1__and00011:O)   | NONE(mult2/resultParcial2_1)| 1     |
+mult2/resultParcial2_2__and0000(mult2/resultParcial2_2__and00001:O)   | NONE(mult2/resultParcial2_2)| 1     |
+mult2/resultParcial2_2__and0001(mult2/resultParcial2_2__and00011:O)   | NONE(mult2/resultParcial2_2)| 1     |
+mult2/resultParcial2_3__and0000(mult2/resultParcial2_3__and00001:O)   | NONE(mult2/resultParcial2_3)| 1     |
+mult2/resultParcial2_3__and0001(mult2/resultParcial2_3__and00011:O)   | NONE(mult2/resultParcial2_3)| 1     |
+mult2/resultParcial2_4__and0000(mult2/resultParcial2_4__and00001:O)   | NONE(mult2/resultParcial2_4)| 1     |
+mult2/resultParcial2_4__and0001(mult2/resultParcial2_4__and00011:O)   | NONE(mult2/resultParcial2_4)| 1     |
+mult2/resultParcial2_5__and0000(mult2/resultParcial2_5__and00002_f5:O)| NONE(mult2/resultParcial2_5)| 1     |
+mult2/resultParcial2_5__and0001(mult2/resultParcial2_5__and00011:O)   | NONE(mult2/resultParcial2_5)| 1     |
+mult2/resultParcial2_6__and0000(mult2/resultParcial2_6__and00001:O)   | NONE(mult2/resultParcial2_6)| 1     |
+mult2/resultParcial2_6__and0001(mult2/resultParcial2_6__and0001_f5:O) | NONE(mult2/resultParcial2_6)| 1     |
+mult2/resultParcial2_7__and0000(mult2/resultParcial2_7__and00002:O)   | NONE(mult2/resultParcial2_7)| 1     |
+mult2/resultParcial2_7__and0001(mult2/resultParcial2_7__and00011:O)   | NONE(mult2/resultParcial2_7)| 1     |
+mult3/resultParcial2_0__and0000(mult3/resultParcial2_0__and00001:O)   | NONE(mult3/resultParcial2_0)| 1     |
+mult3/resultParcial2_0__and0001(mult3/resultParcial2_0__and00011:O)   | NONE(mult3/resultParcial2_0)| 1     |
+mult3/resultParcial2_1__and0000(mult3/resultParcial2_1__and00001:O)   | NONE(mult3/resultParcial2_1)| 1     |
+mult3/resultParcial2_1__and0001(mult3/resultParcial2_1__and00011:O)   | NONE(mult3/resultParcial2_1)| 1     |
+mult3/resultParcial2_2__and0000(mult3/resultParcial2_2__and00001:O)   | NONE(mult3/resultParcial2_2)| 1     |
+mult3/resultParcial2_2__and0001(mult3/resultParcial2_2__and00011:O)   | NONE(mult3/resultParcial2_2)| 1     |
+mult3/resultParcial2_3__and0000(mult3/resultParcial2_3__and00001:O)   | NONE(mult3/resultParcial2_3)| 1     |
+mult3/resultParcial2_3__and0001(mult3/resultParcial2_3__and00011:O)   | NONE(mult3/resultParcial2_3)| 1     |
+mult3/resultParcial2_4__and0000(mult3/resultParcial2_4__and00001:O)   | NONE(mult3/resultParcial2_4)| 1     |
+mult3/resultParcial2_4__and0001(mult3/resultParcial2_4__and00011:O)   | NONE(mult3/resultParcial2_4)| 1     |
+mult3/resultParcial2_5__and0000(mult3/resultParcial2_5__and00002_f5:O)| NONE(mult3/resultParcial2_5)| 1     |
+mult3/resultParcial2_5__and0001(mult3/resultParcial2_5__and00011:O)   | NONE(mult3/resultParcial2_5)| 1     |
+mult3/resultParcial2_6__and0000(mult3/resultParcial2_6__and00001:O)   | NONE(mult3/resultParcial2_6)| 1     |
+mult3/resultParcial2_6__and0001(mult3/resultParcial2_6__and0001_f5:O) | NONE(mult3/resultParcial2_6)| 1     |
+mult3/resultParcial2_7__and0000(mult3/resultParcial2_7__and00002:O)   | NONE(mult3/resultParcial2_7)| 1     |
+mult3/resultParcial2_7__and0001(mult3/resultParcial2_7__and00011:O)   | NONE(mult3/resultParcial2_7)| 1     |
+mult4/resultParcial2_0__and0000(mult4/resultParcial2_0__and00001:O)   | NONE(mult4/resultParcial2_0)| 1     |
+mult4/resultParcial2_0__and0001(mult4/resultParcial2_0__and00011:O)   | NONE(mult4/resultParcial2_0)| 1     |
+mult4/resultParcial2_1__and0000(mult4/resultParcial2_1__and00001:O)   | NONE(mult4/resultParcial2_1)| 1     |
+mult4/resultParcial2_1__and0001(mult4/resultParcial2_1__and00011:O)   | NONE(mult4/resultParcial2_1)| 1     |
+mult4/resultParcial2_2__and0000(mult4/resultParcial2_2__and00001:O)   | NONE(mult4/resultParcial2_2)| 1     |
+mult4/resultParcial2_2__and0001(mult4/resultParcial2_2__and00011:O)   | NONE(mult4/resultParcial2_2)| 1     |
+mult4/resultParcial2_3__and0000(mult4/resultParcial2_3__and00001:O)   | NONE(mult4/resultParcial2_3)| 1     |
+mult4/resultParcial2_3__and0001(mult4/resultParcial2_3__and00011:O)   | NONE(mult4/resultParcial2_3)| 1     |
+mult4/resultParcial2_4__and0000(mult4/resultParcial2_4__and00001:O)   | NONE(mult4/resultParcial2_4)| 1     |
+mult4/resultParcial2_4__and0001(mult4/resultParcial2_4__and00011:O)   | NONE(mult4/resultParcial2_4)| 1     |
+mult4/resultParcial2_5__and0000(mult4/resultParcial2_5__and00002_f5:O)| NONE(mult4/resultParcial2_5)| 1     |
+mult4/resultParcial2_5__and0001(mult4/resultParcial2_5__and00011:O)   | NONE(mult4/resultParcial2_5)| 1     |
+mult4/resultParcial2_6__and0000(mult4/resultParcial2_6__and00001:O)   | NONE(mult4/resultParcial2_6)| 1     |
+mult4/resultParcial2_6__and0001(mult4/resultParcial2_6__and0001_f5:O) | NONE(mult4/resultParcial2_6)| 1     |
+mult4/resultParcial2_7__and0000(mult4/resultParcial2_7__and00002:O)   | NONE(mult4/resultParcial2_7)| 1     |
+mult4/resultParcial2_7__and0001(mult4/resultParcial2_7__and00011:O)   | NONE(mult4/resultParcial2_7)| 1     |
+----------------------------------------------------------------------+-----------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 18.179ns
+   Maximum output required time after clock: 15.351ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult4/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13116 / 16
+-------------------------------------------------------------------------
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<3> (PAD)
+  Destination:       mult4/resultParcial2_5 (LATCH)
+  Destination Clock: mult4/resultParcial2_cmp_ge0000 falling
+
+  Data Path: numA<3> to mult4/resultParcial2_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.587  numA_3_IBUF (numA_3_IBUF)
+     MULT18X18SIO:A3->P7   25   4.344   1.292  mult4/Mmult_resultParcial (mult4/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult4/resultParcial2_and000211 (mult4/N36)
+     LUT4:I0->O            5   0.648   0.636  mult4/resultParcial2_and00031 (mult4/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult4/mux0000_mux0000<1>_SW1 (N150)
+     LUT4:I2->O            1   0.648   0.500  mult4/mux0000_mux0000<1> (mult4/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult4/Madd_mux0000_addsub0000_lut<1> (mult4/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult4/Madd_mux0000_addsub0000_cy<1> (mult4/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult4/Madd_mux0000_addsub0000_cy<2> (mult4/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult4/Madd_mux0000_addsub0000_cy<3> (mult4/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult4/Madd_mux0000_addsub0000_cy<4> (mult4/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult4/Madd_mux0000_addsub0000_xor<5> (mult4/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult4/resultParcial2_5__and000011 (mult4/N23)
+     LUT4:I0->O            1   0.648   0.423  mult4/resultParcial2_mux0008<5>14 (mult4/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult4/resultParcial2_mux0008<5>35 (mult4/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult4/resultParcial2_5
+    ----------------------------------------
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult3/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13116 / 16
+-------------------------------------------------------------------------
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<0> (PAD)
+  Destination:       mult3/resultParcial2_5 (LATCH)
+  Destination Clock: mult3/resultParcial2_cmp_ge0000 falling
+
+  Data Path: numA<0> to mult3/resultParcial2_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.587  numA_0_IBUF (numA_0_IBUF)
+     MULT18X18SIO:A0->P7   25   4.344   1.292  mult3/Mmult_resultParcial (mult3/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult3/resultParcial2_and000211 (mult3/N36)
+     LUT4:I0->O            5   0.648   0.636  mult3/resultParcial2_and00031 (mult3/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult3/mux0000_mux0000<1>_SW1 (N152)
+     LUT4:I2->O            1   0.648   0.500  mult3/mux0000_mux0000<1> (mult3/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult3/Madd_mux0000_addsub0000_lut<1> (mult3/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult3/Madd_mux0000_addsub0000_cy<1> (mult3/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult3/Madd_mux0000_addsub0000_cy<2> (mult3/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult3/Madd_mux0000_addsub0000_cy<3> (mult3/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult3/Madd_mux0000_addsub0000_cy<4> (mult3/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult3/Madd_mux0000_addsub0000_xor<5> (mult3/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult3/resultParcial2_5__and000011 (mult3/N23)
+     LUT4:I0->O            1   0.648   0.423  mult3/resultParcial2_mux0008<5>14 (mult3/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult3/resultParcial2_mux0008<5>35 (mult3/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult3/resultParcial2_5
+    ----------------------------------------
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult2/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13116 / 16
+-------------------------------------------------------------------------
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<3> (PAD)
+  Destination:       mult2/resultParcial2_5 (LATCH)
+  Destination Clock: mult2/resultParcial2_cmp_ge0000 falling
+
+  Data Path: numA<3> to mult2/resultParcial2_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.587  numA_3_IBUF (numA_3_IBUF)
+     MULT18X18SIO:A3->P7   25   4.344   1.292  mult2/Mmult_resultParcial (mult2/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult2/resultParcial2_and000211 (mult2/N36)
+     LUT4:I0->O            5   0.648   0.636  mult2/resultParcial2_and00031 (mult2/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult2/mux0000_mux0000<1>_SW1 (N154)
+     LUT4:I2->O            1   0.648   0.500  mult2/mux0000_mux0000<1> (mult2/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult2/Madd_mux0000_addsub0000_lut<1> (mult2/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult2/Madd_mux0000_addsub0000_cy<1> (mult2/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult2/Madd_mux0000_addsub0000_cy<2> (mult2/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult2/Madd_mux0000_addsub0000_cy<3> (mult2/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult2/Madd_mux0000_addsub0000_cy<4> (mult2/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult2/Madd_mux0000_addsub0000_xor<5> (mult2/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult2/resultParcial2_5__and000011 (mult2/N23)
+     LUT4:I0->O            1   0.648   0.423  mult2/resultParcial2_mux0008<5>14 (mult2/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult2/resultParcial2_mux0008<5>35 (mult2/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult2/resultParcial2_5
+    ----------------------------------------
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult1/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13116 / 16
+-------------------------------------------------------------------------
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<3> (PAD)
+  Destination:       mult1/resultParcial2_5 (LATCH)
+  Destination Clock: mult1/resultParcial2_cmp_ge0000 falling
+
+  Data Path: numA<3> to mult1/resultParcial2_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.849   0.587  numA_3_IBUF (numA_3_IBUF)
+     MULT18X18SIO:A3->P7   25   4.344   1.292  mult1/Mmult_resultParcial (mult1/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult1/resultParcial2_and000211 (mult1/N36)
+     LUT4:I0->O            5   0.648   0.636  mult1/resultParcial2_and00031 (mult1/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult1/mux0000_mux0000<1>_SW1 (N156)
+     LUT4:I2->O            1   0.648   0.500  mult1/mux0000_mux0000<1> (mult1/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult1/Madd_mux0000_addsub0000_lut<1> (mult1/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult1/Madd_mux0000_addsub0000_cy<1> (mult1/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult1/Madd_mux0000_addsub0000_cy<2> (mult1/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult1/Madd_mux0000_addsub0000_cy<3> (mult1/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult1/Madd_mux0000_addsub0000_cy<4> (mult1/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult1/Madd_mux0000_addsub0000_xor<5> (mult1/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult1/resultParcial2_5__and000011 (mult1/N23)
+     LUT4:I0->O            1   0.648   0.423  mult1/resultParcial2_mux0008<5>14 (mult1/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult1/resultParcial2_mux0008<5>35 (mult1/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult1/resultParcial2_5
+    ----------------------------------------
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult4/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 44 / 8
+-------------------------------------------------------------------------
+Offset:              9.739ns (Levels of Logic = 7)
+  Source:            mult4/resultParcial2_0 (LATCH)
+  Destination:       result<15> (PAD)
+  Source Clock:      mult4/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult4/resultParcial2_0 to result<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.728   0.500  mult4/resultParcial2_0 (mult4/resultParcial2_0)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais3/Madd_resultParcial_lut<0> (SomaResultsParciais3/Madd_resultParcial_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais3/Madd_resultParcial_cy<0> (SomaResultsParciais3/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<1> (SomaResultsParciais3/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<2> (SomaResultsParciais3/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           3   0.844   0.674  SomaResultsParciais3/Madd_resultParcial_xor<3> (SomaResultsParciais3/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais3/resultParcial2<3>1 (result_15_OBUF)
+     OBUF:I->O                 4.520          result_15_OBUF (result<15>)
+    ----------------------------------------
+    Total                      9.739ns (8.145ns logic, 1.594ns route)
+                                       (83.6% logic, 16.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult1/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 1569 / 16
+-------------------------------------------------------------------------
+Offset:              15.351ns (Levels of Logic = 15)
+  Source:            mult1/resultParcial2_4 (LATCH)
+  Destination:       result<15> (PAD)
+  Source Clock:      mult1/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult1/resultParcial2_4 to result<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.728   0.563  mult1/resultParcial2_4 (mult1/resultParcial2_4)
+     LUT2:I0->O            1   0.648   0.000  SomaResultsParciais1/Madd_resultParcial_lut<0> (SomaResultsParciais1/Madd_resultParcial_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais1/Madd_resultParcial_cy<0> (SomaResultsParciais1/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais1/Madd_resultParcial_cy<1> (SomaResultsParciais1/Madd_resultParcial_cy<1>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais1/Madd_resultParcial_xor<2> (SomaResultsParciais1/resultParcial<2>)
+     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais1/resultParcial2<4>1 (carryOut1)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais2/Madd_resultParcial_cy<0> (SomaResultsParciais2/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais2/Madd_resultParcial_cy<1> (SomaResultsParciais2/Madd_resultParcial_cy<1>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais2/Madd_resultParcial_xor<2> (SomaResultsParciais2/resultParcial<2>)
+     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais2/resultParcial2<4>1 (carryOut2)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<0> (SomaResultsParciais3/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<1> (SomaResultsParciais3/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<2> (SomaResultsParciais3/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           3   0.844   0.674  SomaResultsParciais3/Madd_resultParcial_xor<3> (SomaResultsParciais3/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais3/resultParcial2<3>1 (result_15_OBUF)
+     OBUF:I->O                 4.520          result_15_OBUF (result<15>)
+    ----------------------------------------
+    Total                     15.351ns (11.394ns logic, 3.957ns route)
+                                       (74.2% logic, 25.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult2/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 1254 / 12
+-------------------------------------------------------------------------
+Offset:              15.283ns (Levels of Logic = 15)
+  Source:            mult2/resultParcial2_0 (LATCH)
+  Destination:       result<15> (PAD)
+  Source Clock:      mult2/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult2/resultParcial2_0 to result<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.728   0.500  mult2/resultParcial2_0 (mult2/resultParcial2_0)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais1/Madd_resultParcial_lut<0> (SomaResultsParciais1/Madd_resultParcial_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais1/Madd_resultParcial_cy<0> (SomaResultsParciais1/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais1/Madd_resultParcial_cy<1> (SomaResultsParciais1/Madd_resultParcial_cy<1>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais1/Madd_resultParcial_xor<2> (SomaResultsParciais1/resultParcial<2>)
+     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais1/resultParcial2<4>1 (carryOut1)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais2/Madd_resultParcial_cy<0> (SomaResultsParciais2/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais2/Madd_resultParcial_cy<1> (SomaResultsParciais2/Madd_resultParcial_cy<1>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais2/Madd_resultParcial_xor<2> (SomaResultsParciais2/resultParcial<2>)
+     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais2/resultParcial2<4>1 (carryOut2)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<0> (SomaResultsParciais3/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<1> (SomaResultsParciais3/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<2> (SomaResultsParciais3/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           3   0.844   0.674  SomaResultsParciais3/Madd_resultParcial_xor<3> (SomaResultsParciais3/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais3/resultParcial2<3>1 (result_15_OBUF)
+     OBUF:I->O                 4.520          result_15_OBUF (result<15>)
+    ----------------------------------------
+    Total                     15.283ns (11.389ns logic, 3.894ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult3/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 279 / 8
+-------------------------------------------------------------------------
+Offset:              12.511ns (Levels of Logic = 11)
+  Source:            mult3/resultParcial2_0 (LATCH)
+  Destination:       result<15> (PAD)
+  Source Clock:      mult3/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult3/resultParcial2_0 to result<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.728   0.500  mult3/resultParcial2_0 (mult3/resultParcial2_0)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais2/Madd_resultParcial_lut<0> (SomaResultsParciais2/Madd_resultParcial_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais2/Madd_resultParcial_cy<0> (SomaResultsParciais2/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais2/Madd_resultParcial_cy<1> (SomaResultsParciais2/Madd_resultParcial_cy<1>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais2/Madd_resultParcial_xor<2> (SomaResultsParciais2/resultParcial<2>)
+     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais2/resultParcial2<4>1 (carryOut2)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<0> (SomaResultsParciais3/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<1> (SomaResultsParciais3/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<2> (SomaResultsParciais3/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           3   0.844   0.674  SomaResultsParciais3/Madd_resultParcial_xor<3> (SomaResultsParciais3/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais3/resultParcial2<3>1 (result_15_OBUF)
+     OBUF:I->O                 4.520          result_15_OBUF (result<15>)
+    ----------------------------------------
+    Total                     12.511ns (9.767ns logic, 2.744ns route)
+                                       (78.1% logic, 21.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.27 secs
+ 
+--> 
+
+
+Total memory usage is 517564 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+
