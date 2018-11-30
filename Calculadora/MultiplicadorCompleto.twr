@@ -40,227 +40,619 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Clock numA<12> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<0>   |   13.985(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<1>   |   13.985(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<2>   |   13.990(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<3>   |   13.993(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<4>   |   17.077(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   19.102(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<5>   |   21.607(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   23.149(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<6>   |   21.948(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   23.490(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<7>   |   20.748(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   22.887(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<8>   |   23.336(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   18.895(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   25.475(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<9>   |   24.784(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.709(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   26.916(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<10>  |   24.739(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.664(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   26.871(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<11>  |   25.041(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.966(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   27.173(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<12>  |   27.362(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   24.287(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   17.305(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   29.494(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<13>  |   29.188(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   26.130(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   20.148(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   31.320(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<14>  |   29.108(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   26.050(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   20.040(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   31.240(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<15>  |   29.178(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   26.120(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   20.138(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   31.310(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<16>  |   14.157(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<17>  |   14.169(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<18>  |   14.204(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<19>  |   14.204(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+Clock numA<0> to Pad
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<0>   |   16.418(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<1>   |   16.044(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<2>   |   16.023(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<3>   |   16.035(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<4>   |   19.938(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   17.383(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   28.603(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.662(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   27.682(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   24.741(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   28.094(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.153(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   31.099(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   28.158(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   25.615(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   31.956(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.015(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.254(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   32.541(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.600(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.839(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   31.933(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   28.992(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.215(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   34.645(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   31.704(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   31.943(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   20.126(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   36.024(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.083(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.326(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.829(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   36.121(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.180(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.423(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.932(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   36.399(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.458(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.701(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.210(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   37.629(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   34.688(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   34.931(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   25.440(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   38.814(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   35.873(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.116(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.629(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   39.077(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.136(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.379(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.892(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   39.055(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.114(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.357(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.870(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   40.015(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   37.074(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   37.317(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   27.830(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   43.071(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   40.130(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   40.373(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   30.886(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   42.931(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   39.990(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   40.233(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   30.746(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   42.347(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   39.406(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.649(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   30.162(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
-Clock numA<13> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<0>   |   13.923(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<1>   |   13.923(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<2>   |   13.928(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<3>   |   13.931(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<4>   |   17.015(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   18.510(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<5>   |   21.545(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   22.557(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<6>   |   21.886(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   22.898(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<7>   |   20.686(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   22.295(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<8>   |   23.274(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   18.807(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   24.883(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<9>   |   24.722(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.621(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   26.324(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<10>  |   24.677(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.576(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   26.279(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<11>  |   24.979(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.878(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   26.581(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<12>  |   27.300(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   24.199(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   17.540(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   28.902(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<13>  |   29.126(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   26.042(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   20.383(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   30.728(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<14>  |   29.046(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   25.962(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   20.275(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   30.648(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<15>  |   29.116(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   26.032(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   20.373(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   30.718(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<16>  |   14.392(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<17>  |   14.404(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<18>  |   14.439(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<19>  |   14.439(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+Clock numA<1> to Pad
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<0>   |   16.202(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<1>   |   15.828(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<2>   |   15.807(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<3>   |   15.819(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<4>   |   19.722(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   17.793(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   28.387(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   26.072(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   27.466(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.151(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   27.878(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.563(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   30.883(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   28.568(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   25.774(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   31.740(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.425(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.413(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   32.325(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   30.010(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.998(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   31.717(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.402(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.374(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   34.429(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.114(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.102(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   19.914(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   35.808(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.493(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.485(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.617(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   35.905(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.590(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.582(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.720(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   36.183(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.868(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.860(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.998(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   37.413(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   35.098(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.090(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   25.228(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   38.598(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.283(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.275(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.417(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   38.861(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.546(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.538(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.680(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   38.839(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.524(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.516(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.658(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   39.799(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   37.484(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   37.476(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   27.618(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   42.855(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   40.540(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   40.532(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   30.674(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   42.715(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   40.400(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   40.392(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   30.534(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   42.131(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   39.816(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.808(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   29.950(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
-Clock numA<14> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<0>   |   14.683(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<1>   |   14.683(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<2>   |   14.688(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<3>   |   14.691(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<4>   |   17.775(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   19.614(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<5>   |   22.305(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   23.661(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<6>   |   22.646(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   24.002(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<7>   |   21.446(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   23.399(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<8>   |   24.034(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   18.441(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   25.987(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<9>   |   25.482(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.255(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   27.428(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<10>  |   25.437(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.210(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   27.383(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<11>  |   25.739(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.512(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   27.685(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<12>  |   28.060(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   23.833(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   17.114(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   30.006(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<13>  |   29.886(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   25.676(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   19.957(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   31.832(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<14>  |   29.806(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   25.596(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   19.849(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   31.752(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<15>  |   29.876(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   25.666(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   19.947(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   31.822(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<16>  |   13.966(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<17>  |   13.978(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<18>  |   14.013(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<19>  |   14.013(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+Clock numA<2> to Pad
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<0>   |   15.548(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<1>   |   15.174(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<2>   |   15.153(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<3>   |   15.165(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<4>   |   19.068(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   17.395(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   27.733(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.674(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   26.812(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   24.753(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   27.224(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.165(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   30.229(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   28.170(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   24.932(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   31.086(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.027(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   28.571(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   31.671(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.612(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.156(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   31.063(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.004(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   28.532(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   33.775(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   31.716(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   31.260(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   19.658(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   35.154(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.095(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.643(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.361(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   35.251(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.192(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.740(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.464(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   35.529(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.470(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.018(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.742(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   36.759(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   34.700(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   34.248(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.972(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   37.944(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   35.885(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.433(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.161(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   38.207(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.148(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.696(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.424(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   38.185(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.126(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.674(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.402(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   39.145(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   37.086(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.634(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   27.362(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   42.201(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   40.142(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.690(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   30.418(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   42.061(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   40.002(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.550(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   30.278(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   41.477(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   39.418(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   38.966(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   29.694(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
-Clock numA<15> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<0>   |   14.470(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<1>   |   14.470(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<2>   |   14.475(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<3>   |   14.478(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<4>   |   17.562(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   19.583(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<5>   |   22.092(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   23.630(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<6>   |   22.433(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   23.971(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<7>   |   21.233(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   23.368(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<8>   |   23.821(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   18.414(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   25.956(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<9>   |   25.269(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.228(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   27.397(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<10>  |   25.224(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.183(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   27.352(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<11>  |   25.526(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   21.485(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   27.654(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<12>  |   27.847(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   23.806(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   17.333(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   29.975(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<13>  |   29.673(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   25.649(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   20.176(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   31.801(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<14>  |   29.593(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   25.569(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   20.068(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   31.721(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<15>  |   29.663(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-            |   25.639(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-            |   20.166(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-            |   31.791(F)|mult9/resultParcial2_cmp_ge0000 |   0.000|
-result<16>  |   14.185(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<17>  |   14.197(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<18>  |   14.232(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<19>  |   14.232(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+Clock numA<3> to Pad
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<0>   |   15.128(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<1>   |   14.754(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<2>   |   14.733(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<3>   |   14.745(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<4>   |   18.648(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   17.802(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   27.313(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   26.081(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   26.392(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.160(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   26.804(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.572(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   29.809(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   28.577(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   23.526(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   30.666(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.434(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   27.165(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   31.251(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   30.019(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   27.750(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   30.643(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.411(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   27.126(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   33.355(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.123(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.854(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   19.802(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   34.734(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.502(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   31.237(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.505(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   34.831(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.599(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   31.334(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.608(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   35.109(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.877(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   31.612(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.886(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   36.339(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   35.107(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.842(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   25.116(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   37.524(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.292(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   34.027(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.305(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   37.787(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.555(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   34.290(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.568(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   37.765(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.533(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   34.268(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   26.546(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   38.725(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   37.493(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.228(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   27.506(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   41.781(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   40.549(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   38.284(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   30.562(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   41.641(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   40.409(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   38.144(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   30.422(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   41.057(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   39.825(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   37.560(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   29.838(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
+
+Clock numA<8> to Pad
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<4>   |   20.606(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   25.717(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   24.796(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   25.208(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   19.025(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   28.213(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   25.452(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   29.070(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   26.037(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   29.655(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   25.413(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   29.047(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   28.141(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   31.759(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   20.342(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   29.520(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   33.138(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.352(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   29.617(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   33.235(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.455(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   29.895(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   33.513(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.733(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   31.125(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   34.743(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   25.968(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   20.797(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   32.310(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.928(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.433(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   25.678(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   32.573(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   36.191(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.696(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   25.941(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   32.551(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   36.169(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.674(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   25.919(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   33.511(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   37.129(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   29.496(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.741(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   36.567(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   40.185(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   32.552(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   29.797(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   36.427(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   40.045(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   32.412(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   29.657(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   35.843(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   39.461(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   31.828(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   29.073(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
+
+Clock numA<9> to Pad
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<4>   |   20.055(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   25.166(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   24.245(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   24.657(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   18.705(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   27.662(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   25.132(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   28.519(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   25.717(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   29.104(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   25.093(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   28.496(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   27.821(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   31.208(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   20.420(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   29.200(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   32.587(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.430(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   29.297(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   32.684(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.533(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   29.575(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   32.962(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.811(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   30.805(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   34.192(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   26.046(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   21.637(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   31.990(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.377(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.511(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.518(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   32.253(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.640(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.774(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.781(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   32.231(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.618(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.752(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.759(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   33.191(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   36.578(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   29.574(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   27.581(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   36.247(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   39.634(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   32.630(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   30.637(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   36.107(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   39.494(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   32.490(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   30.497(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   35.523(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   38.910(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   31.906(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   29.913(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
+
+Clock numA<10> to Pad
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<4>   |   20.000(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   25.111(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   24.190(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   24.602(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   18.709(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   27.607(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   25.136(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   28.464(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   25.721(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   29.049(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   25.097(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   28.441(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   27.825(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   31.153(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   20.483(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   29.204(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   32.532(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.493(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   29.301(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   32.629(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.596(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   29.579(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   32.907(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.874(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   30.809(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   34.137(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   26.109(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   21.502(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   31.994(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.322(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.574(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.383(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   32.257(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.585(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.837(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.646(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   32.235(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.563(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.815(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.624(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   33.195(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   36.523(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   29.637(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   27.446(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   36.251(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   39.579(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   32.693(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   30.502(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   36.111(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   39.439(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   32.553(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   30.362(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   35.527(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   38.855(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   31.969(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   29.778(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
+
+Clock numA<11> to Pad
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<4>   |   19.974(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   25.085(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   24.164(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   24.576(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   18.749(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   27.581(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   25.176(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   28.438(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   25.761(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   29.023(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   25.137(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   28.415(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   27.865(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   31.127(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   19.908(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   29.244(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   32.506(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   23.918(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   29.341(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   32.603(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.021(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   29.619(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   32.881(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   24.299(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   30.849(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   34.111(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   25.534(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   21.480(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   32.034(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.296(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   27.999(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.361(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   32.297(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.559(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.262(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.624(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   32.275(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   35.537(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   28.240(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   26.602(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   33.235(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   36.497(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   29.062(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   27.424(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   36.291(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   39.553(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   32.118(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   30.480(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   36.151(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   39.413(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   31.978(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   30.340(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   35.567(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+            |   38.829(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+            |   31.394(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+            |   29.756(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<0> to Pad
 ------------+------------+-------------------------------+--------+
             | clk (edge) |                               | Clock  |
 Destination |   to PAD   |Internal Clock(s)              | Phase  |
 ------------+------------+-------------------------------+--------+
-result<4>   |   18.226(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<5>   |   22.273(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<6>   |   22.614(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<7>   |   22.011(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<8>   |   24.599(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   26.040(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   25.995(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   26.297(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   28.618(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   30.444(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   30.364(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   30.434(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
+result<0>   |   15.341(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<1>   |   14.967(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<2>   |   14.946(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<3>   |   14.958(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<4>   |   18.861(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   27.526(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   26.605(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   27.017(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   30.022(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   19.449(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   30.879(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.876(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   31.464(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   26.461(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   30.856(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.837(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   33.568(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   28.565(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   34.947(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.944(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   35.044(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   30.041(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   35.322(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   30.319(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   36.552(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   31.549(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   37.737(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.734(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   38.000(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.997(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   37.978(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.975(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   38.938(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.935(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   41.994(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.991(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   41.854(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.851(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   41.270(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.267(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
 ------------+------------+-------------------------------+--------+
 
 Clock numB<1> to Pad
@@ -268,18 +660,46 @@ Clock numB<1> to Pad
             | clk (edge) |                               | Clock  |
 Destination |   to PAD   |Internal Clock(s)              | Phase  |
 ------------+------------+-------------------------------+--------+
-result<4>   |   18.191(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<5>   |   22.238(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<6>   |   22.579(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<7>   |   21.976(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<8>   |   24.564(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   26.005(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   25.960(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   26.262(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   28.583(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   30.409(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   30.329(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   30.399(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
+result<0>   |   15.575(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<1>   |   15.201(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<2>   |   15.180(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<3>   |   15.192(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<4>   |   19.095(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   27.760(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   26.839(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   27.251(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   30.256(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   19.055(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   31.113(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.482(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   31.698(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   26.067(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   31.090(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.443(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   33.802(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   28.171(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   35.181(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.550(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   35.278(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.647(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   35.556(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.925(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   36.786(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   31.155(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   37.971(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.340(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   38.234(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.603(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   38.212(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.581(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   39.172(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.541(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   42.228(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.597(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   42.088(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.457(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   41.504(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   35.873(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
 ------------+------------+-------------------------------+--------+
 
 Clock numB<2> to Pad
@@ -287,18 +707,46 @@ Clock numB<2> to Pad
             | clk (edge) |                               | Clock  |
 Destination |   to PAD   |Internal Clock(s)              | Phase  |
 ------------+------------+-------------------------------+--------+
-result<4>   |   18.226(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<5>   |   22.273(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<6>   |   22.614(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<7>   |   22.011(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<8>   |   24.599(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   26.040(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   25.995(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   26.297(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   28.618(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   30.444(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   30.364(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   30.434(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
+result<0>   |   15.643(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<1>   |   15.269(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<2>   |   15.248(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<3>   |   15.260(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<4>   |   19.163(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   27.828(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   26.907(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   27.319(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   30.324(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   19.064(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   31.181(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.491(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   31.766(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   26.076(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   31.158(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.452(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   33.870(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   28.180(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   35.249(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.559(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   35.346(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.656(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   35.624(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.934(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   36.854(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   31.164(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   38.039(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.349(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   38.302(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.612(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   38.280(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.590(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   39.240(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.550(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   42.296(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.606(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   42.156(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.466(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   41.572(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   35.882(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
 ------------+------------+-------------------------------+--------+
 
 Clock numB<3> to Pad
@@ -306,338 +754,698 @@ Clock numB<3> to Pad
             | clk (edge) |                               | Clock  |
 Destination |   to PAD   |Internal Clock(s)              | Phase  |
 ------------+------------+-------------------------------+--------+
-result<4>   |   18.296(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<5>   |   22.343(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<6>   |   22.684(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<7>   |   22.081(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<8>   |   24.669(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   26.110(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   26.065(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   26.367(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   28.688(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   30.514(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   30.434(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   30.504(F)|mult9/resultParcial2_cmp_ge0000|   0.000|
+result<0>   |   15.549(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<1>   |   15.175(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<2>   |   15.154(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<3>   |   15.166(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<4>   |   19.069(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   27.734(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   26.813(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   27.225(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   30.230(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   19.207(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   31.087(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.634(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   31.672(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   26.219(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   31.064(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   25.595(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   33.776(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   28.323(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   35.155(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.702(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   35.252(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   29.799(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   35.530(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   30.077(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   36.760(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   31.307(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   37.945(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.492(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   38.208(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.755(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   38.186(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   32.733(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   39.146(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   33.693(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   42.202(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.749(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   42.062(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.609(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   41.478(F)|mult1/resultParcial2_cmp_ge0000|   0.000|
+            |   36.025(F)|mult5/resultParcial2_cmp_ge0000|   0.000|
 ------------+------------+-------------------------------+--------+
 
 Clock numB<4> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<0>   |   13.573(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<1>   |   13.573(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<2>   |   13.578(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<3>   |   13.581(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<4>   |   16.665(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<5>   |   21.195(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<6>   |   21.536(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<7>   |   20.336(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<8>   |   22.924(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   24.372(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   24.327(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   24.629(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   26.950(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   28.776(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   28.696(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   28.766(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<4>   |   17.309(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   21.106(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   25.588(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   26.217(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   24.667(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   25.296(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   25.079(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   25.708(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   28.084(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   28.713(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   28.941(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.570(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   29.526(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   30.155(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   28.918(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.547(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   31.630(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.259(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   33.009(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.638(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   33.106(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.735(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   33.384(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   34.013(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   34.614(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.243(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   35.799(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.428(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   36.062(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.691(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   36.040(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.669(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   37.000(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   37.629(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   40.056(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   40.685(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   39.916(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   40.545(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   39.332(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.961(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<5> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<0>   |   13.430(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<1>   |   13.430(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<2>   |   13.435(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<3>   |   13.438(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<4>   |   16.522(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<5>   |   21.052(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<6>   |   21.393(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<7>   |   20.193(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<8>   |   22.781(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   24.229(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   24.184(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   24.486(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   26.807(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   28.633(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   28.553(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   28.623(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<4>   |   18.507(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   19.701(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   26.786(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   24.812(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   25.865(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   23.891(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   26.277(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   24.303(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   29.282(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   27.308(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   30.139(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   28.165(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   30.724(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   28.750(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   30.116(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   28.142(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   32.828(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   30.854(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   34.207(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.233(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   34.304(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.330(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   34.582(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.608(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   35.812(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.838(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   36.997(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.023(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   37.260(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.286(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   37.238(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.264(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   38.198(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.224(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   41.254(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.280(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   41.114(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.140(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   40.530(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   38.556(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<6> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<0>   |   13.636(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<1>   |   13.636(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<2>   |   13.641(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<3>   |   13.644(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<4>   |   16.728(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<5>   |   21.258(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<6>   |   21.599(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<7>   |   20.399(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<8>   |   22.987(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   24.435(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   24.390(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   24.692(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   27.013(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   28.839(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   28.759(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   28.829(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<4>   |   18.637(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   19.983(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   26.916(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   25.094(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   25.995(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   24.173(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   26.407(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   24.585(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   29.412(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   27.590(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   30.269(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   28.447(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   30.854(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.032(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   30.246(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   28.424(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   32.958(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   31.136(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   34.337(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.515(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   34.434(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.612(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   34.712(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   32.890(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   35.942(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   34.120(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   37.127(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.305(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   37.390(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.568(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   37.368(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   35.546(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   38.328(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.506(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   41.384(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.562(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   41.244(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.422(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   40.660(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   38.838(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<7> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<0>   |   13.955(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<1>   |   13.955(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<2>   |   13.960(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<3>   |   13.963(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<4>   |   17.047(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<5>   |   21.577(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<6>   |   21.918(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<7>   |   20.718(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<8>   |   23.306(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   24.754(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   24.709(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   25.011(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   27.332(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   29.158(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   29.078(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   29.148(F)|mult10/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<4>   |   17.386(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   20.802(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<5>   |   25.665(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   25.913(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<6>   |   24.744(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   24.992(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<7>   |   25.156(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   25.404(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<8>   |   28.161(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   28.409(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   29.018(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.266(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   29.603(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.851(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   28.995(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   29.243(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   31.707(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   31.955(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   33.086(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.334(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   33.183(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.431(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   33.461(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   33.709(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   34.691(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   34.939(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   35.876(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.124(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   36.139(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.387(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   36.117(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   36.365(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   37.077(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   37.325(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   40.133(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   40.381(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   39.993(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   40.241(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   39.409(F)|mult2/resultParcial2_cmp_ge0000|   0.000|
+            |   39.657(F)|mult6/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<8> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<8>   |   18.865(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   21.679(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   21.634(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   21.936(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   24.257(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   26.100(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   26.020(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   26.090(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<8>   |   23.210(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   26.849(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   27.434(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   26.810(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   29.538(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   19.657(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   30.921(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.667(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   31.018(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.770(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   31.296(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.048(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   32.526(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   25.283(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   33.711(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   27.748(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   33.974(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.011(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   33.952(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   27.989(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   34.912(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.811(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   37.968(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   31.867(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   37.828(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   31.727(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   37.244(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   31.143(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<9> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<8>   |   18.464(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   21.278(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   21.233(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   21.535(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   23.856(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   25.699(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   25.619(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   25.689(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<8>   |   23.245(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   26.884(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   27.469(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   26.845(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   29.573(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   20.176(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   30.956(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.186(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   31.053(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.289(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   31.331(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.567(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   32.561(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   25.802(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   33.746(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.267(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   34.009(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.530(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   33.987(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.508(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   34.947(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   29.330(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   38.003(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   32.386(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   37.863(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   32.246(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   37.279(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   31.662(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<10> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<8>   |   18.680(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   21.494(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   21.449(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   21.751(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   24.072(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   25.915(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   25.835(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   25.905(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<8>   |   22.856(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   26.495(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   27.080(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   26.456(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   29.184(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   20.003(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   30.567(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.013(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   30.664(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.116(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   30.942(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.394(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   32.172(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   25.629(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   33.357(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.094(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   33.620(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.357(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   33.598(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.335(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   34.558(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   29.157(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   37.614(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   32.213(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   37.474(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   32.073(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   36.890(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   31.489(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<11> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<8>   |   18.465(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<9>   |   21.279(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<10>  |   21.234(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<11>  |   21.536(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<12>  |   23.857(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   25.700(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   25.620(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   25.690(F)|mult11/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<8>   |   23.082(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<9>   |   26.721(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<10>  |   27.306(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<11>  |   26.682(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+result<12>  |   29.410(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   19.893(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   30.793(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   23.903(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   30.890(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.006(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   31.168(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   24.284(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   32.398(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   25.519(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   33.583(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   27.984(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   33.846(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.247(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   33.824(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   28.225(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   34.784(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   29.047(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   37.840(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   32.103(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   37.700(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   31.963(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   37.116(F)|mult3/resultParcial2_cmp_ge0000|   0.000|
+            |   31.379(F)|mult7/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<12> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<12>  |   16.565(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   19.408(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   19.300(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   19.398(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<16>  |   13.417(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<17>  |   13.429(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<18>  |   13.464(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<19>  |   13.464(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<12>  |   19.533(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   23.236(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   23.339(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   23.617(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   24.847(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   21.018(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   26.036(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.899(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   26.299(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   26.162(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   26.277(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   26.140(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   27.237(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   26.962(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   30.293(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   30.018(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   30.153(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   29.878(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   29.569(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   29.294(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<13> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<12>  |   16.978(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   19.821(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   19.713(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   19.811(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<16>  |   13.830(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<17>  |   13.842(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<18>  |   13.877(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<19>  |   13.877(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<12>  |   20.627(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   24.330(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   24.433(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   24.711(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   25.941(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   20.493(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   27.130(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.374(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   27.393(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.637(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   27.371(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.615(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   28.331(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   26.437(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   31.387(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   29.493(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   31.247(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   29.353(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   30.663(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   28.769(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<14> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<12>  |   16.930(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   19.773(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   19.665(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   19.763(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<16>  |   13.782(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<17>  |   13.794(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<18>  |   13.829(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<19>  |   13.829(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<12>  |   20.571(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   24.274(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   24.377(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   24.655(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   25.885(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   20.750(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   27.074(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.631(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   27.337(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.894(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   27.315(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.872(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   28.275(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   26.694(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   31.331(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   29.750(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   31.191(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   29.610(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   30.607(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   29.026(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
 Clock numB<15> to Pad
-------------+------------+--------------------------------+--------+
-            | clk (edge) |                                | Clock  |
-Destination |   to PAD   |Internal Clock(s)               | Phase  |
-------------+------------+--------------------------------+--------+
-result<12>  |   16.565(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<13>  |   19.408(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<14>  |   19.300(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<15>  |   19.398(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<16>  |   13.417(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<17>  |   13.429(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<18>  |   13.464(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-result<19>  |   13.464(F)|mult16/resultParcial2_cmp_ge0000|   0.000|
-------------+------------+--------------------------------+--------+
+------------+------------+-------------------------------+--------+
+            | clk (edge) |                               | Clock  |
+Destination |   to PAD   |Internal Clock(s)              | Phase  |
+------------+------------+-------------------------------+--------+
+result<12>  |   20.845(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<13>  |   24.548(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<14>  |   24.651(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<15>  |   24.929(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+result<16>  |   26.159(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   20.216(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<17>  |   27.348(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.097(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<18>  |   27.611(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.360(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<19>  |   27.589(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   25.338(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<20>  |   28.549(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   26.160(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<21>  |   31.605(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   29.216(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<22>  |   31.465(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   29.076(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+result<23>  |   30.881(F)|mult4/resultParcial2_cmp_ge0000|   0.000|
+            |   28.492(F)|mult8/resultParcial2_cmp_ge0000|   0.000|
+------------+------------+-------------------------------+--------+
 
-Clock to Setup on destination clock numA<12>
+Clock to Setup on destination clock numA<0>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   11.154|   11.154|
-numA<13>       |         |         |   11.389|   11.389|
-numA<14>       |         |         |   10.977|   10.977|
-numA<15>       |         |         |   10.764|   10.764|
-numB<0>        |         |         |    9.017|    9.017|
-numB<1>        |         |         |    8.982|    8.982|
-numB<2>        |         |         |    9.017|    9.017|
-numB<3>        |         |         |    9.087|    9.087|
-numB<4>        |         |         |    9.867|    9.867|
-numB<5>        |         |         |    9.724|    9.724|
-numB<6>        |         |         |    9.930|    9.930|
-numB<7>        |         |         |   10.249|   10.249|
-numB<8>        |         |         |    8.882|    8.882|
-numB<9>        |         |         |    8.481|    8.481|
-numB<10>       |         |         |    8.697|    8.697|
-numB<11>       |         |         |    8.482|    8.482|
-numB<12>       |         |         |   10.414|   10.414|
-numB<13>       |         |         |   10.827|   10.827|
-numB<14>       |         |         |   10.114|   10.114|
-numB<15>       |         |         |    9.749|    9.749|
+numA<0>        |         |         |   11.866|   11.866|
+numA<1>        |         |         |   11.654|   11.654|
+numA<2>        |         |         |   11.398|   11.398|
+numA<3>        |         |         |   11.542|   11.542|
+numB<0>        |         |         |    9.420|    9.420|
+numB<1>        |         |         |    9.654|    9.654|
+numB<2>        |         |         |    9.722|    9.722|
+numB<3>        |         |         |    9.628|    9.628|
+numB<4>        |         |         |   10.216|   10.216|
+numB<5>        |         |         |   11.414|   11.414|
+numB<6>        |         |         |   11.544|   11.544|
+numB<7>        |         |         |   10.293|   10.293|
+numB<8>        |         |         |    8.006|    8.006|
+numB<9>        |         |         |    8.041|    8.041|
+numB<10>       |         |         |    7.652|    7.652|
+numB<11>       |         |         |    7.878|    7.878|
+numB<12>       |         |         |   11.273|   11.273|
+numB<13>       |         |         |   12.367|   12.367|
+numB<14>       |         |         |   12.311|   12.311|
+numB<15>       |         |         |   12.585|   12.585|
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock numA<13>
+Clock to Setup on destination clock numA<1>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   10.966|   10.966|
-numA<13>       |         |         |   11.201|   11.201|
-numA<14>       |         |         |   11.026|   11.026|
-numA<15>       |         |         |   10.847|   10.847|
-numB<0>        |         |         |    9.490|    9.490|
-numB<1>        |         |         |    9.455|    9.455|
-numB<2>        |         |         |    9.490|    9.490|
-numB<3>        |         |         |    9.560|    9.560|
-numB<4>        |         |         |    9.916|    9.916|
-numB<5>        |         |         |    9.773|    9.773|
-numB<6>        |         |         |    9.979|    9.979|
-numB<7>        |         |         |   10.298|   10.298|
-numB<8>        |         |         |    8.952|    8.952|
-numB<9>        |         |         |    8.551|    8.551|
-numB<10>       |         |         |    8.767|    8.767|
-numB<11>       |         |         |    8.552|    8.552|
-numB<12>       |         |         |   10.226|   10.226|
-numB<13>       |         |         |   10.639|   10.639|
-numB<14>       |         |         |    9.926|    9.926|
-numB<15>       |         |         |    9.561|    9.561|
+numA<0>        |         |         |   12.036|   12.036|
+numA<1>        |         |         |   11.824|   11.824|
+numA<2>        |         |         |   11.568|   11.568|
+numA<3>        |         |         |   11.712|   11.712|
+numB<0>        |         |         |    9.593|    9.593|
+numB<1>        |         |         |    9.827|    9.827|
+numB<2>        |         |         |    9.895|    9.895|
+numB<3>        |         |         |    9.801|    9.801|
+numB<4>        |         |         |    9.888|    9.888|
+numB<5>        |         |         |   11.086|   11.086|
+numB<6>        |         |         |   11.216|   11.216|
+numB<7>        |         |         |    9.965|    9.965|
+numB<8>        |         |         |    7.879|    7.879|
+numB<9>        |         |         |    7.914|    7.914|
+numB<10>       |         |         |    7.525|    7.525|
+numB<11>       |         |         |    7.751|    7.751|
+numB<12>       |         |         |   11.443|   11.443|
+numB<13>       |         |         |   12.537|   12.537|
+numB<14>       |         |         |   12.481|   12.481|
+numB<15>       |         |         |   12.755|   12.755|
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock numA<14>
+Clock to Setup on destination clock numA<2>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   11.307|   11.307|
-numA<13>       |         |         |   11.542|   11.542|
-numA<14>       |         |         |   10.451|   10.451|
-numA<15>       |         |         |   10.670|   10.670|
-numB<0>        |         |         |    8.608|    8.608|
-numB<1>        |         |         |    8.573|    8.573|
-numB<2>        |         |         |    8.608|    8.608|
-numB<3>        |         |         |    8.678|    8.678|
-numB<4>        |         |         |    9.309|    9.309|
-numB<5>        |         |         |    9.166|    9.166|
-numB<6>        |         |         |    9.372|    9.372|
-numB<7>        |         |         |    9.691|    9.691|
-numB<8>        |         |         |    9.246|    9.246|
-numB<9>        |         |         |    8.845|    8.845|
-numB<10>       |         |         |    9.061|    9.061|
-numB<11>       |         |         |    8.846|    8.846|
-numB<12>       |         |         |   10.567|   10.567|
-numB<13>       |         |         |   10.980|   10.980|
-numB<14>       |         |         |   10.267|   10.267|
-numB<15>       |         |         |    9.902|    9.902|
+numA<0>        |         |         |   12.240|   12.240|
+numA<1>        |         |         |   12.028|   12.028|
+numA<2>        |         |         |   11.772|   11.772|
+numA<3>        |         |         |   11.916|   11.916|
+numB<0>        |         |         |   10.116|   10.116|
+numB<1>        |         |         |   10.350|   10.350|
+numB<2>        |         |         |   10.418|   10.418|
+numB<3>        |         |         |   10.324|   10.324|
+numB<4>        |         |         |   10.207|   10.207|
+numB<5>        |         |         |   11.405|   11.405|
+numB<6>        |         |         |   11.535|   11.535|
+numB<7>        |         |         |   10.284|   10.284|
+numB<8>        |         |         |    8.552|    8.552|
+numB<9>        |         |         |    8.587|    8.587|
+numB<10>       |         |         |    8.198|    8.198|
+numB<11>       |         |         |    8.424|    8.424|
+numB<12>       |         |         |   11.647|   11.647|
+numB<13>       |         |         |   12.741|   12.741|
+numB<14>       |         |         |   12.685|   12.685|
+numB<15>       |         |         |   12.959|   12.959|
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock numA<15>
+Clock to Setup on destination clock numA<3>
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   11.131|   11.131|
-numA<13>       |         |         |   11.366|   11.366|
-numA<14>       |         |         |   10.589|   10.589|
-numA<15>       |         |         |   10.494|   10.494|
-numB<0>        |         |         |    8.632|    8.632|
-numB<1>        |         |         |    8.597|    8.597|
-numB<2>        |         |         |    8.632|    8.632|
-numB<3>        |         |         |    8.702|    8.702|
-numB<4>        |         |         |    9.479|    9.479|
-numB<5>        |         |         |    9.336|    9.336|
-numB<6>        |         |         |    9.542|    9.542|
-numB<7>        |         |         |    9.861|    9.861|
-numB<8>        |         |         |    9.267|    9.267|
-numB<9>        |         |         |    8.866|    8.866|
-numB<10>       |         |         |    9.082|    9.082|
-numB<11>       |         |         |    8.867|    8.867|
-numB<12>       |         |         |   10.391|   10.391|
-numB<13>       |         |         |   10.804|   10.804|
-numB<14>       |         |         |   10.091|   10.091|
-numB<15>       |         |         |    9.726|    9.726|
+numA<0>        |         |         |   12.125|   12.125|
+numA<1>        |         |         |   12.242|   12.242|
+numA<2>        |         |         |   11.657|   11.657|
+numA<3>        |         |         |   11.801|   11.801|
+numB<0>        |         |         |   10.452|   10.452|
+numB<1>        |         |         |   10.686|   10.686|
+numB<2>        |         |         |   10.754|   10.754|
+numB<3>        |         |         |   10.660|   10.660|
+numB<4>        |         |         |    9.881|    9.881|
+numB<5>        |         |         |   11.079|   11.079|
+numB<6>        |         |         |   11.209|   11.209|
+numB<7>        |         |         |    9.958|    9.958|
+numB<8>        |         |         |    9.678|    9.678|
+numB<9>        |         |         |    9.713|    9.713|
+numB<10>       |         |         |    9.324|    9.324|
+numB<11>       |         |         |    9.550|    9.550|
+numB<12>       |         |         |   11.532|   11.532|
+numB<13>       |         |         |   12.626|   12.626|
+numB<14>       |         |         |   12.570|   12.570|
+numB<15>       |         |         |   12.844|   12.844|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numA<8>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+numA<8>        |         |         |   11.181|   11.181|
+numA<9>        |         |         |   11.606|   11.606|
+numA<10>       |         |         |   11.471|   11.471|
+numA<11>       |         |         |   11.449|   11.449|
+numB<0>        |         |         |   11.605|   11.605|
+numB<1>        |         |         |   11.211|   11.211|
+numB<2>        |         |         |   11.220|   11.220|
+numB<3>        |         |         |   11.363|   11.363|
+numB<4>        |         |         |   10.458|   10.458|
+numB<5>        |         |         |    9.053|    9.053|
+numB<6>        |         |         |    9.335|    9.335|
+numB<7>        |         |         |   10.154|   10.154|
+numB<8>        |         |         |    8.455|    8.455|
+numB<9>        |         |         |    8.974|    8.974|
+numB<10>       |         |         |    8.801|    8.801|
+numB<11>       |         |         |    8.691|    8.691|
+numB<12>       |         |         |   10.987|   10.987|
+numB<13>       |         |         |   10.462|   10.462|
+numB<14>       |         |         |   10.719|   10.719|
+numB<15>       |         |         |   10.185|   10.185|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numA<9>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+numA<8>        |         |         |   11.437|   11.437|
+numA<9>        |         |         |   11.117|   11.117|
+numA<10>       |         |         |   11.121|   11.121|
+numA<11>       |         |         |   11.161|   11.161|
+numB<0>        |         |         |   11.861|   11.861|
+numB<1>        |         |         |   11.467|   11.467|
+numB<2>        |         |         |   11.476|   11.476|
+numB<3>        |         |         |   11.619|   11.619|
+numB<4>        |         |         |   10.898|   10.898|
+numB<5>        |         |         |    9.493|    9.493|
+numB<6>        |         |         |    9.775|    9.775|
+numB<7>        |         |         |   10.594|   10.594|
+numB<8>        |         |         |    8.393|    8.393|
+numB<9>        |         |         |    8.912|    8.912|
+numB<10>       |         |         |    8.739|    8.739|
+numB<11>       |         |         |    8.629|    8.629|
+numB<12>       |         |         |   10.315|   10.315|
+numB<13>       |         |         |    9.790|    9.790|
+numB<14>       |         |         |   10.047|   10.047|
+numB<15>       |         |         |    9.513|    9.513|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numA<10>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+numA<8>        |         |         |   11.434|   11.434|
+numA<9>        |         |         |   11.114|   11.114|
+numA<10>       |         |         |   11.118|   11.118|
+numA<11>       |         |         |   11.158|   11.158|
+numB<0>        |         |         |   11.858|   11.858|
+numB<1>        |         |         |   11.464|   11.464|
+numB<2>        |         |         |   11.473|   11.473|
+numB<3>        |         |         |   11.616|   11.616|
+numB<4>        |         |         |   10.942|   10.942|
+numB<5>        |         |         |    9.537|    9.537|
+numB<6>        |         |         |    9.819|    9.819|
+numB<7>        |         |         |   10.638|   10.638|
+numB<8>        |         |         |    8.342|    8.342|
+numB<9>        |         |         |    8.861|    8.861|
+numB<10>       |         |         |    8.688|    8.688|
+numB<11>       |         |         |    8.578|    8.578|
+numB<12>       |         |         |   10.423|   10.423|
+numB<13>       |         |         |    9.898|    9.898|
+numB<14>       |         |         |   10.155|   10.155|
+numB<15>       |         |         |    9.621|    9.621|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock numA<11>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+numA<8>        |         |         |   11.402|   11.402|
+numA<9>        |         |         |   11.082|   11.082|
+numA<10>       |         |         |   11.086|   11.086|
+numA<11>       |         |         |   11.126|   11.126|
+numB<0>        |         |         |   11.826|   11.826|
+numB<1>        |         |         |   11.432|   11.432|
+numB<2>        |         |         |   11.441|   11.441|
+numB<3>        |         |         |   11.584|   11.584|
+numB<4>        |         |         |   10.963|   10.963|
+numB<5>        |         |         |    9.558|    9.558|
+numB<6>        |         |         |    9.840|    9.840|
+numB<7>        |         |         |   10.659|   10.659|
+numB<8>        |         |         |    8.802|    8.802|
+numB<9>        |         |         |    9.321|    9.321|
+numB<10>       |         |         |    9.148|    9.148|
+numB<11>       |         |         |    9.038|    9.038|
+numB<12>       |         |         |   10.441|   10.441|
+numB<13>       |         |         |    9.916|    9.916|
+numB<14>       |         |         |   10.173|   10.173|
+numB<15>       |         |         |    9.639|    9.639|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<0>
@@ -645,14 +1453,18 @@ Clock to Setup on destination clock numB<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   10.593|   10.593|
-numA<13>       |         |         |   10.001|   10.001|
-numA<14>       |         |         |   11.105|   11.105|
-numA<15>       |         |         |   11.074|   11.074|
-numB<0>        |         |         |    9.717|    9.717|
-numB<1>        |         |         |    9.682|    9.682|
-numB<2>        |         |         |    9.717|    9.717|
-numB<3>        |         |         |    9.787|    9.787|
+numA<0>        |         |         |   11.359|   11.359|
+numA<1>        |         |         |   11.143|   11.143|
+numA<2>        |         |         |   10.489|   10.489|
+numA<3>        |         |         |   10.069|   10.069|
+numA<8>        |         |         |   10.842|   10.842|
+numA<9>        |         |         |   10.522|   10.522|
+numA<10>       |         |         |   10.526|   10.526|
+numA<11>       |         |         |   10.566|   10.566|
+numB<0>        |         |         |   11.266|   11.266|
+numB<1>        |         |         |   10.872|   10.872|
+numB<2>        |         |         |   10.881|   10.881|
+numB<3>        |         |         |   11.024|   11.024|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<1>
@@ -660,14 +1472,18 @@ Clock to Setup on destination clock numB<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   10.621|   10.621|
-numA<13>       |         |         |   10.029|   10.029|
-numA<14>       |         |         |   11.133|   11.133|
-numA<15>       |         |         |   11.102|   11.102|
-numB<0>        |         |         |    9.745|    9.745|
-numB<1>        |         |         |    9.710|    9.710|
-numB<2>        |         |         |    9.745|    9.745|
-numB<3>        |         |         |    9.815|    9.815|
+numA<0>        |         |         |   11.172|   11.172|
+numA<1>        |         |         |   10.956|   10.956|
+numA<2>        |         |         |   10.302|   10.302|
+numA<3>        |         |         |    9.882|    9.882|
+numA<8>        |         |         |   11.157|   11.157|
+numA<9>        |         |         |   10.837|   10.837|
+numA<10>       |         |         |   10.841|   10.841|
+numA<11>       |         |         |   10.881|   10.881|
+numB<0>        |         |         |   11.581|   11.581|
+numB<1>        |         |         |   11.187|   11.187|
+numB<2>        |         |         |   11.196|   11.196|
+numB<3>        |         |         |   11.339|   11.339|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<2>
@@ -675,14 +1491,18 @@ Clock to Setup on destination clock numB<2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   10.593|   10.593|
-numA<13>       |         |         |   10.001|   10.001|
-numA<14>       |         |         |   11.105|   11.105|
-numA<15>       |         |         |   11.074|   11.074|
-numB<0>        |         |         |    9.717|    9.717|
-numB<1>        |         |         |    9.682|    9.682|
-numB<2>        |         |         |    9.717|    9.717|
-numB<3>        |         |         |    9.787|    9.787|
+numA<0>        |         |         |   11.117|   11.117|
+numA<1>        |         |         |   10.901|   10.901|
+numA<2>        |         |         |   10.247|   10.247|
+numA<3>        |         |         |    9.827|    9.827|
+numA<8>        |         |         |   11.150|   11.150|
+numA<9>        |         |         |   10.830|   10.830|
+numA<10>       |         |         |   10.834|   10.834|
+numA<11>       |         |         |   10.874|   10.874|
+numB<0>        |         |         |   11.574|   11.574|
+numB<1>        |         |         |   11.180|   11.180|
+numB<2>        |         |         |   11.189|   11.189|
+numB<3>        |         |         |   11.332|   11.332|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<3>
@@ -690,14 +1510,18 @@ Clock to Setup on destination clock numB<3>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   10.537|   10.537|
-numA<13>       |         |         |    9.945|    9.945|
-numA<14>       |         |         |   11.049|   11.049|
-numA<15>       |         |         |   11.018|   11.018|
-numB<0>        |         |         |    9.661|    9.661|
-numB<1>        |         |         |    9.626|    9.626|
-numB<2>        |         |         |    9.661|    9.661|
-numB<3>        |         |         |    9.731|    9.731|
+numA<0>        |         |         |   11.192|   11.192|
+numA<1>        |         |         |   10.976|   10.976|
+numA<2>        |         |         |   10.322|   10.322|
+numA<3>        |         |         |    9.902|    9.902|
+numA<8>        |         |         |   11.036|   11.036|
+numA<9>        |         |         |   10.716|   10.716|
+numA<10>       |         |         |   10.720|   10.720|
+numA<11>       |         |         |   10.760|   10.760|
+numB<0>        |         |         |   11.460|   11.460|
+numB<1>        |         |         |   11.066|   11.066|
+numB<2>        |         |         |   11.075|   11.075|
+numB<3>        |         |         |   11.218|   11.218|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<4>
@@ -705,14 +1529,18 @@ Clock to Setup on destination clock numB<4>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   10.609|   10.609|
-numA<13>       |         |         |   10.547|   10.547|
-numA<14>       |         |         |   11.307|   11.307|
-numA<15>       |         |         |   11.094|   11.094|
-numB<4>        |         |         |   10.197|   10.197|
-numB<5>        |         |         |   10.054|   10.054|
-numB<6>        |         |         |   10.260|   10.260|
-numB<7>        |         |         |   10.579|   10.579|
+numA<0>        |         |         |   10.350|   10.350|
+numA<1>        |         |         |   10.760|   10.760|
+numA<2>        |         |         |   10.362|   10.362|
+numA<3>        |         |         |   10.769|   10.769|
+numA<8>        |         |         |    9.557|    9.557|
+numA<9>        |         |         |    9.006|    9.006|
+numA<10>       |         |         |    8.951|    8.951|
+numA<11>       |         |         |    8.925|    8.925|
+numB<4>        |         |         |   10.276|   10.276|
+numB<5>        |         |         |   11.474|   11.474|
+numB<6>        |         |         |   11.604|   11.604|
+numB<7>        |         |         |   10.353|   10.353|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<5>
@@ -720,14 +1548,18 @@ Clock to Setup on destination clock numB<5>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   10.723|   10.723|
-numA<13>       |         |         |   10.661|   10.661|
-numA<14>       |         |         |   11.421|   11.421|
-numA<15>       |         |         |   11.208|   11.208|
-numB<4>        |         |         |   10.311|   10.311|
-numB<5>        |         |         |   10.168|   10.168|
-numB<6>        |         |         |   10.374|   10.374|
-numB<7>        |         |         |   10.693|   10.693|
+numA<0>        |         |         |    9.391|    9.391|
+numA<1>        |         |         |    9.801|    9.801|
+numA<2>        |         |         |    9.403|    9.403|
+numA<3>        |         |         |    9.810|    9.810|
+numA<8>        |         |         |   10.681|   10.681|
+numA<9>        |         |         |   10.130|   10.130|
+numA<10>       |         |         |   10.075|   10.075|
+numA<11>       |         |         |   10.049|   10.049|
+numB<4>        |         |         |   11.181|   11.181|
+numB<5>        |         |         |   10.515|   10.515|
+numB<6>        |         |         |   10.645|   10.645|
+numB<7>        |         |         |   10.877|   10.877|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<6>
@@ -735,14 +1567,18 @@ Clock to Setup on destination clock numB<6>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   10.558|   10.558|
-numA<13>       |         |         |   10.496|   10.496|
-numA<14>       |         |         |   11.256|   11.256|
-numA<15>       |         |         |   11.043|   11.043|
-numB<4>        |         |         |   10.146|   10.146|
-numB<5>        |         |         |   10.003|   10.003|
-numB<6>        |         |         |   10.209|   10.209|
-numB<7>        |         |         |   10.528|   10.528|
+numA<0>        |         |         |    9.287|    9.287|
+numA<1>        |         |         |    9.697|    9.697|
+numA<2>        |         |         |    9.299|    9.299|
+numA<3>        |         |         |    9.706|    9.706|
+numA<8>        |         |         |   10.456|   10.456|
+numA<9>        |         |         |    9.905|    9.905|
+numA<10>       |         |         |    9.850|    9.850|
+numA<11>       |         |         |    9.824|    9.824|
+numB<4>        |         |         |   10.956|   10.956|
+numB<5>        |         |         |   10.411|   10.411|
+numB<6>        |         |         |   10.541|   10.541|
+numB<7>        |         |         |   10.652|   10.652|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<7>
@@ -750,14 +1586,18 @@ Clock to Setup on destination clock numB<7>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   10.303|   10.303|
-numA<13>       |         |         |   10.241|   10.241|
-numA<14>       |         |         |   11.001|   11.001|
-numA<15>       |         |         |   10.788|   10.788|
-numB<4>        |         |         |    9.891|    9.891|
-numB<5>        |         |         |    9.748|    9.748|
-numB<6>        |         |         |    9.954|    9.954|
-numB<7>        |         |         |   10.273|   10.273|
+numA<0>        |         |         |   10.288|   10.288|
+numA<1>        |         |         |   10.698|   10.698|
+numA<2>        |         |         |   10.300|   10.300|
+numA<3>        |         |         |   10.707|   10.707|
+numA<8>        |         |         |    9.800|    9.800|
+numA<9>        |         |         |    9.249|    9.249|
+numA<10>       |         |         |    9.194|    9.194|
+numA<11>       |         |         |    9.168|    9.168|
+numB<4>        |         |         |   10.300|   10.300|
+numB<5>        |         |         |   11.412|   11.412|
+numB<6>        |         |         |   11.542|   11.542|
+numB<7>        |         |         |   10.291|   10.291|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<8>
@@ -765,14 +1605,18 @@ Clock to Setup on destination clock numB<8>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |    8.936|    8.936|
-numA<13>       |         |         |    8.848|    8.848|
-numA<14>       |         |         |    8.482|    8.482|
-numA<15>       |         |         |    8.455|    8.455|
-numB<8>        |         |         |    8.906|    8.906|
-numB<9>        |         |         |    8.505|    8.505|
-numB<10>       |         |         |    8.721|    8.721|
-numB<11>       |         |         |    8.506|    8.506|
+numA<0>        |         |         |   12.335|   12.335|
+numA<1>        |         |         |   12.494|   12.494|
+numA<2>        |         |         |   11.652|   11.652|
+numA<3>        |         |         |   10.246|   10.246|
+numA<8>        |         |         |    9.688|    9.688|
+numA<9>        |         |         |    9.766|    9.766|
+numA<10>       |         |         |    9.829|    9.829|
+numA<11>       |         |         |    9.254|    9.254|
+numB<8>        |         |         |    9.930|    9.930|
+numB<9>        |         |         |    9.965|    9.965|
+numB<10>       |         |         |    9.576|    9.576|
+numB<11>       |         |         |    9.802|    9.802|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<9>
@@ -780,14 +1624,18 @@ Clock to Setup on destination clock numB<9>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |    9.257|    9.257|
-numA<13>       |         |         |    9.169|    9.169|
-numA<14>       |         |         |    8.803|    8.803|
-numA<15>       |         |         |    8.776|    8.776|
-numB<8>        |         |         |    9.227|    9.227|
-numB<9>        |         |         |    8.826|    8.826|
-numB<10>       |         |         |    9.042|    9.042|
-numB<11>       |         |         |    8.827|    8.827|
+numA<0>        |         |         |   12.307|   12.307|
+numA<1>        |         |         |   12.466|   12.466|
+numA<2>        |         |         |   11.624|   11.624|
+numA<3>        |         |         |   10.218|   10.218|
+numA<8>        |         |         |    9.273|    9.273|
+numA<9>        |         |         |    9.351|    9.351|
+numA<10>       |         |         |    9.414|    9.414|
+numA<11>       |         |         |    8.839|    8.839|
+numB<8>        |         |         |    9.902|    9.902|
+numB<9>        |         |         |    9.937|    9.937|
+numB<10>       |         |         |    9.548|    9.548|
+numB<11>       |         |         |    9.774|    9.774|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<10>
@@ -795,14 +1643,18 @@ Clock to Setup on destination clock numB<10>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |    9.084|    9.084|
-numA<13>       |         |         |    8.996|    8.996|
-numA<14>       |         |         |    8.630|    8.630|
-numA<15>       |         |         |    8.603|    8.603|
-numB<8>        |         |         |    9.054|    9.054|
-numB<9>        |         |         |    8.653|    8.653|
-numB<10>       |         |         |    8.869|    8.869|
-numB<11>       |         |         |    8.654|    8.654|
+numA<0>        |         |         |   12.618|   12.618|
+numA<1>        |         |         |   12.777|   12.777|
+numA<2>        |         |         |   11.935|   11.935|
+numA<3>        |         |         |   10.529|   10.529|
+numA<8>        |         |         |    9.411|    9.411|
+numA<9>        |         |         |    9.489|    9.489|
+numA<10>       |         |         |    9.552|    9.552|
+numA<11>       |         |         |    8.977|    8.977|
+numB<8>        |         |         |   10.213|   10.213|
+numB<9>        |         |         |   10.248|   10.248|
+numB<10>       |         |         |    9.859|    9.859|
+numB<11>       |         |         |   10.085|   10.085|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<11>
@@ -810,14 +1662,18 @@ Clock to Setup on destination clock numB<11>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |    9.256|    9.256|
-numA<13>       |         |         |    9.168|    9.168|
-numA<14>       |         |         |    8.802|    8.802|
-numA<15>       |         |         |    8.775|    8.775|
-numB<8>        |         |         |    9.226|    9.226|
-numB<9>        |         |         |    8.825|    8.825|
-numB<10>       |         |         |    9.041|    9.041|
-numB<11>       |         |         |    8.826|    8.826|
+numA<0>        |         |         |   12.437|   12.437|
+numA<1>        |         |         |   12.596|   12.596|
+numA<2>        |         |         |   11.754|   11.754|
+numA<3>        |         |         |   10.348|   10.348|
+numA<8>        |         |         |    9.499|    9.499|
+numA<9>        |         |         |    9.577|    9.577|
+numA<10>       |         |         |    9.640|    9.640|
+numA<11>       |         |         |    9.065|    9.065|
+numB<8>        |         |         |   10.032|   10.032|
+numB<9>        |         |         |   10.067|   10.067|
+numB<10>       |         |         |    9.678|    9.678|
+numB<11>       |         |         |    9.904|    9.904|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<12>
@@ -825,14 +1681,18 @@ Clock to Setup on destination clock numB<12>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   11.746|   11.746|
-numA<13>       |         |         |   11.981|   11.981|
-numA<14>       |         |         |   10.890|   10.890|
-numA<15>       |         |         |   11.109|   11.109|
-numB<12>       |         |         |   11.006|   11.006|
-numB<13>       |         |         |   11.419|   11.419|
-numB<14>       |         |         |   10.706|   10.706|
-numB<15>       |         |         |   10.341|   10.341|
+numA<0>        |         |         |   12.341|   12.341|
+numA<1>        |         |         |   12.129|   12.129|
+numA<2>        |         |         |   11.873|   11.873|
+numA<3>        |         |         |   12.017|   12.017|
+numA<8>        |         |         |   10.589|   10.589|
+numA<9>        |         |         |   11.429|   11.429|
+numA<10>       |         |         |   11.294|   11.294|
+numA<11>       |         |         |   11.272|   11.272|
+numB<12>       |         |         |   11.748|   11.748|
+numB<13>       |         |         |   12.842|   12.842|
+numB<14>       |         |         |   12.786|   12.786|
+numB<15>       |         |         |   13.060|   13.060|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<13>
@@ -840,14 +1700,18 @@ Clock to Setup on destination clock numB<13>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   11.416|   11.416|
-numA<13>       |         |         |   11.651|   11.651|
-numA<14>       |         |         |   10.560|   10.560|
-numA<15>       |         |         |   10.779|   10.779|
-numB<12>       |         |         |   10.676|   10.676|
-numB<13>       |         |         |   11.089|   11.089|
-numB<14>       |         |         |   10.376|   10.376|
-numB<15>       |         |         |   10.011|   10.011|
+numA<0>        |         |         |   11.465|   11.465|
+numA<1>        |         |         |   11.253|   11.253|
+numA<2>        |         |         |   10.997|   10.997|
+numA<3>        |         |         |   11.141|   11.141|
+numA<8>        |         |         |   11.009|   11.009|
+numA<9>        |         |         |   11.849|   11.849|
+numA<10>       |         |         |   11.714|   11.714|
+numA<11>       |         |         |   11.692|   11.692|
+numB<12>       |         |         |   11.230|   11.230|
+numB<13>       |         |         |   11.966|   11.966|
+numB<14>       |         |         |   11.910|   11.910|
+numB<15>       |         |         |   12.184|   12.184|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<14>
@@ -855,14 +1719,18 @@ Clock to Setup on destination clock numB<14>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   11.454|   11.454|
-numA<13>       |         |         |   11.689|   11.689|
-numA<14>       |         |         |   10.598|   10.598|
-numA<15>       |         |         |   10.817|   10.817|
-numB<12>       |         |         |   10.714|   10.714|
-numB<13>       |         |         |   11.127|   11.127|
-numB<14>       |         |         |   10.414|   10.414|
-numB<15>       |         |         |   10.049|   10.049|
+numA<0>        |         |         |   11.510|   11.510|
+numA<1>        |         |         |   11.298|   11.298|
+numA<2>        |         |         |   11.042|   11.042|
+numA<3>        |         |         |   11.186|   11.186|
+numA<8>        |         |         |   10.804|   10.804|
+numA<9>        |         |         |   11.644|   11.644|
+numA<10>       |         |         |   11.509|   11.509|
+numA<11>       |         |         |   11.487|   11.487|
+numB<12>       |         |         |   11.025|   11.025|
+numB<13>       |         |         |   12.011|   12.011|
+numB<14>       |         |         |   11.955|   11.955|
+numB<15>       |         |         |   12.229|   12.229|
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock numB<15>
@@ -870,25 +1738,29 @@ Clock to Setup on destination clock numB<15>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-numA<12>       |         |         |   11.746|   11.746|
-numA<13>       |         |         |   11.981|   11.981|
-numA<14>       |         |         |   10.890|   10.890|
-numA<15>       |         |         |   11.109|   11.109|
-numB<12>       |         |         |   11.006|   11.006|
-numB<13>       |         |         |   11.419|   11.419|
-numB<14>       |         |         |   10.706|   10.706|
-numB<15>       |         |         |   10.341|   10.341|
+numA<0>        |         |         |   11.291|   11.291|
+numA<1>        |         |         |   11.079|   11.079|
+numA<2>        |         |         |   10.823|   10.823|
+numA<3>        |         |         |   10.967|   10.967|
+numA<8>        |         |         |   11.231|   11.231|
+numA<9>        |         |         |   12.071|   12.071|
+numA<10>       |         |         |   11.936|   11.936|
+numA<11>       |         |         |   11.914|   11.914|
+numB<12>       |         |         |   11.452|   11.452|
+numB<13>       |         |         |   11.792|   11.792|
+numB<14>       |         |         |   11.736|   11.736|
+numB<15>       |         |         |   12.010|   12.010|
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Fri Nov 30 14:30:39 2018 
+Analysis completed Fri Nov 30 16:19:05 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 368 MB
+Peak Memory Usage: 373 MB
 
 
 

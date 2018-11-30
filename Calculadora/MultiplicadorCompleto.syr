@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.05 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: MultiplicadorCompleto.prj
@@ -194,21 +194,28 @@ Unit <Soma4Alg> synthesized.
 
 Synthesizing Unit <MultiplicadorCompleto>.
     Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd".
+WARNING:Xst:1306 - Output <result<31:24>> is never assigned.
 WARNING:Xst:647 - Input <numA<7:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:646 - Signal <resultParcial1Linha4<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <resultParcial1Linha3<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <resultParcial1Linha2<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:653 - Signal <linha4<31:20>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000.
-WARNING:Xst:1780 - Signal <linha3<31:20>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <linha3<19:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <linha2<31:20>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <linha2<19:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <linha1<31:20>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <linha1<19:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <parcela4Soma> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <parcela3Soma> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <parcela2Soma<31:24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <parcela2Soma<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <parcela1Soma<31:24>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <parcela1Soma<3:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <linha4<31:20>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <linha3<31:24>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <linha3<23:20>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
+WARNING:Xst:1780 - Signal <linha2<31:28>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <linha2<27:20>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000.
+WARNING:Xst:653 - Signal <linha1<31:20>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000.
 WARNING:Xst:646 - Signal <carryOut3Linha4<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <carryOut3Linha3<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <carryOut3Linha2<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <carryOut3Linha1<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <carryOut1Alg5<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:653 - Signal <carryIn<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:1780 - Signal <auxResultLinha4<31:12>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:1780 - Signal <auxResultLinha3<31:12>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
@@ -224,14 +231,14 @@ HDL Synthesis Report
 Macro Statistics
 # Multipliers                                          : 32
  4x4-bit multiplier                                    : 32
-# Adders/Subtractors                                   : 56
- 5-bit adder                                           : 12
- 5-bit adder carry in                                  : 12
+# Adders/Subtractors                                   : 66
+ 5-bit adder                                           : 17
+ 5-bit adder carry in                                  : 17
  8-bit adder                                           : 32
 # Latches                                              : 16
  8-bit latch                                           : 16
-# Comparators                                          : 284
- 5-bit comparator greatequal                           : 12
+# Comparators                                          : 289
+ 5-bit comparator greatequal                           : 17
  8-bit comparator greatequal                           : 128
  8-bit comparator lessequal                            : 144
 
@@ -241,34 +248,6 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1290 - Hierarchical block <mult1> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <mult2> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <mult3> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <mult4> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais1> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais2> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais3> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <mult5> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <mult6> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <mult7> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <mult8> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais4> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais5> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais6> is unconnected in block <MultiplicadorCompleto>.
-   It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <mult9> is unconnected in block <MultiplicadorCompleto>.
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <mult10> is unconnected in block <MultiplicadorCompleto>.
@@ -283,6 +262,20 @@ WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais8> is unconnected in b
    It will be removed from the design.
 WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais9> is unconnected in block <MultiplicadorCompleto>.
    It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mult13> is unconnected in block <MultiplicadorCompleto>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mult14> is unconnected in block <MultiplicadorCompleto>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mult15> is unconnected in block <MultiplicadorCompleto>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <mult16> is unconnected in block <MultiplicadorCompleto>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais10> is unconnected in block <MultiplicadorCompleto>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais11> is unconnected in block <MultiplicadorCompleto>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais12> is unconnected in block <MultiplicadorCompleto>.
+   It will be removed from the design.
 
 =========================================================================
 Advanced HDL Synthesis Report
@@ -290,14 +283,14 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Multipliers                                          : 32
  4x4-bit multiplier                                    : 32
-# Adders/Subtractors                                   : 56
- 5-bit adder                                           : 12
- 5-bit adder carry in                                  : 12
+# Adders/Subtractors                                   : 66
+ 5-bit adder                                           : 17
+ 5-bit adder carry in                                  : 17
  8-bit adder                                           : 32
 # Latches                                              : 16
  8-bit latch                                           : 16
-# Comparators                                          : 284
- 5-bit comparator greatequal                           : 12
+# Comparators                                          : 289
+ 5-bit comparator greatequal                           : 17
  8-bit comparator greatequal                           : 128
  8-bit comparator lessequal                            : 144
 
@@ -309,101 +302,55 @@ Macro Statistics
 WARNING:Xst:1989 - Unit <MultiplicadorCompleto>: instances <mult9>, <mult13> of unit <Multiplicador> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <MultiplicadorCompleto>: instances <mult10>, <mult14> of unit <Multiplicador> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <MultiplicadorCompleto>: instances <mult11>, <mult15> of unit <Multiplicador> are equivalent, second instance is removed
-WARNING:Xst:2677 - Node <mult12/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult8/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult7/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult6/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult5/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult4/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult3/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult2/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult1/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult1/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult1/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult1/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult1/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult1/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult1/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult1/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult1/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult2/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult2/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult2/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult2/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult2/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult2/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult2/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult2/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult3/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult3/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult3/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult3/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult3/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult3/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult3/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult3/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult4/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult4/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult4/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult4/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult4/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult4/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult4/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult4/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult5/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult5/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult5/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult5/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult5/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult5/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult5/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult5/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult6/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult6/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult6/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult6/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult6/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult6/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult6/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult6/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult7/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult7/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult7/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult7/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult7/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult7/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult7/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult7/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult8/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult8/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult8/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult8/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult8/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult8/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult8/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult8/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult9/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult9/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult9/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult9/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult12/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult12/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult12/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult12/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult12/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult12/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult12/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
-WARNING:Xst:2677 - Node <mult12/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:1989 - Unit <MultiplicadorCompleto>: instances <mult12>, <mult16> of unit <Multiplicador> are equivalent, second instance is removed
 
 Optimizing unit <MultiplicadorCompleto> ...
 
+Optimizing unit <Multiplicador> ...
+WARNING:Xst:2677 - Node <mult12/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult12/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult12/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult12/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult12/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult12/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult12/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult12/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult12/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult11/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult11/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult11/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult11/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult11/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult11/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult11/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult11/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult11/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult10/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult10/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult10/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult10/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult10/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult10/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult10/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult10/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult10/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult9/resultParcial2_7> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult9/resultParcial2_6> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult9/resultParcial2_5> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult9/resultParcial2_4> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult9/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult9/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult9/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult9/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult9/Mmult_resultParcial> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult5/resultParcial2_3> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult5/resultParcial2_2> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult5/resultParcial2_1> of sequential type is unconnected in block <MultiplicadorCompleto>.
+WARNING:Xst:2677 - Node <mult5/resultParcial2_0> of sequential type is unconnected in block <MultiplicadorCompleto>.
+
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block MultiplicadorCompleto, actual ratio is 3.
-Latch mult10/resultParcial2_3 has been replicated 1 time(s) to handle iob=true attribute.
-Latch mult10/resultParcial2_2 has been replicated 1 time(s) to handle iob=true attribute.
-Latch mult10/resultParcial2_1 has been replicated 1 time(s) to handle iob=true attribute.
-Latch mult10/resultParcial2_0 has been replicated 1 time(s) to handle iob=true attribute.
+Found area constraint ratio of 100 (+ 5) on block MultiplicadorCompleto, actual ratio is 7.
 
 Final Macro Processing ...
 
@@ -438,22 +385,22 @@ Design Statistics
 # IOs                              : 64
 
 Cell Usage :
-# BELS                             : 370
+# BELS                             : 920
 #      GND                         : 1
-#      LUT1                        : 11
-#      LUT2                        : 42
-#      LUT3                        : 22
-#      LUT4                        : 206
-#      MUXCY                       : 35
-#      MUXF5                       : 17
-#      XORCY                       : 36
-# FlipFlops/Latches                : 32
-#      LDCPE                       : 32
-# IO Buffers                       : 52
-#      IBUF                        : 20
-#      OBUF                        : 32
-# MULTs                            : 4
-#      MULT18X18SIO                : 4
+#      LUT1                        : 23
+#      LUT2                        : 126
+#      LUT3                        : 86
+#      LUT4                        : 480
+#      MUXCY                       : 83
+#      MUXF5                       : 33
+#      XORCY                       : 88
+# FlipFlops/Latches                : 60
+#      LDCPE                       : 60
+# IO Buffers                       : 48
+#      IBUF                        : 24
+#      OBUF                        : 24
+# MULTs                            : 8
+#      MULT18X18SIO                : 8
 =========================================================================
 
 Device utilization summary:
@@ -461,13 +408,13 @@ Device utilization summary:
 
 Selected Device : 3s700anfgg484-4 
 
- Number of Slices:                      159  out of   5888     2%  
- Number of Slice Flip Flops:             24  out of  11776     0%  
- Number of 4 input LUTs:                281  out of  11776     2%  
+ Number of Slices:                      400  out of   5888     6%  
+ Number of Slice Flip Flops:             56  out of  11776     0%  
+ Number of 4 input LUTs:                715  out of  11776     6%  
  Number of IOs:                          64
- Number of bonded IOBs:                  52  out of    372    13%  
-    IOB Flip Flops:                       8
- Number of MULT18X18SIOs:                 4  out of     20    20%  
+ Number of bonded IOBs:                  48  out of    372    12%  
+    IOB Flip Flops:                       4
+ Number of MULT18X18SIOs:                 8  out of     20    40%  
 
 ---------------------------
 Partition Resource Summary:
@@ -487,89 +434,157 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
----------------------------------------------------------------------+---------------------------------+-------+
-Clock Signal                                                         | Clock buffer(FF name)           | Load  |
----------------------------------------------------------------------+---------------------------------+-------+
-mult9/resultParcial2_cmp_ge0000(mult9/resultParcial2_cmp_ge00001:O)  | NONE(*)(mult9/resultParcial2_4) | 4     |
-mult10/resultParcial2_cmp_ge0000(mult10/resultParcial2_cmp_ge00001:O)| NONE(*)(mult10/resultParcial2_0)| 12    |
-mult11/resultParcial2_cmp_ge0000(mult11/resultParcial2_cmp_ge00001:O)| NONE(*)(mult11/resultParcial2_0)| 8     |
-mult16/resultParcial2_cmp_ge0000(mult16/resultParcial2_cmp_ge00001:O)| NONE(*)(mult16/resultParcial2_0)| 8     |
----------------------------------------------------------------------+---------------------------------+-------+
-(*) These 4 clock signal(s) are generated by combinatorial logic,
+-------------------------------------------------------------------+--------------------------------+-------+
+Clock Signal                                                       | Clock buffer(FF name)          | Load  |
+-------------------------------------------------------------------+--------------------------------+-------+
+mult8/resultParcial2_cmp_ge0000(mult8/resultParcial2_cmp_ge00001:O)| NONE(*)(mult8/resultParcial2_7)| 8     |
+mult7/resultParcial2_cmp_ge0000(mult7/resultParcial2_cmp_ge00001:O)| NONE(*)(mult7/resultParcial2_7)| 8     |
+mult6/resultParcial2_cmp_ge0000(mult6/resultParcial2_cmp_ge00001:O)| NONE(*)(mult6/resultParcial2_7)| 8     |
+mult5/resultParcial2_cmp_ge0000(mult5/resultParcial2_cmp_ge00001:O)| NONE(*)(mult5/resultParcial2_7)| 4     |
+mult4/resultParcial2_cmp_ge0000(mult4/resultParcial2_cmp_ge00001:O)| NONE(*)(mult4/resultParcial2_7)| 8     |
+mult3/resultParcial2_cmp_ge0000(mult3/resultParcial2_cmp_ge00001:O)| NONE(*)(mult3/resultParcial2_7)| 8     |
+mult2/resultParcial2_cmp_ge0000(mult2/resultParcial2_cmp_ge00001:O)| NONE(*)(mult2/resultParcial2_7)| 8     |
+mult1/resultParcial2_cmp_ge0000(mult1/resultParcial2_cmp_ge00001:O)| NONE(*)(mult1/resultParcial2_7)| 8     |
+-------------------------------------------------------------------+--------------------------------+-------+
+(*) These 8 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
----------------------------------------------------------------------+------------------------------+-------+
-Control Signal                                                       | Buffer(FF name)              | Load  |
----------------------------------------------------------------------+------------------------------+-------+
-mult10/resultParcial2_0__and0000(mult10/resultParcial2_0__and00001:O)| NONE(mult10/resultParcial2_0)| 2     |
-mult10/resultParcial2_0__and0001(mult10/resultParcial2_0__and00011:O)| NONE(mult10/resultParcial2_0)| 2     |
-mult10/resultParcial2_1__and0000(mult10/resultParcial2_1__and00001:O)| NONE(mult10/resultParcial2_1)| 2     |
-mult10/resultParcial2_1__and0001(mult10/resultParcial2_1__and00011:O)| NONE(mult10/resultParcial2_1)| 2     |
-mult10/resultParcial2_2__and0000(mult10/resultParcial2_2__and00001:O)| NONE(mult10/resultParcial2_2)| 2     |
-mult10/resultParcial2_2__and0001(mult10/resultParcial2_2__and00011:O)| NONE(mult10/resultParcial2_2)| 2     |
-mult10/resultParcial2_3__and0000(mult10/resultParcial2_3__and00001:O)| NONE(mult10/resultParcial2_3)| 2     |
-mult10/resultParcial2_3__and0001(mult10/resultParcial2_3__and00011:O)| NONE(mult10/resultParcial2_3)| 2     |
-mult10/resultParcial2_4__and0000(mult10/resultParcial2_4__and00001:O)| NONE(mult10/resultParcial2_4)| 1     |
-mult10/resultParcial2_4__and0001(mult10/resultParcial2_4__and00011:O)| NONE(mult10/resultParcial2_4)| 1     |
-mult10/resultParcial2_5__and0000(mult10/resultParcial2_5__and00001:O)| NONE(mult10/resultParcial2_5)| 1     |
-mult10/resultParcial2_5__and0001(mult10/resultParcial2_5__and00011:O)| NONE(mult10/resultParcial2_5)| 1     |
-mult10/resultParcial2_6__and0000(mult10/resultParcial2_6__and00001:O)| NONE(mult10/resultParcial2_6)| 1     |
-mult10/resultParcial2_6__and0001(mult10/resultParcial2_6__and00011:O)| NONE(mult10/resultParcial2_6)| 1     |
-mult10/resultParcial2_7__and0000(mult10/resultParcial2_7__and00001:O)| NONE(mult10/resultParcial2_7)| 1     |
-mult10/resultParcial2_7__and0001(mult10/resultParcial2_7__and00011:O)| NONE(mult10/resultParcial2_7)| 1     |
-mult11/resultParcial2_0__and0000(mult11/resultParcial2_0__and00001:O)| NONE(mult11/resultParcial2_0)| 1     |
-mult11/resultParcial2_0__and0001(mult11/resultParcial2_0__and00011:O)| NONE(mult11/resultParcial2_0)| 1     |
-mult11/resultParcial2_1__and0000(mult11/resultParcial2_1__and00001:O)| NONE(mult11/resultParcial2_1)| 1     |
-mult11/resultParcial2_1__and0001(mult11/resultParcial2_1__and00011:O)| NONE(mult11/resultParcial2_1)| 1     |
-mult11/resultParcial2_2__and0000(mult11/resultParcial2_2__and00001:O)| NONE(mult11/resultParcial2_2)| 1     |
-mult11/resultParcial2_2__and0001(mult11/resultParcial2_2__and00011:O)| NONE(mult11/resultParcial2_2)| 1     |
-mult11/resultParcial2_3__and0000(mult11/resultParcial2_3__and00001:O)| NONE(mult11/resultParcial2_3)| 1     |
-mult11/resultParcial2_3__and0001(mult11/resultParcial2_3__and00011:O)| NONE(mult11/resultParcial2_3)| 1     |
-mult11/resultParcial2_4__and0000(mult11/resultParcial2_4__and00001:O)| NONE(mult11/resultParcial2_4)| 1     |
-mult11/resultParcial2_4__and0001(mult11/resultParcial2_4__and00011:O)| NONE(mult11/resultParcial2_4)| 1     |
-mult11/resultParcial2_5__and0000(mult11/resultParcial2_5__and00001:O)| NONE(mult11/resultParcial2_5)| 1     |
-mult11/resultParcial2_5__and0001(mult11/resultParcial2_5__and00011:O)| NONE(mult11/resultParcial2_5)| 1     |
-mult11/resultParcial2_6__and0000(mult11/resultParcial2_6__and00001:O)| NONE(mult11/resultParcial2_6)| 1     |
-mult11/resultParcial2_6__and0001(mult11/resultParcial2_6__and00011:O)| NONE(mult11/resultParcial2_6)| 1     |
-mult11/resultParcial2_7__and0000(mult11/resultParcial2_7__and00001:O)| NONE(mult11/resultParcial2_7)| 1     |
-mult11/resultParcial2_7__and0001(mult11/resultParcial2_7__and00011:O)| NONE(mult11/resultParcial2_7)| 1     |
-mult16/resultParcial2_0__and0000(mult16/resultParcial2_0__and00001:O)| NONE(mult16/resultParcial2_0)| 1     |
-mult16/resultParcial2_0__and0001(mult16/resultParcial2_0__and00011:O)| NONE(mult16/resultParcial2_0)| 1     |
-mult16/resultParcial2_1__and0000(mult16/resultParcial2_1__and00001:O)| NONE(mult16/resultParcial2_1)| 1     |
-mult16/resultParcial2_1__and0001(mult16/resultParcial2_1__and00011:O)| NONE(mult16/resultParcial2_1)| 1     |
-mult16/resultParcial2_2__and0000(mult16/resultParcial2_2__and00001:O)| NONE(mult16/resultParcial2_2)| 1     |
-mult16/resultParcial2_2__and0001(mult16/resultParcial2_2__and00011:O)| NONE(mult16/resultParcial2_2)| 1     |
-mult16/resultParcial2_3__and0000(mult16/resultParcial2_3__and00001:O)| NONE(mult16/resultParcial2_3)| 1     |
-mult16/resultParcial2_3__and0001(mult16/resultParcial2_3__and00011:O)| NONE(mult16/resultParcial2_3)| 1     |
-mult16/resultParcial2_4__and0000(mult16/resultParcial2_4__and00001:O)| NONE(mult16/resultParcial2_4)| 1     |
-mult16/resultParcial2_4__and0001(mult16/resultParcial2_4__and00011:O)| NONE(mult16/resultParcial2_4)| 1     |
-mult16/resultParcial2_5__and0000(mult16/resultParcial2_5__and00001:O)| NONE(mult16/resultParcial2_5)| 1     |
-mult16/resultParcial2_5__and0001(mult16/resultParcial2_5__and00011:O)| NONE(mult16/resultParcial2_5)| 1     |
-mult16/resultParcial2_6__and0000(mult16/resultParcial2_6__and00001:O)| NONE(mult16/resultParcial2_6)| 1     |
-mult16/resultParcial2_6__and0001(mult16/resultParcial2_6__and00011:O)| NONE(mult16/resultParcial2_6)| 1     |
-mult16/resultParcial2_7__and0000(mult16/resultParcial2_7__and00001:O)| NONE(mult16/resultParcial2_7)| 1     |
-mult16/resultParcial2_7__and0001(mult16/resultParcial2_7__and00011:O)| NONE(mult16/resultParcial2_7)| 1     |
-mult9/resultParcial2_4__and0000(mult9/resultParcial2_4__and00001:O)  | NONE(mult9/resultParcial2_4) | 1     |
-mult9/resultParcial2_4__and0001(mult9/resultParcial2_4__and00011:O)  | NONE(mult9/resultParcial2_4) | 1     |
-mult9/resultParcial2_5__and0000(mult9/resultParcial2_5__and00001:O)  | NONE(mult9/resultParcial2_5) | 1     |
-mult9/resultParcial2_5__and0001(mult9/resultParcial2_5__and00011:O)  | NONE(mult9/resultParcial2_5) | 1     |
-mult9/resultParcial2_6__and0000(mult9/resultParcial2_6__and00001:O)  | NONE(mult9/resultParcial2_6) | 1     |
-mult9/resultParcial2_6__and0001(mult9/resultParcial2_6__and00011:O)  | NONE(mult9/resultParcial2_6) | 1     |
-mult9/resultParcial2_7__and0000(mult9/resultParcial2_7__and00001:O)  | NONE(mult9/resultParcial2_7) | 1     |
-mult9/resultParcial2_7__and0001(mult9/resultParcial2_7__and00011:O)  | NONE(mult9/resultParcial2_7) | 1     |
----------------------------------------------------------------------+------------------------------+-------+
+----------------------------------------------------------------------+-----------------------------+-------+
+Control Signal                                                        | Buffer(FF name)             | Load  |
+----------------------------------------------------------------------+-----------------------------+-------+
+mult1/resultParcial2_0__and0000(mult1/resultParcial2_0__and00001:O)   | NONE(mult1/resultParcial2_0)| 1     |
+mult1/resultParcial2_0__and0001(mult1/resultParcial2_0__and00011:O)   | NONE(mult1/resultParcial2_0)| 1     |
+mult1/resultParcial2_1__and0000(mult1/resultParcial2_1__and00001:O)   | NONE(mult1/resultParcial2_1)| 1     |
+mult1/resultParcial2_1__and0001(mult1/resultParcial2_1__and00011:O)   | NONE(mult1/resultParcial2_1)| 1     |
+mult1/resultParcial2_2__and0000(mult1/resultParcial2_2__and00001:O)   | NONE(mult1/resultParcial2_2)| 1     |
+mult1/resultParcial2_2__and0001(mult1/resultParcial2_2__and00011:O)   | NONE(mult1/resultParcial2_2)| 1     |
+mult1/resultParcial2_3__and0000(mult1/resultParcial2_3__and00001:O)   | NONE(mult1/resultParcial2_3)| 1     |
+mult1/resultParcial2_3__and0001(mult1/resultParcial2_3__and00011:O)   | NONE(mult1/resultParcial2_3)| 1     |
+mult1/resultParcial2_4__and0000(mult1/resultParcial2_4__and00001:O)   | NONE(mult1/resultParcial2_4)| 1     |
+mult1/resultParcial2_4__and0001(mult1/resultParcial2_4__and00011:O)   | NONE(mult1/resultParcial2_4)| 1     |
+mult1/resultParcial2_5__and0000(mult1/resultParcial2_5__and00002_f5:O)| NONE(mult1/resultParcial2_5)| 1     |
+mult1/resultParcial2_5__and0001(mult1/resultParcial2_5__and00011:O)   | NONE(mult1/resultParcial2_5)| 1     |
+mult1/resultParcial2_6__and0000(mult1/resultParcial2_6__and00001:O)   | NONE(mult1/resultParcial2_6)| 1     |
+mult1/resultParcial2_6__and0001(mult1/resultParcial2_6__and0001_f5:O) | NONE(mult1/resultParcial2_6)| 1     |
+mult1/resultParcial2_7__and0000(mult1/resultParcial2_7__and00002:O)   | NONE(mult1/resultParcial2_7)| 1     |
+mult1/resultParcial2_7__and0001(mult1/resultParcial2_7__and00011:O)   | NONE(mult1/resultParcial2_7)| 1     |
+mult2/resultParcial2_0__and0000(mult2/resultParcial2_0__and00001:O)   | NONE(mult2/resultParcial2_0)| 1     |
+mult2/resultParcial2_0__and0001(mult2/resultParcial2_0__and00011:O)   | NONE(mult2/resultParcial2_0)| 1     |
+mult2/resultParcial2_1__and0000(mult2/resultParcial2_1__and00001:O)   | NONE(mult2/resultParcial2_1)| 1     |
+mult2/resultParcial2_1__and0001(mult2/resultParcial2_1__and00011:O)   | NONE(mult2/resultParcial2_1)| 1     |
+mult2/resultParcial2_2__and0000(mult2/resultParcial2_2__and00001:O)   | NONE(mult2/resultParcial2_2)| 1     |
+mult2/resultParcial2_2__and0001(mult2/resultParcial2_2__and00011:O)   | NONE(mult2/resultParcial2_2)| 1     |
+mult2/resultParcial2_3__and0000(mult2/resultParcial2_3__and00001:O)   | NONE(mult2/resultParcial2_3)| 1     |
+mult2/resultParcial2_3__and0001(mult2/resultParcial2_3__and00011:O)   | NONE(mult2/resultParcial2_3)| 1     |
+mult2/resultParcial2_4__and0000(mult2/resultParcial2_4__and00001:O)   | NONE(mult2/resultParcial2_4)| 1     |
+mult2/resultParcial2_4__and0001(mult2/resultParcial2_4__and00011:O)   | NONE(mult2/resultParcial2_4)| 1     |
+mult2/resultParcial2_5__and0000(mult2/resultParcial2_5__and00002_f5:O)| NONE(mult2/resultParcial2_5)| 1     |
+mult2/resultParcial2_5__and0001(mult2/resultParcial2_5__and00011:O)   | NONE(mult2/resultParcial2_5)| 1     |
+mult2/resultParcial2_6__and0000(mult2/resultParcial2_6__and00001:O)   | NONE(mult2/resultParcial2_6)| 1     |
+mult2/resultParcial2_6__and0001(mult2/resultParcial2_6__and0001_f5:O) | NONE(mult2/resultParcial2_6)| 1     |
+mult2/resultParcial2_7__and0000(mult2/resultParcial2_7__and00002:O)   | NONE(mult2/resultParcial2_7)| 1     |
+mult2/resultParcial2_7__and0001(mult2/resultParcial2_7__and00011:O)   | NONE(mult2/resultParcial2_7)| 1     |
+mult3/resultParcial2_0__and0000(mult3/resultParcial2_0__and00001:O)   | NONE(mult3/resultParcial2_0)| 1     |
+mult3/resultParcial2_0__and0001(mult3/resultParcial2_0__and00011:O)   | NONE(mult3/resultParcial2_0)| 1     |
+mult3/resultParcial2_1__and0000(mult3/resultParcial2_1__and00001:O)   | NONE(mult3/resultParcial2_1)| 1     |
+mult3/resultParcial2_1__and0001(mult3/resultParcial2_1__and00011:O)   | NONE(mult3/resultParcial2_1)| 1     |
+mult3/resultParcial2_2__and0000(mult3/resultParcial2_2__and00001:O)   | NONE(mult3/resultParcial2_2)| 1     |
+mult3/resultParcial2_2__and0001(mult3/resultParcial2_2__and00011:O)   | NONE(mult3/resultParcial2_2)| 1     |
+mult3/resultParcial2_3__and0000(mult3/resultParcial2_3__and00001:O)   | NONE(mult3/resultParcial2_3)| 1     |
+mult3/resultParcial2_3__and0001(mult3/resultParcial2_3__and00011:O)   | NONE(mult3/resultParcial2_3)| 1     |
+mult3/resultParcial2_4__and0000(mult3/resultParcial2_4__and00001:O)   | NONE(mult3/resultParcial2_4)| 1     |
+mult3/resultParcial2_4__and0001(mult3/resultParcial2_4__and00011:O)   | NONE(mult3/resultParcial2_4)| 1     |
+mult3/resultParcial2_5__and0000(mult3/resultParcial2_5__and00002_f5:O)| NONE(mult3/resultParcial2_5)| 1     |
+mult3/resultParcial2_5__and0001(mult3/resultParcial2_5__and00011:O)   | NONE(mult3/resultParcial2_5)| 1     |
+mult3/resultParcial2_6__and0000(mult3/resultParcial2_6__and00001:O)   | NONE(mult3/resultParcial2_6)| 1     |
+mult3/resultParcial2_6__and0001(mult3/resultParcial2_6__and0001_f5:O) | NONE(mult3/resultParcial2_6)| 1     |
+mult3/resultParcial2_7__and0000(mult3/resultParcial2_7__and00002:O)   | NONE(mult3/resultParcial2_7)| 1     |
+mult3/resultParcial2_7__and0001(mult3/resultParcial2_7__and00011:O)   | NONE(mult3/resultParcial2_7)| 1     |
+mult4/resultParcial2_0__and0000(mult4/resultParcial2_0__and00001:O)   | NONE(mult4/resultParcial2_0)| 1     |
+mult4/resultParcial2_0__and0001(mult4/resultParcial2_0__and00011:O)   | NONE(mult4/resultParcial2_0)| 1     |
+mult4/resultParcial2_1__and0000(mult4/resultParcial2_1__and00001:O)   | NONE(mult4/resultParcial2_1)| 1     |
+mult4/resultParcial2_1__and0001(mult4/resultParcial2_1__and00011:O)   | NONE(mult4/resultParcial2_1)| 1     |
+mult4/resultParcial2_2__and0000(mult4/resultParcial2_2__and00001:O)   | NONE(mult4/resultParcial2_2)| 1     |
+mult4/resultParcial2_2__and0001(mult4/resultParcial2_2__and00011:O)   | NONE(mult4/resultParcial2_2)| 1     |
+mult4/resultParcial2_3__and0000(mult4/resultParcial2_3__and00001:O)   | NONE(mult4/resultParcial2_3)| 1     |
+mult4/resultParcial2_3__and0001(mult4/resultParcial2_3__and00011:O)   | NONE(mult4/resultParcial2_3)| 1     |
+mult4/resultParcial2_4__and0000(mult4/resultParcial2_4__and00001:O)   | NONE(mult4/resultParcial2_4)| 1     |
+mult4/resultParcial2_4__and0001(mult4/resultParcial2_4__and00011:O)   | NONE(mult4/resultParcial2_4)| 1     |
+mult4/resultParcial2_5__and0000(mult4/resultParcial2_5__and00002_f5:O)| NONE(mult4/resultParcial2_5)| 1     |
+mult4/resultParcial2_5__and0001(mult4/resultParcial2_5__and00011:O)   | NONE(mult4/resultParcial2_5)| 1     |
+mult4/resultParcial2_6__and0000(mult4/resultParcial2_6__and00001:O)   | NONE(mult4/resultParcial2_6)| 1     |
+mult4/resultParcial2_6__and0001(mult4/resultParcial2_6__and0001_f5:O) | NONE(mult4/resultParcial2_6)| 1     |
+mult4/resultParcial2_7__and0000(mult4/resultParcial2_7__and00002:O)   | NONE(mult4/resultParcial2_7)| 1     |
+mult4/resultParcial2_7__and0001(mult4/resultParcial2_7__and00011:O)   | NONE(mult4/resultParcial2_7)| 1     |
+mult5/resultParcial2_4__and0000(mult5/resultParcial2_4__and00001:O)   | NONE(mult5/resultParcial2_4)| 1     |
+mult5/resultParcial2_4__and0001(mult5/resultParcial2_4__and00011:O)   | NONE(mult5/resultParcial2_4)| 1     |
+mult5/resultParcial2_5__and0000(mult5/resultParcial2_5__and00002_f5:O)| NONE(mult5/resultParcial2_5)| 1     |
+mult5/resultParcial2_5__and0001(mult5/resultParcial2_5__and00011:O)   | NONE(mult5/resultParcial2_5)| 1     |
+mult5/resultParcial2_6__and0000(mult5/resultParcial2_6__and00001:O)   | NONE(mult5/resultParcial2_6)| 1     |
+mult5/resultParcial2_6__and0001(mult5/resultParcial2_6__and0001_f5:O) | NONE(mult5/resultParcial2_6)| 1     |
+mult5/resultParcial2_7__and0000(mult5/resultParcial2_7__and00002:O)   | NONE(mult5/resultParcial2_7)| 1     |
+mult5/resultParcial2_7__and0001(mult5/resultParcial2_7__and00011:O)   | NONE(mult5/resultParcial2_7)| 1     |
+mult6/resultParcial2_0__and0000(mult6/resultParcial2_0__and00001:O)   | NONE(mult6/resultParcial2_0)| 1     |
+mult6/resultParcial2_0__and0001(mult6/resultParcial2_0__and00011:O)   | NONE(mult6/resultParcial2_0)| 1     |
+mult6/resultParcial2_1__and0000(mult6/resultParcial2_1__and00001:O)   | NONE(mult6/resultParcial2_1)| 1     |
+mult6/resultParcial2_1__and0001(mult6/resultParcial2_1__and00011:O)   | NONE(mult6/resultParcial2_1)| 1     |
+mult6/resultParcial2_2__and0000(mult6/resultParcial2_2__and00001:O)   | NONE(mult6/resultParcial2_2)| 1     |
+mult6/resultParcial2_2__and0001(mult6/resultParcial2_2__and00011:O)   | NONE(mult6/resultParcial2_2)| 1     |
+mult6/resultParcial2_3__and0000(mult6/resultParcial2_3__and00001:O)   | NONE(mult6/resultParcial2_3)| 1     |
+mult6/resultParcial2_3__and0001(mult6/resultParcial2_3__and00011:O)   | NONE(mult6/resultParcial2_3)| 1     |
+mult6/resultParcial2_4__and0000(mult6/resultParcial2_4__and00001:O)   | NONE(mult6/resultParcial2_4)| 1     |
+mult6/resultParcial2_4__and0001(mult6/resultParcial2_4__and00011:O)   | NONE(mult6/resultParcial2_4)| 1     |
+mult6/resultParcial2_5__and0000(mult6/resultParcial2_5__and00002_f5:O)| NONE(mult6/resultParcial2_5)| 1     |
+mult6/resultParcial2_5__and0001(mult6/resultParcial2_5__and00011:O)   | NONE(mult6/resultParcial2_5)| 1     |
+mult6/resultParcial2_6__and0000(mult6/resultParcial2_6__and00001:O)   | NONE(mult6/resultParcial2_6)| 1     |
+mult6/resultParcial2_6__and0001(mult6/resultParcial2_6__and0001_f5:O) | NONE(mult6/resultParcial2_6)| 1     |
+mult6/resultParcial2_7__and0000(mult6/resultParcial2_7__and00002:O)   | NONE(mult6/resultParcial2_7)| 1     |
+mult6/resultParcial2_7__and0001(mult6/resultParcial2_7__and00011:O)   | NONE(mult6/resultParcial2_7)| 1     |
+mult7/resultParcial2_0__and0000(mult7/resultParcial2_0__and00001:O)   | NONE(mult7/resultParcial2_0)| 1     |
+mult7/resultParcial2_0__and0001(mult7/resultParcial2_0__and00011:O)   | NONE(mult7/resultParcial2_0)| 1     |
+mult7/resultParcial2_1__and0000(mult7/resultParcial2_1__and00001:O)   | NONE(mult7/resultParcial2_1)| 1     |
+mult7/resultParcial2_1__and0001(mult7/resultParcial2_1__and00011:O)   | NONE(mult7/resultParcial2_1)| 1     |
+mult7/resultParcial2_2__and0000(mult7/resultParcial2_2__and00001:O)   | NONE(mult7/resultParcial2_2)| 1     |
+mult7/resultParcial2_2__and0001(mult7/resultParcial2_2__and00011:O)   | NONE(mult7/resultParcial2_2)| 1     |
+mult7/resultParcial2_3__and0000(mult7/resultParcial2_3__and00001:O)   | NONE(mult7/resultParcial2_3)| 1     |
+mult7/resultParcial2_3__and0001(mult7/resultParcial2_3__and00011:O)   | NONE(mult7/resultParcial2_3)| 1     |
+mult7/resultParcial2_4__and0000(mult7/resultParcial2_4__and00001:O)   | NONE(mult7/resultParcial2_4)| 1     |
+mult7/resultParcial2_4__and0001(mult7/resultParcial2_4__and00011:O)   | NONE(mult7/resultParcial2_4)| 1     |
+mult7/resultParcial2_5__and0000(mult7/resultParcial2_5__and00002_f5:O)| NONE(mult7/resultParcial2_5)| 1     |
+mult7/resultParcial2_5__and0001(mult7/resultParcial2_5__and00011:O)   | NONE(mult7/resultParcial2_5)| 1     |
+mult7/resultParcial2_6__and0000(mult7/resultParcial2_6__and00001:O)   | NONE(mult7/resultParcial2_6)| 1     |
+mult7/resultParcial2_6__and0001(mult7/resultParcial2_6__and0001_f5:O) | NONE(mult7/resultParcial2_6)| 1     |
+mult7/resultParcial2_7__and0000(mult7/resultParcial2_7__and00002:O)   | NONE(mult7/resultParcial2_7)| 1     |
+mult7/resultParcial2_7__and0001(mult7/resultParcial2_7__and00011:O)   | NONE(mult7/resultParcial2_7)| 1     |
+mult8/resultParcial2_0__and0000(mult8/resultParcial2_0__and00001:O)   | NONE(mult8/resultParcial2_0)| 1     |
+mult8/resultParcial2_0__and0001(mult8/resultParcial2_0__and00011:O)   | NONE(mult8/resultParcial2_0)| 1     |
+mult8/resultParcial2_1__and0000(mult8/resultParcial2_1__and00001:O)   | NONE(mult8/resultParcial2_1)| 1     |
+mult8/resultParcial2_1__and0001(mult8/resultParcial2_1__and00011:O)   | NONE(mult8/resultParcial2_1)| 1     |
+mult8/resultParcial2_2__and0000(mult8/resultParcial2_2__and00001:O)   | NONE(mult8/resultParcial2_2)| 1     |
+mult8/resultParcial2_2__and0001(mult8/resultParcial2_2__and00011:O)   | NONE(mult8/resultParcial2_2)| 1     |
+mult8/resultParcial2_3__and0000(mult8/resultParcial2_3__and00001:O)   | NONE(mult8/resultParcial2_3)| 1     |
+mult8/resultParcial2_3__and0001(mult8/resultParcial2_3__and00011:O)   | NONE(mult8/resultParcial2_3)| 1     |
+mult8/resultParcial2_4__and0000(mult8/resultParcial2_4__and00001:O)   | NONE(mult8/resultParcial2_4)| 1     |
+mult8/resultParcial2_4__and0001(mult8/resultParcial2_4__and00011:O)   | NONE(mult8/resultParcial2_4)| 1     |
+mult8/resultParcial2_5__and0000(mult8/resultParcial2_5__and00002_f5:O)| NONE(mult8/resultParcial2_5)| 1     |
+mult8/resultParcial2_5__and0001(mult8/resultParcial2_5__and00011:O)   | NONE(mult8/resultParcial2_5)| 1     |
+mult8/resultParcial2_6__and0000(mult8/resultParcial2_6__and00001:O)   | NONE(mult8/resultParcial2_6)| 1     |
+mult8/resultParcial2_6__and0001(mult8/resultParcial2_6__and0001_f5:O) | NONE(mult8/resultParcial2_6)| 1     |
+mult8/resultParcial2_7__and0000(mult8/resultParcial2_7__and00002:O)   | NONE(mult8/resultParcial2_7)| 1     |
+mult8/resultParcial2_7__and0001(mult8/resultParcial2_7__and00011:O)   | NONE(mult8/resultParcial2_7)| 1     |
+----------------------------------------------------------------------+-----------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 15.598ns
-   Maximum output required time after clock: 14.888ns
+   Minimum input arrival time before clock: 18.179ns
+   Maximum output required time after clock: 25.070ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -577,269 +592,578 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'mult9/resultParcial2_cmp_ge0000'
-  Total number of paths / destination ports: 10344 / 8
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult8/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
-Offset:              15.598ns (Levels of Logic = 17)
-  Source:            numA<14> (PAD)
-  Destination:       mult9/resultParcial2_7 (LATCH)
-  Destination Clock: mult9/resultParcial2_cmp_ge0000 falling
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<11> (PAD)
+  Destination:       mult8/resultParcial2_5 (LATCH)
+  Destination Clock: mult8/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<14> to mult9/resultParcial2_7
+  Data Path: numA<11> to mult8/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_14_IBUF (numA_14_IBUF)
-     MULT18X18SIO:A2->P4   19   3.657   1.228  mult9/Mmult_resultParcial (mult9/Madd_resultParcial2_addsub0000_cy<4>)
-     LUT4:I0->O            1   0.648   0.000  mult9/resultParcial2_and000235_SW01 (mult9/resultParcial2_and000235_SW0)
-     MUXF5:I0->O           1   0.276   0.423  mult9/resultParcial2_and000235_SW0_f5 (N214)
-     LUT4:I3->O            7   0.648   0.740  mult9/resultParcial2_and000235 (mult9/resultParcial2_and0002)
-     LUT4:I2->O            1   0.648   0.563  mult9/mux0000_mux0001<3>63 (mult9/mux0000_mux0001<3>)
-     LUT4:I0->O            1   0.648   0.500  mult9/mux0000_mux0000<1>2 (mult9/mux0000_mux0000<1>)
-     LUT2:I1->O            1   0.643   0.000  mult9/Madd_mux0000_addsub0000_lut<1> (mult9/Madd_mux0000_addsub0000_lut<1>)
-     MUXCY:S->O            1   0.632   0.000  mult9/Madd_mux0000_addsub0000_cy<1> (mult9/Madd_mux0000_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.065   0.000  mult9/Madd_mux0000_addsub0000_cy<2> (mult9/Madd_mux0000_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.065   0.000  mult9/Madd_mux0000_addsub0000_cy<3> (mult9/Madd_mux0000_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.065   0.000  mult9/Madd_mux0000_addsub0000_cy<4> (mult9/Madd_mux0000_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.065   0.000  mult9/Madd_mux0000_addsub0000_cy<5> (mult9/Madd_mux0000_addsub0000_cy<5>)
-     MUXCY:CI->O           0   0.065   0.000  mult9/Madd_mux0000_addsub0000_cy<6> (mult9/Madd_mux0000_addsub0000_cy<6>)
-     XORCY:CI->O           3   0.844   0.563  mult9/Madd_mux0000_addsub0000_xor<7> (mult9/mux0000_addsub0000<7>)
-     LUT3:I2->O            1   0.648   0.000  mult9/resultParcial2_mux0008<7>_G (N259)
-     MUXF5:I1->O           1   0.276   0.000  mult9/resultParcial2_mux0008<7> (mult9/resultParcial2_mux0008<7>)
-     LDCPE:D                   0.252          mult9/resultParcial2_7
+     IBUF:I->O             4   0.849   0.587  numA_11_IBUF (numA_11_IBUF)
+     MULT18X18SIO:A3->P7   25   4.344   1.292  mult8/Mmult_resultParcial (mult8/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult8/resultParcial2_and000211 (mult8/N36)
+     LUT4:I0->O            5   0.648   0.636  mult8/resultParcial2_and00031 (mult8/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult8/mux0000_mux0000<1>_SW1 (N322)
+     LUT4:I2->O            1   0.648   0.500  mult8/mux0000_mux0000<1> (mult8/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult8/Madd_mux0000_addsub0000_lut<1> (mult8/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult8/Madd_mux0000_addsub0000_cy<1> (mult8/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult8/Madd_mux0000_addsub0000_cy<2> (mult8/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult8/Madd_mux0000_addsub0000_cy<3> (mult8/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult8/Madd_mux0000_addsub0000_cy<4> (mult8/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult8/Madd_mux0000_addsub0000_xor<5> (mult8/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult8/resultParcial2_5__and000011 (mult8/N23)
+     LUT4:I0->O            1   0.648   0.423  mult8/resultParcial2_mux0008<5>14 (mult8/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult8/resultParcial2_mux0008<5>35 (mult8/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult8/resultParcial2_5
     ----------------------------------------
-    Total                     15.598ns (10.994ns logic, 4.604ns route)
-                                       (70.5% logic, 29.5% route)
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'mult10/resultParcial2_cmp_ge0000'
-  Total number of paths / destination ports: 18106 / 24
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult7/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
-Offset:              15.598ns (Levels of Logic = 17)
-  Source:            numA<12> (PAD)
-  Destination:       mult10/resultParcial2_7 (LATCH)
-  Destination Clock: mult10/resultParcial2_cmp_ge0000 falling
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<11> (PAD)
+  Destination:       mult7/resultParcial2_5 (LATCH)
+  Destination Clock: mult7/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<12> to mult10/resultParcial2_7
+  Data Path: numA<11> to mult7/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_12_IBUF (numA_12_IBUF)
-     MULT18X18SIO:A0->P4   19   3.657   1.228  mult10/Mmult_resultParcial (mult10/Madd_resultParcial2_addsub0000_cy<4>)
-     LUT4:I0->O            1   0.648   0.000  mult10/resultParcial2_and000235_SW01 (mult10/resultParcial2_and000235_SW0)
-     MUXF5:I0->O           1   0.276   0.423  mult10/resultParcial2_and000235_SW0_f5 (N220)
-     LUT4:I3->O            7   0.648   0.740  mult10/resultParcial2_and000235 (mult10/resultParcial2_and0002)
-     LUT4:I2->O            1   0.648   0.563  mult10/mux0000_mux0001<3>63 (mult10/mux0000_mux0001<3>)
-     LUT4:I0->O            1   0.648   0.500  mult10/mux0000_mux0000<1>2 (mult10/mux0000_mux0000<1>)
-     LUT2:I1->O            1   0.643   0.000  mult10/Madd_mux0000_addsub0000_lut<1> (mult10/Madd_mux0000_addsub0000_lut<1>)
-     MUXCY:S->O            1   0.632   0.000  mult10/Madd_mux0000_addsub0000_cy<1> (mult10/Madd_mux0000_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.065   0.000  mult10/Madd_mux0000_addsub0000_cy<2> (mult10/Madd_mux0000_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.065   0.000  mult10/Madd_mux0000_addsub0000_cy<3> (mult10/Madd_mux0000_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.065   0.000  mult10/Madd_mux0000_addsub0000_cy<4> (mult10/Madd_mux0000_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.065   0.000  mult10/Madd_mux0000_addsub0000_cy<5> (mult10/Madd_mux0000_addsub0000_cy<5>)
-     MUXCY:CI->O           0   0.065   0.000  mult10/Madd_mux0000_addsub0000_cy<6> (mult10/Madd_mux0000_addsub0000_cy<6>)
-     XORCY:CI->O           3   0.844   0.563  mult10/Madd_mux0000_addsub0000_xor<7> (mult10/mux0000_addsub0000<7>)
-     LUT3:I2->O            1   0.648   0.000  mult10/resultParcial2_mux0008<7>_G (N265)
-     MUXF5:I1->O           1   0.276   0.000  mult10/resultParcial2_mux0008<7> (mult10/resultParcial2_mux0008<7>)
-     LDCPE:D                   0.252          mult10/resultParcial2_7
+     IBUF:I->O             4   0.849   0.587  numA_11_IBUF (numA_11_IBUF)
+     MULT18X18SIO:A3->P7   25   4.344   1.292  mult7/Mmult_resultParcial (mult7/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult7/resultParcial2_and000211 (mult7/N36)
+     LUT4:I0->O            5   0.648   0.636  mult7/resultParcial2_and00031 (mult7/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult7/mux0000_mux0000<1>_SW1 (N324)
+     LUT4:I2->O            1   0.648   0.500  mult7/mux0000_mux0000<1> (mult7/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult7/Madd_mux0000_addsub0000_lut<1> (mult7/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult7/Madd_mux0000_addsub0000_cy<1> (mult7/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult7/Madd_mux0000_addsub0000_cy<2> (mult7/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult7/Madd_mux0000_addsub0000_cy<3> (mult7/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult7/Madd_mux0000_addsub0000_cy<4> (mult7/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult7/Madd_mux0000_addsub0000_xor<5> (mult7/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult7/resultParcial2_5__and000011 (mult7/N23)
+     LUT4:I0->O            1   0.648   0.423  mult7/resultParcial2_mux0008<5>14 (mult7/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult7/resultParcial2_mux0008<5>35 (mult7/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult7/resultParcial2_5
     ----------------------------------------
-    Total                     15.598ns (10.994ns logic, 4.604ns route)
-                                       (70.5% logic, 29.5% route)
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'mult11/resultParcial2_cmp_ge0000'
-  Total number of paths / destination ports: 14230 / 16
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult6/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
-Offset:              15.598ns (Levels of Logic = 17)
-  Source:            numA<15> (PAD)
-  Destination:       mult11/resultParcial2_7 (LATCH)
-  Destination Clock: mult11/resultParcial2_cmp_ge0000 falling
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<11> (PAD)
+  Destination:       mult6/resultParcial2_5 (LATCH)
+  Destination Clock: mult6/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<15> to mult11/resultParcial2_7
+  Data Path: numA<11> to mult6/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_15_IBUF (numA_15_IBUF)
-     MULT18X18SIO:A3->P4   19   3.657   1.228  mult11/Mmult_resultParcial (mult11/Madd_resultParcial2_addsub0000_cy<4>)
-     LUT4:I0->O            1   0.648   0.000  mult11/resultParcial2_and000235_SW01 (mult11/resultParcial2_and000235_SW0)
-     MUXF5:I0->O           1   0.276   0.423  mult11/resultParcial2_and000235_SW0_f5 (N218)
-     LUT4:I3->O            7   0.648   0.740  mult11/resultParcial2_and000235 (mult11/resultParcial2_and0002)
-     LUT4:I2->O            1   0.648   0.563  mult11/mux0000_mux0001<3>63 (mult11/mux0000_mux0001<3>)
-     LUT4:I0->O            1   0.648   0.500  mult11/mux0000_mux0000<1>2 (mult11/mux0000_mux0000<1>)
-     LUT2:I1->O            1   0.643   0.000  mult11/Madd_mux0000_addsub0000_lut<1> (mult11/Madd_mux0000_addsub0000_lut<1>)
-     MUXCY:S->O            1   0.632   0.000  mult11/Madd_mux0000_addsub0000_cy<1> (mult11/Madd_mux0000_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.065   0.000  mult11/Madd_mux0000_addsub0000_cy<2> (mult11/Madd_mux0000_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.065   0.000  mult11/Madd_mux0000_addsub0000_cy<3> (mult11/Madd_mux0000_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.065   0.000  mult11/Madd_mux0000_addsub0000_cy<4> (mult11/Madd_mux0000_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.065   0.000  mult11/Madd_mux0000_addsub0000_cy<5> (mult11/Madd_mux0000_addsub0000_cy<5>)
-     MUXCY:CI->O           0   0.065   0.000  mult11/Madd_mux0000_addsub0000_cy<6> (mult11/Madd_mux0000_addsub0000_cy<6>)
-     XORCY:CI->O           3   0.844   0.563  mult11/Madd_mux0000_addsub0000_xor<7> (mult11/mux0000_addsub0000<7>)
-     LUT3:I2->O            1   0.648   0.000  mult11/resultParcial2_mux0008<7>_G (N263)
-     MUXF5:I1->O           1   0.276   0.000  mult11/resultParcial2_mux0008<7> (mult11/resultParcial2_mux0008<7>)
-     LDCPE:D                   0.252          mult11/resultParcial2_7
+     IBUF:I->O             4   0.849   0.587  numA_11_IBUF (numA_11_IBUF)
+     MULT18X18SIO:A3->P7   25   4.344   1.292  mult6/Mmult_resultParcial (mult6/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult6/resultParcial2_and000211 (mult6/N36)
+     LUT4:I0->O            5   0.648   0.636  mult6/resultParcial2_and00031 (mult6/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult6/mux0000_mux0000<1>_SW1 (N326)
+     LUT4:I2->O            1   0.648   0.500  mult6/mux0000_mux0000<1> (mult6/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult6/Madd_mux0000_addsub0000_lut<1> (mult6/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult6/Madd_mux0000_addsub0000_cy<1> (mult6/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult6/Madd_mux0000_addsub0000_cy<2> (mult6/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult6/Madd_mux0000_addsub0000_cy<3> (mult6/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult6/Madd_mux0000_addsub0000_cy<4> (mult6/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult6/Madd_mux0000_addsub0000_xor<5> (mult6/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult6/resultParcial2_5__and000011 (mult6/N23)
+     LUT4:I0->O            1   0.648   0.423  mult6/resultParcial2_mux0008<5>14 (mult6/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult6/resultParcial2_mux0008<5>35 (mult6/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult6/resultParcial2_5
     ----------------------------------------
-    Total                     15.598ns (10.994ns logic, 4.604ns route)
-                                       (70.5% logic, 29.5% route)
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'mult16/resultParcial2_cmp_ge0000'
-  Total number of paths / destination ports: 14230 / 16
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult5/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 9768 / 8
 -------------------------------------------------------------------------
-Offset:              15.598ns (Levels of Logic = 17)
-  Source:            numA<13> (PAD)
-  Destination:       mult16/resultParcial2_7 (LATCH)
-  Destination Clock: mult16/resultParcial2_cmp_ge0000 falling
+Offset:              18.121ns (Levels of Logic = 15)
+  Source:            numA<9> (PAD)
+  Destination:       mult5/resultParcial2_5 (LATCH)
+  Destination Clock: mult5/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<13> to mult16/resultParcial2_7
+  Data Path: numA<9> to mult5/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_13_IBUF (numA_13_IBUF)
-     MULT18X18SIO:A1->P4   19   3.657   1.228  mult16/Mmult_resultParcial (mult16/Madd_resultParcial2_addsub0000_cy<4>)
-     LUT4:I0->O            1   0.648   0.000  mult16/resultParcial2_and000235_SW01 (mult16/resultParcial2_and000235_SW0)
-     MUXF5:I0->O           1   0.276   0.423  mult16/resultParcial2_and000235_SW0_f5 (N216)
-     LUT4:I3->O            7   0.648   0.740  mult16/resultParcial2_and000235 (mult16/resultParcial2_and0002)
-     LUT4:I2->O            1   0.648   0.563  mult16/mux0000_mux0001<3>63 (mult16/mux0000_mux0001<3>)
-     LUT4:I0->O            1   0.648   0.500  mult16/mux0000_mux0000<1>2 (mult16/mux0000_mux0000<1>)
-     LUT2:I1->O            1   0.643   0.000  mult16/Madd_mux0000_addsub0000_lut<1> (mult16/Madd_mux0000_addsub0000_lut<1>)
-     MUXCY:S->O            1   0.632   0.000  mult16/Madd_mux0000_addsub0000_cy<1> (mult16/Madd_mux0000_addsub0000_cy<1>)
-     MUXCY:CI->O           1   0.065   0.000  mult16/Madd_mux0000_addsub0000_cy<2> (mult16/Madd_mux0000_addsub0000_cy<2>)
-     MUXCY:CI->O           1   0.065   0.000  mult16/Madd_mux0000_addsub0000_cy<3> (mult16/Madd_mux0000_addsub0000_cy<3>)
-     MUXCY:CI->O           1   0.065   0.000  mult16/Madd_mux0000_addsub0000_cy<4> (mult16/Madd_mux0000_addsub0000_cy<4>)
-     MUXCY:CI->O           1   0.065   0.000  mult16/Madd_mux0000_addsub0000_cy<5> (mult16/Madd_mux0000_addsub0000_cy<5>)
-     MUXCY:CI->O           0   0.065   0.000  mult16/Madd_mux0000_addsub0000_cy<6> (mult16/Madd_mux0000_addsub0000_cy<6>)
-     XORCY:CI->O           3   0.844   0.563  mult16/Madd_mux0000_addsub0000_xor<7> (mult16/mux0000_addsub0000<7>)
-     LUT3:I2->O            1   0.648   0.000  mult16/resultParcial2_mux0008<7>_G (N261)
-     MUXF5:I1->O           1   0.276   0.000  mult16/resultParcial2_mux0008<7> (mult16/resultParcial2_mux0008<7>)
-     LDCPE:D                   0.252          mult16/resultParcial2_7
+     IBUF:I->O             4   0.849   0.587  numA_9_IBUF (numA_9_IBUF)
+     MULT18X18SIO:A1->P7   23   4.344   1.234  mult5/Mmult_resultParcial (mult5/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult5/resultParcial2_and000211 (mult5/N36)
+     LUT4:I0->O            5   0.648   0.636  mult5/resultParcial2_and00031 (mult5/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult5/mux0000_mux0000<1>_SW1 (N328)
+     LUT4:I2->O            1   0.648   0.500  mult5/mux0000_mux0000<1> (mult5/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult5/Madd_mux0000_addsub0000_lut<1> (mult5/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult5/Madd_mux0000_addsub0000_cy<1> (mult5/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult5/Madd_mux0000_addsub0000_cy<2> (mult5/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult5/Madd_mux0000_addsub0000_cy<3> (mult5/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult5/Madd_mux0000_addsub0000_cy<4> (mult5/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult5/Madd_mux0000_addsub0000_xor<5> (mult5/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult5/resultParcial2_5__and000011 (mult5/N23)
+     LUT4:I0->O            1   0.648   0.423  mult5/resultParcial2_mux0008<5>14 (mult5/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult5/resultParcial2_mux0008<5>35 (mult5/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult5/resultParcial2_5
     ----------------------------------------
-    Total                     15.598ns (10.994ns logic, 4.604ns route)
-                                       (70.5% logic, 29.5% route)
+    Total                     18.121ns (12.295ns logic, 5.826ns route)
+                                       (67.8% logic, 32.2% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'mult16/resultParcial2_cmp_ge0000'
-  Total number of paths / destination ports: 44 / 8
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult4/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
-Offset:              9.674ns (Levels of Logic = 6)
-  Source:            mult16/resultParcial2_0 (LATCH)
-  Destination:       result<15> (PAD)
-  Source Clock:      mult16/resultParcial2_cmp_ge0000 falling
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<2> (PAD)
+  Destination:       mult4/resultParcial2_5 (LATCH)
+  Destination Clock: mult4/resultParcial2_cmp_ge0000 falling
 
-  Data Path: mult16/resultParcial2_0 to result<15>
+  Data Path: numA<2> to mult4/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCPE:G->Q            1   0.728   0.500  mult16/resultParcial2_0 (mult16/resultParcial2_0)
-     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais12/Madd_resultParcial_lut<0> (SomaResultsParciais12/Madd_resultParcial_lut<0>)
-     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais12/Madd_resultParcial_cy<0> (SomaResultsParciais12/Madd_resultParcial_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais12/Madd_resultParcial_cy<1> (SomaResultsParciais12/Madd_resultParcial_cy<1>)
-     XORCY:CI->O           3   0.844   0.674  SomaResultsParciais12/Madd_resultParcial_xor<2> (SomaResultsParciais12/resultParcial<2>)
-     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais12/resultParcial2<3>1 (result_15_OBUF)
-     OBUF:I->O                 4.520          result_15_OBUF (result<15>)
+     IBUF:I->O             4   0.849   0.587  numA_2_IBUF (numA_2_IBUF)
+     MULT18X18SIO:A2->P7   25   4.344   1.292  mult4/Mmult_resultParcial (mult4/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult4/resultParcial2_and000211 (mult4/N36)
+     LUT4:I0->O            5   0.648   0.636  mult4/resultParcial2_and00031 (mult4/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult4/mux0000_mux0000<1>_SW1 (N330)
+     LUT4:I2->O            1   0.648   0.500  mult4/mux0000_mux0000<1> (mult4/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult4/Madd_mux0000_addsub0000_lut<1> (mult4/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult4/Madd_mux0000_addsub0000_cy<1> (mult4/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult4/Madd_mux0000_addsub0000_cy<2> (mult4/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult4/Madd_mux0000_addsub0000_cy<3> (mult4/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult4/Madd_mux0000_addsub0000_cy<4> (mult4/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult4/Madd_mux0000_addsub0000_xor<5> (mult4/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult4/resultParcial2_5__and000011 (mult4/N23)
+     LUT4:I0->O            1   0.648   0.423  mult4/resultParcial2_mux0008<5>14 (mult4/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult4/resultParcial2_mux0008<5>35 (mult4/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult4/resultParcial2_5
     ----------------------------------------
-    Total                      9.674ns (8.080ns logic, 1.594ns route)
-                                       (83.5% logic, 16.5% route)
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'mult9/resultParcial2_cmp_ge0000'
-  Total number of paths / destination ports: 623 / 12
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult3/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
-Offset:              14.888ns (Levels of Logic = 12)
-  Source:            mult9/resultParcial2_4 (LATCH)
-  Destination:       result<15> (PAD)
-  Source Clock:      mult9/resultParcial2_cmp_ge0000 falling
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<3> (PAD)
+  Destination:       mult3/resultParcial2_5 (LATCH)
+  Destination Clock: mult3/resultParcial2_cmp_ge0000 falling
 
-  Data Path: mult9/resultParcial2_4 to result<15>
+  Data Path: numA<3> to mult3/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCPE:G->Q            3   0.728   0.611  mult9/resultParcial2_4 (mult9/resultParcial2_4)
-     LUT4:I1->O            4   0.643   0.619  SomaResultsParciais10/Madd_resultParcial_cy<1>11 (SomaResultsParciais10/Madd_resultParcial_cy<1>)
-     LUT3:I2->O            3   0.648   0.563  SomaResultsParciais10/Madd_resultParcial_cy<2>11 (SomaResultsParciais10/Madd_resultParcial_cy<2>)
-     LUT4:I2->O            1   0.648   0.420  SomaResultsParciais10/resultParcial2<4>1 (carryOut1Linha4)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais11/Madd_resultParcial_cy<0> (SomaResultsParciais11/Madd_resultParcial_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais11/Madd_resultParcial_cy<1> (SomaResultsParciais11/Madd_resultParcial_cy<1>)
-     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais11/Madd_resultParcial_xor<2> (SomaResultsParciais11/resultParcial<2>)
-     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais11/resultParcial2<4>1 (carryOut2Linha4)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais12/Madd_resultParcial_cy<0> (SomaResultsParciais12/Madd_resultParcial_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais12/Madd_resultParcial_cy<1> (SomaResultsParciais12/Madd_resultParcial_cy<1>)
-     XORCY:CI->O           3   0.844   0.674  SomaResultsParciais12/Madd_resultParcial_xor<2> (SomaResultsParciais12/resultParcial<2>)
-     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais12/resultParcial2<3>1 (result_15_OBUF)
-     OBUF:I->O                 4.520          result_15_OBUF (result<15>)
+     IBUF:I->O             4   0.849   0.587  numA_3_IBUF (numA_3_IBUF)
+     MULT18X18SIO:A3->P7   25   4.344   1.292  mult3/Mmult_resultParcial (mult3/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult3/resultParcial2_and000211 (mult3/N36)
+     LUT4:I0->O            5   0.648   0.636  mult3/resultParcial2_and00031 (mult3/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult3/mux0000_mux0000<1>_SW1 (N332)
+     LUT4:I2->O            1   0.648   0.500  mult3/mux0000_mux0000<1> (mult3/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult3/Madd_mux0000_addsub0000_lut<1> (mult3/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult3/Madd_mux0000_addsub0000_cy<1> (mult3/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult3/Madd_mux0000_addsub0000_cy<2> (mult3/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult3/Madd_mux0000_addsub0000_cy<3> (mult3/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult3/Madd_mux0000_addsub0000_cy<4> (mult3/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult3/Madd_mux0000_addsub0000_xor<5> (mult3/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult3/resultParcial2_5__and000011 (mult3/N23)
+     LUT4:I0->O            1   0.648   0.423  mult3/resultParcial2_mux0008<5>14 (mult3/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult3/resultParcial2_mux0008<5>35 (mult3/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult3/resultParcial2_5
     ----------------------------------------
-    Total                     14.888ns (10.431ns logic, 4.457ns route)
-                                       (70.1% logic, 29.9% route)
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'mult10/resultParcial2_cmp_ge0000'
-  Total number of paths / destination ports: 996 / 16
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult2/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
-Offset:              14.845ns (Levels of Logic = 12)
-  Source:            mult10/resultParcial2_0 (LATCH)
-  Destination:       result<15> (PAD)
-  Source Clock:      mult10/resultParcial2_cmp_ge0000 falling
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<3> (PAD)
+  Destination:       mult2/resultParcial2_5 (LATCH)
+  Destination Clock: mult2/resultParcial2_cmp_ge0000 falling
 
-  Data Path: mult10/resultParcial2_0 to result<15>
+  Data Path: numA<3> to mult2/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCPE:G->Q            3   0.728   0.563  mult10/resultParcial2_0 (mult10/resultParcial2_0)
-     LUT4:I2->O            4   0.648   0.619  SomaResultsParciais10/Madd_resultParcial_cy<1>11 (SomaResultsParciais10/Madd_resultParcial_cy<1>)
-     LUT3:I2->O            3   0.648   0.563  SomaResultsParciais10/Madd_resultParcial_cy<2>11 (SomaResultsParciais10/Madd_resultParcial_cy<2>)
-     LUT4:I2->O            1   0.648   0.420  SomaResultsParciais10/resultParcial2<4>1 (carryOut1Linha4)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais11/Madd_resultParcial_cy<0> (SomaResultsParciais11/Madd_resultParcial_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais11/Madd_resultParcial_cy<1> (SomaResultsParciais11/Madd_resultParcial_cy<1>)
-     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais11/Madd_resultParcial_xor<2> (SomaResultsParciais11/resultParcial<2>)
-     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais11/resultParcial2<4>1 (carryOut2Linha4)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais12/Madd_resultParcial_cy<0> (SomaResultsParciais12/Madd_resultParcial_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais12/Madd_resultParcial_cy<1> (SomaResultsParciais12/Madd_resultParcial_cy<1>)
-     XORCY:CI->O           3   0.844   0.674  SomaResultsParciais12/Madd_resultParcial_xor<2> (SomaResultsParciais12/resultParcial<2>)
-     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais12/resultParcial2<3>1 (result_15_OBUF)
-     OBUF:I->O                 4.520          result_15_OBUF (result<15>)
+     IBUF:I->O             4   0.849   0.587  numA_3_IBUF (numA_3_IBUF)
+     MULT18X18SIO:A3->P7   25   4.344   1.292  mult2/Mmult_resultParcial (mult2/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult2/resultParcial2_and000211 (mult2/N36)
+     LUT4:I0->O            5   0.648   0.636  mult2/resultParcial2_and00031 (mult2/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult2/mux0000_mux0000<1>_SW1 (N334)
+     LUT4:I2->O            1   0.648   0.500  mult2/mux0000_mux0000<1> (mult2/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult2/Madd_mux0000_addsub0000_lut<1> (mult2/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult2/Madd_mux0000_addsub0000_cy<1> (mult2/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult2/Madd_mux0000_addsub0000_cy<2> (mult2/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult2/Madd_mux0000_addsub0000_cy<3> (mult2/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult2/Madd_mux0000_addsub0000_cy<4> (mult2/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult2/Madd_mux0000_addsub0000_xor<5> (mult2/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult2/resultParcial2_5__and000011 (mult2/N23)
+     LUT4:I0->O            1   0.648   0.423  mult2/resultParcial2_mux0008<5>14 (mult2/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult2/resultParcial2_mux0008<5>35 (mult2/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult2/resultParcial2_5
     ----------------------------------------
-    Total                     14.845ns (10.436ns logic, 4.409ns route)
-                                       (70.3% logic, 29.7% route)
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
 
 =========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'mult11/resultParcial2_cmp_ge0000'
-  Total number of paths / destination ports: 279 / 8
+Timing constraint: Default OFFSET IN BEFORE for Clock 'mult1/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
-Offset:              12.446ns (Levels of Logic = 10)
-  Source:            mult11/resultParcial2_0 (LATCH)
-  Destination:       result<15> (PAD)
-  Source Clock:      mult11/resultParcial2_cmp_ge0000 falling
+Offset:              18.179ns (Levels of Logic = 15)
+  Source:            numA<0> (PAD)
+  Destination:       mult1/resultParcial2_5 (LATCH)
+  Destination Clock: mult1/resultParcial2_cmp_ge0000 falling
 
-  Data Path: mult11/resultParcial2_0 to result<15>
+  Data Path: numA<0> to mult1/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LDCPE:G->Q            1   0.728   0.500  mult11/resultParcial2_0 (mult11/resultParcial2_0)
-     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais11/Madd_resultParcial_lut<0> (SomaResultsParciais11/Madd_resultParcial_lut<0>)
-     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais11/Madd_resultParcial_cy<0> (SomaResultsParciais11/Madd_resultParcial_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais11/Madd_resultParcial_cy<1> (SomaResultsParciais11/Madd_resultParcial_cy<1>)
-     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais11/Madd_resultParcial_xor<2> (SomaResultsParciais11/resultParcial<2>)
-     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais11/resultParcial2<4>1 (carryOut2Linha4)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais12/Madd_resultParcial_cy<0> (SomaResultsParciais12/Madd_resultParcial_cy<0>)
-     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais12/Madd_resultParcial_cy<1> (SomaResultsParciais12/Madd_resultParcial_cy<1>)
-     XORCY:CI->O           3   0.844   0.674  SomaResultsParciais12/Madd_resultParcial_xor<2> (SomaResultsParciais12/resultParcial<2>)
-     LUT4:I0->O            1   0.648   0.420  SomaResultsParciais12/resultParcial2<3>1 (result_15_OBUF)
-     OBUF:I->O                 4.520          result_15_OBUF (result<15>)
+     IBUF:I->O             4   0.849   0.587  numA_0_IBUF (numA_0_IBUF)
+     MULT18X18SIO:A0->P7   25   4.344   1.292  mult1/Mmult_resultParcial (mult1/Madd_resultParcial2_addsub0000_lut<7>)
+     LUT3:I2->O            2   0.648   0.590  mult1/resultParcial2_and000211 (mult1/N36)
+     LUT4:I0->O            5   0.648   0.636  mult1/resultParcial2_and00031 (mult1/resultParcial2_and0003)
+     LUT4:I3->O            1   0.648   0.452  mult1/mux0000_mux0000<1>_SW1 (N336)
+     LUT4:I2->O            1   0.648   0.500  mult1/mux0000_mux0000<1> (mult1/mux0000_mux0000<1>)
+     LUT2:I1->O            1   0.643   0.000  mult1/Madd_mux0000_addsub0000_lut<1> (mult1/Madd_mux0000_addsub0000_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  mult1/Madd_mux0000_addsub0000_cy<1> (mult1/Madd_mux0000_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  mult1/Madd_mux0000_addsub0000_cy<2> (mult1/Madd_mux0000_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  mult1/Madd_mux0000_addsub0000_cy<3> (mult1/Madd_mux0000_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  mult1/Madd_mux0000_addsub0000_cy<4> (mult1/Madd_mux0000_addsub0000_cy<4>)
+     XORCY:CI->O           4   0.844   0.730  mult1/Madd_mux0000_addsub0000_xor<5> (mult1/mux0000_addsub0000<5>)
+     LUT2:I0->O            3   0.648   0.674  mult1/resultParcial2_5__and000011 (mult1/N23)
+     LUT4:I0->O            1   0.648   0.423  mult1/resultParcial2_mux0008<5>14 (mult1/resultParcial2_mux0008<5>14)
+     LUT4:I3->O            1   0.648   0.000  mult1/resultParcial2_mux0008<5>35 (mult1/resultParcial2_mux0008<5>)
+     LDCPE:D                   0.252          mult1/resultParcial2_5
     ----------------------------------------
-    Total                     12.446ns (9.702ns logic, 2.744ns route)
-                                       (78.0% logic, 22.0% route)
+    Total                     18.179ns (12.295ns logic, 5.884ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult8/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 861 / 8
+-------------------------------------------------------------------------
+Offset:              15.981ns (Levels of Logic = 13)
+  Source:            mult8/resultParcial2_0 (LATCH)
+  Destination:       result<23> (PAD)
+  Source Clock:      mult8/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult8/resultParcial2_0 to result<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.728   0.500  mult8/resultParcial2_0 (mult8/resultParcial2_0)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais6/Madd_resultParcial_lut<0> (SomaResultsParciais6/Madd_resultParcial_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais6/Madd_resultParcial_cy<0> (SomaResultsParciais6/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais6/Madd_resultParcial_cy<1> (SomaResultsParciais6/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais6/Madd_resultParcial_cy<2> (SomaResultsParciais6/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           3   0.844   0.563  SomaResultsParciais6/Madd_resultParcial_xor<3> (SomaResultsParciais6/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I2->O            1   0.648   0.500  SomaResultsParciais6/resultParcial2<1>1 (auxResultLinha2<9>)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais16/Madd_resultParcial_lut<1> (SomaResultsParciais16/Madd_resultParcial_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais16/Madd_resultParcial_cy<1> (SomaResultsParciais16/Madd_resultParcial_cy<1>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais16/Madd_resultParcial_xor<2> (SomaResultsParciais16/resultParcial<2>)
+     LUT2:I1->O            2   0.643   0.527  SomaResultsParciais16/resultParcial2<4>11 (N6)
+     LUT4:I1->O            3   0.643   0.611  SomaResultsParciais17/Madd_resultParcial_cy<0>11 (SomaResultsParciais17/Madd_resultParcial_cy<0>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais17/resultParcial2<3>1 (result_23_OBUF)
+     OBUF:I->O                 4.520          result_23_OBUF (result<23>)
+    ----------------------------------------
+    Total                     15.981ns (12.193ns logic, 3.788ns route)
+                                       (76.3% logic, 23.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult6/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 58831 / 20
+-------------------------------------------------------------------------
+Offset:              22.638ns (Levels of Logic = 19)
+  Source:            mult6/resultParcial2_0 (LATCH)
+  Destination:       result<23> (PAD)
+  Source Clock:      mult6/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult6/resultParcial2_0 to result<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            6   0.728   0.701  mult6/resultParcial2_0 (mult6/resultParcial2_0)
+     LUT4:I2->O            4   0.648   0.619  SomaResultsParciais4/Madd_resultParcial_cy<1>11 (SomaResultsParciais4/Madd_resultParcial_cy<1>)
+     LUT3:I2->O            3   0.648   0.674  SomaResultsParciais4/Madd_resultParcial_cy<2>11 (SomaResultsParciais4/Madd_resultParcial_cy<2>)
+     LUT4:I0->O            2   0.648   0.447  SomaResultsParciais4/resultParcial2_cmp_ge00001 (SomaResultsParciais4/resultParcial2_cmp_ge0000)
+     MUXF5:S->O            1   0.756   0.500  SomaResultsParciais4/resultParcial2<2>1_f5 (auxResultLinha2<2>)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais14/Madd_resultParcial_lut<2> (SomaResultsParciais14/Madd_resultParcial_lut<2>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais14/Madd_resultParcial_cy<2> (SomaResultsParciais14/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais14/Madd_resultParcial_xor<3> (SomaResultsParciais14/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais14/resultParcial2<4>1 (carryOut1Alg2)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<0> (SomaResultsParciais15/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<1> (SomaResultsParciais15/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<2> (SomaResultsParciais15/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais15/Madd_resultParcial_xor<3> (SomaResultsParciais15/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais15/resultParcial2<4>1 (carryOut1Alg3)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais16/Madd_resultParcial_cy<0> (SomaResultsParciais16/Madd_resultParcial_cy<0>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais16/Madd_resultParcial_xor<1> (SomaResultsParciais16/Madd_resultParcial2_addsub0000_cy<1>)
+     LUT2:I0->O            2   0.648   0.527  SomaResultsParciais16/resultParcial2<4>11 (N6)
+     LUT4:I1->O            3   0.643   0.611  SomaResultsParciais17/Madd_resultParcial_cy<0>11 (SomaResultsParciais17/Madd_resultParcial_cy<0>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais17/resultParcial2<3>1 (result_23_OBUF)
+     OBUF:I->O                 4.520          result_23_OBUF (result<23>)
+    ----------------------------------------
+    Total                     22.638ns (15.235ns logic, 7.403ns route)
+                                       (67.3% logic, 32.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult1/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 157362 / 24
+-------------------------------------------------------------------------
+Offset:              25.070ns (Levels of Logic = 23)
+  Source:            mult1/resultParcial2_4 (LATCH)
+  Destination:       result<23> (PAD)
+  Source Clock:      mult1/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult1/resultParcial2_4 to result<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            4   0.728   0.730  mult1/resultParcial2_4 (mult1/resultParcial2_4)
+     LUT2:I0->O            4   0.648   0.619  SomaResultsParciais1/Madd_resultParcial_cy<0>11 (SomaResultsParciais1/Madd_resultParcial_cy<0>)
+     LUT4:I2->O            3   0.648   0.534  SomaResultsParciais1/resultParcial2<3>11 (N3)
+     LUT4:I3->O            2   0.648   0.447  SomaResultsParciais1/resultParcial2_cmp_ge00001 (SomaResultsParciais1/resultParcial2_cmp_ge0000)
+     MUXF5:S->O            2   0.756   0.590  SomaResultsParciais13/Madd_resultParcial_lut<1>1_f5 (SomaResultsParciais13/Madd_resultParcial_lut<1>)
+     LUT4:I0->O            3   0.648   0.611  SomaResultsParciais13/Madd_resultParcial_cy<1>11 (SomaResultsParciais13/Madd_resultParcial_cy<1>)
+     LUT4:I1->O            3   0.643   0.563  SomaResultsParciais13/Madd_resultParcial_cy<2>11 (SomaResultsParciais13/Madd_resultParcial_cy<2>)
+     LUT4:I2->O            1   0.648   0.420  SomaResultsParciais13/resultParcial2<4>1 (carryOut1Alg1)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais14/Madd_resultParcial_cy<0> (SomaResultsParciais14/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais14/Madd_resultParcial_cy<1> (SomaResultsParciais14/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais14/Madd_resultParcial_cy<2> (SomaResultsParciais14/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais14/Madd_resultParcial_xor<3> (SomaResultsParciais14/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais14/resultParcial2<4>1 (carryOut1Alg2)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<0> (SomaResultsParciais15/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<1> (SomaResultsParciais15/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<2> (SomaResultsParciais15/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais15/Madd_resultParcial_xor<3> (SomaResultsParciais15/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais15/resultParcial2<4>1 (carryOut1Alg3)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais16/Madd_resultParcial_cy<0> (SomaResultsParciais16/Madd_resultParcial_cy<0>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais16/Madd_resultParcial_xor<1> (SomaResultsParciais16/Madd_resultParcial2_addsub0000_cy<1>)
+     LUT2:I0->O            2   0.648   0.527  SomaResultsParciais16/resultParcial2<4>11 (N6)
+     LUT4:I1->O            3   0.643   0.611  SomaResultsParciais17/Madd_resultParcial_cy<0>11 (SomaResultsParciais17/Madd_resultParcial_cy<0>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais17/resultParcial2<3>1 (result_23_OBUF)
+     OBUF:I->O                 4.520          result_23_OBUF (result<23>)
+    ----------------------------------------
+    Total                     25.070ns (16.094ns logic, 8.976ns route)
+                                       (64.2% logic, 35.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult2/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 254026 / 20
+-------------------------------------------------------------------------
+Offset:              25.002ns (Levels of Logic = 23)
+  Source:            mult2/resultParcial2_0 (LATCH)
+  Destination:       result<23> (PAD)
+  Source Clock:      mult2/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult2/resultParcial2_0 to result<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            4   0.728   0.667  mult2/resultParcial2_0 (mult2/resultParcial2_0)
+     LUT2:I1->O            4   0.643   0.619  SomaResultsParciais1/Madd_resultParcial_cy<0>11 (SomaResultsParciais1/Madd_resultParcial_cy<0>)
+     LUT4:I2->O            3   0.648   0.534  SomaResultsParciais1/resultParcial2<3>11 (N3)
+     LUT4:I3->O            2   0.648   0.447  SomaResultsParciais1/resultParcial2_cmp_ge00001 (SomaResultsParciais1/resultParcial2_cmp_ge0000)
+     MUXF5:S->O            2   0.756   0.590  SomaResultsParciais13/Madd_resultParcial_lut<1>1_f5 (SomaResultsParciais13/Madd_resultParcial_lut<1>)
+     LUT4:I0->O            3   0.648   0.611  SomaResultsParciais13/Madd_resultParcial_cy<1>11 (SomaResultsParciais13/Madd_resultParcial_cy<1>)
+     LUT4:I1->O            3   0.643   0.563  SomaResultsParciais13/Madd_resultParcial_cy<2>11 (SomaResultsParciais13/Madd_resultParcial_cy<2>)
+     LUT4:I2->O            1   0.648   0.420  SomaResultsParciais13/resultParcial2<4>1 (carryOut1Alg1)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais14/Madd_resultParcial_cy<0> (SomaResultsParciais14/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais14/Madd_resultParcial_cy<1> (SomaResultsParciais14/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais14/Madd_resultParcial_cy<2> (SomaResultsParciais14/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais14/Madd_resultParcial_xor<3> (SomaResultsParciais14/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais14/resultParcial2<4>1 (carryOut1Alg2)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<0> (SomaResultsParciais15/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<1> (SomaResultsParciais15/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<2> (SomaResultsParciais15/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais15/Madd_resultParcial_xor<3> (SomaResultsParciais15/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais15/resultParcial2<4>1 (carryOut1Alg3)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais16/Madd_resultParcial_cy<0> (SomaResultsParciais16/Madd_resultParcial_cy<0>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais16/Madd_resultParcial_xor<1> (SomaResultsParciais16/Madd_resultParcial2_addsub0000_cy<1>)
+     LUT2:I0->O            2   0.648   0.527  SomaResultsParciais16/resultParcial2<4>11 (N6)
+     LUT4:I1->O            3   0.643   0.611  SomaResultsParciais17/Madd_resultParcial_cy<0>11 (SomaResultsParciais17/Madd_resultParcial_cy<0>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais17/resultParcial2<3>1 (result_23_OBUF)
+     OBUF:I->O                 4.520          result_23_OBUF (result<23>)
+    ----------------------------------------
+    Total                     25.002ns (16.089ns logic, 8.913ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult3/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 66395 / 16
+-------------------------------------------------------------------------
+Offset:              21.646ns (Levels of Logic = 22)
+  Source:            mult3/resultParcial2_0 (LATCH)
+  Destination:       result<23> (PAD)
+  Source Clock:      mult3/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult3/resultParcial2_0 to result<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.728   0.500  mult3/resultParcial2_0 (mult3/resultParcial2_0)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais2/Madd_resultParcial_lut<0> (SomaResultsParciais2/Madd_resultParcial_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais2/Madd_resultParcial_cy<0> (SomaResultsParciais2/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais2/Madd_resultParcial_cy<1> (SomaResultsParciais2/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais2/Madd_resultParcial_cy<2> (SomaResultsParciais2/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.619  SomaResultsParciais2/Madd_resultParcial_xor<3> (SomaResultsParciais2/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I2->O            1   0.648   0.563  SomaResultsParciais2/resultParcial2<1>1 (auxResultLinha1<5>)
+     LUT3:I0->O            1   0.648   0.000  SomaResultsParciais14/Madd_resultParcial_lut<1> (SomaResultsParciais14/Madd_resultParcial_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais14/Madd_resultParcial_cy<1> (SomaResultsParciais14/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais14/Madd_resultParcial_cy<2> (SomaResultsParciais14/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais14/Madd_resultParcial_xor<3> (SomaResultsParciais14/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais14/resultParcial2<4>1 (carryOut1Alg2)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<0> (SomaResultsParciais15/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<1> (SomaResultsParciais15/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<2> (SomaResultsParciais15/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais15/Madd_resultParcial_xor<3> (SomaResultsParciais15/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais15/resultParcial2<4>1 (carryOut1Alg3)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais16/Madd_resultParcial_cy<0> (SomaResultsParciais16/Madd_resultParcial_cy<0>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais16/Madd_resultParcial_xor<1> (SomaResultsParciais16/Madd_resultParcial2_addsub0000_cy<1>)
+     LUT2:I0->O            2   0.648   0.527  SomaResultsParciais16/resultParcial2<4>11 (N6)
+     LUT4:I1->O            3   0.643   0.611  SomaResultsParciais17/Madd_resultParcial_cy<0>11 (SomaResultsParciais17/Madd_resultParcial_cy<0>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais17/resultParcial2<3>1 (result_23_OBUF)
+     OBUF:I->O                 4.520          result_23_OBUF (result<23>)
+    ----------------------------------------
+    Total                     21.646ns (15.502ns logic, 6.144ns route)
+                                       (71.6% logic, 28.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult5/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 37090 / 16
+-------------------------------------------------------------------------
+Offset:              22.543ns (Levels of Logic = 19)
+  Source:            mult5/resultParcial2_4 (LATCH)
+  Destination:       result<23> (PAD)
+  Source Clock:      mult5/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult5/resultParcial2_4 to result<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            3   0.728   0.611  mult5/resultParcial2_4 (mult5/resultParcial2_4)
+     LUT4:I1->O            4   0.643   0.619  SomaResultsParciais4/Madd_resultParcial_cy<1>11 (SomaResultsParciais4/Madd_resultParcial_cy<1>)
+     LUT3:I2->O            3   0.648   0.674  SomaResultsParciais4/Madd_resultParcial_cy<2>11 (SomaResultsParciais4/Madd_resultParcial_cy<2>)
+     LUT4:I0->O            2   0.648   0.447  SomaResultsParciais4/resultParcial2_cmp_ge00001 (SomaResultsParciais4/resultParcial2_cmp_ge0000)
+     MUXF5:S->O            1   0.756   0.500  SomaResultsParciais4/resultParcial2<2>1_f5 (auxResultLinha2<2>)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais14/Madd_resultParcial_lut<2> (SomaResultsParciais14/Madd_resultParcial_lut<2>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais14/Madd_resultParcial_cy<2> (SomaResultsParciais14/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais14/Madd_resultParcial_xor<3> (SomaResultsParciais14/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais14/resultParcial2<4>1 (carryOut1Alg2)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<0> (SomaResultsParciais15/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<1> (SomaResultsParciais15/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<2> (SomaResultsParciais15/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais15/Madd_resultParcial_xor<3> (SomaResultsParciais15/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais15/resultParcial2<4>1 (carryOut1Alg3)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais16/Madd_resultParcial_cy<0> (SomaResultsParciais16/Madd_resultParcial_cy<0>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais16/Madd_resultParcial_xor<1> (SomaResultsParciais16/Madd_resultParcial2_addsub0000_cy<1>)
+     LUT2:I0->O            2   0.648   0.527  SomaResultsParciais16/resultParcial2<4>11 (N6)
+     LUT4:I1->O            3   0.643   0.611  SomaResultsParciais17/Madd_resultParcial_cy<0>11 (SomaResultsParciais17/Madd_resultParcial_cy<0>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais17/resultParcial2<3>1 (result_23_OBUF)
+     OBUF:I->O                 4.520          result_23_OBUF (result<23>)
+    ----------------------------------------
+    Total                     22.543ns (15.230ns logic, 7.313ns route)
+                                       (67.6% logic, 32.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult4/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 6659 / 12
+-------------------------------------------------------------------------
+Offset:              18.821ns (Levels of Logic = 17)
+  Source:            mult4/resultParcial2_0 (LATCH)
+  Destination:       result<23> (PAD)
+  Source Clock:      mult4/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult4/resultParcial2_0 to result<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.728   0.500  mult4/resultParcial2_0 (mult4/resultParcial2_0)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais3/Madd_resultParcial_lut<0> (SomaResultsParciais3/Madd_resultParcial_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais3/Madd_resultParcial_cy<0> (SomaResultsParciais3/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<1> (SomaResultsParciais3/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais3/Madd_resultParcial_cy<2> (SomaResultsParciais3/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           3   0.844   0.563  SomaResultsParciais3/Madd_resultParcial_xor<3> (SomaResultsParciais3/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I2->O            1   0.648   0.563  SomaResultsParciais3/resultParcial2<1>1 (auxResultLinha1<9>)
+     LUT2:I0->O            1   0.648   0.000  SomaResultsParciais15/Madd_resultParcial_lut<1> (SomaResultsParciais15/Madd_resultParcial_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais15/Madd_resultParcial_cy<1> (SomaResultsParciais15/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<2> (SomaResultsParciais15/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais15/Madd_resultParcial_xor<3> (SomaResultsParciais15/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais15/resultParcial2<4>1 (carryOut1Alg3)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais16/Madd_resultParcial_cy<0> (SomaResultsParciais16/Madd_resultParcial_cy<0>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais16/Madd_resultParcial_xor<1> (SomaResultsParciais16/Madd_resultParcial2_addsub0000_cy<1>)
+     LUT2:I0->O            2   0.648   0.527  SomaResultsParciais16/resultParcial2<4>11 (N6)
+     LUT4:I1->O            3   0.643   0.611  SomaResultsParciais17/Madd_resultParcial_cy<0>11 (SomaResultsParciais17/Madd_resultParcial_cy<0>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais17/resultParcial2<3>1 (result_23_OBUF)
+     OBUF:I->O                 4.520          result_23_OBUF (result<23>)
+    ----------------------------------------
+    Total                     18.821ns (13.820ns logic, 5.001ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'mult7/resultParcial2_cmp_ge0000'
+  Total number of paths / destination ports: 9004 / 12
+-------------------------------------------------------------------------
+Offset:              18.809ns (Levels of Logic = 17)
+  Source:            mult7/resultParcial2_0 (LATCH)
+  Destination:       result<23> (PAD)
+  Source Clock:      mult7/resultParcial2_cmp_ge0000 falling
+
+  Data Path: mult7/resultParcial2_0 to result<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCPE:G->Q            1   0.728   0.500  mult7/resultParcial2_0 (mult7/resultParcial2_0)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais5/Madd_resultParcial_lut<0> (SomaResultsParciais5/Madd_resultParcial_lut<0>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais5/Madd_resultParcial_cy<0> (SomaResultsParciais5/Madd_resultParcial_cy<0>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais5/Madd_resultParcial_cy<1> (SomaResultsParciais5/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais5/Madd_resultParcial_cy<2> (SomaResultsParciais5/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.619  SomaResultsParciais5/Madd_resultParcial_xor<3> (SomaResultsParciais5/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I2->O            1   0.648   0.500  SomaResultsParciais5/resultParcial2<1>1 (auxResultLinha2<5>)
+     LUT2:I1->O            1   0.643   0.000  SomaResultsParciais15/Madd_resultParcial_lut<1> (SomaResultsParciais15/Madd_resultParcial_lut<1>)
+     MUXCY:S->O            1   0.632   0.000  SomaResultsParciais15/Madd_resultParcial_cy<1> (SomaResultsParciais15/Madd_resultParcial_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais15/Madd_resultParcial_cy<2> (SomaResultsParciais15/Madd_resultParcial_cy<2>)
+     XORCY:CI->O           4   0.844   0.667  SomaResultsParciais15/Madd_resultParcial_xor<3> (SomaResultsParciais15/Madd_resultParcial2_addsub0000_lut<3>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais15/resultParcial2<4>1 (carryOut1Alg3)
+     MUXCY:CI->O           1   0.065   0.000  SomaResultsParciais16/Madd_resultParcial_cy<0> (SomaResultsParciais16/Madd_resultParcial_cy<0>)
+     XORCY:CI->O           4   0.844   0.730  SomaResultsParciais16/Madd_resultParcial_xor<1> (SomaResultsParciais16/Madd_resultParcial2_addsub0000_cy<1>)
+     LUT2:I0->O            2   0.648   0.527  SomaResultsParciais16/resultParcial2<4>11 (N6)
+     LUT4:I1->O            3   0.643   0.611  SomaResultsParciais17/Madd_resultParcial_cy<0>11 (SomaResultsParciais17/Madd_resultParcial_cy<0>)
+     LUT4:I1->O            1   0.643   0.420  SomaResultsParciais17/resultParcial2<3>1 (result_23_OBUF)
+     OBUF:I->O                 4.520          result_23_OBUF (result<23>)
+    ----------------------------------------
+    Total                     18.809ns (13.815ns logic, 4.994ns route)
+                                       (73.4% logic, 26.6% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.32 secs
+Total CPU time to Xst completion: 7.33 secs
  
 --> 
 
 
-Total memory usage is 519888 kilobytes
+Total memory usage is 521760 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  134 (   0 filtered)
+Number of warnings :   90 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

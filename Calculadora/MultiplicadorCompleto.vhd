@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -112,6 +113,18 @@ architecture MultiplicadorCompletoArch of MultiplicadorCompleto is
 	
 	signal carryIn : std_logic_vector (0 to 0) := (others => '0');
 	
+	---------------------- carry out primeira soma parcial---------------
+	
+	signal carryOut1Alg1, carryOut1Alg2, carryOut1Alg3, carryOut1Alg4, carryOut1Alg5 : std_logic_vector (0 downto 0) := (others => '0');
+		
+	---------------------- carry out primeira soma parcial---------------
+
+
+
+	
+	signal parcela1Soma, parcela2Soma, parcela3Soma,
+	parcela4Soma : std_logic_vector (31 downto 0) := (others => '0');
+	
 	
 begin
 
@@ -186,20 +199,43 @@ begin
 		linha4(11 downto 8)	<= auxResultLinha4(7 downto 4);
 		linha4(15 downto 12)	<= auxResultLinha4(11 downto 8);
 		linha4(19 downto 16)	<=	resultParcial4Linha4 (7 downto 4);
-		
-		result <= linha4;
 		----------------------	operacoes Linha4 ------------------------------
-
---		Multi : process (numA, numB) is
+		
+		----------------------- Rodando rodando -------------------------------
+		
+		parcela1Soma <= linha1;
+		parcela2Soma <= std_logic_vector( unsigned(linha2) sll  4);
+		parcela3Soma <= std_logic_vector( unsigned(linha3) sll  8);
+		parcela4Soma <= std_logic_vector( unsigned(linha4) sll 12);	
+		
+		-----------------------------------------------------------------------
+		
+		-------------- somando duas primeiras linhas ------------------------
+		
+		result(3 downto 0) <= linha1(3 downto 0);
+		
+		
+		SomaResultsParciais13 	: Soma4Alg port map (carryIn, parcela1Soma(7 downto 4), parcela2Soma(7 downto 4), result (7 downto 4), carryOut1Alg1);
+		SomaResultsParciais14 	: Soma4Alg port map (carryOut1Alg1, parcela1Soma(11 downto 8), parcela2Soma(11 downto 8), result (11 downto 8), carryOut1Alg2);
+		SomaResultsParciais15 	: Soma4Alg port map (carryOut1Alg2, parcela1Soma(15 downto 12), parcela2Soma(15 downto 12), result (15 downto 12), carryOut1Alg3);
+		SomaResultsParciais16 	: Soma4Alg port map (carryOut1Alg3, parcela1Soma(19 downto 16), parcela2Soma(19 downto 16), result (19 downto 16), carryOut1Alg4);
+		SomaResultsParciais17 	: Soma4Alg port map (carryOut1Alg4, parcela1Soma(23 downto 20), parcela2Soma(23 downto 20), result (23 downto 20), carryOut1Alg5);
+		
+		-------------- somando duas primeiras linhas -------------------------
+		
+	
+--		Multi : process (numA, numB, linha1, linha2, linha3, linha4) is
 --		begin
 --		
---			for index 0 to 15
 --			
---				
---				
---			end loop;
+--			
 --		
---		end process SomaResultsParciais;
+----			--result <= std_logic_vector(unsigned(parcela1Soma) + unsigned(parcela2Soma) + unsigned(parcela3Soma) + unsigned(parcela4Soma));
+----			result <= std_logic_vector(unsigned(parcela1Soma) + unsigned(parcela2Soma));
+--
+--			
+--		
+--		end process Multi;
 
 
 end MultiplicadorCompletoArch;

@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Arch::  Fri Nov 30 14:30:22 2018
+Arch::  Fri Nov 30 16:18:50 2018
 
 par -w -intstyle ise -ol high -t 1 MultiplicadorCompleto_map.ncd
 MultiplicadorCompleto.ncd MultiplicadorCompleto.pcf 
@@ -25,21 +25,21 @@ Device speed data version:  "PRODUCTION 1.42 2013-10-13".
 
 Design Summary Report:
 
- Number of External IOBs                          52 out of 372    13%
+ Number of External IOBs                          48 out of 372    12%
 
-   Number of External Input IOBs                 20
+   Number of External Input IOBs                 24
 
-      Number of External Input IBUFs             20
+      Number of External Input IBUFs             24
 
-   Number of External Output IOBs                32
+   Number of External Output IOBs                24
 
-      Number of External Output IOBs             32
+      Number of External Output IOBs             24
 
    Number of External Bidir IOBs                  0
 
 
-   Number of MULT18X18SIOs                   4 out of 20     20%
-   Number of Slices                        147 out of 5888    2%
+   Number of MULT18X18SIOs                   8 out of 20     40%
+   Number of Slices                        367 out of 5888    6%
       Number of SLICEMs                      0 out of 2944    0%
 
 
@@ -58,47 +58,47 @@ Total REAL time at the beginning of Placer: 1 secs
 Total CPU  time at the beginning of Placer: 1 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:501c) REAL time: 2 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:15caa) REAL time: 2 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:501c) REAL time: 2 secs 
+Phase 2.7  Design Feasibility Check (Checksum:15caa) REAL time: 2 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:501c) REAL time: 2 secs 
+Phase 3.31  Local Placement Optimization (Checksum:15caa) REAL time: 2 secs 
 
 Phase 4.2  Initial Clock and IO Placement
 ........
-Phase 4.2  Initial Clock and IO Placement (Checksum:501c) REAL time: 4 secs 
+Phase 4.2  Initial Clock and IO Placement (Checksum:15caa) REAL time: 3 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:501c) REAL time: 4 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:15caa) REAL time: 3 secs 
 
 Phase 6.36  Local Placement Optimization
-Phase 6.36  Local Placement Optimization (Checksum:501c) REAL time: 4 secs 
+Phase 6.36  Local Placement Optimization (Checksum:15caa) REAL time: 3 secs 
 
 Phase 7.3  Local Placement Optimization
 ........
-Phase 7.3  Local Placement Optimization (Checksum:a84c7e7) REAL time: 5 secs 
+Phase 7.3  Local Placement Optimization (Checksum:7027cb0) REAL time: 4 secs 
 
 Phase 8.5  Local Placement Optimization
-Phase 8.5  Local Placement Optimization (Checksum:a84c7e7) REAL time: 5 secs 
+Phase 8.5  Local Placement Optimization (Checksum:7027cb0) REAL time: 4 secs 
 
 Phase 9.8  Global Placement
-.....................................
-...................
-Phase 9.8  Global Placement (Checksum:35b6ff35) REAL time: 5 secs 
+..................................................................................
+.....................
+Phase 9.8  Global Placement (Checksum:f2479bb0) REAL time: 4 secs 
 
 Phase 10.5  Local Placement Optimization
-Phase 10.5  Local Placement Optimization (Checksum:35b6ff35) REAL time: 5 secs 
+Phase 10.5  Local Placement Optimization (Checksum:f2479bb0) REAL time: 4 secs 
 
 Phase 11.18  Placement Optimization
-Phase 11.18  Placement Optimization (Checksum:fc870a3a) REAL time: 6 secs 
+Phase 11.18  Placement Optimization (Checksum:fbb98d24) REAL time: 5 secs 
 
 Phase 12.5  Local Placement Optimization
-Phase 12.5  Local Placement Optimization (Checksum:fc870a3a) REAL time: 6 secs 
+Phase 12.5  Local Placement Optimization (Checksum:fbb98d24) REAL time: 5 secs 
 
-Total REAL time to Placer completion: 6 secs 
-Total CPU  time to Placer completion: 6 secs 
+Total REAL time to Placer completion: 5 secs 
+Total CPU  time to Placer completion: 5 secs 
 Writing design to file MultiplicadorCompleto.ncd
 
 
@@ -106,28 +106,28 @@ Writing design to file MultiplicadorCompleto.ncd
 Starting Router
 
 
-Phase  1  : 1330 unrouted;      REAL time: 10 secs 
+Phase  1  : 3105 unrouted;      REAL time: 8 secs 
 
-Phase  2  : 1243 unrouted;      REAL time: 11 secs 
+Phase  2  : 2942 unrouted;      REAL time: 9 secs 
 
-Phase  3  : 331 unrouted;      REAL time: 11 secs 
+Phase  3  : 783 unrouted;      REAL time: 9 secs 
 
-Phase  4  : 331 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  4  : 783 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
 
 Updating file: MultiplicadorCompleto.ncd with current fully routed design.
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 11 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 10 secs 
 
-Total REAL time to Router completion: 11 secs 
-Total CPU time to Router completion: 11 secs 
+Total REAL time to Router completion: 10 secs 
+Total CPU time to Router completion: 10 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -145,17 +145,29 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|mult11/resultParcial |              |      |      |            |             |
-|        2_cmp_ge0000 |         Local|      |    8 |  0.089     |  2.008      |
+|mult1/resultParcial2 |              |      |      |            |             |
+|         _cmp_ge0000 |         Local|      |    8 |  0.431     |  2.510      |
 +---------------------+--------------+------+------+------------+-------------+
-|mult10/resultParcial |              |      |      |            |             |
-|        2_cmp_ge0000 |         Local|      |   12 |  0.045     |  1.987      |
+|mult8/resultParcial2 |              |      |      |            |             |
+|         _cmp_ge0000 |         Local|      |    8 |  0.112     |  1.419      |
 +---------------------+--------------+------+------+------------+-------------+
-|mult16/resultParcial |              |      |      |            |             |
-|        2_cmp_ge0000 |         Local|      |    8 |  0.047     |  1.664      |
+|mult2/resultParcial2 |              |      |      |            |             |
+|         _cmp_ge0000 |         Local|      |    8 |  0.048     |  1.974      |
 +---------------------+--------------+------+------+------------+-------------+
-|mult9/resultParcial2 |              |      |      |            |             |
-|         _cmp_ge0000 |         Local|      |    4 |  0.153     |  2.056      |
+|mult3/resultParcial2 |              |      |      |            |             |
+|         _cmp_ge0000 |         Local|      |    8 |  0.118     |  2.062      |
++---------------------+--------------+------+------+------------+-------------+
+|mult4/resultParcial2 |              |      |      |            |             |
+|         _cmp_ge0000 |         Local|      |    8 |  0.108     |  1.703      |
++---------------------+--------------+------+------+------------+-------------+
+|mult5/resultParcial2 |              |      |      |            |             |
+|         _cmp_ge0000 |         Local|      |    4 |  0.370     |  2.348      |
++---------------------+--------------+------+------+------------+-------------+
+|mult6/resultParcial2 |              |      |      |            |             |
+|         _cmp_ge0000 |         Local|      |    8 |  0.034     |  1.642      |
++---------------------+--------------+------+------+------------+-------------+
+|mult7/resultParcial2 |              |      |      |            |             |
+|         _cmp_ge0000 |         Local|      |    8 |  0.041     |  1.684      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -184,10 +196,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 12 secs 
-Total CPU time to PAR completion: 12 secs 
+Total REAL time to PAR completion: 10 secs 
+Total CPU time to PAR completion: 10 secs 
 
-Peak Memory Usage:  616 MB
+Peak Memory Usage:  618 MB
 
 Placement: Completed - No errors found.
 Routing: Completed - No errors found.

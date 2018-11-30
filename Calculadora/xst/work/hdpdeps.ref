@@ -1,25 +1,25 @@
 V3 23
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd 2018/11/29.21:20:25 P.20131013
-EN work/Multiplicador 1543588200 \
+EN work/Multiplicador 1543594709 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Multiplicador/MultiplicadorArch 1543588201 \
+AR work/Multiplicador/MultiplicadorArch 1543594710 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd \
-      EN work/Multiplicador 1543588200
-FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd 2018/11/30.14:29:56 P.20131013
-EN work/MultiplicadorCompleto 1543588204 \
+      EN work/Multiplicador 1543594709
+FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd 2018/11/30.16:18:25 P.20131013
+EN work/MultiplicadorCompleto 1543594713 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd \
-      PB ieee/std_logic_1164 1381692176
-AR work/MultiplicadorCompleto/MultiplicadorCompletoArch 1543588205 \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/MultiplicadorCompleto/MultiplicadorCompletoArch 1543594714 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd \
-      EN work/MultiplicadorCompleto 1543588204 CP Multiplicador CP Soma4Alg
+      EN work/MultiplicadorCompleto 1543594713 CP Multiplicador CP Soma4Alg
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd 2018/11/29.18:44:02 P.20131013
-EN work/Soma4Alg 1543588202 \
+EN work/Soma4Alg 1543594711 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Soma4Alg/Soma4AlgArch 1543588203 \
+AR work/Soma4Alg/Soma4AlgArch 1543594712 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd \
-      EN work/Soma4Alg 1543588202
+      EN work/Soma4Alg 1543594711
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd 2018/11/29.18:43:23 P.20131013
 EN work/SomaCompleta 1543517048 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd \

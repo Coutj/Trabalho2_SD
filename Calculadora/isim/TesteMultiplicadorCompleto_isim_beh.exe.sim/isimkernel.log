@@ -1,29 +1,29 @@
 Command line:
    TesteMultiplicadorCompleto_isim_beh.exe
      -simmode  gui
-     -simrunnum  0
-     -socket  43031
+     -simrunnum  1
+     -socket  49811
 
-Fri Nov 30 14:31:18 2018
+Fri Nov 30 16:19:14 2018
 
 
- Elaboration Time: 0.04 sec
+ Elaboration Time: 0.03 sec
 
- Current Memory Usage: 203.583 Meg
+ Current Memory Usage: 204.014 Meg
 
- Total Signals          : 259
- Total Nets             : 1081
- Total Signal Drivers   : 143
- Total Blocks           : 32
- Total Primitive Blocks : 30
- Total Processes        : 143
+ Total Signals          : 318
+ Total Nets             : 1339
+ Total Signal Drivers   : 178
+ Total Blocks           : 37
+ Total Primitive Blocks : 35
+ Total Processes        : 177
  Total Traceable Variables  : 13
- Total Scalar Nets and Variables : 1564
-Total Line Count : 311
+ Total Scalar Nets and Variables : 1822
+Total Line Count : 355
 
- Total Simulation Time: 0.05 sec
+ Total Simulation Time: 0.07 sec
 
- Current Memory Usage: 279.085 Meg
+ Current Memory Usage: 279.515 Meg
 
-Fri Nov 30 14:31:25 2018
+Fri Nov 30 16:19:59 2018
 
