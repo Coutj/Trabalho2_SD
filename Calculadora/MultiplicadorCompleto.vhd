@@ -113,11 +113,22 @@ architecture MultiplicadorCompletoArch of MultiplicadorCompleto is
 	
 	signal carryIn : std_logic_vector (0 to 0) := (others => '0');
 	
-	---------------------- carry out primeira soma parcial---------------
+	---------------------- soma da linha 1 e 2---------------
 	
 	signal carryOut1Alg1, carryOut1Alg2, carryOut1Alg3, carryOut1Alg4, carryOut1Alg5 : std_logic_vector (0 downto 0) := (others => '0');
-		
+	signal somaLinhas1 : std_logic_vector (31 downto 0) := (others => '0');	
 	---------------------- carry out primeira soma parcial---------------
+
+	---------------------- carry out segunda soma parcial---------------
+	
+	signal carryOut2Alg1, carryOut2Alg2, carryOut2Alg3, carryOut2Alg4, carryOut2Alg5 : std_logic_vector (0 downto 0) := (others => '0');
+	signal somaLinhas2 : std_logic_vector (31 downto 0) := (others => '0');	
+	---------------------- carry out segunda soma parcial---------------
+
+	---------------------- carry out soma parcial final---------------
+	
+	signal carryOut3Alg1, carryOut3Alg2, carryOut3Alg3, carryOut3Alg4, carryOut3Alg5, carryOut3Alg6 : std_logic_vector (0 downto 0) := (others => '0');	
+	---------------------- carry out soma parcial final --------------
 
 
 
@@ -212,16 +223,46 @@ begin
 		
 		-------------- somando duas primeiras linhas ------------------------
 		
-		result(3 downto 0) <= linha1(3 downto 0);
+		somaLinhas1(3 downto 0) <= parcela1Soma(3 downto 0);
 		
 		
-		SomaResultsParciais13 	: Soma4Alg port map (carryIn, parcela1Soma(7 downto 4), parcela2Soma(7 downto 4), result (7 downto 4), carryOut1Alg1);
-		SomaResultsParciais14 	: Soma4Alg port map (carryOut1Alg1, parcela1Soma(11 downto 8), parcela2Soma(11 downto 8), result (11 downto 8), carryOut1Alg2);
-		SomaResultsParciais15 	: Soma4Alg port map (carryOut1Alg2, parcela1Soma(15 downto 12), parcela2Soma(15 downto 12), result (15 downto 12), carryOut1Alg3);
-		SomaResultsParciais16 	: Soma4Alg port map (carryOut1Alg3, parcela1Soma(19 downto 16), parcela2Soma(19 downto 16), result (19 downto 16), carryOut1Alg4);
-		SomaResultsParciais17 	: Soma4Alg port map (carryOut1Alg4, parcela1Soma(23 downto 20), parcela2Soma(23 downto 20), result (23 downto 20), carryOut1Alg5);
+		SomaResultsParciais13 	: Soma4Alg port map (carryIn, parcela1Soma(7 downto 4), parcela2Soma(7 downto 4), somaLinhas1(7 downto 4), carryOut1Alg1);
+		SomaResultsParciais14 	: Soma4Alg port map (carryOut1Alg1, parcela1Soma(11 downto 8), parcela2Soma(11 downto 8), somaLinhas1(11 downto 8), carryOut1Alg2);
+		SomaResultsParciais15 	: Soma4Alg port map (carryOut1Alg2, parcela1Soma(15 downto 12), parcela2Soma(15 downto 12), somaLinhas1(15 downto 12), carryOut1Alg3);
+		SomaResultsParciais16 	: Soma4Alg port map (carryOut1Alg3, parcela1Soma(19 downto 16), parcela2Soma(19 downto 16), somaLinhas1(19 downto 16), carryOut1Alg4);
+		SomaResultsParciais17 	: Soma4Alg port map (carryOut1Alg4, parcela1Soma(23 downto 20), parcela2Soma(23 downto 20), somaLinhas1(23 downto 20), carryOut1Alg5);
 		
 		-------------- somando duas primeiras linhas -------------------------
+
+		-------------- somando duas segundas linhas -----------------------
+		
+		somaLinhas2 (11 downto 8) <= parcela3Soma (11 downto 8); 
+		
+		SomaResultsParciais18 : Soma4Alg port map (carryIn, parcela3Soma(15 downto 12), parcela4Soma(15 downto 12), somaLinhas2(15 downto 12), carryOut2Alg1);
+		SomaResultsParciais19 : Soma4Alg port map (carryOut2Alg1, parcela3Soma(19 downto 16), parcela4Soma(19 downto 16), somaLinhas2(19 downto 16), carryOut2Alg2);
+		SomaResultsParciais20 : Soma4Alg port map (carryOut2Alg2, parcela3Soma(23 downto 20), parcela4Soma(23 downto 20), somaLinhas2(23 downto 20), carryOut2Alg3);
+		SomaResultsParciais21 : Soma4Alg port map (carryOut2Alg3, parcela3Soma(27 downto 24), parcela4Soma(27 downto 24), somaLinhas2(27 downto 24), carryOut2Alg4);
+		SomaResultsParciais22 : Soma4Alg port map (carryOut2Alg4, parcela3Soma(31 downto 28), parcela4Soma(31 downto 28), somaLinhas2(31 downto 28), carryOut2Alg5);
+			
+
+		-------------- somando duas segundas linhas ------------------------
+
+		-------------- somando linha final ----------------------------------
+		
+		result(3 downto 0) <= somaLinhas1 (3 downto 0);
+		result(7 downto 4) <= somaLinhas1 (7 downto 4);
+		
+		SomaResultsParciais23 : Soma4Alg port map (carryIn, somaLinhas1(11 downto 8), somaLinhas2(11 downto 8), result(11 downto 8), carryOut3Alg1);
+		SomaResultsParciais24 : Soma4Alg port map (carryOut3Alg1, somaLinhas1(15 downto 12), somaLinhas2(15 downto 12), result(15 downto 12), carryOut3Alg2);
+		SomaResultsParciais25 : Soma4Alg port map (carryOut3Alg2, somaLinhas1(19 downto 16), somaLinhas2(19 downto 16), result(19 downto 16), carryOut3Alg3);
+		SomaResultsParciais26 : Soma4Alg port map (carryOut3Alg3, somaLinhas1(23 downto 20), somaLinhas2(23 downto 20), result(23 downto 20), carryOut3Alg4);
+		SomaResultsParciais27 : Soma4Alg port map (carryOut3Alg4, somaLinhas1(27 downto 24), somaLinhas2(27 downto 24), result(27 downto 24), carryOut3Alg5);
+		SomaResultsParciais28 : Soma4Alg port map (carryOut3Alg5, somaLinhas1(31 downto 28), somaLinhas2(31 downto 28), result(31 downto 28), carryOut3Alg6);
+				
+
+		
+		
+		-------------- somando linha final ----------------------------------
 		
 	
 --		Multi : process (numA, numB, linha1, linha2, linha3, linha4) is

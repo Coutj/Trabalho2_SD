@@ -10,34 +10,34 @@ Target Device  : xc3s700an
 Target Package : fgg484
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Fri Nov 30 16:18:44 2018
+Mapped Date    : Fri Nov 30 16:59:16 2018
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    8
+Number of warnings:   12
 Logic Utilization:
-  Number of Slice Latches:               56 out of  11,776    1%
-  Number of 4 input LUTs:               692 out of  11,776    5%
+  Number of Slice Latches:               84 out of  11,776    1%
+  Number of 4 input LUTs:             1,166 out of  11,776    9%
 Logic Distribution:
-  Number of occupied Slices:            367 out of   5,888    6%
-    Number of Slices containing only related logic:     367 out of     367 100%
-    Number of Slices containing unrelated logic:          0 out of     367   0%
+  Number of occupied Slices:            620 out of   5,888   10%
+    Number of Slices containing only related logic:     620 out of     620 100%
+    Number of Slices containing unrelated logic:          0 out of     620   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:         708 out of  11,776    6%
-    Number used as logic:               692
-    Number used as a route-thru:         16
+  Total Number of 4 input LUTs:       1,190 out of  11,776   10%
+    Number used as logic:             1,166
+    Number used as a route-thru:         24
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
 
-  Number of bonded IOBs:                 48 out of     372   12%
+  Number of bonded IOBs:                 60 out of     372   16%
     IOB Latches:                          4
-  Number of MULT18X18SIOs:                8 out of      20   40%
+  Number of MULT18X18SIOs:               12 out of      20   60%
 
-Average Fanout of Non-Clock Nets:                3.45
+Average Fanout of Non-Clock Nets:                3.43
 
-Peak Memory Usage:  633 MB
+Peak Memory Usage:  635 MB
 Total REAL time to MAP completion:  3 secs 
 Total CPU time to MAP completion:   3 secs 
 
@@ -81,26 +81,6 @@ Section 1 - Errors
 Section 2 - Warnings
 --------------------
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   mult1/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   mult8/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   mult2/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   mult3/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   mult4/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
    mult5/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
@@ -109,20 +89,54 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mult11/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mult8/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mult4/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mult12/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mult3/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mult9/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mult10/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
    mult7/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mult1/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
+   not good design practice. Use the CE pin to control the loading of data into
+   the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   mult2/resultParcial2_cmp_ge0000 is sourced by a combinatorial pin. This is
    not good design practice. Use the CE pin to control the loading of data into
    the flip-flop.
 
 Section 3 - Informational
 -------------------------
-INFO:LIT:243 - Logical network result<31> has no load.
-INFO:LIT:395 - The above info message is repeated 15 more times for the
-   following (max. 5 shown):
-   result<30>,
-   result<29>,
-   result<28>,
-   result<27>,
-   result<26>
+INFO:LIT:243 - Logical network numA<7> has no load.
+INFO:LIT:395 - The above info message is repeated 3 more times for the following
+   (max. 5 shown):
+   numA<6>,
+   numA<5>,
+   numA<4>
    To see the details of these info messages, please use the -detail switch.
 INFO:MapLib:562 - No environment variables are currently set.
 INFO:LIT:244 - All of the single ended outputs in this design are using slew
@@ -131,7 +145,7 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   8 block(s) optimized away
+  11 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
@@ -140,6 +154,9 @@ Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
 MUXCY 		mult1/Madd_mux0000_addsub0000_cy<0>
+MUXCY 		mult10/Madd_mux0000_addsub0000_cy<0>
+MUXCY 		mult11/Madd_mux0000_addsub0000_cy<0>
+MUXCY 		mult12/Madd_mux0000_addsub0000_cy<0>
 MUXCY 		mult2/Madd_mux0000_addsub0000_cy<0>
 MUXCY 		mult3/Madd_mux0000_addsub0000_cy<0>
 MUXCY 		mult4/Madd_mux0000_addsub0000_cy<0>
@@ -165,6 +182,10 @@ Section 6 - IOB Properties
 | numA<9>                            | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
 | numA<10>                           | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
 | numA<11>                           | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| numA<12>                           | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| numA<13>                           | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| numA<14>                           | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
+| numA<15>                           | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
 | numB<0>                            | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
 | numB<1>                            | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
 | numB<2>                            | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
@@ -205,6 +226,14 @@ Section 6 - IOB Properties
 | result<21>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | result<22>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | result<23>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| result<24>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| result<25>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| result<26>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| result<27>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| result<28>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| result<29>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| result<30>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| result<31>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Section 7 - RPMs

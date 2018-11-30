@@ -236,7 +236,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543594749" xil_pn:in_ck="-4341662589808032573" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543594749">
+    <transform xil_pn:end_ts="1543597184" xil_pn:in_ck="-4341662589808032573" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543597184">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Multiplicador.vhd"/>
@@ -245,11 +245,11 @@
       <outfile xil_pn:name="SomaCompleta.vhd"/>
       <outfile xil_pn:name="TesteMultiplicadorCompleto.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1543592860" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4245213749697561761" xil_pn:start_ts="1543592860">
+    <transform xil_pn:end_ts="1543596794" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4245213749697561761" xil_pn:start_ts="1543596794">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543592860" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7935688479272989257" xil_pn:start_ts="1543592860">
+    <transform xil_pn:end_ts="1543596794" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7935688479272989257" xil_pn:start_ts="1543596794">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -257,7 +257,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543594749" xil_pn:in_ck="-4341662589808032573" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543594749">
+    <transform xil_pn:end_ts="1543597184" xil_pn:in_ck="-4341662589808032573" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543597184">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="Multiplicador.vhd"/>
@@ -266,7 +266,7 @@
       <outfile xil_pn:name="SomaCompleta.vhd"/>
       <outfile xil_pn:name="TesteMultiplicadorCompleto.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1543594751" xil_pn:in_ck="-4341662589808032573" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1752425190049327094" xil_pn:start_ts="1543594749">
+    <transform xil_pn:end_ts="1543597187" xil_pn:in_ck="-4341662589808032573" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1752425190049327094" xil_pn:start_ts="1543597184">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -278,7 +278,7 @@
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1543594751" xil_pn:in_ck="-9109467614367912492" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-890003459575117735" xil_pn:start_ts="1543594751">
+    <transform xil_pn:end_ts="1543597187" xil_pn:in_ck="-9109467614367912492" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-890003459575117735" xil_pn:start_ts="1543597187">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -315,7 +315,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543594716" xil_pn:in_ck="6268082166194183474" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1354104482043079269" xil_pn:start_ts="1543594705">
+    <transform xil_pn:end_ts="1543597148" xil_pn:in_ck="6268082166194183474" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="1354104482043079269" xil_pn:start_ts="1543597134">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -339,7 +339,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543594721" xil_pn:in_ck="6638518159761007685" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1227716569623664587" xil_pn:start_ts="1543594716">
+    <transform xil_pn:end_ts="1543597153" xil_pn:in_ck="6638518159761007685" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1227716569623664587" xil_pn:start_ts="1543597148">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MultiplicadorCompleto.bld"/>
@@ -348,7 +348,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1543594728" xil_pn:in_ck="-6876623470512452145" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1543594721">
+    <transform xil_pn:end_ts="1543597160" xil_pn:in_ck="-6876623470512452145" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1543597153">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -362,7 +362,7 @@
       <outfile xil_pn:name="MultiplicadorCompleto_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1543594745" xil_pn:in_ck="3438378440551364812" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1543594728">
+    <transform xil_pn:end_ts="1543597180" xil_pn:in_ck="3438378440551364812" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1543597160">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MultiplicadorCompleto.ncd"/>
@@ -376,7 +376,7 @@
       <outfile xil_pn:name="MultiplicadorCompleto_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1543594745" xil_pn:in_ck="-4014409361226122053" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1543594741">
+    <transform xil_pn:end_ts="1543597180" xil_pn:in_ck="-4014409361226122053" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1543597176">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="MultiplicadorCompleto.twr"/>

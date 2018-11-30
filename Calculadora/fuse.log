@@ -9,8 +9,8 @@ Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Mu
 Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicadorCompleto.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 85052 KB
-Fuse CPU Usage: 1440 ms
+Fuse Memory Usage: 85184 KB
+Fuse CPU Usage: 1580 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -21,6 +21,6 @@ Compiling architecture behavior of entity testemultiplicadorcompleto
 Time Resolution for simulation is 1ps.
 Compiled 10 VHDL Units
 Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicadorCompleto_isim_beh.exe
-Fuse Memory Usage: 656932 KB
-Fuse CPU Usage: 1540 ms
-GCC CPU Usage: 550 ms
+Fuse Memory Usage: 657008 KB
+Fuse CPU Usage: 1690 ms
+GCC CPU Usage: 570 ms
