@@ -1,0 +1,5 @@
+vhdl work "Soma4Alg.vhd"
+vhdl work "Multiplicador.vhd"
+vhdl work "SomaCompleta.vhd"
+vhdl work "MultiplicadorCompleto.vhd"
+vhdl work "Calculadora.vhd"

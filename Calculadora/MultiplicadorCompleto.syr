@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: MultiplicadorCompleto.prj
@@ -112,8 +112,7 @@ Architecture multiplicadorarch of Entity multiplicador is up to date.
 Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd" in Library work.
 Architecture soma4algarch of Entity soma4alg is up to date.
 Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd" in Library work.
-Entity <multiplicadorcompleto> compiled.
-Entity <multiplicadorcompleto> (Architecture <multiplicadorcompletoarch>) compiled.
+Architecture multiplicadorcompletoarch of Entity multiplicadorcompleto is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -599,16 +598,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult12/resultParcial2_cmp
   Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
 Offset:              18.477ns (Levels of Logic = 14)
-  Source:            numA<14> (PAD)
+  Source:            numA<12> (PAD)
   Destination:       mult12/resultParcial2_5 (LATCH)
   Destination Clock: mult12/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<14> to mult12/resultParcial2_5
+  Data Path: numA<12> to mult12/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_14_IBUF (numA_14_IBUF)
-     MULT18X18SIO:A2->P7   23   4.344   1.234  mult12/Mmult_resultParcial (mult12/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_12_IBUF (numA_12_IBUF)
+     MULT18X18SIO:A0->P7   23   4.344   1.234  mult12/Mmult_resultParcial (mult12/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult12/resultParcial2_and000011 (mult12/N13)
      LUT4:I0->O            5   0.648   0.636  mult12/resultParcial2_and00002 (mult12/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult12/mux0000_mux0000<2>_SW0 (N135)
@@ -631,16 +630,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult11/resultParcial2_cmp
   Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
 Offset:              18.477ns (Levels of Logic = 14)
-  Source:            numA<14> (PAD)
+  Source:            numA<12> (PAD)
   Destination:       mult11/resultParcial2_5 (LATCH)
   Destination Clock: mult11/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<14> to mult11/resultParcial2_5
+  Data Path: numA<12> to mult11/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_14_IBUF (numA_14_IBUF)
-     MULT18X18SIO:A2->P7   23   4.344   1.234  mult11/Mmult_resultParcial (mult11/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_12_IBUF (numA_12_IBUF)
+     MULT18X18SIO:A0->P7   23   4.344   1.234  mult11/Mmult_resultParcial (mult11/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult11/resultParcial2_and000011 (mult11/N13)
      LUT4:I0->O            5   0.648   0.636  mult11/resultParcial2_and00002 (mult11/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult11/mux0000_mux0000<2>_SW0 (N137)
@@ -663,16 +662,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult10/resultParcial2_cmp
   Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
 Offset:              18.477ns (Levels of Logic = 14)
-  Source:            numA<13> (PAD)
+  Source:            numA<12> (PAD)
   Destination:       mult10/resultParcial2_5 (LATCH)
   Destination Clock: mult10/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<13> to mult10/resultParcial2_5
+  Data Path: numA<12> to mult10/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_13_IBUF (numA_13_IBUF)
-     MULT18X18SIO:A1->P7   23   4.344   1.234  mult10/Mmult_resultParcial (mult10/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_12_IBUF (numA_12_IBUF)
+     MULT18X18SIO:A0->P7   23   4.344   1.234  mult10/Mmult_resultParcial (mult10/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult10/resultParcial2_and000011 (mult10/N13)
      LUT4:I0->O            5   0.648   0.636  mult10/resultParcial2_and00002 (mult10/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult10/mux0000_mux0000<2>_SW0 (N139)
@@ -695,16 +694,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult9/resultParcial2_cmp_
   Total number of paths / destination ports: 9768 / 8
 -------------------------------------------------------------------------
 Offset:              18.403ns (Levels of Logic = 14)
-  Source:            numA<14> (PAD)
+  Source:            numA<15> (PAD)
   Destination:       mult9/resultParcial2_5 (LATCH)
   Destination Clock: mult9/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<14> to mult9/resultParcial2_5
+  Data Path: numA<15> to mult9/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_14_IBUF (numA_14_IBUF)
-     MULT18X18SIO:A2->P7   21   4.344   1.160  mult9/Mmult_resultParcial (mult9/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_15_IBUF (numA_15_IBUF)
+     MULT18X18SIO:A3->P7   21   4.344   1.160  mult9/Mmult_resultParcial (mult9/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult9/resultParcial2_and000011 (mult9/N13)
      LUT4:I0->O            5   0.648   0.636  mult9/resultParcial2_and00002 (mult9/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult9/mux0000_mux0000<2>_SW0 (N119)
@@ -727,16 +726,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult8/resultParcial2_cmp_
   Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
 Offset:              18.477ns (Levels of Logic = 14)
-  Source:            numA<8> (PAD)
+  Source:            numA<9> (PAD)
   Destination:       mult8/resultParcial2_5 (LATCH)
   Destination Clock: mult8/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<8> to mult8/resultParcial2_5
+  Data Path: numA<9> to mult8/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_8_IBUF (numA_8_IBUF)
-     MULT18X18SIO:A0->P7   23   4.344   1.234  mult8/Mmult_resultParcial (mult8/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_9_IBUF (numA_9_IBUF)
+     MULT18X18SIO:A1->P7   23   4.344   1.234  mult8/Mmult_resultParcial (mult8/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult8/resultParcial2_and000011 (mult8/N13)
      LUT4:I0->O            5   0.648   0.636  mult8/resultParcial2_and00002 (mult8/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult8/mux0000_mux0000<2>_SW0 (N121)
@@ -759,16 +758,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult7/resultParcial2_cmp_
   Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
 Offset:              18.477ns (Levels of Logic = 14)
-  Source:            numA<10> (PAD)
+  Source:            numA<11> (PAD)
   Destination:       mult7/resultParcial2_5 (LATCH)
   Destination Clock: mult7/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<10> to mult7/resultParcial2_5
+  Data Path: numA<11> to mult7/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_10_IBUF (numA_10_IBUF)
-     MULT18X18SIO:A2->P7   23   4.344   1.234  mult7/Mmult_resultParcial (mult7/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_11_IBUF (numA_11_IBUF)
+     MULT18X18SIO:A3->P7   23   4.344   1.234  mult7/Mmult_resultParcial (mult7/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult7/resultParcial2_and000011 (mult7/N13)
      LUT4:I0->O            5   0.648   0.636  mult7/resultParcial2_and00002 (mult7/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult7/mux0000_mux0000<2>_SW0 (N123)
@@ -791,16 +790,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult6/resultParcial2_cmp_
   Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
 Offset:              18.477ns (Levels of Logic = 14)
-  Source:            numA<8> (PAD)
+  Source:            numA<9> (PAD)
   Destination:       mult6/resultParcial2_5 (LATCH)
   Destination Clock: mult6/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<8> to mult6/resultParcial2_5
+  Data Path: numA<9> to mult6/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_8_IBUF (numA_8_IBUF)
-     MULT18X18SIO:A0->P7   23   4.344   1.234  mult6/Mmult_resultParcial (mult6/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_9_IBUF (numA_9_IBUF)
+     MULT18X18SIO:A1->P7   23   4.344   1.234  mult6/Mmult_resultParcial (mult6/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult6/resultParcial2_and000011 (mult6/N13)
      LUT4:I0->O            5   0.648   0.636  mult6/resultParcial2_and00002 (mult6/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult6/mux0000_mux0000<2>_SW0 (N125)
@@ -823,16 +822,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult5/resultParcial2_cmp_
   Total number of paths / destination ports: 9768 / 8
 -------------------------------------------------------------------------
 Offset:              18.403ns (Levels of Logic = 14)
-  Source:            numA<11> (PAD)
+  Source:            numA<9> (PAD)
   Destination:       mult5/resultParcial2_5 (LATCH)
   Destination Clock: mult5/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<11> to mult5/resultParcial2_5
+  Data Path: numA<9> to mult5/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_11_IBUF (numA_11_IBUF)
-     MULT18X18SIO:A3->P7   21   4.344   1.160  mult5/Mmult_resultParcial (mult5/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_9_IBUF (numA_9_IBUF)
+     MULT18X18SIO:A1->P7   21   4.344   1.160  mult5/Mmult_resultParcial (mult5/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult5/resultParcial2_and000011 (mult5/N13)
      LUT4:I0->O            5   0.648   0.636  mult5/resultParcial2_and00002 (mult5/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult5/mux0000_mux0000<2>_SW0 (N127)
@@ -855,16 +854,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult4/resultParcial2_cmp_
   Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
 Offset:              18.477ns (Levels of Logic = 14)
-  Source:            numA<1> (PAD)
+  Source:            numA<0> (PAD)
   Destination:       mult4/resultParcial2_5 (LATCH)
   Destination Clock: mult4/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<1> to mult4/resultParcial2_5
+  Data Path: numA<0> to mult4/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_1_IBUF (numA_1_IBUF)
-     MULT18X18SIO:A1->P7   23   4.344   1.234  mult4/Mmult_resultParcial (mult4/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_0_IBUF (numA_0_IBUF)
+     MULT18X18SIO:A0->P7   23   4.344   1.234  mult4/Mmult_resultParcial (mult4/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult4/resultParcial2_and000011 (mult4/N13)
      LUT4:I0->O            5   0.648   0.636  mult4/resultParcial2_and00002 (mult4/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult4/mux0000_mux0000<2>_SW0 (N129)
@@ -887,16 +886,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult3/resultParcial2_cmp_
   Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
 Offset:              18.477ns (Levels of Logic = 14)
-  Source:            numA<0> (PAD)
+  Source:            numA<3> (PAD)
   Destination:       mult3/resultParcial2_5 (LATCH)
   Destination Clock: mult3/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<0> to mult3/resultParcial2_5
+  Data Path: numA<3> to mult3/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_0_IBUF (numA_0_IBUF)
-     MULT18X18SIO:A0->P7   23   4.344   1.234  mult3/Mmult_resultParcial (mult3/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_3_IBUF (numA_3_IBUF)
+     MULT18X18SIO:A3->P7   23   4.344   1.234  mult3/Mmult_resultParcial (mult3/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            8   0.648   0.900  mult3/resultParcial2_and000011 (mult3/N13)
      LUT4:I0->O            5   0.648   0.636  mult3/resultParcial2_and00002 (mult3/resultParcial2_and0000)
      LUT4:I3->O            1   0.648   0.563  mult3/mux0000_mux0000<2>_SW0 (N131)
@@ -951,16 +950,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'mult1/resultParcial2_cmp_
   Total number of paths / destination ports: 13108 / 16
 -------------------------------------------------------------------------
 Offset:              18.290ns (Levels of Logic = 15)
-  Source:            numA<1> (PAD)
+  Source:            numA<2> (PAD)
   Destination:       mult1/resultParcial2_5 (LATCH)
   Destination Clock: mult1/resultParcial2_cmp_ge0000 falling
 
-  Data Path: numA<1> to mult1/resultParcial2_5
+  Data Path: numA<2> to mult1/resultParcial2_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.849   0.587  numA_1_IBUF (numA_1_IBUF)
-     MULT18X18SIO:A1->P7   25   4.344   1.292  mult1/Mmult_resultParcial (mult1/Madd_resultParcial2_addsub0000_lut<7>)
+     IBUF:I->O             4   0.849   0.587  numA_2_IBUF (numA_2_IBUF)
+     MULT18X18SIO:A2->P7   25   4.344   1.292  mult1/Mmult_resultParcial (mult1/Madd_resultParcial2_addsub0000_lut<7>)
      LUT3:I2->O            2   0.648   0.590  mult1/resultParcial2_and000211 (mult1/N36)
      LUT4:I0->O            5   0.648   0.636  mult1/resultParcial2_and00031 (mult1/resultParcial2_and0003)
      LUT4:I3->O            1   0.648   0.563  mult1/mux0000_mux0000<1>_SW1 (N531)
@@ -1546,12 +1545,12 @@ Offset:              25.542ns (Levels of Logic = 24)
 
 
 Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 10.37 secs
+Total CPU time to Xst completion: 9.92 secs
  
 --> 
 
 
-Total memory usage is 528460 kilobytes
+Total memory usage is 528532 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   46 (   0 filtered)
