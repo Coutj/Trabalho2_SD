@@ -41,6 +41,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Calculadora.unroutes" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="Calculadora.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Calculadora.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Calculadora_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Calculadora_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Calculadora_map.map" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Calculadora_map.mrp" xil_pn:subbranch="Map"/>
@@ -51,6 +52,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Calculadora_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Calculadora_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Calculadora_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Calculadora_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Calculadora_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Calculadora_usage.xml"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Calculadora_vhdl.prj"/>
@@ -351,13 +353,11 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544103793" xil_pn:in_ck="-2438507351673886216" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7232575345252186403" xil_pn:start_ts="1544103779">
+    <transform xil_pn:end_ts="1544295159" xil_pn:in_ck="-3027708574371046591" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7232575345252186403" xil_pn:start_ts="1544295142">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Calculadora.lso"/>
       <outfile xil_pn:name="Calculadora.ngc"/>
@@ -375,24 +375,23 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1544103219" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6179290668782673521" xil_pn:start_ts="1544103219">
+    <transform xil_pn:end_ts="1544295431" xil_pn:in_ck="6578114222110546020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6179290668782673521" xil_pn:start_ts="1544295431">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544103799" xil_pn:in_ck="8696028185365920742" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8563194566340271603" xil_pn:start_ts="1544103793">
+    <transform xil_pn:end_ts="1544295436" xil_pn:in_ck="7647515772922100618" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8563194566340271603" xil_pn:start_ts="1544295431">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Calculadora.bld"/>
       <outfile xil_pn:name="Calculadora.ngd"/>
       <outfile xil_pn:name="Calculadora_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1544103806" xil_pn:in_ck="4818785148867805873" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1544103799">
+    <transform xil_pn:end_ts="1544295446" xil_pn:in_ck="-6084179400794535179" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1544295436">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Calculadora.pcf"/>
       <outfile xil_pn:name="Calculadora_map.map"/>
       <outfile xil_pn:name="Calculadora_map.mrp"/>
@@ -403,10 +402,10 @@
       <outfile xil_pn:name="Calculadora_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1544103821" xil_pn:in_ck="8359286878538545895" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1544103806">
+    <transform xil_pn:end_ts="1544295468" xil_pn:in_ck="-1664205191230930837" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1544295446">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Calculadora.ncd"/>
       <outfile xil_pn:name="Calculadora.pad"/>
       <outfile xil_pn:name="Calculadora.par"/>
@@ -418,10 +417,9 @@
       <outfile xil_pn:name="Calculadora_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1544103821" xil_pn:in_ck="-8463957508948207975" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1544103817">
+    <transform xil_pn:end_ts="1544295468" xil_pn:in_ck="5203831778895811037" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1544295464">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Calculadora.twr"/>
       <outfile xil_pn:name="Calculadora.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>

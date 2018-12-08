@@ -33,15 +33,21 @@ entity Calculadora is
 
 	port (
 	
+				numTeclado : out std_logic_vector (7 downto 0); --mostrar resultado nos leds
+	
 				clock		: in std_logic;
-				resetTeclado : in std_logic;
+				resetTeclado : in std_logic;	-- direita
 				ps2d, ps2c: in  std_logic;		-- Dados e clock do teclado
-				rd_key_code: in std_logic;
+				rd_key_code: in std_logic;		-- esquerda
+				
+				LCD_DB: out std_logic_vector(7 downto 0);		--dados que serao trasmitidos
+				RS:out std_logic;  			--comando/caracter
+				RW:out std_logic;				--ADR(0) /le/escreve
+				OE:out std_logic;				--OE
+				rstLCD:in std_logic;				--cima
 				
 				operacao : in std_logic := '0';
-				result	: out std_logic_vector (31 downto 0) := (others => '0')
-				
-				
+				result	: out std_logic_vector (31 downto 0) := (others => '0')					
 	);
 	
 end Calculadora;
@@ -78,27 +84,46 @@ architecture CalculadoraArch of Calculadora is
 					kb_buf_empty: out std_logic	--	ja escreveu 
 		);
 	end Component;
+	
+	Component lcd is
+		Port ( 	LCD_DB: out std_logic_vector(7 downto 0);		--dados que serao trasmitidos
+					RS:out std_logic;  			--comando/caracter
+					RW:out std_logic;				--ADR(0) /le/escreve
+					CLK:in std_logic;				--GCLK2	50M
+					OE:out std_logic;				--OE
+					rst:in std_logic;				--BTN
+					keyBoardInput:in std_logic_vector (7 downto 0); -- codigo do teclado
+					numeroConfirmado : in	std_logic 
+		);		
+	end Component;
 
-	type estados is (idle, configuraNumeros, selOperacao, resultado);
-	signal estadoAtual, estadoAtualTeclado : estados := idle; 
+	type estados is (idle, selOperacao, resultado);
+	signal estadoAtual : estados := idle; 
+	
+	type estadosTeclado is (idle, configuraNumeros);
+	signal estadoAtualTeclado : estadosTeclado := idle;
 	
 	signal resultMultiplicacao : std_logic_vector (31 downto 0) := (others => '0');
 	signal resultSoma : std_logic_vector (19 downto 0) := (others => '0');
 	
 	signal codigoTeclado : std_logic_vector(7 downto 0) := (others => '0');
 	signal kb_buf_empty	: std_logic;
-	signal numA, numB		: std_logic (15 downto 0) := (others => '0');
+	signal numA, numB		: std_logic_vector (15 downto 0) := (others => '0');
 	
 	signal contador		: integer := 0;
-	signal codigoConvertidoTecladoBinario (3 downto 0) := (others => '0');
+	signal codigoConvertidoTecladoBinario : std_logic_vector (3 downto 0) := (others => '0');
+	signal recebeuNumeros : std_logic := '0';
 
 begin
 
 
-	teclado		: kb_code port map (clock, resetTeclado, ps2d, ps2c, rd_key_code,codigoTeclado, kb_buf_empty );
+	numTeclado <= x"0"&codigoConvertidoTecladoBinario;
+	
+	teclado		: kb_code port map (clock, resetTeclado, ps2d, ps2c, rd_key_code, codigoTeclado, kb_buf_empty );
+	portLcd		: lcd		 port map (LCD_DB, RS, RW, clock, OE, rstLCD, codigoTeclado, rd_key_code);
 
-	Multiplica 	: MultiplicadorCompleto port map (, , resultMultiplicacao);
-	Soma			: SomaCompleta port map (, , resultSoma);
+	Multiplica 	: MultiplicadorCompleto port map (numA, numB , resultMultiplicacao);
+	Soma			: SomaCompleta port map (numA, numB, resultSoma);
 	
 	
 	ConverterNumeroTeclado : process (codigoTeclado) is
@@ -157,9 +182,9 @@ begin
 				numA <= x"0000";
 				numB <= x"0000";
 				
-				if (kb_buf_empty = 1) then
+				if (kb_buf_empty = '1') then
 					
-					estadoAtualTeclado <= configuraNumeros
+					estadoAtualTeclado <= configuraNumeros;
 						
 				end if;
 				
@@ -196,11 +221,12 @@ begin
 				elsif (contador = 7) then
 				
 					numB (15 downto 12)	<= codigoConvertidoTecladoBinario;
-					contador = 0;			
+					contador <= 0;
+					recebeuNumeros <= '1';
 					
 				end if;
 				
-				contador = contador + 1;
+				contador <= contador + 1;
 				
 		end case;
 	
@@ -214,8 +240,10 @@ begin
 		
 			when idle =>
 			
-			when configuraNumeros =>
-			
+				if (recebeuNumeros = '1') then
+					estadoAtual <= selOperacao;
+				end if;		
+						
 			when selOperacao =>
 			
 					if (operacao = '0') then

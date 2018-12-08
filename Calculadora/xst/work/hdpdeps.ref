@@ -1,39 +1,69 @@
-V3 28
-FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd 2018/12/06.13:42:59 P.20131013
-EN work/Calculadora 1544103793 \
+V3 43
+FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd 2018/12/08.18:51:55 P.20131013
+EN work/Calculadora 1544295162 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/Calculadora/CalculadoraArch 1544103794 \
+AR work/Calculadora/CalculadoraArch 1544295163 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd \
-      EN work/Calculadora 1544103793 CP MultiplicadorCompleto CP SomaCompleta
+      EN work/Calculadora 1544295162 CP kb_code CP lcd CP MultiplicadorCompleto \
+      CP SomaCompleta
+FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/fifo.vhd 2018/12/04.15:46:18 P.20131013
+EN work/fifo 1544295152 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/fifo.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/fifo/arch 1544295153 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/fifo.vhd \
+      EN work/fifo 1544295152
+FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/lcd.vhd 2018/12/08.18:52:21 P.20131013
+EN work/lcd 1544295156 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/lcd.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/lcd/Behavioral 1544295157 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/lcd.vhd \
+      EN work/lcd 1544295156
+FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_01_ps2_rx.vhd 2018/12/04.21:24:34 P.20131013
+EN work/ps2_rx 1544295150 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_01_ps2_rx.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ps2_rx/arch 1544295151 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_01_ps2_rx.vhd \
+      EN work/ps2_rx 1544295150
+FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_03_kb_lcode.vhd 2018/12/06.14:40:18 P.20131013
+EN work/kb_code 1544295154 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_03_kb_lcode.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/kb_code/arch 1544295155 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_03_kb_lcode.vhd \
+      EN work/kb_code 1544295154 AR work/ps2_rx/arch 1544295151 AR work/fifo/arch 1544295153
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd 2018/11/29.21:20:25 P.20131013
-EN work/Multiplicador 1544103787 \
+EN work/Multiplicador 1544295148 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Multiplicador/MultiplicadorArch 1544103788 \
+AR work/Multiplicador/MultiplicadorArch 1544295149 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd \
-      EN work/Multiplicador 1544103787
+      EN work/Multiplicador 1544295148
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd 2018/11/30.16:58:54 P.20131013
-EN work/MultiplicadorCompleto 1544103789 \
+EN work/MultiplicadorCompleto 1544295158 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/MultiplicadorCompleto/MultiplicadorCompletoArch 1544103790 \
+AR work/MultiplicadorCompleto/MultiplicadorCompletoArch 1544295159 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd \
-      EN work/MultiplicadorCompleto 1544103789 CP Multiplicador CP Soma4Alg
+      EN work/MultiplicadorCompleto 1544295158 CP Multiplicador CP Soma4Alg
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd 2018/11/29.18:44:02 P.20131013
-EN work/Soma4Alg 1544103785 \
+EN work/Soma4Alg 1544295146 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
-AR work/Soma4Alg/Soma4AlgArch 1544103786 \
+AR work/Soma4Alg/Soma4AlgArch 1544295147 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Soma4Alg.vhd \
-      EN work/Soma4Alg 1544103785
+      EN work/Soma4Alg 1544295146
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd 2018/11/29.18:43:23 P.20131013
-EN work/SomaCompleta 1544103791 \
+EN work/SomaCompleta 1544295160 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/SomaCompleta/SomaCompletaArch 1544103792 \
+AR work/SomaCompleta/SomaCompletaArch 1544295161 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd \
-      EN work/SomaCompleta 1544103791 CP Soma4Alg
+      EN work/SomaCompleta 1544295160 CP Soma4Alg
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador.vhd 2018/11/23.14:58:57 P.20131013
 EN work/Somador 1542985144 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Somador.vhd \
@@ -55,3 +85,4 @@ PH work/Types 1542992136 \
 PB work/Types 1542992137 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Types.vhd \
       PH work/Types 1542992136
+FL /home/juan/Downloads/SD2/prof_guina/lcd.vhd 2018/12/06.21:47:39 P.20131013

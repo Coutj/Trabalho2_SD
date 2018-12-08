@@ -2,16 +2,21 @@ Release 14.7 ngdbuild P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
-ise -dd _ngo -nt timestamp -i -p xc3s700an-fgg484-4 Calculadora.ngc
-Calculadora.ngd
+ise -dd _ngo -nt timestamp -uc constraints.ucf -p xc3s700an-fgg484-4
+Calculadora.ngc Calculadora.ngd
 
 Reading NGO file
 "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
+Annotating constraints to design from ucf file "constraints.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+INFO:ConstraintSystem - The Period constraint <PERIOD = 20.000 ;>
+   [constraints.ucf(6)], is specified using the Net Period method which is not
+   recommended. Please use the Timespec PERIOD method.
+
 Done...
 
 Checking expanded design ...
@@ -27,10 +32,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 385152 kilobytes
+Total memory usage is 390960 kilobytes
 
 Writing NGD file "Calculadora.ngd" ...
 Total REAL time to NGDBUILD completion:  3 sec
-Total CPU time to NGDBUILD completion:   3 sec
+Total CPU time to NGDBUILD completion:   2 sec
 
 Writing NGDBUILD log file "Calculadora.bld"...

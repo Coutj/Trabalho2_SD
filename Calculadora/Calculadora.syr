@@ -4,15 +4,15 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.04 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: Calculadora.prj
@@ -111,22 +111,42 @@ Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/
 Architecture soma4algarch of Entity soma4alg is up to date.
 Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd" in Library work.
 Architecture multiplicadorarch of Entity multiplicador is up to date.
+Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_01_ps2_rx.vhd" in Library work.
+Architecture arch of Entity ps2_rx is up to date.
+Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/fifo.vhd" in Library work.
+Architecture arch of Entity fifo is up to date.
+Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_03_kb_lcode.vhd" in Library work.
+Architecture arch of Entity kb_code is up to date.
+Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/lcd.vhd" in Library work.
+Entity <lcd> compiled.
+Entity <lcd> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/MultiplicadorCompleto.vhd" in Library work.
 Architecture multiplicadorcompletoarch of Entity multiplicadorcompleto is up to date.
 Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/SomaCompleta.vhd" in Library work.
 Architecture somacompletaarch of Entity somacompleta is up to date.
 Compiling vhdl file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd" in Library work.
 Entity <calculadora> compiled.
-Entity <Calculadora> (Architecture <CalculadoraArch>) compiled.
+Entity <calculadora> (Architecture <calculadoraarch>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <Calculadora> in library <work> (architecture <CalculadoraArch>).
+Analyzing hierarchy for entity <Calculadora> in library <work> (architecture <calculadoraarch>).
+
+Analyzing hierarchy for entity <kb_code> in library <work> (architecture <arch>) with generics.
+	W_SIZE = 2
+
+Analyzing hierarchy for entity <lcd> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <MultiplicadorCompleto> in library <work> (architecture <multiplicadorcompletoarch>).
 
 Analyzing hierarchy for entity <SomaCompleta> in library <work> (architecture <somacompletaarch>).
+
+Analyzing hierarchy for entity <ps2_rx> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <fifo> in library <work> (architecture <arch>) with generics.
+	B = 8
+	W = 2
 
 Analyzing hierarchy for entity <Multiplicador> in library <work> (architecture <multiplicadorarch>).
 
@@ -136,10 +156,30 @@ Analyzing hierarchy for entity <Soma4Alg> in library <work> (architecture <soma4
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <Calculadora> in library <work> (Architecture <CalculadoraArch>).
-WARNING:Xst:819 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd" line 77: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <estadoAtual>, <resultSoma>, <resultMultiplicacao>
+Analyzing Entity <Calculadora> in library <work> (Architecture <calculadoraarch>).
+WARNING:Xst:819 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd" line 176: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <estadoAtualTeclado>, <contador>, <codigoConvertidoTecladoBinario>
+WARNING:Xst:819 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd" line 236: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <estadoAtual>, <recebeuNumeros>, <resultSoma>, <resultMultiplicacao>
 Entity <Calculadora> analyzed. Unit <Calculadora> generated.
+
+Analyzing generic Entity <kb_code> in library <work> (Architecture <arch>).
+	W_SIZE = 2
+WARNING:Xst:753 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_03_kb_lcode.vhd" line 37: Unconnected output port 'full' of component 'fifo'.
+Entity <kb_code> analyzed. Unit <kb_code> generated.
+
+Analyzing Entity <ps2_rx> in library <work> (Architecture <arch>).
+Entity <ps2_rx> analyzed. Unit <ps2_rx> generated.
+
+Analyzing generic Entity <fifo> in library <work> (Architecture <arch>).
+	B = 8
+	W = 2
+Entity <fifo> analyzed. Unit <fifo> generated.
+
+Analyzing Entity <lcd> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/lcd.vhd" line 251: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <jaRecebiNumero>
+Entity <lcd> analyzed. Unit <lcd> generated.
 
 Analyzing Entity <MultiplicadorCompleto> in library <work> (Architecture <multiplicadorcompletoarch>).
 Entity <MultiplicadorCompleto> analyzed. Unit <MultiplicadorCompleto> generated.
@@ -163,6 +203,94 @@ Entity <SomaCompleta> analyzed. Unit <SomaCompleta> generated.
 =========================================================================
 
 Performing bidirectional port resolution...
+
+Synthesizing Unit <lcd>.
+    Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/lcd.vhd".
+WARNING:Xst:646 - Signal <writeDone> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <keyDecifrado<31:4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <stCurW>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | OneUSClk                  (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | stidle                                         |
+    | Power Up State     | stidle                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <stCur>.
+    Using one-hot encoding for signal <stNext>.
+    Found 14x10-bit ROM for signal <$mux0000> created at line 263.
+WARNING:Xst:737 - Found 32-bit latch for signal <keyDecifrado>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 6-bit up counter for signal <clkCount>.
+    Found 17-bit up counter for signal <count>.
+    Found 4-bit register for signal <lcd_cmd_ptr>.
+    Found 10-bit register for signal <stCur>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred  14 D-type flip-flop(s).
+Unit <lcd> synthesized.
+
+
+Synthesizing Unit <ps2_rx>.
+    Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_01_ps2_rx.vhd".
+WARNING:Xst:646 - Signal <b_reg<0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <state_reg>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 11-bit register for signal <b_reg>.
+    Found 1-bit register for signal <f_ps2c_reg>.
+    Found 8-bit register for signal <filter_reg>.
+    Found 4-bit register for signal <n_reg>.
+    Found 4-bit subtractor for signal <n_reg$addsub0000> created at line 83.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  24 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <ps2_rx> synthesized.
+
+
+Synthesizing Unit <fifo>.
+    Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/fifo.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <r_data>.
+    Found 32-bit register for signal <array_reg>.
+    Found 1-bit register for signal <empty_reg>.
+    Found 2-bit comparator equal for signal <empty_reg$cmp_eq0000> created at line 89.
+    Found 1-bit 4-to-1 multiplexer for signal <empty_reg$mux0000> created at line 83.
+    Found 1-bit register for signal <full_reg>.
+    Found 2-bit comparator equal for signal <full_reg$cmp_eq0000> created at line 97.
+    Found 1-bit 4-to-1 multiplexer for signal <full_reg$mux0000> created at line 83.
+    Found 2-bit register for signal <r_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <r_ptr_reg$mux0000> created at line 83.
+    Found 2-bit adder for signal <r_ptr_succ$add0000> created at line 72.
+    Found 2-bit register for signal <w_ptr_reg>.
+    Found 2-bit 4-to-1 multiplexer for signal <w_ptr_reg$mux0000> created at line 83.
+    Found 2-bit adder for signal <w_ptr_succ$add0000> created at line 71.
+    Summary:
+	inferred  38 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  14 Multiplexer(s).
+Unit <fifo> synthesized.
+
 
 Synthesizing Unit <Multiplicador>.
     Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Multiplicador.vhd".
@@ -206,6 +334,15 @@ WARNING:Xst:653 - Signal <seis> is used but never assigned. This sourceless sign
 	inferred   2 Adder/Subtractor(s).
 	inferred   1 Comparator(s).
 Unit <Soma4Alg> synthesized.
+
+
+Synthesizing Unit <kb_code>.
+    Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/list_ch08_03_kb_lcode.vhd".
+WARNING:Xst:1780 - Signal <w_data> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <state_reg<0>>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <kb_code> synthesized.
 
 
 Synthesizing Unit <MultiplicadorCompleto>.
@@ -252,9 +389,49 @@ Unit <SomaCompleta> synthesized.
 
 Synthesizing Unit <Calculadora>.
     Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd".
-WARNING:Xst:653 - Signal <estadoAtual> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 2-bit latch for signal <estadoAtual>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <recebeuNumeros>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <estadoAtualTeclado_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 32-bit latch for signal <contador>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 32-bit latch for signal <result>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Using one-hot encoding for signal <estadoAtual>.
+WARNING:Xst:737 - Found 4-bit latch for signal <codigoConvertidoTecladoBinario>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit adder for signal <contador$add0000> created at line 229.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
 Unit <Calculadora> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -263,19 +440,42 @@ INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmet
 HDL Synthesis Report
 
 Macro Statistics
+# ROMs                                                 : 1
+ 14x10-bit ROM                                         : 1
 # Multipliers                                          : 32
  4x4-bit multiplier                                    : 32
-# Adders/Subtractors                                   : 96
+# Adders/Subtractors                                   : 100
+ 2-bit adder                                           : 2
+ 32-bit adder                                          : 1
+ 4-bit subtractor                                      : 1
  5-bit adder                                           : 32
  5-bit adder carry in                                  : 32
  8-bit adder                                           : 32
-# Latches                                              : 17
- 32-bit latch                                          : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 15
+ 1-bit register                                        : 4
+ 10-bit register                                       : 1
+ 11-bit register                                       : 1
+ 2-bit register                                        : 2
+ 4-bit register                                        : 2
+ 8-bit register                                        : 5
+# Latches                                              : 55
+ 1-bit latch                                           : 34
+ 2-bit latch                                           : 1
+ 32-bit latch                                          : 3
+ 4-bit latch                                           : 1
  8-bit latch                                           : 16
-# Comparators                                          : 304
+# Comparators                                          : 306
+ 2-bit comparator equal                                : 2
  5-bit comparator greatequal                           : 32
  8-bit comparator greatequal                           : 128
  8-bit comparator lessequal                            : 144
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 2
+ 2-bit 4-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -283,218 +483,73 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <31>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <30>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <29>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <28>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <27>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <26>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <25>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <24>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <23>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <22>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <21>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <20>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <19>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <18>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <17>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <16>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <15>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <14>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <13>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <12>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <11>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <9>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <8>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <6>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <5>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <4>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <3>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <2>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <1>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <0>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <0>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <1>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <2>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <3>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <4>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <5>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <6>.
-WARNING:Xst:1898 - Due to constant pushing, FF/Latch <0> is unconnected in block <7>.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais1> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais2> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais3> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais4> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais5> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais6> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais7> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais8> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais9> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais10> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais11> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais12> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais13> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais14> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais15> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais16> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais17> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais18> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais19> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais20> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais21> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais22> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais23> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais24> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais25> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais26> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais27> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <SomaResultsParciais28> is unconnected in block <Multiplica>.
-   It will be removed from the design.
-WARNING:Xst:1290 - Hierarchical block <Soma> is unconnected in block <Calculadora>.
-   It will be removed from the design.
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <teclado/ps2_rx_unit/state_reg/FSM> on signal <state_reg[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ dps   | 01
+ load  | 11
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <portLcd/stCurW/FSM> on signal <stCurW[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ strw     | 00
+ stenable | 01
+ stidle   | 10
+----------------------
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block estadoAtualTeclado_0.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 0.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block 1.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2677 - Node <b_reg_0> of sequential type is unconnected in block <ps2_rx_unit>.
+
+Synthesizing (advanced) Unit <lcd>.
+INFO:Xst:3021 - HDL ADVISOR - Asynchronous or synchronous initialization of the register <lcd_cmd_ptr> prevents it from being combined with the ROM <Mrom__mux0000> for implementation as read-only block RAM.
+Unit <lcd> synthesized (advanced).
+WARNING:Xst:2677 - Node <b_reg_0> of sequential type is unconnected in block <ps2_rx>.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 1
+ 14x10-bit ROM                                         : 1
 # Multipliers                                          : 32
  4x4-bit multiplier                                    : 32
-# Adders/Subtractors                                   : 96
+# Adders/Subtractors                                   : 100
+ 2-bit adder                                           : 2
+ 32-bit adder                                          : 1
+ 4-bit subtractor                                      : 1
  5-bit adder                                           : 32
  5-bit adder carry in                                  : 32
  8-bit adder                                           : 32
-# Latches                                              : 17
- 32-bit latch                                          : 1
+# Counters                                             : 2
+ 17-bit up counter                                     : 1
+ 6-bit up counter                                      : 1
+# Registers                                            : 76
+ Flip-Flops                                            : 76
+# Latches                                              : 55
+ 1-bit latch                                           : 34
+ 2-bit latch                                           : 1
+ 32-bit latch                                          : 3
+ 4-bit latch                                           : 1
  8-bit latch                                           : 16
-# Comparators                                          : 304
+# Comparators                                          : 306
+ 2-bit comparator equal                                : 2
  5-bit comparator greatequal                           : 32
  8-bit comparator greatequal                           : 128
  8-bit comparator lessequal                            : 144
+# Multiplexers                                         : 5
+ 1-bit 4-to-1 multiplexer                              : 2
+ 2-bit 4-to-1 multiplexer                              : 2
+ 8-bit 4-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -505,163 +560,52 @@ WARNING:Xst:1989 - Unit <MultiplicadorCompleto>: instances <mult9>, <mult13> of 
 WARNING:Xst:1989 - Unit <MultiplicadorCompleto>: instances <mult10>, <mult14> of unit <Multiplicador> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <MultiplicadorCompleto>: instances <mult11>, <mult15> of unit <Multiplicador> are equivalent, second instance is removed
 WARNING:Xst:1989 - Unit <MultiplicadorCompleto>: instances <mult12>, <mult16> of unit <Multiplicador> are equivalent, second instance is removed
-WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <1> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <2> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <3> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <4> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <5> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <6> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <8> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <9> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <10> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <11> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <12> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <13> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <14> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <15> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <16> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <17> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <18> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <19> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <20> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <21> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <22> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <23> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <24> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <25> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <26> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <27> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <28> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <29> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <30> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <31> has a constant value of 0 in block <LPM_LATCH_10>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <31> in Unit <LPM_LATCH_1> is equivalent to the following 27 FFs/Latches, which will be removed : <30> <29> <28> <27> <26> <25> <24> <23> <22> <21> <20> <19> <18> <17> <16> <15> <14> <13> <12> <11> <10> <9> <8> <7> <6> <5> <4> 
+WARNING:Xst:1293 - FF/Latch <31> has a constant value of 0 in block <LPM_LATCH_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch estadoAtualTeclado_0 hinder the constant cleaning in the block Calculadora.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch estadoAtual_0 hinder the constant cleaning in the block Calculadora.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch estadoAtual_1 hinder the constant cleaning in the block Calculadora.
+   You should achieve better results by setting this init to 1.
 
 Optimizing unit <Calculadora> ...
+
+Optimizing unit <ps2_rx> ...
+
+Optimizing unit <fifo> ...
+
+Optimizing unit <lcd> ...
 
 Optimizing unit <Multiplicador> ...
 
 Optimizing unit <MultiplicadorCompleto> ...
-WARNING:Xst:2677 - Node <Multiplica/mult1/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult1/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult1/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult1/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult1/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult1/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult1/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult1/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult1/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult2/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult2/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult2/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult2/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult2/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult2/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult2/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult2/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult2/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult3/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult3/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult3/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult3/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult3/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult3/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult3/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult3/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult3/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult4/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult4/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult4/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult4/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult4/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult4/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult4/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult4/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult4/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult5/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
 WARNING:Xst:2677 - Node <Multiplica/mult5/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
 WARNING:Xst:2677 - Node <Multiplica/mult5/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
 WARNING:Xst:2677 - Node <Multiplica/mult5/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
 WARNING:Xst:2677 - Node <Multiplica/mult5/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult5/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult5/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult5/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult5/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult6/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult6/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult6/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult6/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult6/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult6/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult6/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult6/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult6/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult7/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult7/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult7/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult7/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult7/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult7/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult7/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult7/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult7/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult8/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult8/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult8/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult8/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult8/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult8/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult8/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult8/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult8/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult9/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
 WARNING:Xst:2677 - Node <Multiplica/mult9/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
 WARNING:Xst:2677 - Node <Multiplica/mult9/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
 WARNING:Xst:2677 - Node <Multiplica/mult9/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
 WARNING:Xst:2677 - Node <Multiplica/mult9/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult9/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult9/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult9/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult9/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult10/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult10/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult10/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult10/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult10/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult10/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult10/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult10/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult10/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult11/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult11/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult11/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult11/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult11/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult11/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult11/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult11/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult11/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult12/Mmult_resultParcial> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult12/resultParcial2_0> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult12/resultParcial2_1> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult12/resultParcial2_2> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult12/resultParcial2_3> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult12/resultParcial2_4> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult12/resultParcial2_5> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult12/resultParcial2_6> of sequential type is unconnected in block <Calculadora>.
-WARNING:Xst:2677 - Node <Multiplica/mult12/resultParcial2_7> of sequential type is unconnected in block <Calculadora>.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block Calculadora, actual ratio is 0.
+Found area constraint ratio of 100 (+ 5) on block Calculadora, actual ratio is 15.
+Latch codigoConvertidoTecladoBinario_3 has been replicated 1 time(s) to handle iob=true attribute.
+Latch codigoConvertidoTecladoBinario_2 has been replicated 1 time(s) to handle iob=true attribute.
+Latch codigoConvertidoTecladoBinario_1 has been replicated 1 time(s) to handle iob=true attribute.
+Latch codigoConvertidoTecladoBinario_0 has been replicated 1 time(s) to handle iob=true attribute.
 
 Final Macro Processing ...
 
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 103
+ Flip-Flops                                            : 103
+
 =========================================================================
 
 =========================================================================
@@ -686,13 +630,47 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 65
+# IOs                              : 58
 
 Cell Usage :
-# BELS                             : 1
+# BELS                             : 1987
 #      GND                         : 1
-# IO Buffers                       : 32
-#      OBUF                        : 32
+#      INV                         : 5
+#      LUT1                        : 81
+#      LUT2                        : 233
+#      LUT2_D                      : 2
+#      LUT3                        : 253
+#      LUT3_D                      : 1
+#      LUT3_L                      : 1
+#      LUT4                        : 864
+#      LUT4_D                      : 2
+#      LUT4_L                      : 4
+#      MUXCY                       : 225
+#      MUXF5                       : 97
+#      VCC                         : 1
+#      XORCY                       : 217
+# FlipFlops/Latches                : 303
+#      FD                          : 5
+#      FDC                         : 31
+#      FDCE                        : 32
+#      FDP                         : 1
+#      FDR                         : 28
+#      FDRSE                       : 4
+#      FDS                         : 1
+#      FDSE                        : 1
+#      LD                          : 76
+#      LDC_1                       : 4
+#      LDCE                        : 28
+#      LDCPE                       : 88
+#      LDE                         : 4
+# Clock Buffers                    : 5
+#      BUFG                        : 4
+#      BUFGP                       : 1
+# IO Buffers                       : 57
+#      IBUF                        : 6
+#      OBUF                        : 51
+# MULTs                            : 12
+#      MULT18X18SIO                : 12
 =========================================================================
 
 Device utilization summary:
@@ -700,9 +678,14 @@ Device utilization summary:
 
 Selected Device : 3s700anfgg484-4 
 
- Number of Slices:                        0  out of   5888     0%  
- Number of IOs:                          65
- Number of bonded IOBs:                  32  out of    372     8%  
+ Number of Slices:                      809  out of   5888    13%  
+ Number of Slice Flip Flops:            267  out of  11776     2%  
+ Number of 4 input LUTs:               1446  out of  11776    12%  
+ Number of IOs:                          58
+ Number of bonded IOBs:                  58  out of    372    15%  
+    IOB Flip Flops:                      36
+ Number of MULT18X18SIOs:                12  out of     20    60%  
+ Number of GCLKs:                         5  out of     24    20%  
 
 ---------------------------
 Partition Resource Summary:
@@ -722,19 +705,230 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+Clock Signal                                                                               | Clock buffer(FF name)                      | Load  |
+-------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+numB_3_not00031(numB_3_not00031:O)                                                         | BUFG(*)(numB_2)                            | 24    |
+teclado/fifo_key_unit/empty_reg                                                            | NONE(estadoAtualTeclado_0)                 | 1     |
+numA_4_cmp_eq0000(numA_4_cmp_eq00001:O)                                                    | NONE(*)(numA_7)                            | 4     |
+numB_3_not0004(numB_3_not0004_wg_cy<7>:O)                                                  | NONE(*)(recebeuNumeros)                    | 5     |
+codigoConvertidoTecladoBinario_not0001(codigoConvertidoTecladoBinario_not0001169_f5:O)     | NONE(*)(codigoConvertidoTecladoBinario_0)  | 8     |
+estadoAtual_0                                                                              | NONE(estadoAtual_0)                        | 2     |
+clock                                                                                      | BUFGP                                      | 70    |
+estadoAtual_11                                                                             | BUFG                                       | 32    |
+estadoAtualTeclado_01                                                                      | BUFG                                       | 32    |
+portLcd/keyDecifrado_not0002(portLcd/keyDecifrado_not0002:O)                               | NONE(*)(portLcd/keyDecifrado_3)            | 4     |
+portLcd/clkCount_51                                                                        | BUFG                                       | 33    |
+Multiplica/mult1/resultParcial2_cmp_ge0000(Multiplica/mult1/resultParcial2_cmp_ge00001:O)  | NONE(*)(Multiplica/mult1/resultParcial2_0) | 8     |
+Multiplica/mult2/resultParcial2_cmp_ge0000(Multiplica/mult2/resultParcial2_cmp_ge00001:O)  | NONE(*)(Multiplica/mult2/resultParcial2_0) | 8     |
+Multiplica/mult3/resultParcial2_cmp_ge0000(Multiplica/mult3/resultParcial2_cmp_ge00001:O)  | NONE(*)(Multiplica/mult3/resultParcial2_0) | 8     |
+Multiplica/mult4/resultParcial2_cmp_ge0000(Multiplica/mult4/resultParcial2_cmp_ge00001:O)  | NONE(*)(Multiplica/mult4/resultParcial2_0) | 8     |
+Multiplica/mult5/resultParcial2_cmp_ge0000(Multiplica/mult5/resultParcial2_cmp_ge00001:O)  | NONE(*)(Multiplica/mult5/resultParcial2_4) | 4     |
+Multiplica/mult6/resultParcial2_cmp_ge0000(Multiplica/mult6/resultParcial2_cmp_ge00001:O)  | NONE(*)(Multiplica/mult6/resultParcial2_0) | 8     |
+Multiplica/mult7/resultParcial2_cmp_ge0000(Multiplica/mult7/resultParcial2_cmp_ge00001:O)  | NONE(*)(Multiplica/mult7/resultParcial2_0) | 8     |
+Multiplica/mult8/resultParcial2_cmp_ge0000(Multiplica/mult8/resultParcial2_cmp_ge00001:O)  | NONE(*)(Multiplica/mult8/resultParcial2_0) | 8     |
+Multiplica/mult9/resultParcial2_cmp_ge0000(Multiplica/mult9/resultParcial2_cmp_ge00001:O)  | NONE(*)(Multiplica/mult9/resultParcial2_4) | 4     |
+Multiplica/mult10/resultParcial2_cmp_ge0000(Multiplica/mult10/resultParcial2_cmp_ge00001:O)| NONE(*)(Multiplica/mult10/resultParcial2_0)| 8     |
+Multiplica/mult11/resultParcial2_cmp_ge0000(Multiplica/mult11/resultParcial2_cmp_ge00001:O)| NONE(*)(Multiplica/mult11/resultParcial2_0)| 8     |
+Multiplica/mult12/resultParcial2_cmp_ge0000(Multiplica/mult12/resultParcial2_cmp_ge00001:O)| NONE(*)(Multiplica/mult12/resultParcial2_0)| 8     |
+-------------------------------------------------------------------------------------------+--------------------------------------------+-------+
+(*) These 17 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
-No asynchronous control signals found in this design
+---------------------------------------------------------------------------------------------+-----------------------------------------+-------+
+Control Signal                                                                               | Buffer(FF name)                         | Load  |
+---------------------------------------------------------------------------------------------+-----------------------------------------+-------+
+resetTeclado                                                                                 | IBUF                                    | 64    |
+estadoAtualTeclado_0_0_not0000(estadoAtualTeclado_0_0_not00001_INV_0:O)                      | NONE(numA_0)                            | 32    |
+Multiplica/mult1/resultParcial2_0__and0000(Multiplica/mult1/resultParcial2_0__and00001:O)    | NONE(Multiplica/mult1/resultParcial2_0) | 1     |
+Multiplica/mult1/resultParcial2_0__and0001(Multiplica/mult1/resultParcial2_0__and00011:O)    | NONE(Multiplica/mult1/resultParcial2_0) | 1     |
+Multiplica/mult1/resultParcial2_1__and0000(Multiplica/mult1/resultParcial2_1__and00001:O)    | NONE(Multiplica/mult1/resultParcial2_1) | 1     |
+Multiplica/mult1/resultParcial2_1__and0001(Multiplica/mult1/resultParcial2_1__and00011:O)    | NONE(Multiplica/mult1/resultParcial2_1) | 1     |
+Multiplica/mult1/resultParcial2_2__and0000(Multiplica/mult1/resultParcial2_2__and00001:O)    | NONE(Multiplica/mult1/resultParcial2_2) | 1     |
+Multiplica/mult1/resultParcial2_2__and0001(Multiplica/mult1/resultParcial2_2__and00011:O)    | NONE(Multiplica/mult1/resultParcial2_2) | 1     |
+Multiplica/mult1/resultParcial2_3__and0000(Multiplica/mult1/resultParcial2_3__and00001:O)    | NONE(Multiplica/mult1/resultParcial2_3) | 1     |
+Multiplica/mult1/resultParcial2_3__and0001(Multiplica/mult1/resultParcial2_3__and00011:O)    | NONE(Multiplica/mult1/resultParcial2_3) | 1     |
+Multiplica/mult1/resultParcial2_4__and0000(Multiplica/mult1/resultParcial2_4__and00001:O)    | NONE(Multiplica/mult1/resultParcial2_4) | 1     |
+Multiplica/mult1/resultParcial2_4__and0001(Multiplica/mult1/resultParcial2_4__and00011:O)    | NONE(Multiplica/mult1/resultParcial2_4) | 1     |
+Multiplica/mult1/resultParcial2_5__and0000(Multiplica/mult1/resultParcial2_5__and00001:O)    | NONE(Multiplica/mult1/resultParcial2_5) | 1     |
+Multiplica/mult1/resultParcial2_5__and0001(Multiplica/mult1/resultParcial2_5__and00011:O)    | NONE(Multiplica/mult1/resultParcial2_5) | 1     |
+Multiplica/mult1/resultParcial2_6__and0000(Multiplica/mult1/resultParcial2_6__and00001:O)    | NONE(Multiplica/mult1/resultParcial2_6) | 1     |
+Multiplica/mult1/resultParcial2_6__and0001(Multiplica/mult1/resultParcial2_6__and0001_f5:O)  | NONE(Multiplica/mult1/resultParcial2_6) | 1     |
+Multiplica/mult1/resultParcial2_7__and0000(Multiplica/mult1/resultParcial2_7__and00002:O)    | NONE(Multiplica/mult1/resultParcial2_7) | 1     |
+Multiplica/mult1/resultParcial2_7__and0001(Multiplica/mult1/resultParcial2_7__and00011:O)    | NONE(Multiplica/mult1/resultParcial2_7) | 1     |
+Multiplica/mult10/resultParcial2_0__and0000(Multiplica/mult10/resultParcial2_0__and00001:O)  | NONE(Multiplica/mult10/resultParcial2_0)| 1     |
+Multiplica/mult10/resultParcial2_0__and0001(Multiplica/mult10/resultParcial2_0__and00011:O)  | NONE(Multiplica/mult10/resultParcial2_0)| 1     |
+Multiplica/mult10/resultParcial2_1__and0000(Multiplica/mult10/resultParcial2_1__and00001:O)  | NONE(Multiplica/mult10/resultParcial2_1)| 1     |
+Multiplica/mult10/resultParcial2_1__and0001(Multiplica/mult10/resultParcial2_1__and00011:O)  | NONE(Multiplica/mult10/resultParcial2_1)| 1     |
+Multiplica/mult10/resultParcial2_2__and0000(Multiplica/mult10/resultParcial2_2__and00001:O)  | NONE(Multiplica/mult10/resultParcial2_2)| 1     |
+Multiplica/mult10/resultParcial2_2__and0001(Multiplica/mult10/resultParcial2_2__and00011:O)  | NONE(Multiplica/mult10/resultParcial2_2)| 1     |
+Multiplica/mult10/resultParcial2_3__and0000(Multiplica/mult10/resultParcial2_3__and00001:O)  | NONE(Multiplica/mult10/resultParcial2_3)| 1     |
+Multiplica/mult10/resultParcial2_3__and0001(Multiplica/mult10/resultParcial2_3__and00011:O)  | NONE(Multiplica/mult10/resultParcial2_3)| 1     |
+Multiplica/mult10/resultParcial2_4__and0000(Multiplica/mult10/resultParcial2_4__and00001:O)  | NONE(Multiplica/mult10/resultParcial2_4)| 1     |
+Multiplica/mult10/resultParcial2_4__and0001(Multiplica/mult10/resultParcial2_4__and00011:O)  | NONE(Multiplica/mult10/resultParcial2_4)| 1     |
+Multiplica/mult10/resultParcial2_5__and0000(Multiplica/mult10/resultParcial2_5__and00001:O)  | NONE(Multiplica/mult10/resultParcial2_5)| 1     |
+Multiplica/mult10/resultParcial2_5__and0001(Multiplica/mult10/resultParcial2_5__and00011:O)  | NONE(Multiplica/mult10/resultParcial2_5)| 1     |
+Multiplica/mult10/resultParcial2_6__and0000(Multiplica/mult10/resultParcial2_6__and00001:O)  | NONE(Multiplica/mult10/resultParcial2_6)| 1     |
+Multiplica/mult10/resultParcial2_6__and0001(Multiplica/mult10/resultParcial2_6__and0001_f5:O)| NONE(Multiplica/mult10/resultParcial2_6)| 1     |
+Multiplica/mult10/resultParcial2_7__and0000(Multiplica/mult10/resultParcial2_7__and00002:O)  | NONE(Multiplica/mult10/resultParcial2_7)| 1     |
+Multiplica/mult10/resultParcial2_7__and0001(Multiplica/mult10/resultParcial2_7__and00011:O)  | NONE(Multiplica/mult10/resultParcial2_7)| 1     |
+Multiplica/mult11/resultParcial2_0__and0000(Multiplica/mult11/resultParcial2_0__and00001:O)  | NONE(Multiplica/mult11/resultParcial2_0)| 1     |
+Multiplica/mult11/resultParcial2_0__and0001(Multiplica/mult11/resultParcial2_0__and00011:O)  | NONE(Multiplica/mult11/resultParcial2_0)| 1     |
+Multiplica/mult11/resultParcial2_1__and0000(Multiplica/mult11/resultParcial2_1__and00001:O)  | NONE(Multiplica/mult11/resultParcial2_1)| 1     |
+Multiplica/mult11/resultParcial2_1__and0001(Multiplica/mult11/resultParcial2_1__and00011:O)  | NONE(Multiplica/mult11/resultParcial2_1)| 1     |
+Multiplica/mult11/resultParcial2_2__and0000(Multiplica/mult11/resultParcial2_2__and00001:O)  | NONE(Multiplica/mult11/resultParcial2_2)| 1     |
+Multiplica/mult11/resultParcial2_2__and0001(Multiplica/mult11/resultParcial2_2__and00011:O)  | NONE(Multiplica/mult11/resultParcial2_2)| 1     |
+Multiplica/mult11/resultParcial2_3__and0000(Multiplica/mult11/resultParcial2_3__and00001:O)  | NONE(Multiplica/mult11/resultParcial2_3)| 1     |
+Multiplica/mult11/resultParcial2_3__and0001(Multiplica/mult11/resultParcial2_3__and00011:O)  | NONE(Multiplica/mult11/resultParcial2_3)| 1     |
+Multiplica/mult11/resultParcial2_4__and0000(Multiplica/mult11/resultParcial2_4__and00001:O)  | NONE(Multiplica/mult11/resultParcial2_4)| 1     |
+Multiplica/mult11/resultParcial2_4__and0001(Multiplica/mult11/resultParcial2_4__and00011:O)  | NONE(Multiplica/mult11/resultParcial2_4)| 1     |
+Multiplica/mult11/resultParcial2_5__and0000(Multiplica/mult11/resultParcial2_5__and00001:O)  | NONE(Multiplica/mult11/resultParcial2_5)| 1     |
+Multiplica/mult11/resultParcial2_5__and0001(Multiplica/mult11/resultParcial2_5__and00011:O)  | NONE(Multiplica/mult11/resultParcial2_5)| 1     |
+Multiplica/mult11/resultParcial2_6__and0000(Multiplica/mult11/resultParcial2_6__and00001:O)  | NONE(Multiplica/mult11/resultParcial2_6)| 1     |
+Multiplica/mult11/resultParcial2_6__and0001(Multiplica/mult11/resultParcial2_6__and0001_f5:O)| NONE(Multiplica/mult11/resultParcial2_6)| 1     |
+Multiplica/mult11/resultParcial2_7__and0000(Multiplica/mult11/resultParcial2_7__and00002:O)  | NONE(Multiplica/mult11/resultParcial2_7)| 1     |
+Multiplica/mult11/resultParcial2_7__and0001(Multiplica/mult11/resultParcial2_7__and00011:O)  | NONE(Multiplica/mult11/resultParcial2_7)| 1     |
+Multiplica/mult12/resultParcial2_0__and0000(Multiplica/mult12/resultParcial2_0__and00001:O)  | NONE(Multiplica/mult12/resultParcial2_0)| 1     |
+Multiplica/mult12/resultParcial2_0__and0001(Multiplica/mult12/resultParcial2_0__and00011:O)  | NONE(Multiplica/mult12/resultParcial2_0)| 1     |
+Multiplica/mult12/resultParcial2_1__and0000(Multiplica/mult12/resultParcial2_1__and00001:O)  | NONE(Multiplica/mult12/resultParcial2_1)| 1     |
+Multiplica/mult12/resultParcial2_1__and0001(Multiplica/mult12/resultParcial2_1__and00011:O)  | NONE(Multiplica/mult12/resultParcial2_1)| 1     |
+Multiplica/mult12/resultParcial2_2__and0000(Multiplica/mult12/resultParcial2_2__and00001:O)  | NONE(Multiplica/mult12/resultParcial2_2)| 1     |
+Multiplica/mult12/resultParcial2_2__and0001(Multiplica/mult12/resultParcial2_2__and00011:O)  | NONE(Multiplica/mult12/resultParcial2_2)| 1     |
+Multiplica/mult12/resultParcial2_3__and0000(Multiplica/mult12/resultParcial2_3__and00001:O)  | NONE(Multiplica/mult12/resultParcial2_3)| 1     |
+Multiplica/mult12/resultParcial2_3__and0001(Multiplica/mult12/resultParcial2_3__and00011:O)  | NONE(Multiplica/mult12/resultParcial2_3)| 1     |
+Multiplica/mult12/resultParcial2_4__and0000(Multiplica/mult12/resultParcial2_4__and00001:O)  | NONE(Multiplica/mult12/resultParcial2_4)| 1     |
+Multiplica/mult12/resultParcial2_4__and0001(Multiplica/mult12/resultParcial2_4__and00011:O)  | NONE(Multiplica/mult12/resultParcial2_4)| 1     |
+Multiplica/mult12/resultParcial2_5__and0000(Multiplica/mult12/resultParcial2_5__and00001:O)  | NONE(Multiplica/mult12/resultParcial2_5)| 1     |
+Multiplica/mult12/resultParcial2_5__and0001(Multiplica/mult12/resultParcial2_5__and00011:O)  | NONE(Multiplica/mult12/resultParcial2_5)| 1     |
+Multiplica/mult12/resultParcial2_6__and0000(Multiplica/mult12/resultParcial2_6__and00001:O)  | NONE(Multiplica/mult12/resultParcial2_6)| 1     |
+Multiplica/mult12/resultParcial2_6__and0001(Multiplica/mult12/resultParcial2_6__and0001_f5:O)| NONE(Multiplica/mult12/resultParcial2_6)| 1     |
+Multiplica/mult12/resultParcial2_7__and0000(Multiplica/mult12/resultParcial2_7__and00002:O)  | NONE(Multiplica/mult12/resultParcial2_7)| 1     |
+Multiplica/mult12/resultParcial2_7__and0001(Multiplica/mult12/resultParcial2_7__and00011:O)  | NONE(Multiplica/mult12/resultParcial2_7)| 1     |
+Multiplica/mult2/resultParcial2_0__and0000(Multiplica/mult2/resultParcial2_0__and00001:O)    | NONE(Multiplica/mult2/resultParcial2_0) | 1     |
+Multiplica/mult2/resultParcial2_0__and0001(Multiplica/mult2/resultParcial2_0__and00011:O)    | NONE(Multiplica/mult2/resultParcial2_0) | 1     |
+Multiplica/mult2/resultParcial2_1__and0000(Multiplica/mult2/resultParcial2_1__and00001:O)    | NONE(Multiplica/mult2/resultParcial2_1) | 1     |
+Multiplica/mult2/resultParcial2_1__and0001(Multiplica/mult2/resultParcial2_1__and00011:O)    | NONE(Multiplica/mult2/resultParcial2_1) | 1     |
+Multiplica/mult2/resultParcial2_2__and0000(Multiplica/mult2/resultParcial2_2__and00001:O)    | NONE(Multiplica/mult2/resultParcial2_2) | 1     |
+Multiplica/mult2/resultParcial2_2__and0001(Multiplica/mult2/resultParcial2_2__and00011:O)    | NONE(Multiplica/mult2/resultParcial2_2) | 1     |
+Multiplica/mult2/resultParcial2_3__and0000(Multiplica/mult2/resultParcial2_3__and00001:O)    | NONE(Multiplica/mult2/resultParcial2_3) | 1     |
+Multiplica/mult2/resultParcial2_3__and0001(Multiplica/mult2/resultParcial2_3__and00011:O)    | NONE(Multiplica/mult2/resultParcial2_3) | 1     |
+Multiplica/mult2/resultParcial2_4__and0000(Multiplica/mult2/resultParcial2_4__and00001:O)    | NONE(Multiplica/mult2/resultParcial2_4) | 1     |
+Multiplica/mult2/resultParcial2_4__and0001(Multiplica/mult2/resultParcial2_4__and00011:O)    | NONE(Multiplica/mult2/resultParcial2_4) | 1     |
+Multiplica/mult2/resultParcial2_5__and0000(Multiplica/mult2/resultParcial2_5__and00001:O)    | NONE(Multiplica/mult2/resultParcial2_5) | 1     |
+Multiplica/mult2/resultParcial2_5__and0001(Multiplica/mult2/resultParcial2_5__and00011:O)    | NONE(Multiplica/mult2/resultParcial2_5) | 1     |
+Multiplica/mult2/resultParcial2_6__and0000(Multiplica/mult2/resultParcial2_6__and00001:O)    | NONE(Multiplica/mult2/resultParcial2_6) | 1     |
+Multiplica/mult2/resultParcial2_6__and0001(Multiplica/mult2/resultParcial2_6__and0001_f5:O)  | NONE(Multiplica/mult2/resultParcial2_6) | 1     |
+Multiplica/mult2/resultParcial2_7__and0000(Multiplica/mult2/resultParcial2_7__and00002:O)    | NONE(Multiplica/mult2/resultParcial2_7) | 1     |
+Multiplica/mult2/resultParcial2_7__and0001(Multiplica/mult2/resultParcial2_7__and00011:O)    | NONE(Multiplica/mult2/resultParcial2_7) | 1     |
+Multiplica/mult3/resultParcial2_0__and0000(Multiplica/mult3/resultParcial2_0__and00001:O)    | NONE(Multiplica/mult3/resultParcial2_0) | 1     |
+Multiplica/mult3/resultParcial2_0__and0001(Multiplica/mult3/resultParcial2_0__and00011:O)    | NONE(Multiplica/mult3/resultParcial2_0) | 1     |
+Multiplica/mult3/resultParcial2_1__and0000(Multiplica/mult3/resultParcial2_1__and00001:O)    | NONE(Multiplica/mult3/resultParcial2_1) | 1     |
+Multiplica/mult3/resultParcial2_1__and0001(Multiplica/mult3/resultParcial2_1__and00011:O)    | NONE(Multiplica/mult3/resultParcial2_1) | 1     |
+Multiplica/mult3/resultParcial2_2__and0000(Multiplica/mult3/resultParcial2_2__and00001:O)    | NONE(Multiplica/mult3/resultParcial2_2) | 1     |
+Multiplica/mult3/resultParcial2_2__and0001(Multiplica/mult3/resultParcial2_2__and00011:O)    | NONE(Multiplica/mult3/resultParcial2_2) | 1     |
+Multiplica/mult3/resultParcial2_3__and0000(Multiplica/mult3/resultParcial2_3__and00001:O)    | NONE(Multiplica/mult3/resultParcial2_3) | 1     |
+Multiplica/mult3/resultParcial2_3__and0001(Multiplica/mult3/resultParcial2_3__and00011:O)    | NONE(Multiplica/mult3/resultParcial2_3) | 1     |
+Multiplica/mult3/resultParcial2_4__and0000(Multiplica/mult3/resultParcial2_4__and00001:O)    | NONE(Multiplica/mult3/resultParcial2_4) | 1     |
+Multiplica/mult3/resultParcial2_4__and0001(Multiplica/mult3/resultParcial2_4__and00011:O)    | NONE(Multiplica/mult3/resultParcial2_4) | 1     |
+Multiplica/mult3/resultParcial2_5__and0000(Multiplica/mult3/resultParcial2_5__and00001:O)    | NONE(Multiplica/mult3/resultParcial2_5) | 1     |
+Multiplica/mult3/resultParcial2_5__and0001(Multiplica/mult3/resultParcial2_5__and00011:O)    | NONE(Multiplica/mult3/resultParcial2_5) | 1     |
+Multiplica/mult3/resultParcial2_6__and0000(Multiplica/mult3/resultParcial2_6__and00001:O)    | NONE(Multiplica/mult3/resultParcial2_6) | 1     |
+Multiplica/mult3/resultParcial2_6__and0001(Multiplica/mult3/resultParcial2_6__and0001_f5:O)  | NONE(Multiplica/mult3/resultParcial2_6) | 1     |
+Multiplica/mult3/resultParcial2_7__and0000(Multiplica/mult3/resultParcial2_7__and00002:O)    | NONE(Multiplica/mult3/resultParcial2_7) | 1     |
+Multiplica/mult3/resultParcial2_7__and0001(Multiplica/mult3/resultParcial2_7__and00011:O)    | NONE(Multiplica/mult3/resultParcial2_7) | 1     |
+Multiplica/mult4/resultParcial2_0__and0000(Multiplica/mult4/resultParcial2_0__and00001:O)    | NONE(Multiplica/mult4/resultParcial2_0) | 1     |
+Multiplica/mult4/resultParcial2_0__and0001(Multiplica/mult4/resultParcial2_0__and00011:O)    | NONE(Multiplica/mult4/resultParcial2_0) | 1     |
+Multiplica/mult4/resultParcial2_1__and0000(Multiplica/mult4/resultParcial2_1__and00001:O)    | NONE(Multiplica/mult4/resultParcial2_1) | 1     |
+Multiplica/mult4/resultParcial2_1__and0001(Multiplica/mult4/resultParcial2_1__and00011:O)    | NONE(Multiplica/mult4/resultParcial2_1) | 1     |
+Multiplica/mult4/resultParcial2_2__and0000(Multiplica/mult4/resultParcial2_2__and00001:O)    | NONE(Multiplica/mult4/resultParcial2_2) | 1     |
+Multiplica/mult4/resultParcial2_2__and0001(Multiplica/mult4/resultParcial2_2__and00011:O)    | NONE(Multiplica/mult4/resultParcial2_2) | 1     |
+Multiplica/mult4/resultParcial2_3__and0000(Multiplica/mult4/resultParcial2_3__and00001:O)    | NONE(Multiplica/mult4/resultParcial2_3) | 1     |
+Multiplica/mult4/resultParcial2_3__and0001(Multiplica/mult4/resultParcial2_3__and00011:O)    | NONE(Multiplica/mult4/resultParcial2_3) | 1     |
+Multiplica/mult4/resultParcial2_4__and0000(Multiplica/mult4/resultParcial2_4__and00001:O)    | NONE(Multiplica/mult4/resultParcial2_4) | 1     |
+Multiplica/mult4/resultParcial2_4__and0001(Multiplica/mult4/resultParcial2_4__and00011:O)    | NONE(Multiplica/mult4/resultParcial2_4) | 1     |
+Multiplica/mult4/resultParcial2_5__and0000(Multiplica/mult4/resultParcial2_5__and00001:O)    | NONE(Multiplica/mult4/resultParcial2_5) | 1     |
+Multiplica/mult4/resultParcial2_5__and0001(Multiplica/mult4/resultParcial2_5__and00011:O)    | NONE(Multiplica/mult4/resultParcial2_5) | 1     |
+Multiplica/mult4/resultParcial2_6__and0000(Multiplica/mult4/resultParcial2_6__and00001:O)    | NONE(Multiplica/mult4/resultParcial2_6) | 1     |
+Multiplica/mult4/resultParcial2_6__and0001(Multiplica/mult4/resultParcial2_6__and0001_f5:O)  | NONE(Multiplica/mult4/resultParcial2_6) | 1     |
+Multiplica/mult4/resultParcial2_7__and0000(Multiplica/mult4/resultParcial2_7__and00002:O)    | NONE(Multiplica/mult4/resultParcial2_7) | 1     |
+Multiplica/mult4/resultParcial2_7__and0001(Multiplica/mult4/resultParcial2_7__and00011:O)    | NONE(Multiplica/mult4/resultParcial2_7) | 1     |
+Multiplica/mult5/resultParcial2_4__and0000(Multiplica/mult5/resultParcial2_4__and00001:O)    | NONE(Multiplica/mult5/resultParcial2_4) | 1     |
+Multiplica/mult5/resultParcial2_4__and0001(Multiplica/mult5/resultParcial2_4__and00011:O)    | NONE(Multiplica/mult5/resultParcial2_4) | 1     |
+Multiplica/mult5/resultParcial2_5__and0000(Multiplica/mult5/resultParcial2_5__and00001:O)    | NONE(Multiplica/mult5/resultParcial2_5) | 1     |
+Multiplica/mult5/resultParcial2_5__and0001(Multiplica/mult5/resultParcial2_5__and00011:O)    | NONE(Multiplica/mult5/resultParcial2_5) | 1     |
+Multiplica/mult5/resultParcial2_6__and0000(Multiplica/mult5/resultParcial2_6__and00001:O)    | NONE(Multiplica/mult5/resultParcial2_6) | 1     |
+Multiplica/mult5/resultParcial2_6__and0001(Multiplica/mult5/resultParcial2_6__and0001_f5:O)  | NONE(Multiplica/mult5/resultParcial2_6) | 1     |
+Multiplica/mult5/resultParcial2_7__and0000(Multiplica/mult5/resultParcial2_7__and00002:O)    | NONE(Multiplica/mult5/resultParcial2_7) | 1     |
+Multiplica/mult5/resultParcial2_7__and0001(Multiplica/mult5/resultParcial2_7__and00011:O)    | NONE(Multiplica/mult5/resultParcial2_7) | 1     |
+Multiplica/mult6/resultParcial2_0__and0000(Multiplica/mult6/resultParcial2_0__and00001:O)    | NONE(Multiplica/mult6/resultParcial2_0) | 1     |
+Multiplica/mult6/resultParcial2_0__and0001(Multiplica/mult6/resultParcial2_0__and00011:O)    | NONE(Multiplica/mult6/resultParcial2_0) | 1     |
+Multiplica/mult6/resultParcial2_1__and0000(Multiplica/mult6/resultParcial2_1__and00001:O)    | NONE(Multiplica/mult6/resultParcial2_1) | 1     |
+Multiplica/mult6/resultParcial2_1__and0001(Multiplica/mult6/resultParcial2_1__and00011:O)    | NONE(Multiplica/mult6/resultParcial2_1) | 1     |
+Multiplica/mult6/resultParcial2_2__and0000(Multiplica/mult6/resultParcial2_2__and00001:O)    | NONE(Multiplica/mult6/resultParcial2_2) | 1     |
+Multiplica/mult6/resultParcial2_2__and0001(Multiplica/mult6/resultParcial2_2__and00011:O)    | NONE(Multiplica/mult6/resultParcial2_2) | 1     |
+Multiplica/mult6/resultParcial2_3__and0000(Multiplica/mult6/resultParcial2_3__and00001:O)    | NONE(Multiplica/mult6/resultParcial2_3) | 1     |
+Multiplica/mult6/resultParcial2_3__and0001(Multiplica/mult6/resultParcial2_3__and00011:O)    | NONE(Multiplica/mult6/resultParcial2_3) | 1     |
+Multiplica/mult6/resultParcial2_4__and0000(Multiplica/mult6/resultParcial2_4__and00001:O)    | NONE(Multiplica/mult6/resultParcial2_4) | 1     |
+Multiplica/mult6/resultParcial2_4__and0001(Multiplica/mult6/resultParcial2_4__and00011:O)    | NONE(Multiplica/mult6/resultParcial2_4) | 1     |
+Multiplica/mult6/resultParcial2_5__and0000(Multiplica/mult6/resultParcial2_5__and00001:O)    | NONE(Multiplica/mult6/resultParcial2_5) | 1     |
+Multiplica/mult6/resultParcial2_5__and0001(Multiplica/mult6/resultParcial2_5__and00011:O)    | NONE(Multiplica/mult6/resultParcial2_5) | 1     |
+Multiplica/mult6/resultParcial2_6__and0000(Multiplica/mult6/resultParcial2_6__and00001:O)    | NONE(Multiplica/mult6/resultParcial2_6) | 1     |
+Multiplica/mult6/resultParcial2_6__and0001(Multiplica/mult6/resultParcial2_6__and0001_f5:O)  | NONE(Multiplica/mult6/resultParcial2_6) | 1     |
+Multiplica/mult6/resultParcial2_7__and0000(Multiplica/mult6/resultParcial2_7__and00002:O)    | NONE(Multiplica/mult6/resultParcial2_7) | 1     |
+Multiplica/mult6/resultParcial2_7__and0001(Multiplica/mult6/resultParcial2_7__and00011:O)    | NONE(Multiplica/mult6/resultParcial2_7) | 1     |
+Multiplica/mult7/resultParcial2_0__and0000(Multiplica/mult7/resultParcial2_0__and00001:O)    | NONE(Multiplica/mult7/resultParcial2_0) | 1     |
+Multiplica/mult7/resultParcial2_0__and0001(Multiplica/mult7/resultParcial2_0__and00011:O)    | NONE(Multiplica/mult7/resultParcial2_0) | 1     |
+Multiplica/mult7/resultParcial2_1__and0000(Multiplica/mult7/resultParcial2_1__and00001:O)    | NONE(Multiplica/mult7/resultParcial2_1) | 1     |
+Multiplica/mult7/resultParcial2_1__and0001(Multiplica/mult7/resultParcial2_1__and00011:O)    | NONE(Multiplica/mult7/resultParcial2_1) | 1     |
+Multiplica/mult7/resultParcial2_2__and0000(Multiplica/mult7/resultParcial2_2__and00001:O)    | NONE(Multiplica/mult7/resultParcial2_2) | 1     |
+Multiplica/mult7/resultParcial2_2__and0001(Multiplica/mult7/resultParcial2_2__and00011:O)    | NONE(Multiplica/mult7/resultParcial2_2) | 1     |
+Multiplica/mult7/resultParcial2_3__and0000(Multiplica/mult7/resultParcial2_3__and00001:O)    | NONE(Multiplica/mult7/resultParcial2_3) | 1     |
+Multiplica/mult7/resultParcial2_3__and0001(Multiplica/mult7/resultParcial2_3__and00011:O)    | NONE(Multiplica/mult7/resultParcial2_3) | 1     |
+Multiplica/mult7/resultParcial2_4__and0000(Multiplica/mult7/resultParcial2_4__and00001:O)    | NONE(Multiplica/mult7/resultParcial2_4) | 1     |
+Multiplica/mult7/resultParcial2_4__and0001(Multiplica/mult7/resultParcial2_4__and00011:O)    | NONE(Multiplica/mult7/resultParcial2_4) | 1     |
+Multiplica/mult7/resultParcial2_5__and0000(Multiplica/mult7/resultParcial2_5__and00001:O)    | NONE(Multiplica/mult7/resultParcial2_5) | 1     |
+Multiplica/mult7/resultParcial2_5__and0001(Multiplica/mult7/resultParcial2_5__and00011:O)    | NONE(Multiplica/mult7/resultParcial2_5) | 1     |
+Multiplica/mult7/resultParcial2_6__and0000(Multiplica/mult7/resultParcial2_6__and00001:O)    | NONE(Multiplica/mult7/resultParcial2_6) | 1     |
+Multiplica/mult7/resultParcial2_6__and0001(Multiplica/mult7/resultParcial2_6__and0001_f5:O)  | NONE(Multiplica/mult7/resultParcial2_6) | 1     |
+Multiplica/mult7/resultParcial2_7__and0000(Multiplica/mult7/resultParcial2_7__and00002:O)    | NONE(Multiplica/mult7/resultParcial2_7) | 1     |
+Multiplica/mult7/resultParcial2_7__and0001(Multiplica/mult7/resultParcial2_7__and00011:O)    | NONE(Multiplica/mult7/resultParcial2_7) | 1     |
+Multiplica/mult8/resultParcial2_0__and0000(Multiplica/mult8/resultParcial2_0__and00001:O)    | NONE(Multiplica/mult8/resultParcial2_0) | 1     |
+Multiplica/mult8/resultParcial2_0__and0001(Multiplica/mult8/resultParcial2_0__and00011:O)    | NONE(Multiplica/mult8/resultParcial2_0) | 1     |
+Multiplica/mult8/resultParcial2_1__and0000(Multiplica/mult8/resultParcial2_1__and00001:O)    | NONE(Multiplica/mult8/resultParcial2_1) | 1     |
+Multiplica/mult8/resultParcial2_1__and0001(Multiplica/mult8/resultParcial2_1__and00011:O)    | NONE(Multiplica/mult8/resultParcial2_1) | 1     |
+Multiplica/mult8/resultParcial2_2__and0000(Multiplica/mult8/resultParcial2_2__and00001:O)    | NONE(Multiplica/mult8/resultParcial2_2) | 1     |
+Multiplica/mult8/resultParcial2_2__and0001(Multiplica/mult8/resultParcial2_2__and00011:O)    | NONE(Multiplica/mult8/resultParcial2_2) | 1     |
+Multiplica/mult8/resultParcial2_3__and0000(Multiplica/mult8/resultParcial2_3__and00001:O)    | NONE(Multiplica/mult8/resultParcial2_3) | 1     |
+Multiplica/mult8/resultParcial2_3__and0001(Multiplica/mult8/resultParcial2_3__and00011:O)    | NONE(Multiplica/mult8/resultParcial2_3) | 1     |
+Multiplica/mult8/resultParcial2_4__and0000(Multiplica/mult8/resultParcial2_4__and00001:O)    | NONE(Multiplica/mult8/resultParcial2_4) | 1     |
+Multiplica/mult8/resultParcial2_4__and0001(Multiplica/mult8/resultParcial2_4__and00011:O)    | NONE(Multiplica/mult8/resultParcial2_4) | 1     |
+Multiplica/mult8/resultParcial2_5__and0000(Multiplica/mult8/resultParcial2_5__and00001:O)    | NONE(Multiplica/mult8/resultParcial2_5) | 1     |
+Multiplica/mult8/resultParcial2_5__and0001(Multiplica/mult8/resultParcial2_5__and00011:O)    | NONE(Multiplica/mult8/resultParcial2_5) | 1     |
+Multiplica/mult8/resultParcial2_6__and0000(Multiplica/mult8/resultParcial2_6__and00001:O)    | NONE(Multiplica/mult8/resultParcial2_6) | 1     |
+Multiplica/mult8/resultParcial2_6__and0001(Multiplica/mult8/resultParcial2_6__and0001_f5:O)  | NONE(Multiplica/mult8/resultParcial2_6) | 1     |
+Multiplica/mult8/resultParcial2_7__and0000(Multiplica/mult8/resultParcial2_7__and00002:O)    | NONE(Multiplica/mult8/resultParcial2_7) | 1     |
+Multiplica/mult8/resultParcial2_7__and0001(Multiplica/mult8/resultParcial2_7__and00011:O)    | NONE(Multiplica/mult8/resultParcial2_7) | 1     |
+Multiplica/mult9/resultParcial2_4__and0000(Multiplica/mult9/resultParcial2_4__and00001:O)    | NONE(Multiplica/mult9/resultParcial2_4) | 1     |
+Multiplica/mult9/resultParcial2_4__and0001(Multiplica/mult9/resultParcial2_4__and00011:O)    | NONE(Multiplica/mult9/resultParcial2_4) | 1     |
+Multiplica/mult9/resultParcial2_5__and0000(Multiplica/mult9/resultParcial2_5__and00001:O)    | NONE(Multiplica/mult9/resultParcial2_5) | 1     |
+Multiplica/mult9/resultParcial2_5__and0001(Multiplica/mult9/resultParcial2_5__and00011:O)    | NONE(Multiplica/mult9/resultParcial2_5) | 1     |
+Multiplica/mult9/resultParcial2_6__and0000(Multiplica/mult9/resultParcial2_6__and00001:O)    | NONE(Multiplica/mult9/resultParcial2_6) | 1     |
+Multiplica/mult9/resultParcial2_6__and0001(Multiplica/mult9/resultParcial2_6__and0001_f5:O)  | NONE(Multiplica/mult9/resultParcial2_6) | 1     |
+Multiplica/mult9/resultParcial2_7__and0000(Multiplica/mult9/resultParcial2_7__and00002:O)    | NONE(Multiplica/mult9/resultParcial2_7) | 1     |
+Multiplica/mult9/resultParcial2_7__and0001(Multiplica/mult9/resultParcial2_7__and00011:O)    | NONE(Multiplica/mult9/resultParcial2_7) | 1     |
+---------------------------------------------------------------------------------------------+-----------------------------------------+-------+
 
 Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
+   Minimum period: 7.926ns (Maximum Frequency: 126.167MHz)
+   Minimum input arrival time before clock: 3.431ns
+   Maximum output required time after clock: 7.018ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -742,17 +936,307 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'numB_3_not00031'
+  Clock period: 2.542ns (frequency: 393.391MHz)
+  Total number of paths / destination ports: 24 / 24
+-------------------------------------------------------------------------
+Delay:               2.542ns (Levels of Logic = 1)
+  Source:            numB_2 (LATCH)
+  Destination:       numB_2 (LATCH)
+  Source Clock:      numB_3_not00031 falling
+  Destination Clock: numB_3_not00031 falling
+
+  Data Path: numB_2 to numB_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCE:G->Q            10   0.728   0.914  numB_2 (numB_2)
+     LUT3:I2->O            1   0.648   0.000  numB_2_mux00041 (numB_2_mux0004)
+     LDCE:D                    0.252          numB_2
+    ----------------------------------------
+    Total                      2.542ns (1.628ns logic, 0.914ns route)
+                                       (64.0% logic, 36.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'teclado/fifo_key_unit/empty_reg'
+  Clock period: 3.482ns (frequency: 287.230MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.482ns (Levels of Logic = 1)
+  Source:            estadoAtualTeclado_0 (LATCH)
+  Destination:       estadoAtualTeclado_0 (LATCH)
+  Source Clock:      teclado/fifo_key_unit/empty_reg falling
+  Destination Clock: teclado/fifo_key_unit/empty_reg falling
+
+  Data Path: estadoAtualTeclado_0 to estadoAtualTeclado_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.728   0.531  estadoAtualTeclado_0 (estadoAtualTeclado_01)
+     INV:I->O             33   0.648   1.263  estadoAtualTeclado_0_0_not00001_INV_0 (estadoAtualTeclado_0_0_not0000)
+     LDE:GE                    0.312          estadoAtualTeclado_0
+    ----------------------------------------
+    Total                      3.482ns (1.688ns logic, 1.794ns route)
+                                       (48.5% logic, 51.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'numB_3_not0004'
+  Clock period: 2.191ns (frequency: 456.413MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.191ns (Levels of Logic = 1)
+  Source:            recebeuNumeros (LATCH)
+  Destination:       recebeuNumeros (LATCH)
+  Source Clock:      numB_3_not0004 falling
+  Destination Clock: numB_3_not0004 falling
+
+  Data Path: recebeuNumeros to recebeuNumeros
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              3   0.728   0.563  recebeuNumeros (recebeuNumeros)
+     LUT3:I2->O            1   0.648   0.000  recebeuNumeros_mux00071 (recebeuNumeros_mux0007)
+     LDE:D                     0.252          recebeuNumeros
+    ----------------------------------------
+    Total                      2.191ns (1.628ns logic, 0.563ns route)
+                                       (74.3% logic, 25.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 6.965ns (frequency: 143.575MHz)
+  Total number of paths / destination ports: 637 / 101
+-------------------------------------------------------------------------
+Delay:               6.965ns (Levels of Logic = 5)
+  Source:            teclado/ps2_rx_unit/filter_reg_2 (FF)
+  Destination:       teclado/ps2_rx_unit/n_reg_3 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: teclado/ps2_rx_unit/filter_reg_2 to teclado/ps2_rx_unit/n_reg_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.591   0.619  teclado/ps2_rx_unit/filter_reg_2 (teclado/ps2_rx_unit/filter_reg_2)
+     LUT3:I2->O            1   0.648   0.452  teclado/ps2_rx_unit/fall_edge7 (teclado/ps2_rx_unit/fall_edge7)
+     LUT4:I2->O            6   0.648   0.749  teclado/ps2_rx_unit/fall_edge33 (teclado/ps2_rx_unit/fall_edge)
+     LUT2_D:I1->O         12   0.643   0.964  teclado/ps2_rx_unit/n_reg_mux0000<3>23 (teclado/ps2_rx_unit/N4)
+     LUT4_L:I3->LO         1   0.648   0.103  teclado/ps2_rx_unit/n_reg_mux0000<0>_SW0 (N426)
+     LUT4:I3->O            1   0.648   0.000  teclado/ps2_rx_unit/n_reg_mux0000<0> (teclado/ps2_rx_unit/n_reg_mux0000<0>)
+     FDC:D                     0.252          teclado/ps2_rx_unit/n_reg_3
+    ----------------------------------------
+    Total                      6.965ns (4.078ns logic, 2.887ns route)
+                                       (58.5% logic, 41.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'estadoAtualTeclado_01'
+  Clock period: 6.014ns (frequency: 166.279MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               6.014ns (Levels of Logic = 32)
+  Source:            contador_1 (LATCH)
+  Destination:       contador_31 (LATCH)
+  Source Clock:      estadoAtualTeclado_01 falling
+  Destination Clock: estadoAtualTeclado_01 falling
+
+  Data Path: contador_1 to contador_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q              10   0.728   1.025  contador_1 (contador_1)
+     LUT1:I0->O            1   0.648   0.000  Madd_contador_add0000_cy<1>_rt (Madd_contador_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.632   0.000  Madd_contador_add0000_cy<1> (Madd_contador_add0000_cy<1>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<2> (Madd_contador_add0000_cy<2>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<3> (Madd_contador_add0000_cy<3>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<4> (Madd_contador_add0000_cy<4>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<5> (Madd_contador_add0000_cy<5>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<6> (Madd_contador_add0000_cy<6>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<7> (Madd_contador_add0000_cy<7>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<8> (Madd_contador_add0000_cy<8>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<9> (Madd_contador_add0000_cy<9>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<10> (Madd_contador_add0000_cy<10>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<11> (Madd_contador_add0000_cy<11>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<12> (Madd_contador_add0000_cy<12>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<13> (Madd_contador_add0000_cy<13>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<14> (Madd_contador_add0000_cy<14>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<15> (Madd_contador_add0000_cy<15>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<16> (Madd_contador_add0000_cy<16>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<17> (Madd_contador_add0000_cy<17>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<18> (Madd_contador_add0000_cy<18>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<19> (Madd_contador_add0000_cy<19>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<20> (Madd_contador_add0000_cy<20>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<21> (Madd_contador_add0000_cy<21>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<22> (Madd_contador_add0000_cy<22>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<23> (Madd_contador_add0000_cy<23>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<24> (Madd_contador_add0000_cy<24>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<25> (Madd_contador_add0000_cy<25>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<26> (Madd_contador_add0000_cy<26>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<27> (Madd_contador_add0000_cy<27>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<28> (Madd_contador_add0000_cy<28>)
+     MUXCY:CI->O           1   0.065   0.000  Madd_contador_add0000_cy<29> (Madd_contador_add0000_cy<29>)
+     MUXCY:CI->O           0   0.065   0.000  Madd_contador_add0000_cy<30> (Madd_contador_add0000_cy<30>)
+     XORCY:CI->O           1   0.844   0.000  Madd_contador_add0000_xor<31> (contador_add0000<31>)
+     LD:D                      0.252          contador_31
+    ----------------------------------------
+    Total                      6.014ns (4.989ns logic, 1.025ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'portLcd/clkCount_51'
+  Clock period: 7.926ns (frequency: 126.167MHz)
+  Total number of paths / destination ports: 1631 / 54
+-------------------------------------------------------------------------
+Delay:               7.926ns (Levels of Logic = 5)
+  Source:            portLcd/count_13 (FF)
+  Destination:       portLcd/stCur_9 (FF)
+  Source Clock:      portLcd/clkCount_51 rising
+  Destination Clock: portLcd/clkCount_51 rising
+
+  Data Path: portLcd/count_13 to portLcd/stCur_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.674  portLcd/count_13 (portLcd/count_13)
+     LUT3:I0->O            1   0.648   0.452  portLcd/delayOK_or000028 (portLcd/delayOK_or000028)
+     LUT4_D:I2->O          1   0.648   0.452  portLcd/delayOK_or0000234 (portLcd/N9)
+     LUT3:I2->O            1   0.648   0.423  portLcd/delayOK_or000086 (portLcd/delayOK_or000086)
+     LUT4:I3->O           25   0.648   1.340  portLcd/delayOK_or0000161 (portLcd/delayOK)
+     LUT2:I1->O            2   0.643   0.447  portLcd/stNext_and00001 (portLcd/stNext_and0000)
+     FDRSE:CE                  0.312          portLcd/stCur_9
+    ----------------------------------------
+    Total                      7.926ns (4.138ns logic, 3.788ns route)
+                                       (52.2% logic, 47.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'estadoAtual_11'
+  Total number of paths / destination ports: 34 / 32
+-------------------------------------------------------------------------
+Offset:              3.431ns (Levels of Logic = 3)
+  Source:            operacao (PAD)
+  Destination:       result_3 (LATCH)
+  Destination Clock: estadoAtual_11 falling
+
+  Data Path: operacao to result_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   0.849   1.406  operacao_IBUF (operacao_IBUF)
+     LUT4:I0->O            1   0.648   0.000  result_mux0000<3>1 (result_mux0000<3>1)
+     MUXF5:I1->O           1   0.276   0.000  result_mux0000<3>_f5 (result_mux0000<3>)
+     LD:D                      0.252          result_3
+    ----------------------------------------
+    Total                      3.431ns (2.025ns logic, 1.406ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              2.649ns (Levels of Logic = 2)
+  Source:            rd_key_code (PAD)
+  Destination:       teclado/fifo_key_unit/r_ptr_reg_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: rd_key_code to teclado/fifo_key_unit/r_ptr_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.849   0.900  rd_key_code_IBUF (rd_key_code_IBUF)
+     LUT4:I0->O            1   0.648   0.000  teclado/fifo_key_unit/Mmux_r_ptr_reg_mux000031 (teclado/fifo_key_unit/r_ptr_reg_mux0000<0>)
+     FDC:D                     0.252          teclado/fifo_key_unit/r_ptr_reg_0
+    ----------------------------------------
+    Total                      2.649ns (1.749ns logic, 0.900ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'portLcd/clkCount_51'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              3.156ns (Levels of Logic = 2)
+  Source:            rd_key_code (PAD)
+  Destination:       portLcd/stCur_9 (FF)
+  Destination Clock: portLcd/clkCount_51 rising
+
+  Data Path: rd_key_code to portLcd/stCur_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.849   0.900  rd_key_code_IBUF (rd_key_code_IBUF)
+     LUT2:I0->O            2   0.648   0.447  portLcd/stNext_and00001 (portLcd/stNext_and0000)
+     FDRSE:CE                  0.312          portLcd/stCur_9
+    ----------------------------------------
+    Total                      3.156ns (1.809ns logic, 1.347ns route)
+                                       (57.3% logic, 42.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'portLcd/clkCount_51'
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Offset:              7.018ns (Levels of Logic = 2)
+  Source:            portLcd/lcd_cmd_ptr_1 (FF)
+  Destination:       LCD_DB<5> (PAD)
+  Source Clock:      portLcd/clkCount_51 rising
+
+  Data Path: portLcd/lcd_cmd_ptr_1 to LCD_DB<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.591   0.812  portLcd/lcd_cmd_ptr_1 (portLcd/lcd_cmd_ptr_1)
+     LUT4:I0->O            2   0.648   0.447  portLcd/LCD_DB<5>1 (LCD_DB_4_OBUF)
+     OBUF:I->O                 4.520          LCD_DB_5_OBUF (LCD_DB<5>)
+    ----------------------------------------
+    Total                      7.018ns (5.759ns logic, 1.259ns route)
+                                       (82.1% logic, 17.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'estadoAtual_11'
+  Total number of paths / destination ports: 32 / 32
+-------------------------------------------------------------------------
+Offset:              5.668ns (Levels of Logic = 1)
+  Source:            result_31 (LATCH)
+  Destination:       result<31> (PAD)
+  Source Clock:      estadoAtual_11 falling
+
+  Data Path: result_31 to result<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.728   0.420  result_31 (result_31)
+     OBUF:I->O                 4.520          result_31_OBUF (result<31>)
+    ----------------------------------------
+    Total                      5.668ns (5.248ns logic, 0.420ns route)
+                                       (92.6% logic, 7.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'codigoConvertidoTecladoBinario_not0001'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              5.668ns (Levels of Logic = 1)
+  Source:            codigoConvertidoTecladoBinario_3_1 (LATCH)
+  Destination:       numTeclado<3> (PAD)
+  Source Clock:      codigoConvertidoTecladoBinario_not0001 falling
+
+  Data Path: codigoConvertidoTecladoBinario_3_1 to numTeclado<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.728   0.420  codigoConvertidoTecladoBinario_3_1 (codigoConvertidoTecladoBinario_3_1)
+     OBUF:I->O                 4.520          numTeclado_3_OBUF (numTeclado<3>)
+    ----------------------------------------
+    Total                      5.668ns (5.248ns logic, 0.420ns route)
+                                       (92.6% logic, 7.4% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.36 secs
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.81 secs
  
 --> 
 
 
-Total memory usage is 526464 kilobytes
+Total memory usage is 554916 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  349 (   0 filtered)
-Number of infos    :    1 (   0 filtered)
+Number of warnings :  105 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
 

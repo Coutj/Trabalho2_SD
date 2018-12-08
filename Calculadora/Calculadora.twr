@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
 3 -fastpaths -xml Calculadora.twx Calculadora.ncd -o Calculadora.twr
-Calculadora.pcf
+Calculadora.pcf -ucf constraints.ucf
 
 Design file:              Calculadora.ncd
 Physical constraint file: Calculadora.pcf
@@ -16,7 +16,6 @@ Environment Variable      Effect
 NONE                      No environment variables were set
 --------------------------------------------------------------------------------
 
-INFO:Timing:2698 - No timing constraints found, doing default enumeration.
 INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
 INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
    option. All paths that are not constrained will be reported in the 
@@ -34,22 +33,482 @@ INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and
    SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
    Error.
 
+================================================================================
+Timing constraint: NET "clock_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 637 paths analyzed, 173 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.821ns.
+--------------------------------------------------------------------------------
+
+Paths for end point teclado/ps2_rx_unit/b_reg_1 (SLICE_X37Y33.G3), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     11.179ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               teclado/ps2_rx_unit/filter_reg_2 (FF)
+  Destination:          teclado/ps2_rx_unit/b_reg_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      8.684ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.137ns (0.579 - 0.716)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: teclado/ps2_rx_unit/filter_reg_2 to teclado/ps2_rx_unit/b_reg_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y22.YQ      Tcko                  0.676   teclado/ps2_rx_unit/filter_reg<3>
+                                                       teclado/ps2_rx_unit/filter_reg_2
+    SLICE_X26Y25.F1      net (fanout=4)        1.305   teclado/ps2_rx_unit/filter_reg<2>
+    SLICE_X26Y25.X       Tilo                  0.692   teclado/ps2_rx_unit/fall_edge7
+                                                       teclado/ps2_rx_unit/fall_edge7
+    SLICE_X27Y22.F3      net (fanout=1)        0.320   teclado/ps2_rx_unit/fall_edge7
+    SLICE_X27Y22.X       Tilo                  0.643   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge33
+    SLICE_X19Y35.G2      net (fanout=6)        1.082   teclado/ps2_rx_unit/fall_edge
+    SLICE_X19Y35.Y       Tilo                  0.648   N424
+                                                       teclado/ps2_rx_unit/n_reg_mux0000<3>23
+    SLICE_X37Y33.G3      net (fanout=13)       2.591   teclado/ps2_rx_unit/N4
+    SLICE_X37Y33.CLK     Tgck                  0.727   teclado/ps2_rx_unit/b_reg<2>
+                                                       teclado/ps2_rx_unit/b_reg_mux0000<1>1
+                                                       teclado/ps2_rx_unit/b_reg_1
+    -------------------------------------------------  ---------------------------
+    Total                                      8.684ns (3.386ns logic, 5.298ns route)
+                                                       (39.0% logic, 61.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.966ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               teclado/ps2_rx_unit/filter_reg_5 (FF)
+  Destination:          teclado/ps2_rx_unit/b_reg_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.897ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.137ns (0.579 - 0.716)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: teclado/ps2_rx_unit/filter_reg_5 to teclado/ps2_rx_unit/b_reg_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y23.XQ      Tcko                  0.631   teclado/ps2_rx_unit/filter_reg<5>
+                                                       teclado/ps2_rx_unit/filter_reg_5
+    SLICE_X27Y22.G2      net (fanout=4)        0.560   teclado/ps2_rx_unit/filter_reg<5>
+    SLICE_X27Y22.Y       Tilo                  0.648   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge31
+    SLICE_X27Y22.F2      net (fanout=1)        0.367   teclado/ps2_rx_unit/fall_edge31/O
+    SLICE_X27Y22.X       Tilo                  0.643   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge33
+    SLICE_X19Y35.G2      net (fanout=6)        1.082   teclado/ps2_rx_unit/fall_edge
+    SLICE_X19Y35.Y       Tilo                  0.648   N424
+                                                       teclado/ps2_rx_unit/n_reg_mux0000<3>23
+    SLICE_X37Y33.G3      net (fanout=13)       2.591   teclado/ps2_rx_unit/N4
+    SLICE_X37Y33.CLK     Tgck                  0.727   teclado/ps2_rx_unit/b_reg<2>
+                                                       teclado/ps2_rx_unit/b_reg_mux0000<1>1
+                                                       teclado/ps2_rx_unit/b_reg_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.897ns (3.297ns logic, 4.600ns route)
+                                                       (41.8% logic, 58.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     11.989ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               teclado/ps2_rx_unit/filter_reg_7 (FF)
+  Destination:          teclado/ps2_rx_unit/b_reg_1 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.878ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.133ns (0.579 - 0.712)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: teclado/ps2_rx_unit/filter_reg_7 to teclado/ps2_rx_unit/b_reg_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y21.XQ      Tcko                  0.591   teclado/ps2_rx_unit/filter_reg<7>
+                                                       teclado/ps2_rx_unit/filter_reg_7
+    SLICE_X27Y22.G3      net (fanout=4)        0.581   teclado/ps2_rx_unit/filter_reg<7>
+    SLICE_X27Y22.Y       Tilo                  0.648   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge31
+    SLICE_X27Y22.F2      net (fanout=1)        0.367   teclado/ps2_rx_unit/fall_edge31/O
+    SLICE_X27Y22.X       Tilo                  0.643   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge33
+    SLICE_X19Y35.G2      net (fanout=6)        1.082   teclado/ps2_rx_unit/fall_edge
+    SLICE_X19Y35.Y       Tilo                  0.648   N424
+                                                       teclado/ps2_rx_unit/n_reg_mux0000<3>23
+    SLICE_X37Y33.G3      net (fanout=13)       2.591   teclado/ps2_rx_unit/N4
+    SLICE_X37Y33.CLK     Tgck                  0.727   teclado/ps2_rx_unit/b_reg<2>
+                                                       teclado/ps2_rx_unit/b_reg_mux0000<1>1
+                                                       teclado/ps2_rx_unit/b_reg_1
+    -------------------------------------------------  ---------------------------
+    Total                                      7.878ns (3.257ns logic, 4.621ns route)
+                                                       (41.3% logic, 58.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point teclado/ps2_rx_unit/b_reg_3 (SLICE_X37Y32.G4), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     11.498ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               teclado/ps2_rx_unit/filter_reg_2 (FF)
+  Destination:          teclado/ps2_rx_unit/b_reg_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      8.365ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.137ns (0.579 - 0.716)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: teclado/ps2_rx_unit/filter_reg_2 to teclado/ps2_rx_unit/b_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y22.YQ      Tcko                  0.676   teclado/ps2_rx_unit/filter_reg<3>
+                                                       teclado/ps2_rx_unit/filter_reg_2
+    SLICE_X26Y25.F1      net (fanout=4)        1.305   teclado/ps2_rx_unit/filter_reg<2>
+    SLICE_X26Y25.X       Tilo                  0.692   teclado/ps2_rx_unit/fall_edge7
+                                                       teclado/ps2_rx_unit/fall_edge7
+    SLICE_X27Y22.F3      net (fanout=1)        0.320   teclado/ps2_rx_unit/fall_edge7
+    SLICE_X27Y22.X       Tilo                  0.643   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge33
+    SLICE_X19Y35.G2      net (fanout=6)        1.082   teclado/ps2_rx_unit/fall_edge
+    SLICE_X19Y35.Y       Tilo                  0.648   N424
+                                                       teclado/ps2_rx_unit/n_reg_mux0000<3>23
+    SLICE_X37Y32.G4      net (fanout=13)       2.272   teclado/ps2_rx_unit/N4
+    SLICE_X37Y32.CLK     Tgck                  0.727   teclado/ps2_rx_unit/b_reg<4>
+                                                       teclado/ps2_rx_unit/b_reg_mux0000<3>1
+                                                       teclado/ps2_rx_unit/b_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      8.365ns (3.386ns logic, 4.979ns route)
+                                                       (40.5% logic, 59.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.285ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               teclado/ps2_rx_unit/filter_reg_5 (FF)
+  Destination:          teclado/ps2_rx_unit/b_reg_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.578ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.137ns (0.579 - 0.716)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: teclado/ps2_rx_unit/filter_reg_5 to teclado/ps2_rx_unit/b_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y23.XQ      Tcko                  0.631   teclado/ps2_rx_unit/filter_reg<5>
+                                                       teclado/ps2_rx_unit/filter_reg_5
+    SLICE_X27Y22.G2      net (fanout=4)        0.560   teclado/ps2_rx_unit/filter_reg<5>
+    SLICE_X27Y22.Y       Tilo                  0.648   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge31
+    SLICE_X27Y22.F2      net (fanout=1)        0.367   teclado/ps2_rx_unit/fall_edge31/O
+    SLICE_X27Y22.X       Tilo                  0.643   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge33
+    SLICE_X19Y35.G2      net (fanout=6)        1.082   teclado/ps2_rx_unit/fall_edge
+    SLICE_X19Y35.Y       Tilo                  0.648   N424
+                                                       teclado/ps2_rx_unit/n_reg_mux0000<3>23
+    SLICE_X37Y32.G4      net (fanout=13)       2.272   teclado/ps2_rx_unit/N4
+    SLICE_X37Y32.CLK     Tgck                  0.727   teclado/ps2_rx_unit/b_reg<4>
+                                                       teclado/ps2_rx_unit/b_reg_mux0000<3>1
+                                                       teclado/ps2_rx_unit/b_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      7.578ns (3.297ns logic, 4.281ns route)
+                                                       (43.5% logic, 56.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.308ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               teclado/ps2_rx_unit/filter_reg_7 (FF)
+  Destination:          teclado/ps2_rx_unit/b_reg_3 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.559ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.133ns (0.579 - 0.712)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: teclado/ps2_rx_unit/filter_reg_7 to teclado/ps2_rx_unit/b_reg_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y21.XQ      Tcko                  0.591   teclado/ps2_rx_unit/filter_reg<7>
+                                                       teclado/ps2_rx_unit/filter_reg_7
+    SLICE_X27Y22.G3      net (fanout=4)        0.581   teclado/ps2_rx_unit/filter_reg<7>
+    SLICE_X27Y22.Y       Tilo                  0.648   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge31
+    SLICE_X27Y22.F2      net (fanout=1)        0.367   teclado/ps2_rx_unit/fall_edge31/O
+    SLICE_X27Y22.X       Tilo                  0.643   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge33
+    SLICE_X19Y35.G2      net (fanout=6)        1.082   teclado/ps2_rx_unit/fall_edge
+    SLICE_X19Y35.Y       Tilo                  0.648   N424
+                                                       teclado/ps2_rx_unit/n_reg_mux0000<3>23
+    SLICE_X37Y32.G4      net (fanout=13)       2.272   teclado/ps2_rx_unit/N4
+    SLICE_X37Y32.CLK     Tgck                  0.727   teclado/ps2_rx_unit/b_reg<4>
+                                                       teclado/ps2_rx_unit/b_reg_mux0000<3>1
+                                                       teclado/ps2_rx_unit/b_reg_3
+    -------------------------------------------------  ---------------------------
+    Total                                      7.559ns (3.257ns logic, 4.302ns route)
+                                                       (43.1% logic, 56.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point teclado/ps2_rx_unit/b_reg_2 (SLICE_X37Y33.F4), 10 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     11.505ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               teclado/ps2_rx_unit/filter_reg_2 (FF)
+  Destination:          teclado/ps2_rx_unit/b_reg_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      8.358ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.137ns (0.579 - 0.716)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: teclado/ps2_rx_unit/filter_reg_2 to teclado/ps2_rx_unit/b_reg_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y22.YQ      Tcko                  0.676   teclado/ps2_rx_unit/filter_reg<3>
+                                                       teclado/ps2_rx_unit/filter_reg_2
+    SLICE_X26Y25.F1      net (fanout=4)        1.305   teclado/ps2_rx_unit/filter_reg<2>
+    SLICE_X26Y25.X       Tilo                  0.692   teclado/ps2_rx_unit/fall_edge7
+                                                       teclado/ps2_rx_unit/fall_edge7
+    SLICE_X27Y22.F3      net (fanout=1)        0.320   teclado/ps2_rx_unit/fall_edge7
+    SLICE_X27Y22.X       Tilo                  0.643   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge33
+    SLICE_X19Y35.G2      net (fanout=6)        1.082   teclado/ps2_rx_unit/fall_edge
+    SLICE_X19Y35.Y       Tilo                  0.648   N424
+                                                       teclado/ps2_rx_unit/n_reg_mux0000<3>23
+    SLICE_X37Y33.F4      net (fanout=13)       2.270   teclado/ps2_rx_unit/N4
+    SLICE_X37Y33.CLK     Tfck                  0.722   teclado/ps2_rx_unit/b_reg<2>
+                                                       teclado/ps2_rx_unit/b_reg_mux0000<2>1
+                                                       teclado/ps2_rx_unit/b_reg_2
+    -------------------------------------------------  ---------------------------
+    Total                                      8.358ns (3.381ns logic, 4.977ns route)
+                                                       (40.5% logic, 59.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.292ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               teclado/ps2_rx_unit/filter_reg_5 (FF)
+  Destination:          teclado/ps2_rx_unit/b_reg_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.571ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.137ns (0.579 - 0.716)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: teclado/ps2_rx_unit/filter_reg_5 to teclado/ps2_rx_unit/b_reg_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X26Y23.XQ      Tcko                  0.631   teclado/ps2_rx_unit/filter_reg<5>
+                                                       teclado/ps2_rx_unit/filter_reg_5
+    SLICE_X27Y22.G2      net (fanout=4)        0.560   teclado/ps2_rx_unit/filter_reg<5>
+    SLICE_X27Y22.Y       Tilo                  0.648   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge31
+    SLICE_X27Y22.F2      net (fanout=1)        0.367   teclado/ps2_rx_unit/fall_edge31/O
+    SLICE_X27Y22.X       Tilo                  0.643   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge33
+    SLICE_X19Y35.G2      net (fanout=6)        1.082   teclado/ps2_rx_unit/fall_edge
+    SLICE_X19Y35.Y       Tilo                  0.648   N424
+                                                       teclado/ps2_rx_unit/n_reg_mux0000<3>23
+    SLICE_X37Y33.F4      net (fanout=13)       2.270   teclado/ps2_rx_unit/N4
+    SLICE_X37Y33.CLK     Tfck                  0.722   teclado/ps2_rx_unit/b_reg<2>
+                                                       teclado/ps2_rx_unit/b_reg_mux0000<2>1
+                                                       teclado/ps2_rx_unit/b_reg_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.571ns (3.292ns logic, 4.279ns route)
+                                                       (43.5% logic, 56.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     12.315ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               teclado/ps2_rx_unit/filter_reg_7 (FF)
+  Destination:          teclado/ps2_rx_unit/b_reg_2 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      7.552ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.133ns (0.579 - 0.712)
+  Source Clock:         clock_BUFGP rising at 0.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: teclado/ps2_rx_unit/filter_reg_7 to teclado/ps2_rx_unit/b_reg_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y21.XQ      Tcko                  0.591   teclado/ps2_rx_unit/filter_reg<7>
+                                                       teclado/ps2_rx_unit/filter_reg_7
+    SLICE_X27Y22.G3      net (fanout=4)        0.581   teclado/ps2_rx_unit/filter_reg<7>
+    SLICE_X27Y22.Y       Tilo                  0.648   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge31
+    SLICE_X27Y22.F2      net (fanout=1)        0.367   teclado/ps2_rx_unit/fall_edge31/O
+    SLICE_X27Y22.X       Tilo                  0.643   teclado/ps2_rx_unit/fall_edge
+                                                       teclado/ps2_rx_unit/fall_edge33
+    SLICE_X19Y35.G2      net (fanout=6)        1.082   teclado/ps2_rx_unit/fall_edge
+    SLICE_X19Y35.Y       Tilo                  0.648   N424
+                                                       teclado/ps2_rx_unit/n_reg_mux0000<3>23
+    SLICE_X37Y33.F4      net (fanout=13)       2.270   teclado/ps2_rx_unit/N4
+    SLICE_X37Y33.CLK     Tfck                  0.722   teclado/ps2_rx_unit/b_reg<2>
+                                                       teclado/ps2_rx_unit/b_reg_mux0000<2>1
+                                                       teclado/ps2_rx_unit/b_reg_2
+    -------------------------------------------------  ---------------------------
+    Total                                      7.552ns (3.252ns logic, 4.300ns route)
+                                                       (43.1% logic, 56.9% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clock_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point teclado/ps2_rx_unit/filter_reg_6 (SLICE_X27Y21.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.007ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               teclado/ps2_rx_unit/filter_reg_7 (FF)
+  Destination:          teclado/ps2_rx_unit/filter_reg_6 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.007ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clock_BUFGP rising at 20.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: teclado/ps2_rx_unit/filter_reg_7 to teclado/ps2_rx_unit/filter_reg_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X27Y21.XQ      Tcko                  0.473   teclado/ps2_rx_unit/filter_reg<7>
+                                                       teclado/ps2_rx_unit/filter_reg_7
+    SLICE_X27Y21.BY      net (fanout=4)        0.394   teclado/ps2_rx_unit/filter_reg<7>
+    SLICE_X27Y21.CLK     Tckdi       (-Th)    -0.140   teclado/ps2_rx_unit/filter_reg<7>
+                                                       teclado/ps2_rx_unit/filter_reg_6
+    -------------------------------------------------  ---------------------------
+    Total                                      1.007ns (0.613ns logic, 0.394ns route)
+                                                       (60.9% logic, 39.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point teclado/fifo_key_unit/array_reg_0_0 (SLICE_X39Y31.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.050ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               teclado/ps2_rx_unit/b_reg_1 (FF)
+  Destination:          teclado/fifo_key_unit/array_reg_0_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.086ns (Levels of Logic = 0)
+  Clock Path Skew:      0.036ns (0.273 - 0.237)
+  Source Clock:         clock_BUFGP rising at 20.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: teclado/ps2_rx_unit/b_reg_1 to teclado/fifo_key_unit/array_reg_0_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X37Y33.YQ      Tcko                  0.464   teclado/ps2_rx_unit/b_reg<2>
+                                                       teclado/ps2_rx_unit/b_reg_1
+    SLICE_X39Y31.BY      net (fanout=6)        0.482   teclado/ps2_rx_unit/b_reg<1>
+    SLICE_X39Y31.CLK     Tckdi       (-Th)    -0.140   teclado/fifo_key_unit/array_reg_0_1
+                                                       teclado/fifo_key_unit/array_reg_0_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.086ns (0.604ns logic, 0.482ns route)
+                                                       (55.6% logic, 44.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point teclado/fifo_key_unit/array_reg_2_0 (SLICE_X39Y30.BY), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.050ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               teclado/ps2_rx_unit/b_reg_1 (FF)
+  Destination:          teclado/fifo_key_unit/array_reg_2_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.086ns (Levels of Logic = 0)
+  Clock Path Skew:      0.036ns (0.273 - 0.237)
+  Source Clock:         clock_BUFGP rising at 20.000ns
+  Destination Clock:    clock_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: teclado/ps2_rx_unit/b_reg_1 to teclado/fifo_key_unit/array_reg_2_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X37Y33.YQ      Tcko                  0.464   teclado/ps2_rx_unit/b_reg<2>
+                                                       teclado/ps2_rx_unit/b_reg_1
+    SLICE_X39Y30.BY      net (fanout=6)        0.482   teclado/ps2_rx_unit/b_reg<1>
+    SLICE_X39Y30.CLK     Tckdi       (-Th)    -0.140   teclado/fifo_key_unit/array_reg_2_1
+                                                       teclado/fifo_key_unit/array_reg_2_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.086ns (0.604ns logic, 0.482ns route)
+                                                       (55.6% logic, 44.4% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clock_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.398ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 0.801ns (Tcl)
+  Physical resource: teclado/ps2_rx_unit/n_reg<3>/CLK
+  Logical resource: teclado/ps2_rx_unit/n_reg_3/CK
+  Location pin: SLICE_X18Y35.CLK
+  Clock network: clock_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.398ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.801ns (Tch)
+  Physical resource: teclado/ps2_rx_unit/n_reg<3>/CLK
+  Logical resource: teclado/ps2_rx_unit/n_reg_3/CK
+  Location pin: SLICE_X18Y35.CLK
+  Clock network: clock_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.398ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.602ns (624.220MHz) (Tcp)
+  Physical resource: teclado/ps2_rx_unit/n_reg<3>/CLK
+  Logical resource: teclado/ps2_rx_unit/n_reg_3/CK
+  Location pin: SLICE_X18Y35.CLK
+  Clock network: clock_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
 
 
 Data Sheet report:
 -----------------
-No constraints were found to generate data for the Data Sheet Report section.
-Use the Advanced Analysis (-a) option or generate global constraints for each
-clock, its pad to setup and clock to pad paths, and a pad to pad constraint.
+All values displayed in nanoseconds (ns)
 
-Analysis completed Thu Dec  6 13:43:40 2018 
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    8.821|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 637 paths, 0 nets, and 312 connections
+
+Design statistics:
+   Minimum period:   8.821ns{1}   (Maximum frequency: 113.366MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sat Dec  8 18:57:48 2018 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 364 MB
+Peak Memory Usage: 383 MB
 
 
 
