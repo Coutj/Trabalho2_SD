@@ -1,0 +1,236 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 4 -n
+3 -fastpaths -xml ConvertBCDToLCDNUM.twx ConvertBCDToLCDNUM.ncd -o
+ConvertBCDToLCDNUM.twr ConvertBCDToLCDNUM.pcf
+
+Design file:              ConvertBCDToLCDNUM.ncd
+Physical constraint file: ConvertBCDToLCDNUM.pcf
+Device,package,speed:     xc3s700an,fgg484,-4 (PRODUCTION 1.42 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+numEntrada<28> |numSaida<0>    |    7.216|
+numEntrada<28> |numSaida<1>    |   11.595|
+numEntrada<28> |numSaida<3>    |   10.364|
+numEntrada<28> |numSaida<4>    |   13.074|
+numEntrada<28> |numSaida<5>    |   13.365|
+numEntrada<28> |numSaida<6>    |   17.864|
+numEntrada<28> |numSaida<8>    |    7.895|
+numEntrada<28> |numSaida<9>    |   12.208|
+numEntrada<28> |numSaida<11>   |   11.449|
+numEntrada<28> |numSaida<12>   |   13.087|
+numEntrada<28> |numSaida<13>   |   13.365|
+numEntrada<28> |numSaida<14>   |   17.985|
+numEntrada<28> |numSaida<16>   |    8.164|
+numEntrada<28> |numSaida<17>   |   12.227|
+numEntrada<28> |numSaida<19>   |   11.449|
+numEntrada<28> |numSaida<20>   |   13.990|
+numEntrada<28> |numSaida<21>   |   13.086|
+numEntrada<28> |numSaida<22>   |   17.867|
+numEntrada<28> |numSaida<24>   |    8.066|
+numEntrada<28> |numSaida<25>   |   12.109|
+numEntrada<28> |numSaida<27>   |    9.601|
+numEntrada<28> |numSaida<28>   |   14.795|
+numEntrada<28> |numSaida<29>   |   12.533|
+numEntrada<28> |numSaida<30>   |   17.435|
+numEntrada<28> |numSaida<32>   |    8.177|
+numEntrada<28> |numSaida<33>   |   12.227|
+numEntrada<28> |numSaida<35>   |   11.161|
+numEntrada<28> |numSaida<36>   |   14.787|
+numEntrada<28> |numSaida<37>   |   12.821|
+numEntrada<28> |numSaida<38>   |   18.146|
+numEntrada<28> |numSaida<40>   |    8.177|
+numEntrada<28> |numSaida<41>   |   11.651|
+numEntrada<28> |numSaida<43>   |   10.616|
+numEntrada<28> |numSaida<44>   |   13.699|
+numEntrada<28> |numSaida<45>   |   13.365|
+numEntrada<28> |numSaida<46>   |   17.440|
+numEntrada<28> |numSaida<48>   |    7.451|
+numEntrada<28> |numSaida<49>   |   12.378|
+numEntrada<28> |numSaida<51>   |   10.913|
+numEntrada<28> |numSaida<52>   |   14.263|
+numEntrada<28> |numSaida<53>   |   13.046|
+numEntrada<28> |numSaida<54>   |   18.680|
+numEntrada<28> |numSaida<56>   |    7.199|
+numEntrada<28> |numSaida<57>   |   12.034|
+numEntrada<28> |numSaida<59>   |   10.154|
+numEntrada<28> |numSaida<60>   |   13.967|
+numEntrada<28> |numSaida<61>   |   12.468|
+numEntrada<28> |numSaida<62>   |   17.873|
+numEntrada<29> |numSaida<1>    |    7.779|
+numEntrada<29> |numSaida<4>    |    9.258|
+numEntrada<29> |numSaida<5>    |    9.549|
+numEntrada<29> |numSaida<6>    |   14.048|
+numEntrada<29> |numSaida<9>    |    8.392|
+numEntrada<29> |numSaida<12>   |    9.271|
+numEntrada<29> |numSaida<13>   |    9.549|
+numEntrada<29> |numSaida<14>   |   14.169|
+numEntrada<29> |numSaida<17>   |    8.411|
+numEntrada<29> |numSaida<20>   |   10.174|
+numEntrada<29> |numSaida<21>   |    9.270|
+numEntrada<29> |numSaida<22>   |   14.051|
+numEntrada<29> |numSaida<25>   |    8.293|
+numEntrada<29> |numSaida<28>   |   10.979|
+numEntrada<29> |numSaida<29>   |    8.717|
+numEntrada<29> |numSaida<30>   |   13.619|
+numEntrada<29> |numSaida<33>   |    8.411|
+numEntrada<29> |numSaida<36>   |   10.971|
+numEntrada<29> |numSaida<37>   |    9.005|
+numEntrada<29> |numSaida<38>   |   14.330|
+numEntrada<29> |numSaida<41>   |    7.835|
+numEntrada<29> |numSaida<44>   |    9.883|
+numEntrada<29> |numSaida<45>   |    9.549|
+numEntrada<29> |numSaida<46>   |   13.624|
+numEntrada<29> |numSaida<49>   |    8.562|
+numEntrada<29> |numSaida<52>   |   10.447|
+numEntrada<29> |numSaida<53>   |    9.230|
+numEntrada<29> |numSaida<54>   |   14.864|
+numEntrada<29> |numSaida<57>   |    8.218|
+numEntrada<29> |numSaida<60>   |   10.151|
+numEntrada<29> |numSaida<61>   |    8.652|
+numEntrada<29> |numSaida<62>   |   14.057|
+numEntrada<30> |numSaida<0>    |   10.166|
+numEntrada<30> |numSaida<1>    |   14.545|
+numEntrada<30> |numSaida<2>    |    8.255|
+numEntrada<30> |numSaida<3>    |   13.314|
+numEntrada<30> |numSaida<4>    |   16.024|
+numEntrada<30> |numSaida<5>    |   16.315|
+numEntrada<30> |numSaida<6>    |   20.814|
+numEntrada<30> |numSaida<8>    |   10.845|
+numEntrada<30> |numSaida<9>    |   15.158|
+numEntrada<30> |numSaida<10>   |    8.257|
+numEntrada<30> |numSaida<11>   |   14.399|
+numEntrada<30> |numSaida<12>   |   16.037|
+numEntrada<30> |numSaida<13>   |   16.315|
+numEntrada<30> |numSaida<14>   |   20.935|
+numEntrada<30> |numSaida<16>   |   11.114|
+numEntrada<30> |numSaida<17>   |   15.177|
+numEntrada<30> |numSaida<18>   |    8.268|
+numEntrada<30> |numSaida<19>   |   14.399|
+numEntrada<30> |numSaida<20>   |   16.940|
+numEntrada<30> |numSaida<21>   |   16.036|
+numEntrada<30> |numSaida<22>   |   20.817|
+numEntrada<30> |numSaida<24>   |   11.016|
+numEntrada<30> |numSaida<25>   |   15.059|
+numEntrada<30> |numSaida<26>   |    8.244|
+numEntrada<30> |numSaida<27>   |   12.551|
+numEntrada<30> |numSaida<28>   |   17.745|
+numEntrada<30> |numSaida<29>   |   15.483|
+numEntrada<30> |numSaida<30>   |   20.385|
+numEntrada<30> |numSaida<32>   |   11.127|
+numEntrada<30> |numSaida<33>   |   15.177|
+numEntrada<30> |numSaida<34>   |    8.202|
+numEntrada<30> |numSaida<35>   |   14.111|
+numEntrada<30> |numSaida<36>   |   17.737|
+numEntrada<30> |numSaida<37>   |   15.771|
+numEntrada<30> |numSaida<38>   |   21.096|
+numEntrada<30> |numSaida<40>   |   11.127|
+numEntrada<30> |numSaida<41>   |   14.601|
+numEntrada<30> |numSaida<42>   |    7.839|
+numEntrada<30> |numSaida<43>   |   13.566|
+numEntrada<30> |numSaida<44>   |   16.649|
+numEntrada<30> |numSaida<45>   |   16.315|
+numEntrada<30> |numSaida<46>   |   20.390|
+numEntrada<30> |numSaida<48>   |   10.401|
+numEntrada<30> |numSaida<49>   |   15.328|
+numEntrada<30> |numSaida<50>   |    7.842|
+numEntrada<30> |numSaida<51>   |   13.863|
+numEntrada<30> |numSaida<52>   |   17.213|
+numEntrada<30> |numSaida<53>   |   15.996|
+numEntrada<30> |numSaida<54>   |   21.630|
+numEntrada<30> |numSaida<56>   |   10.149|
+numEntrada<30> |numSaida<57>   |   14.984|
+numEntrada<30> |numSaida<58>   |    7.820|
+numEntrada<30> |numSaida<59>   |   13.104|
+numEntrada<30> |numSaida<60>   |   16.917|
+numEntrada<30> |numSaida<61>   |   15.418|
+numEntrada<30> |numSaida<62>   |   20.823|
+numEntrada<31> |numSaida<1>    |    9.309|
+numEntrada<31> |numSaida<3>    |    8.078|
+numEntrada<31> |numSaida<4>    |   10.788|
+numEntrada<31> |numSaida<5>    |   11.079|
+numEntrada<31> |numSaida<6>    |   15.578|
+numEntrada<31> |numSaida<9>    |    9.922|
+numEntrada<31> |numSaida<11>   |    9.163|
+numEntrada<31> |numSaida<12>   |   10.801|
+numEntrada<31> |numSaida<13>   |   11.079|
+numEntrada<31> |numSaida<14>   |   15.699|
+numEntrada<31> |numSaida<17>   |    9.941|
+numEntrada<31> |numSaida<19>   |    9.163|
+numEntrada<31> |numSaida<20>   |   11.704|
+numEntrada<31> |numSaida<21>   |   10.800|
+numEntrada<31> |numSaida<22>   |   15.581|
+numEntrada<31> |numSaida<25>   |    9.823|
+numEntrada<31> |numSaida<27>   |    7.315|
+numEntrada<31> |numSaida<28>   |   12.509|
+numEntrada<31> |numSaida<29>   |   10.247|
+numEntrada<31> |numSaida<30>   |   15.149|
+numEntrada<31> |numSaida<33>   |    9.941|
+numEntrada<31> |numSaida<35>   |    8.875|
+numEntrada<31> |numSaida<36>   |   12.501|
+numEntrada<31> |numSaida<37>   |   10.535|
+numEntrada<31> |numSaida<38>   |   15.860|
+numEntrada<31> |numSaida<41>   |    9.365|
+numEntrada<31> |numSaida<43>   |    8.330|
+numEntrada<31> |numSaida<44>   |   11.413|
+numEntrada<31> |numSaida<45>   |   11.079|
+numEntrada<31> |numSaida<46>   |   15.154|
+numEntrada<31> |numSaida<49>   |   10.092|
+numEntrada<31> |numSaida<51>   |    8.627|
+numEntrada<31> |numSaida<52>   |   11.977|
+numEntrada<31> |numSaida<53>   |   10.760|
+numEntrada<31> |numSaida<54>   |   16.394|
+numEntrada<31> |numSaida<57>   |    9.748|
+numEntrada<31> |numSaida<59>   |    7.868|
+numEntrada<31> |numSaida<60>   |   11.681|
+numEntrada<31> |numSaida<61>   |   10.182|
+numEntrada<31> |numSaida<62>   |   15.587|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Dec 10 23:49:59 2018 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 366 MB
+
+
+

@@ -1,4 +1,4 @@
-V3 43
+V3 46
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd 2018/12/08.18:51:55 P.20131013
 EN work/Calculadora 1544295162 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd \
@@ -7,6 +7,13 @@ AR work/Calculadora/CalculadoraArch 1544295163 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd \
       EN work/Calculadora 1544295162 CP kb_code CP lcd CP MultiplicadorCompleto \
       CP SomaCompleta
+FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM.vhd 2018/12/10.23:49:19 P.20131013
+EN work/ConvertBCDToLCDNUM 1544485764 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/ConvertBCDToLCDNUM/ConvertBCDToLCDNUMArch 1544485765 \
+      FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM.vhd \
+      EN work/ConvertBCDToLCDNUM 1544485764
 FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/fifo.vhd 2018/12/04.15:46:18 P.20131013
 EN work/fifo 1544295152 \
       FL /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/fifo.vhd \

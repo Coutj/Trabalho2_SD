@@ -29,17 +29,14 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Calculadora.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Calculadora.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Calculadora.ngr"/>
-    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Calculadora.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Calculadora.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Calculadora.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Calculadora.prj"/>
-    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Calculadora.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Calculadora.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Calculadora.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Calculadora.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Calculadora.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Calculadora.unroutes" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Calculadora.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Calculadora.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Calculadora_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="Calculadora_guide.ncd" xil_pn:origination="imported"/>
@@ -47,16 +44,47 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Calculadora_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Calculadora_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Calculadora_map.ngm" xil_pn:subbranch="Map"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Calculadora_map.xrpt"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Calculadora_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Calculadora_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Calculadora_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Calculadora_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="Calculadora_summary.html"/>
-    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Calculadora_summary.xml"/>
-    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Calculadora_usage.xml"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Calculadora_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Calculadora_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="ConvertBCDToLCDNUM.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ConvertBCDToLCDNUM.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ConvertBCDToLCDNUM.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ConvertBCDToLCDNUM.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ConvertBCDToLCDNUM.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="ConvertBCDToLCDNUM.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ConvertBCDToLCDNUM.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="ConvertBCDToLCDNUM.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="ConvertBCDToLCDNUM.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="ConvertBCDToLCDNUM.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ConvertBCDToLCDNUM.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="ConvertBCDToLCDNUM.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ConvertBCDToLCDNUM.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ConvertBCDToLCDNUM.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="ConvertBCDToLCDNUM.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="ConvertBCDToLCDNUM.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="ConvertBCDToLCDNUM.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="ConvertBCDToLCDNUM.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ConvertBCDToLCDNUM.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ConvertBCDToLCDNUM_beh.prj"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="ConvertBCDToLCDNUM_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ConvertBCDToLCDNUM_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ConvertBCDToLCDNUM_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ConvertBCDToLCDNUM_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ConvertBCDToLCDNUM_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ConvertBCDToLCDNUM_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="ConvertBCDToLCDNUM_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ConvertBCDToLCDNUM_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ConvertBCDToLCDNUM_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="ConvertBCDToLCDNUM_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="ConvertBCDToLCDNUM_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ConvertBCDToLCDNUM_par.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="ConvertBCDToLCDNUM_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="ConvertBCDToLCDNUM_usage.xml"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ConvertBCDToLCDNUM_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ConvertBCDToLCDNUM_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Multiplicador.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Multiplicador.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Multiplicador.lso"/>
@@ -229,9 +257,7 @@
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Somador_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Somador_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Somador_xst.xrpt"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TesteMultiplicadorCompleto_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TesteMultiplicadorCompleto_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TesteMultiplicadorCompleto_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TesteMultiplicador_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TesteMultiplicador_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TesteMultiplicador_isim_beh.wdb"/>
@@ -263,44 +289,38 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543597184" xil_pn:in_ck="-4341662589808032573" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1543597184">
+    <transform xil_pn:end_ts="1544485426" xil_pn:in_ck="-5003942249379713390" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1544485426">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Calculadora.vhd"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.vhd"/>
       <outfile xil_pn:name="Multiplicador.vhd"/>
       <outfile xil_pn:name="MultiplicadorCompleto.vhd"/>
       <outfile xil_pn:name="Soma4Alg.vhd"/>
       <outfile xil_pn:name="SomaCompleta.vhd"/>
       <outfile xil_pn:name="TesteMultiplicadorCompleto.vhd"/>
+      <outfile xil_pn:name="fifo.vhd"/>
+      <outfile xil_pn:name="lcd.vhd"/>
+      <outfile xil_pn:name="list_ch08_01_ps2_rx.vhd"/>
+      <outfile xil_pn:name="list_ch08_03_kb_lcode.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1543596794" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4245213749697561761" xil_pn:start_ts="1543596794">
+    <transform xil_pn:end_ts="1544482663" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="335247578627124046" xil_pn:start_ts="1544482663">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543596794" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="7935688479272989257" xil_pn:start_ts="1543596794">
+    <transform xil_pn:end_ts="1544482663" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3256226131328246422" xil_pn:start_ts="1544482663">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1543570513" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-830002363663251352" xil_pn:start_ts="1543570513">
+    <transform xil_pn:end_ts="1544482663" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="1645043513068106128" xil_pn:start_ts="1544482663">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1543597184" xil_pn:in_ck="-4341662589808032573" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1543597184">
-      <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputChanged"/>
-      <outfile xil_pn:name="Multiplicador.vhd"/>
-      <outfile xil_pn:name="MultiplicadorCompleto.vhd"/>
-      <outfile xil_pn:name="Soma4Alg.vhd"/>
-      <outfile xil_pn:name="SomaCompleta.vhd"/>
-      <outfile xil_pn:name="TesteMultiplicadorCompleto.vhd"/>
-    </transform>
-    <transform xil_pn:end_ts="1543597187" xil_pn:in_ck="-4341662589808032573" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1752425190049327094" xil_pn:start_ts="1543597184">
+    <transform xil_pn:end_ts="1544485426" xil_pn:in_ck="-5003942249379713390" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1544485426">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -308,20 +328,40 @@
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TesteMultiplicadorCompleto_beh.prj"/>
-      <outfile xil_pn:name="TesteMultiplicadorCompleto_isim_beh.exe"/>
+      <outfile xil_pn:name="Calculadora.vhd"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.vhd"/>
+      <outfile xil_pn:name="Multiplicador.vhd"/>
+      <outfile xil_pn:name="MultiplicadorCompleto.vhd"/>
+      <outfile xil_pn:name="Soma4Alg.vhd"/>
+      <outfile xil_pn:name="SomaCompleta.vhd"/>
+      <outfile xil_pn:name="TesteMultiplicadorCompleto.vhd"/>
+      <outfile xil_pn:name="fifo.vhd"/>
+      <outfile xil_pn:name="lcd.vhd"/>
+      <outfile xil_pn:name="list_ch08_01_ps2_rx.vhd"/>
+      <outfile xil_pn:name="list_ch08_03_kb_lcode.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1544485428" xil_pn:in_ck="-5003942249379713390" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3184017925717183246" xil_pn:start_ts="1544485426">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_beh.prj"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1543597187" xil_pn:in_ck="-9109467614367912492" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-890003459575117735" xil_pn:start_ts="1543597187">
+    <transform xil_pn:end_ts="1544485428" xil_pn:in_ck="177674634068437427" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3430132839621699509" xil_pn:start_ts="1544485428">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="TesteMultiplicadorCompleto_isim_beh.wdb"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -329,99 +369,94 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544103214" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="9110887277907364620" xil_pn:start_ts="1544103214">
+    <transform xil_pn:end_ts="1544478323" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1865055627623981706" xil_pn:start_ts="1544478323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544103214" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8577221774135123674" xil_pn:start_ts="1544103214">
+    <transform xil_pn:end_ts="1544478323" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1645043513068106128" xil_pn:start_ts="1544478323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544103214" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1544103214">
+    <transform xil_pn:end_ts="1544478323" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1544478323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544103214" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2178222350165180132" xil_pn:start_ts="1544103214">
+    <transform xil_pn:end_ts="1544478323" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="335247578627124046" xil_pn:start_ts="1544478323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544103214" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="9102341965431189672" xil_pn:start_ts="1544103214">
+    <transform xil_pn:end_ts="1544478323" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="9102341965431189672" xil_pn:start_ts="1544478323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544103214" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="7680800026392926192" xil_pn:start_ts="1544103214">
+    <transform xil_pn:end_ts="1544478323" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-3732355618202762790" xil_pn:start_ts="1544478323">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544295159" xil_pn:in_ck="-3027708574371046591" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="7232575345252186403" xil_pn:start_ts="1544295142">
+    <transform xil_pn:end_ts="1544485767" xil_pn:in_ck="-4642243331027890207" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6745904205370827123" xil_pn:start_ts="1544485759">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="Calculadora.lso"/>
-      <outfile xil_pn:name="Calculadora.ngc"/>
-      <outfile xil_pn:name="Calculadora.ngr"/>
-      <outfile xil_pn:name="Calculadora.prj"/>
-      <outfile xil_pn:name="Calculadora.stx"/>
-      <outfile xil_pn:name="Calculadora.syr"/>
-      <outfile xil_pn:name="Calculadora.xst"/>
-      <outfile xil_pn:name="Calculadora_xst.xrpt"/>
-      <outfile xil_pn:name="Multiplicador.ngr"/>
-      <outfile xil_pn:name="MultiplicadorCompleto.ngr"/>
-      <outfile xil_pn:name="Soma4Alg.ngr"/>
-      <outfile xil_pn:name="SomaCompleta.ngr"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.lso"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.ngc"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.ngr"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.prj"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.stx"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.syr"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.xst"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_beh.prj"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_xst.xrpt"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1544295431" xil_pn:in_ck="6578114222110546020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6179290668782673521" xil_pn:start_ts="1544295431">
+    <transform xil_pn:end_ts="1544478332" xil_pn:in_ck="6578114222110546020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-4821614060468221191" xil_pn:start_ts="1544478331">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544295436" xil_pn:in_ck="7647515772922100618" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="8563194566340271603" xil_pn:start_ts="1544295431">
+    <transform xil_pn:end_ts="1544485772" xil_pn:in_ck="-680201798669595712" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1800163815484689507" xil_pn:start_ts="1544485767">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Calculadora.bld"/>
-      <outfile xil_pn:name="Calculadora.ngd"/>
-      <outfile xil_pn:name="Calculadora_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.bld"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.ngd"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_ngdbuild.xrpt"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1544295446" xil_pn:in_ck="-6084179400794535179" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1544295436">
+    <transform xil_pn:end_ts="1544485778" xil_pn:in_ck="-1023040199767956436" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1544485772">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Calculadora.pcf"/>
-      <outfile xil_pn:name="Calculadora_map.map"/>
-      <outfile xil_pn:name="Calculadora_map.mrp"/>
-      <outfile xil_pn:name="Calculadora_map.ncd"/>
-      <outfile xil_pn:name="Calculadora_map.ngm"/>
-      <outfile xil_pn:name="Calculadora_map.xrpt"/>
-      <outfile xil_pn:name="Calculadora_summary.xml"/>
-      <outfile xil_pn:name="Calculadora_usage.xml"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.pcf"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_map.map"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_map.mrp"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_map.ncd"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_map.ngm"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_map.xrpt"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_summary.xml"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1544295468" xil_pn:in_ck="-1664205191230930837" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1544295446">
+    <transform xil_pn:end_ts="1544485799" xil_pn:in_ck="-8033119726151447813" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1544485778">
       <status xil_pn:value="SuccessfullyRun"/>
-      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Calculadora.ncd"/>
-      <outfile xil_pn:name="Calculadora.pad"/>
-      <outfile xil_pn:name="Calculadora.par"/>
-      <outfile xil_pn:name="Calculadora.ptwx"/>
-      <outfile xil_pn:name="Calculadora.unroutes"/>
-      <outfile xil_pn:name="Calculadora.xpi"/>
-      <outfile xil_pn:name="Calculadora_pad.csv"/>
-      <outfile xil_pn:name="Calculadora_pad.txt"/>
-      <outfile xil_pn:name="Calculadora_par.xrpt"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.ncd"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.pad"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.par"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.ptwx"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.unroutes"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.xpi"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_pad.csv"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_pad.txt"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1544295468" xil_pn:in_ck="5203831778895811037" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1544295464">
+    <transform xil_pn:end_ts="1544485799" xil_pn:in_ck="1601219557436456336" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1544485796">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="Calculadora.twr"/>
-      <outfile xil_pn:name="Calculadora.twx"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.twr"/>
+      <outfile xil_pn:name="ConvertBCDToLCDNUM.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
     </transform>
   </transforms>

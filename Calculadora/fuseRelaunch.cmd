@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicadorCompleto_isim_beh.exe" -prj "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/TesteMultiplicadorCompleto_beh.prj" "work.TesteMultiplicadorCompleto" 
+-intstyle "ise" -incremental -o "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM_isim_beh.exe" -prj "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM_beh.prj" "work.ConvertBCDToLCDNUM" 

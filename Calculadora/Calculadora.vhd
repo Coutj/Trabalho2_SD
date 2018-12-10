@@ -246,17 +246,21 @@ begin
 						
 			when selOperacao =>
 			
-					if (operacao = '0') then
+				if (operacao = '0') then
 						
-						result	<= X"000"&resultSoma;
+					result	<= X"000"&resultSoma;
 					
-					else
+				else
 					
-						result <= resultMultiplicacao;
+					result <= resultMultiplicacao;
 					
-					end if;
+				end if;
+					
+				estadoAtual <= resultado;
 					
 			when resultado =>
+			
+				
 		
 		end case;
 		
