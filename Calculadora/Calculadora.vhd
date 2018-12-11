@@ -36,9 +36,9 @@ entity Calculadora is
 				numTeclado : out std_logic_vector (7 downto 0); --mostrar resultado nos leds
 	
 				clock		: in std_logic;
-				resetTeclado : in std_logic;	-- direita
+				resetTeclado : in std_logic;	-- esquerda
 				ps2d, ps2c: in  std_logic;		-- Dados e clock do teclado
-				rd_key_code: in std_logic;		-- esquerda
+				rd_key_code: in std_logic;		-- direita
 				
 				LCD_DB: out std_logic_vector(7 downto 0);		--dados que serao trasmitidos
 				RS:out std_logic;  			--comando/caracter
@@ -117,8 +117,8 @@ architecture CalculadoraArch of Calculadora is
 begin
 
 
-	numTeclado <= x"0"&codigoConvertidoTecladoBinario;
-	
+	numTeclado <= kb_buf_empty&"000"&codigoConvertidoTecladoBinario;
+	--resetTeclado
 	teclado		: kb_code port map (clock, resetTeclado, ps2d, ps2c, rd_key_code, codigoTeclado, kb_buf_empty );
 	portLcd		: lcd		 port map (LCD_DB, RS, RW, clock, OE, rstLCD, codigoTeclado, rd_key_code);
 
@@ -169,6 +169,7 @@ begin
 		
 			codigoConvertidoTecladoBinario <= "1001";
 		
+		
 		end if;
 	
 	end process;
@@ -182,7 +183,7 @@ begin
 				numA <= x"0000";
 				numB <= x"0000";
 				
-				if (kb_buf_empty = '1') then
+				if (kb_buf_empty = '0') then
 					
 					estadoAtualTeclado <= configuraNumeros;
 						
@@ -271,4 +272,3 @@ begin
 
 
 end CalculadoraArch;
-

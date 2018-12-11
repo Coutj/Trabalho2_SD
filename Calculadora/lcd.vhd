@@ -109,54 +109,63 @@ architecture Behavioral of lcd is
 	signal jaRecebiNumero	: std_logic := '0';
 
 	type LCD_CMDS_T is array(integer range <>) of std_logic_vector(9 downto 0);
-	constant LCD_CMDS : LCD_CMDS_T := ( 0 => "00"&X"3C",			--Function Set
+	constant LCD_CMDS : LCD_CMDS_T := ( 
+						
+						 0 => "00"&X"3C",			--Function Set
 					    1 => "00"&X"0C",			--Display ON, Cursor OFF, Blink OFF
 					    2 => "00"&X"01",			--Clear Display
-					    3 => "00"&X"02", 		--return home
-
-					    4 => "10"&"00110000", 			--0
-					    5 => "10"&"00110001",  		--1
-					    6 => "10"&"00110010",  		--2
-					    7 => "10"&"00110011", 			--3
-					    8 => "10"&"00110100", 			--4
-					    9 => "10"&"00110101",  		--5
-					    10 => "10"&"00110110", 		--6
-					    11 => "10"&"00110111", 		--7
-					    12 => "10"&"00111000", 		--8
-					    13 => "10"&"00111001"  		--9
-													
-
+					    3 => "00"&X"02" 		--return home
 						 );
+						 
+	
+
 													
 	signal lcd_cmd_ptr : integer range 0 to LCD_CMDS'HIGH + 1 := 0;	--endereco do caractere
+	
+	type LCD_CMDS_NEW is array(integer range <>) of std_logic_vector(9 downto 0);
+	constant LCD_CMDS_NUMERO : LCD_CMDS_NEW := ( 
+					    0 => "10"&"00110000", 			--0
+					    1 => "10"&"00110001",  		--1
+					    2 => "10"&"00110010",  		--2
+					    3 => "10"&"00110011", 			--3
+					    4 => "10"&"00110100", 			--4
+					    5 => "10"&"00110101",  		--5
+					    6 => "10"&"00110110", 		--6
+					    7 => "10"&"00110111", 		--7
+					    8 => "10"&"00111000", 		--8
+					    9 => "10"&"00111001", 		--9
+						 10 => "10"&"00111111"
+
+						 );
+						 
+
 begin
  	
 	ConvertKeytoLCDCODE: process (keyBoardInput)
 	begin
-			if (keyBoardInput = "00100101") then -- 0
-				keyDecifrado <= 4;
+			if (keyBoardInput = "01000101") then -- 0
+				keyDecifrado <= 0;
 			elsif (keyBoardInput = "00010110") then	--	1
-				keyDecifrado <= 5;
+				keyDecifrado <= 1;
 			elsif (keyBoardInput = "00011110") then	--	2
-				keyDecifrado <= 6;
+				keyDecifrado <= 2;
 			elsif (keyBoardInput = "00100110") then	--	3
-				keyDecifrado <= 7;
-			elsif (keyBoardInput = "00100101") then	--	4
-				keyDecifrado <= 8;
-			elsif (keyBoardInput = "00101110") then	--	5
-				keyDecifrado <= 9;
-			elsif (keyBoardInput = "00110110") then	--	6
-				keyDecifrado <= 10;
-			elsif (keyBoardInput = "00111101") then	--	7
-				keyDecifrado <= 11;
-			elsif (keyBoardInput = "00111110") then	--	8
-				keyDecifrado <= 12;
-			elsif (keyBoardInput = "01000110") then	--	9
-				keyDecifrado <= 13;
-			
-			elsif (keyBoardInput = "00000000") then 	-- return home
 				keyDecifrado <= 3;
-			end if;
+			elsif (keyBoardInput = "00100101") then	--	4
+				keyDecifrado <= 4;
+			elsif (keyBoardInput = "00101110") then	--	5
+				keyDecifrado <= 5;
+			elsif (keyBoardInput = "00110110") then	--	6
+				keyDecifrado <= 6;
+			elsif (keyBoardInput = "00111101") then	--	7
+				keyDecifrado <= 7;
+			elsif (keyBoardInput = "00111110") then	--	8
+				keyDecifrado <= 8;
+			elsif (keyBoardInput = "01000110") then	--	9
+				keyDecifrado <= 9;
+			else
+				keyDecifrado <= 10;
+    		end if;
 	
 	end process ConvertKeytoLCDCODE;
 	
@@ -187,29 +196,29 @@ begin
 		else '0';
 	--rdone <= '1' when stCur = stWait else '0';
 	--Increments the pointer so the statemachine goes through the commands
---	process (lcd_cmd_ptr, oneUSClk)
---   		begin
---			if (oneUSClk = '1' and oneUSClk'event) then
---				if ((stNext = stInitDne or stNext = stDisplayCtrlSet or stNext = stDisplayClear) and writeDone = '0') then 
---					lcd_cmd_ptr <= keyDecifrado;
---				elsif stCur = stPowerOn_Delay or stNext = stPowerOn_Delay then
---					lcd_cmd_ptr <= 0;
---				else
---					lcd_cmd_ptr <= lcd_cmd_ptr;		-- recebe return home
---				end if;
---			end if;
---		end process;
-
-		process (lcd_cmd_ptr, oneUSClk)
+	process (lcd_cmd_ptr, oneUSClk)
    		begin
 			if (oneUSClk = '1' and oneUSClk'event) then
-				if stCur = stPowerOn_Delay or stNext = stPowerOn_Delay then
+				if ((stNext = stInitDne or stNext = stDisplayCtrlSet or stNext = stDisplayClear) and writeDone = '0') then 
+					lcd_cmd_ptr <= lcd_cmd_ptr + 1;
+				elsif stCur = stPowerOn_Delay or stNext = stPowerOn_Delay then
 					lcd_cmd_ptr <= 0;
 				else
-					lcd_cmd_ptr <= keyDecifrado;		
+					lcd_cmd_ptr <= lcd_cmd_ptr;
 				end if;
 			end if;
 		end process;
+
+--		process (lcd_cmd_ptr, oneUSClk)
+--   		begin
+--			if (oneUSClk = '1' and oneUSClk'event) then
+--				if stCur = stPowerOn_Delay or stNext = stPowerOn_Delay then
+--					lcd_cmd_ptr <= 0;
+--				else
+--					lcd_cmd_ptr <= 4;--keyDecifrado;		
+--				end if;
+--			end if;
+--		end process;
 		
 		
 		
@@ -270,7 +279,7 @@ begin
 				when stFunctionSet =>
 					RS <= LCD_CMDS(lcd_cmd_ptr)(9);
 					RW <= LCD_CMDS(lcd_cmd_ptr)(8);
-					LCD_DB <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
+					LCD_DB <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0); 
 					activateW <= '1';	
 					stNext <= stFunctionSet_Delay;
 				
@@ -313,7 +322,7 @@ begin
 				when stDisplayClear	=>
 					RS <= LCD_CMDS(lcd_cmd_ptr)(9);
 					RW <= LCD_CMDS(lcd_cmd_ptr)(8);
-					LCD_DB <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
+					LCD_DB <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0); 
 					activateW <= '1';
 					stNext <= stDisplayClear_Delay;
 
@@ -324,7 +333,7 @@ begin
 					RW <= LCD_CMDS(lcd_cmd_ptr)(8);
 					LCD_DB <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
 					activateW <= '0';
-					if (delayOK = '1' and jaRecebiNumero = '1' ) then
+					if (delayOK = '1' and jaRecebiNumero = '1') then
 						stNext <= stInitDne;
 					else
 						stNext <= stDisplayClear_Delay;
@@ -333,24 +342,25 @@ begin
 				--State for normal operations for displaying characters, changing the
 				--Cursor position etc.
 				when stInitDne =>		
-					RS <= LCD_CMDS(lcd_cmd_ptr)(9);
-					RW <= LCD_CMDS(lcd_cmd_ptr)(8);
-					LCD_DB <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
+					RS <= '1'; --LCD_CMDS(lcd_cmd_ptr)(9);
+					RW <= '0'; --LCD_CMDS(lcd_cmd_ptr)(8);
+					LCD_DB <= LCD_CMDS_NUMERO(keyDecifrado)(7 downto 0);
 					activateW <= '0';
 					stNext <= stActWr;
 
 				when stActWr =>		
-					RS <= LCD_CMDS(lcd_cmd_ptr)(9);
-					RW <= LCD_CMDS(lcd_cmd_ptr)(8);
-					LCD_DB <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
+					RS <= '1'; --LCD_CMDS(lcd_cmd_ptr)(9);
+					RW <= '0'; --LCD_CMDS(lcd_cmd_ptr)(8);
+					LCD_DB <= LCD_CMDS_NUMERO(keyDecifrado)(7 downto 0); --mud
 					activateW <= '1';
 					stNext <= stCharDelay;
+
 					
 				--Provides a max delay between instructions.
 				when stCharDelay =>
-					RS <= LCD_CMDS(lcd_cmd_ptr)(9);
-					RW <= LCD_CMDS(lcd_cmd_ptr)(8);
-					LCD_DB <= LCD_CMDS(lcd_cmd_ptr)(7 downto 0);
+					RS <= '1'; --LCD_CMDS(lcd_cmd_ptr)(9);
+					RW <= '0'; --LCD_CMDS(lcd_cmd_ptr)(8);;
+					LCD_DB <= LCD_CMDS_NUMERO(keyDecifrado)(7 downto 0);
 					activateW <= '0';					
 					
 					if (delayOK = '1' and jaRecebiNumero = '1') then

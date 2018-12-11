@@ -69,6 +69,7 @@
     <file xil_pn:fileType="FILE_XPI" xil_pn:name="ConvertBCDToLCDNUM.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ConvertBCDToLCDNUM.xst"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ConvertBCDToLCDNUM_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ConvertBCDToLCDNUM_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="ConvertBCDToLCDNUM_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ConvertBCDToLCDNUM_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ConvertBCDToLCDNUM_isim_beh.wdb"/>
@@ -81,6 +82,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="ConvertBCDToLCDNUM_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="ConvertBCDToLCDNUM_pad.txt" xil_pn:subbranch="Par"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ConvertBCDToLCDNUM_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ConvertBCDToLCDNUM_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="ConvertBCDToLCDNUM_summary.xml"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="ConvertBCDToLCDNUM_usage.xml"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ConvertBCDToLCDNUM_vhdl.prj"/>
@@ -344,6 +346,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
@@ -358,6 +361,7 @@
     <transform xil_pn:end_ts="1544485428" xil_pn:in_ck="177674634068437427" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3430132839621699509" xil_pn:start_ts="1544485428">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -393,7 +397,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544485767" xil_pn:in_ck="-4642243331027890207" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6745904205370827123" xil_pn:start_ts="1544485759">
+    <transform xil_pn:end_ts="1544569352" xil_pn:in_ck="-4642243331027890207" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-6745904205370827123" xil_pn:start_ts="1544569340">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -416,7 +420,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1544485772" xil_pn:in_ck="-680201798669595712" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1800163815484689507" xil_pn:start_ts="1544485767">
+    <transform xil_pn:end_ts="1544569358" xil_pn:in_ck="-680201798669595712" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-1800163815484689507" xil_pn:start_ts="1544569352">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ConvertBCDToLCDNUM.bld"/>
@@ -425,7 +429,7 @@
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1544485778" xil_pn:in_ck="-1023040199767956436" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1544485772">
+    <transform xil_pn:end_ts="1544569367" xil_pn:in_ck="-1023040199767956436" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="570889668722473129" xil_pn:start_ts="1544569358">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ConvertBCDToLCDNUM.pcf"/>
@@ -438,7 +442,7 @@
       <outfile xil_pn:name="ConvertBCDToLCDNUM_usage.xml"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1544485799" xil_pn:in_ck="-8033119726151447813" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1544485778">
+    <transform xil_pn:end_ts="1544569389" xil_pn:in_ck="-8033119726151447813" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8699727321066641134" xil_pn:start_ts="1544569367">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ConvertBCDToLCDNUM.ncd"/>
@@ -452,7 +456,7 @@
       <outfile xil_pn:name="ConvertBCDToLCDNUM_par.xrpt"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
     </transform>
-    <transform xil_pn:end_ts="1544485799" xil_pn:in_ck="1601219557436456336" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1544485796">
+    <transform xil_pn:end_ts="1544569389" xil_pn:in_ck="1601219557436456336" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1544569385">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ConvertBCDToLCDNUM.twr"/>

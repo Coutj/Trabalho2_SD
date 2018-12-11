@@ -35,13 +35,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -100,18 +100,21 @@
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Calculadora - CalculadoraArch |home|juan|Documents|SD_trabalho2|Trabalho2_SD|Calculadora|Calculadora.vhd/Multiplica - MultiplicadorCompleto - MultiplicadorCompletoArch</ClosedNode>
+         <ClosedNode>/Calculadora - CalculadoraArch |home|juan|Documents|SD_trabalho2|Trabalho2_SD|Calculadora|Calculadora.vhd/Soma - SomaCompleta - SomaCompletaArch</ClosedNode>
+         <ClosedNode>/Calculadora - CalculadoraArch |home|juan|Documents|SD_trabalho2|Trabalho2_SD|Calculadora|Calculadora.vhd/teclado - kb_code - arch</ClosedNode>
          <ClosedNode>/Soma4Alg - Soma4AlgArch |home|juan|Documents|SD_trabalho2|Trabalho2_SD|Calculadora|Soma4Alg.vhd</ClosedNode>
          <ClosedNode>/TesteMultiplicadorCompleto - behavior |home|juan|Documents|SD_trabalho2|Trabalho2_SD|Calculadora|TesteMultiplicadorCompleto.vhd/uut - MultiplicadorCompleto - MultiplicadorCompletoArch</ClosedNode>
          <ClosedNode>/Types |home|juan|Documents|SD_trabalho2|Trabalho2_SD|Calculadora|Types.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ConvertBCDToLCDNUM - ConvertBCDToLCDNUMArch (/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM.vhd)</SelectedItem>
+         <SelectedItem>Calculadora - CalculadoraArch (/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >49</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000267000000020000000000000000000000000200000064ffffffff000000810000000300000002000002670000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>ConvertBCDToLCDNUM - ConvertBCDToLCDNUMArch (/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM.vhd)</CurrentItem>
+      <CurrentItem>Calculadora - CalculadoraArch (/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/Calculadora.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -148,12 +151,12 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000ef000000010000000100000000000000000000000064ffffffff000000810000000000000001000000ef0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem/>
    </ItemView>
 </Project>
