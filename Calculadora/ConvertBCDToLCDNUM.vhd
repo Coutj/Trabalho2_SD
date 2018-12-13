@@ -48,34 +48,35 @@ architecture ConvertBCDToLCDNUMArch of ConvertBCDToLCDNUM is
 begin
 
 
-	Convertendo : process (numEntrada) is
+	Convertendo : process (numEntrada)
 	begin
+	
 			
 				entrada(7 downto 0) <= x"0"&numEntrada (3 downto 0);
 		
-				if (entrada = "00000000") then					
-					entrada <= x"45";						
-				elsif (entrada = "00000001") then					
-					entrada <= x"16";					
+				--if (entrada = "00000000") then					
+				--	entradaAux <= x"45";						
+				if (entrada = "00000001") then					
+					entradaAux <= x"16";					
 				elsif (entrada = "00000010") then					
-					entrada <= x"1E";						
+					entradaAux <= x"1E";						
 				elsif (entrada = "00000011") then					
-					entrada <= x"26" ;
+					entradaAux <= x"26" ;
 				elsif (entrada = "00000100") then	
-					entrada <= x"25";					
+					entradaAux <= x"25";					
 				elsif (entrada = "00000101") then					
-					entrada <= x"2E" ;						
+					entradaAux <= x"2E" ;						
 				elsif (entrada = "00000110") then					
-					entrada <= x"36" ;						
+					entradaAux <= x"36" ;						
 				elsif (entrada = "00000111") then				
-					entrada <= x"3D" ;						
+					entradaAux <= x"3D" ;						
 				elsif (entrada = "00001000") then					
-					entrada <= x"3E";						
+					entradaAux <= x"3E";						
 				elsif (entrada = "00001001") then					
-					entrada <= x"46";				
+					entradaAux <= x"46";				
 				end if;
 				
-				numSaida(7 downto 0) <= entrada;
+				numSaida(7 downto 0) <= entradaAux;
 				
 				entrada(3 downto 0) <= numEntrada (7 downto 4);
 		

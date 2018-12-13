@@ -19,6 +19,8 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -100,7 +102,7 @@ architecture CalculadoraArch of Calculadora is
 	type estados is (idle, selOperacao, resultado);
 	signal estadoAtual : estados := idle; 
 	
-	type estadosTeclado is (idle, configuraNumeros);
+	type estadosTeclado is (idle, configuraNumeros, delayTeclado);
 	signal estadoAtualTeclado : estadosTeclado := idle;
 	
 	signal resultMultiplicacao : std_logic_vector (31 downto 0) := (others => '0');
@@ -113,12 +115,42 @@ architecture CalculadoraArch of Calculadora is
 	signal contador		: integer := 0;
 	signal codigoConvertidoTecladoBinario : std_logic_vector (3 downto 0) := (others => '0');
 	signal recebeuNumeros : std_logic := '0';
+	
+	signal count:std_logic_vector (25 downto 0):= (others => '0');	--15 bit count variable for timing delays
+	signal delayOK : std_logic := '0';
+	signal OneUSClk:std_logic;
+	signal clkCount:std_logic_vector(5 downto 0);
+	signal startDelay:std_logic;
 
 begin
 
+		process (clock, oneUSClk)
+    		begin
+			if (clock = '1' and clock'event) then
+				clkCount <= clkCount + 1;
+			end if;
+		end process;
+		
+		oneUSClk <= clkCount(5);
+		
+		process (oneUSClk, delayOK)
+		begin
+			if (oneUSClk = '1' and oneUSClk'event) then
+				if delayOK = '1' then
+					count <= "00000000000000000000000000";
+				else
+					count <= count + 1;
+				end if;
+			end if;
+		end process;
+		
+		
+		delayOK <= '1' when ( count = "00000011001111111111111111"	or startDelay = '1')
+							else	'0';
 
-	numTeclado <= kb_buf_empty&"000"&codigoConvertidoTecladoBinario;
-	--resetTeclado
+
+	numTeclado <= x"0" & codigoConvertidoTecladoBinario;
+	
 	teclado		: kb_code port map (clock, resetTeclado, ps2d, ps2c, rd_key_code, codigoTeclado, kb_buf_empty );
 	portLcd		: lcd		 port map (LCD_DB, RS, RW, clock, OE, rstLCD, codigoTeclado, rd_key_code);
 
@@ -129,110 +161,112 @@ begin
 	ConverterNumeroTeclado : process (codigoTeclado) is
 	begin
 	
-		if (codigoTeclado = x"45") then
-		
-			codigoConvertidoTecladoBinario <= "0000";
-			
-		elsif (codigoTeclado = x"16") then
-		
-			codigoConvertidoTecladoBinario <= "0001";
-		
-		elsif (codigoTeclado = x"1E") then
-		
+		if (codigoTeclado = x"45") then	
+			codigoConvertidoTecladoBinario <= "0000";		
+		elsif (codigoTeclado = x"16") then	
+			codigoConvertidoTecladoBinario <= "0001";	
+		elsif (codigoTeclado = x"1E") then		
 			codigoConvertidoTecladoBinario <= "0010";
-			
-		elsif (codigoTeclado = x"26") then
-		
-			codigoConvertidoTecladoBinario <= "0011";
-			
-		elsif (codigoTeclado = x"25") then
-		
-			codigoConvertidoTecladoBinario <= "0100";
-			
-		elsif (codigoTeclado = x"2E") then
-		
-			codigoConvertidoTecladoBinario <= "0101";
-			
-		elsif (codigoTeclado = x"36") then
-		
-			codigoConvertidoTecladoBinario <= "0110";
-			
-		elsif (codigoTeclado = x"3D") then
-		
-			codigoConvertidoTecladoBinario <= "0111";
-			
-		elsif (codigoTeclado = x"3E") then
-		
-			codigoConvertidoTecladoBinario <= "1000";
-			
-		elsif (codigoTeclado = x"46") then
-		
-			codigoConvertidoTecladoBinario <= "1001";
-		
-		
+		elsif (codigoTeclado = x"26") then		
+			codigoConvertidoTecladoBinario <= "0011";			
+		elsif (codigoTeclado = x"25") then		
+			codigoConvertidoTecladoBinario <= "0100";			
+		elsif (codigoTeclado = x"2E") then		
+			codigoConvertidoTecladoBinario <= "0101";			
+		elsif (codigoTeclado = x"36") then	
+			codigoConvertidoTecladoBinario <= "0110";			
+		elsif (codigoTeclado = x"3D") then		
+			codigoConvertidoTecladoBinario <= "0111";			
+		elsif (codigoTeclado = x"3E") then		
+			codigoConvertidoTecladoBinario <= "1000";			
+		elsif (codigoTeclado = x"46") then		
+			codigoConvertidoTecladoBinario <= "1001";		
 		end if;
 	
 	end process;
 	
-	ObterNumerosTeclado : process (codigoTeclado, kb_buf_empty) is -- Armazenar o numero toda vez que o buffer mudar
+	ObterNumerosTeclado : process (delayOK) is -- Armazenar o numero toda vez que o numero for confirmado
 	begin
 		
 		case estadoAtualTeclado is
 		
 			when idle =>
-				numA <= x"0000";
-				numB <= x"0000";
+--				numA <= x"0000";
+--				numB <= x"0000";
 				
-				if (kb_buf_empty = '0') then
+				if (rd_key_code = '1') then
 					
 					estadoAtualTeclado <= configuraNumeros;
-						
+					startDelay <= '1';
+					
+				else
+				
+					estadoAtualTeclado <= idle;
+					
 				end if;
 				
 			when configuraNumeros =>
-			
-				if (contador = 0) then
+					
+				startDelay <= '0';
+					
+				if (contador = 3) then
+					numA (3 downto 0)	<= codigoConvertidoTecladoBinario;				
 				
-					numA (3 downto 0)	<= codigoConvertidoTecladoBinario;
+				elsif (contador = 2) then				
+					numA (7 downto 4)	<= codigoConvertidoTecladoBinario;
 				
 				elsif (contador = 1) then
 				
-					numA (7 downto 4)	<= codigoConvertidoTecladoBinario;
-				
-				elsif (contador = 2) then
-				
 					numA (11 downto 8)	<= codigoConvertidoTecladoBinario;
-					
-				elsif (contador = 3) then
+				
+				elsif (contador = 0) then
 				
 					numA (15 downto 12)	<= codigoConvertidoTecladoBinario;
 					
-				elsif (contador = 4) then
-				
-					numB (3 downto 0)	<= codigoConvertidoTecladoBinario;
-					
-				elsif (contador = 5) then
-				
-					numB (7 downto 4)	<= codigoConvertidoTecladoBinario;
-					
-				elsif (contador = 6) then
-				
-					numB (11 downto 8)	<= codigoConvertidoTecladoBinario;
-				
 				elsif (contador = 7) then
 				
-					numB (15 downto 12)	<= codigoConvertidoTecladoBinario;
+					numB (3 downto 0)	<= codigoConvertidoTecladoBinario;
 					contador <= 0;
 					recebeuNumeros <= '1';
 					
+				elsif (contador = 6) then
+				
+					numB (7 downto 4)	<= codigoConvertidoTecladoBinario;
+			
+				elsif (contador = 5) then
+				
+					numB (11 downto 8)	<= codigoConvertidoTecladoBinario;
+				
+				elsif (contador = 4) then
+				
+					numB (15 downto 12)	<= codigoConvertidoTecladoBinario;
+					
+					
 				end if;
 				
-				contador <= contador + 1;
+				
+				
+				estadoAtualTeclado <= delayTeclado;
+				
+				
+				
+			when delayTeclado =>
+				
+				if (delayOK = '1') then
+				
+					estadoAtualTeclado <= idle;
+					contador <= contador + 1;
+					
+				else
+					estadoAtualTeclado <= delayTeclado;
+							
+				end if;
+				
 				
 		end case;
 	
-	
 	end process ObterNumerosTeclado;
+	
 
 	CalcProcess : process (numA, numB, operacao) is 
 	begin
@@ -265,8 +299,6 @@ begin
 		
 		end case;
 		
-		
-	
 	
 	end process CalcProcess;
 

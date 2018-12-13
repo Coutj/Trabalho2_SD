@@ -10,27 +10,28 @@ Target Device  : xc3s700an
 Target Package : fgg484
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 11 23:02:41 2018
+Mapped Date    : Thu Dec 13 12:19:19 2018
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    0
+Number of warnings:    1
 Logic Utilization:
-  Number of 4 input LUTs:                17 out of  11,776    1%
+  Number of 4 input LUTs:                27 out of  11,776    1%
 Logic Distribution:
-  Number of occupied Slices:              9 out of   5,888    1%
-    Number of Slices containing only related logic:       9 out of       9 100%
-    Number of Slices containing unrelated logic:          0 out of       9   0%
+  Number of occupied Slices:             14 out of   5,888    1%
+    Number of Slices containing only related logic:      14 out of      14 100%
+    Number of Slices containing unrelated logic:          0 out of      14   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:          17 out of  11,776    1%
+  Total Number of 4 input LUTs:          27 out of  11,776    1%
   Number of bonded IOBs:                 68 out of     372   18%
+    IOB Latches:                          7
 
-Average Fanout of Non-Clock Nets:                6.78
+Average Fanout of Non-Clock Nets:                5.44
 
-Peak Memory Usage:  629 MB
+Peak Memory Usage:  627 MB
 Total REAL time to MAP completion:  5 secs 
-Total CPU time to MAP completion:   2 secs 
+Total CPU time to MAP completion:   3 secs 
 
 NOTES:
 
@@ -71,6 +72,9 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net entradaAux_not0001 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
 
 Section 3 - Informational
 -------------------------
@@ -90,7 +94,7 @@ INFO:LIT:244 - All of the single ended outputs in this design are using slew
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-   1 block(s) optimized away
+   2 block(s) optimized away
 
 Section 5 - Removed Logic
 -------------------------
@@ -98,9 +102,7 @@ Section 5 - Removed Logic
 Optimized Block(s):
 TYPE 		BLOCK
 GND 		XST_GND
-
-To enable printing of redundant blocks removed and signals merged, set the
-detailed map report option and rerun map.
+VCC 		XST_VCC
 
 Section 6 - IOB Properties
 --------------------------
@@ -113,13 +115,13 @@ Section 6 - IOB Properties
 | numEntrada<29>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
 | numEntrada<30>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
 | numEntrada<31>                     | IBUF             | INPUT     | LVCMOS25             |       |          |         |              |          | 0 / 0    |                  |
-| numSaida<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
-| numSaida<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
-| numSaida<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
-| numSaida<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
-| numSaida<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
-| numSaida<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
-| numSaida<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
+| numSaida<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| numSaida<1>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| numSaida<2>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| numSaida<3>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| numSaida<4>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| numSaida<5>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
+| numSaida<6>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    | OFF1         |          | 0 / 0    | 3STATE           |
 | numSaida<7>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | numSaida<8>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |
 | numSaida<9>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW    |              |          | 0 / 0    | 3STATE           |

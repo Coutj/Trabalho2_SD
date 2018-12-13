@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: ConvertBCDToLCDNUM.prj
@@ -120,6 +120,8 @@ Analyzing hierarchy for entity <ConvertBCDToLCDNUM> in library <work> (architect
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <ConvertBCDToLCDNUM> in library <work> (Architecture <convertbcdtolcdnumarch>).
+WARNING:Xst:819 - "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM.vhd" line 51: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <entradaAux>
 Entity <ConvertBCDToLCDNUM> analyzed. Unit <ConvertBCDToLCDNUM> generated.
 
 
@@ -131,39 +133,49 @@ Performing bidirectional port resolution...
 
 Synthesizing Unit <ConvertBCDToLCDNUM>.
     Related source file is "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM.vhd".
-WARNING:Xst:647 - Input <numEntrada<27:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1780 - Signal <entradaAux> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:647 - Input <numEntrada<27:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 8-bit latch for signal <entradaAux>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 Unit <ConvertBCDToLCDNUM> synthesized.
 
 
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+
 =========================================================================
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1293 - FF/Latch <0> has a constant value of 0 in block <7>. This FF/Latch will be trimmed during the optimization process.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Latches                                              : 1
+ 8-bit latch                                           : 1
+
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:2170 - Unit ConvertBCDToLCDNUM : the following signal(s) form a combinatorial loop: numSaida<6>, entrada_0_and0000.
-WARNING:Xst:2170 - Unit ConvertBCDToLCDNUM : the following signal(s) form a combinatorial loop: numSaida<5>, entrada_5_or0001, entrada_0_cmp_eq0000, numSaida<0>.
-WARNING:Xst:2170 - Unit ConvertBCDToLCDNUM : the following signal(s) form a combinatorial loop: entrada_0_cmp_eq0003, numSaida<1>, entrada_4_or0001, numSaida<4>.
-WARNING:Xst:2170 - Unit ConvertBCDToLCDNUM : the following signal(s) form a combinatorial loop: entrada_0_cmp_eq0005, numSaida<2>, entrada_0_or0002, numSaida<3>.
+WARNING:Xst:1293 - FF/Latch <7> has a constant value of 0 in block <LPM_LATCH_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2170 - Unit ConvertBCDToLCDNUM : the following signal(s) form a combinatorial loop: entradaAux_and0000, numSaida<14>.
+WARNING:Xst:2170 - Unit ConvertBCDToLCDNUM : the following signal(s) form a combinatorial loop: entradaAux_cmp_eq0003, numSaida<13>, entrada_5_or0001, numSaida<8>.
+WARNING:Xst:2170 - Unit ConvertBCDToLCDNUM : the following signal(s) form a combinatorial loop: numSaida<12>, numSaida<9>, entrada_4_or0001, entradaAux_cmp_eq0001.
+WARNING:Xst:2170 - Unit ConvertBCDToLCDNUM : the following signal(s) form a combinatorial loop: numSaida<10>, entradaAux_and0002, entrada_0_or0002, entradaAux_cmp_eq0004, numSaida<11>.
 
 Optimizing unit <ConvertBCDToLCDNUM> ...
 
 Mapping all equations...
+WARNING:Xst:2170 - Unit ConvertBCDToLCDNUM : the following signal(s) form a combinatorial loop: N21.
 Building and optimizing final netlist ...
 Found area constraint ratio of 100 (+ 5) on block ConvertBCDToLCDNUM, actual ratio is 0.
 
@@ -200,13 +212,15 @@ Design Statistics
 # IOs                              : 96
 
 Cell Usage :
-# BELS                             : 23
+# BELS                             : 33
 #      GND                         : 1
-#      INV                         : 1
-#      LUT2                        : 2
-#      LUT3                        : 4
-#      LUT4                        : 12
+#      LUT2                        : 7
+#      LUT3                        : 7
+#      LUT4                        : 14
 #      MUXF5                       : 3
+#      VCC                         : 1
+# FlipFlops/Latches                : 7
+#      LD                          : 7
 # IO Buffers                       : 68
 #      IBUF                        : 4
 #      OBUF                        : 64
@@ -217,10 +231,11 @@ Device utilization summary:
 
 Selected Device : 3s700anfgg484-4 
 
- Number of Slices:                       10  out of   5888     0%  
- Number of 4 input LUTs:                 19  out of  11776     0%  
+ Number of Slices:                       16  out of   5888     0%  
+ Number of 4 input LUTs:                 28  out of  11776     0%  
  Number of IOs:                          96
  Number of bonded IOBs:                  68  out of    372    18%  
+    IOB Flip Flops:                       7
 
 ---------------------------
 Partition Resource Summary:
@@ -240,7 +255,15 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------------+------------------------+-------+
+Clock Signal                             | Clock buffer(FF name)  | Load  |
+-----------------------------------------+------------------------+-------+
+entradaAux_not0001(entradaAux_not00011:O)| NONE(*)(entradaAux_0)  | 7     |
+-----------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -251,58 +274,106 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
-   Maximum combinational path delay: 23.499ns
+   Minimum input arrival time before clock: 18.463ns
+   Maximum output required time after clock: 5.668ns
+   Maximum combinational path delay: 23.523ns
 
 Timing Detail:
 --------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default path analysis
-  Total number of paths / destination ports: 5408 / 56
+Timing constraint: Default OFFSET IN BEFORE for Clock 'entradaAux_not0001'
+  Total number of paths / destination ports: 999 / 7
 -------------------------------------------------------------------------
-Delay:               23.499ns (Levels of Logic = 16)
-  Source:            numEntrada<30> (PAD)
-  Destination:       numSaida<62> (PAD)
+Offset:              18.463ns (Levels of Logic = 13)
+  Source:            numEntrada<29> (PAD)
+  Destination:       entradaAux_1 (LATCH)
+  Destination Clock: entradaAux_not0001 falling
 
-  Data Path: numEntrada<30> to numSaida<62>
+  Data Path: numEntrada<29> to entradaAux_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   0.849   0.611  numEntrada_30_IBUF (numEntrada_30_IBUF)
-     LUT2:I1->O            1   0.643   0.000  entrada_2_mux00632 (entrada_2_mux00631)
-     MUXF5:I0->O          16   0.276   1.114  entrada_2_mux0063_f5 (numSaida_2_OBUF)
-     LUT4:I1->O            2   0.643   0.590  entrada_3_mux006311 (N11)
-     LUT4:I0->O           16   0.648   1.114  entrada_0_mux006330 (numSaida_0_OBUF)
-     LUT4:I1->O            1   0.643   0.452  entrada_3_mux006348 (entrada_3_mux006348)
-     LUT3:I2->O           19   0.648   1.228  entrada_3_mux006364 (numSaida_3_OBUF)
-     LUT4:I0->O            1   0.648   0.452  entrada_1_mux006349 (entrada_1_mux006349)
-     LUT4:I2->O           17   0.648   1.194  entrada_1_mux006367 (numSaida_1_OBUF)
-     LUT4:I0->O            1   0.648   0.000  entrada_4_mux00771 (entrada_4_mux0077)
-     MUXF5:I1->O          10   0.276   1.025  entrada_4_mux0077_f5 (numSaida_4_OBUF)
-     LUT3:I0->O           12   0.648   1.104  entrada_0_and00001 (entrada_0_and0000)
-     LUT3:I0->O            1   0.648   0.000  entrada_6_mux0077171 (entrada_6_mux0077171)
-     MUXF5:I1->O           1   0.276   0.423  entrada_6_mux007717_f5 (entrada_6_mux007717)
-     LUT4:I3->O           10   0.648   0.882  entrada_6_mux007746 (numSaida_6_OBUF)
+     IBUF:I->O             2   0.849   0.590  numEntrada_29_IBUF (numEntrada_29_IBUF)
+     LUT2:I0->O            1   0.648   0.563  entrada_1_mux00632 (entrada_1_mux00632)
+     LUT4:I0->O           15   0.648   1.017  entrada_1_mux006341 (numSaida_9_OBUF)
+     MUXF5:S->O           12   0.756   1.041  entrada_0_or00021_f5 (N21)
+     LUT4:I1->O           12   0.643   1.104  entrada_2_mux00631 (numSaida_10_OBUF)
+     LUT2:I0->O            1   0.648   0.452  entrada_0_mux00639 (entrada_0_mux00639)
+     LUT3:I2->O            1   0.648   0.500  entrada_0_mux006319 (entrada_0_mux006319)
+     LUT3:I1->O           16   0.643   1.114  entrada_0_mux006333 (numSaida_8_OBUF)
+     LUT4:I1->O            9   0.643   0.963  numSaida<13>1 (numSaida_13_OBUF)
+     LUT3:I0->O           18   0.648   1.211  entradaAux_not000121 (entradaAux_and0000)
+     LUT4:I0->O            1   0.648   0.000  entrada_3_mux00631 (entrada_3_mux0063)
+     MUXF5:I1->O          23   0.276   1.202  entrada_3_mux0063_f5 (numSaida_11_OBUF)
+     MUXF5:S->O            1   0.756   0.000  entradaAux_mux0008<1>_f5 (entradaAux_mux0008<1>)
+     LD:D                      0.252          entradaAux_1
+    ----------------------------------------
+    Total                     18.463ns (8.706ns logic, 9.757ns route)
+                                       (47.2% logic, 52.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'entradaAux_not0001'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              5.668ns (Levels of Logic = 1)
+  Source:            entradaAux_6 (LATCH)
+  Destination:       numSaida<6> (PAD)
+  Source Clock:      entradaAux_not0001 falling
+
+  Data Path: entradaAux_6 to numSaida<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.728   0.420  entradaAux_6 (entradaAux_6)
+     OBUF:I->O                 4.520          numSaida_6_OBUF (numSaida<6>)
+    ----------------------------------------
+    Total                      5.668ns (5.248ns logic, 0.420ns route)
+                                       (92.6% logic, 7.4% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 2996 / 49
+-------------------------------------------------------------------------
+Delay:               23.523ns (Levels of Logic = 14)
+  Source:            numEntrada<29> (PAD)
+  Destination:       numSaida<62> (PAD)
+
+  Data Path: numEntrada<29> to numSaida<62>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.849   0.590  numEntrada_29_IBUF (numEntrada_29_IBUF)
+     LUT2:I0->O            1   0.648   0.563  entrada_1_mux00632 (entrada_1_mux00632)
+     LUT4:I0->O           15   0.648   1.017  entrada_1_mux006341 (numSaida_9_OBUF)
+     MUXF5:S->O           12   0.756   1.041  entrada_0_or00021_f5 (N21)
+     LUT4:I1->O           12   0.643   1.104  entrada_2_mux00631 (numSaida_10_OBUF)
+     LUT2:I0->O            1   0.648   0.452  entrada_0_mux00639 (entrada_0_mux00639)
+     LUT3:I2->O            1   0.648   0.500  entrada_0_mux006319 (entrada_0_mux006319)
+     LUT3:I1->O           16   0.643   1.114  entrada_0_mux006333 (numSaida_8_OBUF)
+     LUT4:I1->O            9   0.643   0.963  numSaida<13>1 (numSaida_13_OBUF)
+     LUT3:I0->O           18   0.648   1.211  entradaAux_not000121 (entradaAux_and0000)
+     LUT4:I0->O            1   0.648   0.000  entrada_3_mux00631 (entrada_3_mux0063)
+     MUXF5:I1->O          23   0.276   1.345  entrada_3_mux0063_f5 (numSaida_11_OBUF)
+     LUT4:I0->O            8   0.648   0.757  entrada_6_mux00751 (numSaida_14_OBUF)
      OBUF:I->O                 4.520          numSaida_62_OBUF (numSaida<62>)
     ----------------------------------------
-    Total                     23.499ns (13.310ns logic, 10.189ns route)
-                                       (56.6% logic, 43.4% route)
+    Total                     23.523ns (12.866ns logic, 10.657ns route)
+                                       (54.7% logic, 45.3% route)
 
 =========================================================================
 
 
 Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.25 secs
+Total CPU time to Xst completion: 4.31 secs
  
 --> 
 
 
-Total memory usage is 502240 kilobytes
+Total memory usage is 503264 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    6 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue Dec 11 23:03:05 2018
+Thu Dec 13 12:19:43 2018
 
 
 INFO: The IO information is provided in three file formats as part of the Place and Route (PAR) process.  These formats are:
@@ -63,7 +63,7 @@ Pinout by Pin Number:
 |AA19      |              |DIFFSTB   |IO_L32N_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |AA20      |              |DIFFSTB   |IO_L36N_2/CCLK        |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |AA21      |              |DIFFSTB   |IO_L35N_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|AA22      |numSaida<7>   |IOB       |IO_L01P_1/HDC         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|AA22      |numSaida<23>  |IOB       |IO_L01P_1/HDC         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |AB1       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
 |AB2       |              |DIFFMTB   |IO_L03P_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |AB3       |              |DIFFMTB   |IO_L04P_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
@@ -171,9 +171,9 @@ Pinout by Pin Number:
 |E17       |              |DIFFMTB   |IO_L01P_0             |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |E18       |              |          |VCCAUX                |         |           |              |          |         |           |         |3.3      |          |           |                |
 |E19       |              |          |TDO                   |         |           |              |          |         |           |         |         |          |           |                |
-|E20       |numSaida<28>  |IOB       |IO_L38P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|E20       |numSaida<58>  |IOB       |IO_L38P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |E21       |              |          |VCCO_1                |         |           |1             |          |         |           |         |2.50     |          |           |                |
-|E22       |numSaida<55>  |IOB       |IO_L41P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|E22       |numSaida<47>  |IOB       |IO_L41P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |F1        |              |DIFFSLR   |IO_L12N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |F2        |              |DIFFMLR   |IO_L12P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |F3        |              |DIFFMLR   |IO_L08P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -191,11 +191,11 @@ Pinout by Pin Number:
 |F15       |              |DIFFSTB   |IO_L04N_0             |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |F16       |              |IBUF      |IP_0                  |UNUSED   |           |0             |          |         |           |         |         |          |           |                |
 |F17       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
-|F18       |numSaida<22>  |IOB       |IO_L40N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|F19       |numSaida<38>  |IOB       |IO_L40P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|F20       |numSaida<36>  |IOB       |IO_L38N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|F21       |numSaida<6>   |IOB       |IO_L34N_1/A19         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|F22       |numSaida<52>  |IOB       |IO_L34P_1/A18         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|F18       |numSaida<31>  |IOB       |IO_L40N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|F19       |numSaida<55>  |IOB       |IO_L40P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|F20       |numSaida<42>  |IOB       |IO_L38N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|F21       |numSaida<10>  |IOB       |IO_L34N_1/A19         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|F22       |numSaida<22>  |IOB       |IO_L34P_1/A18         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |G1        |              |DIFFSLR   |IO_L13N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |G2        |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
 |G3        |              |DIFFMLR   |IO_L13P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -215,9 +215,9 @@ Pinout by Pin Number:
 |G17       |              |DIFFSLR   |IO_L46N_1/A25         |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |G18       |              |DIFFMLR   |IO_L46P_1/A24         |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |G19       |numSaida<54>  |IOB       |IO_L36P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|G20       |numSaida<62>  |IOB       |IO_L36N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|G20       |numSaida<50>  |IOB       |IO_L36N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |G21       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
-|G22       |numSaida<3>   |IOB       |IO_L30N_1/A15         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|G22       |numSaida<62>  |IOB       |IO_L30N_1/A15         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |H1        |              |DIFFSLR   |IO_L16N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |H2        |              |DIFFMLR   |IO_L16P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |H3        |              |DIFFSLR   |IO_L14N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -236,10 +236,10 @@ Pinout by Pin Number:
 |H16       |              |DIFFMI_NDT|IP_L47P_1/VREF_1      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |H17       |              |DIFFMI_NDT|IP_L39P_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |H18       |              |DIFFSI_NDT|IP_L39N_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|H19       |numSaida<11>  |IOB       |IO_L37N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|H20       |numSaida<51>  |IOB       |IO_L33N_1/A17         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|H21       |numSaida<14>  |IOB       |IO_L33P_1/A16         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|H22       |numSaida<46>  |IOB       |IO_L30P_1/A14         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|H19       |numSaida<46>  |IOB       |IO_L37N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|H20       |numSaida<14>  |IOB       |IO_L33N_1/A17         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|H21       |numSaida<38>  |IOB       |IO_L33P_1/A16         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|H22       |numSaida<21>  |IOB       |IO_L30P_1/A14         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |J1        |              |DIFFSLR   |IO_L17N_3/VREF_3      |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |J2        |              |          |VCCO_3                |         |           |3             |          |         |           |         |any******|          |           |                |
 |J3        |              |DIFFMLR   |IO_L17P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -257,11 +257,11 @@ Pinout by Pin Number:
 |J15       |              |DIFFSI_NDT|IP_L43N_1/VREF_1      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |J16       |              |DIFFMI_NDT|IP_L43P_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |J17       |              |          |VCCO_1                |         |           |1             |          |         |           |         |2.50     |          |           |                |
-|J18       |numSaida<19>  |IOB       |IO_L37P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|J18       |numSaida<30>  |IOB       |IO_L37P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |J19       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
-|J20       |numSaida<30>  |IOB       |IO_L29N_1/A13         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|J21       |numSaida<44>  |IOB       |IO_L29P_1/A12         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|J22       |numSaida<60>  |IOB       |IO_L26N_1/A11         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|J20       |numSaida<49>  |IOB       |IO_L29N_1/A13         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|J21       |numSaida<33>  |IOB       |IO_L29P_1/A12         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|J22       |numSaida<36>  |IOB       |IO_L26N_1/A11         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |K1        |              |DIFFMLR   |IO_L22P_3/LHCLK2      |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |K2        |              |DIFFSLR   |IO_L20N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |K3        |              |DIFFMLR   |IO_L20P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -278,12 +278,12 @@ Pinout by Pin Number:
 |K14       |              |DIFFMI_NDT|IP_L35P_1/VREF_1      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |K15       |              |DIFFSI_NDT|IP_L35N_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |K16       |              |DIFFSI_NDT|IP_L31N_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|K17       |numSaida<20>  |IOB       |IO_L32P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|K18       |numSaida<35>  |IOB       |IO_L32N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|K19       |numSaida<32>  |IOB       |IO_L25N_1/RHCLK7      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|K20       |numSaida<47>  |IOB       |IO_L25P_1/IRDY1/RHCLK6|OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|K17       |numSaida<26>  |IOB       |IO_L32P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|K18       |numSaida<34>  |IOB       |IO_L32N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|K19       |numSaida<18>  |IOB       |IO_L25N_1/RHCLK7      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|K20       |numSaida<53>  |IOB       |IO_L25P_1/IRDY1/RHCLK6|OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |K21       |              |          |VCCO_1                |         |           |1             |          |         |           |         |2.50     |          |           |                |
-|K22       |numSaida<40>  |IOB       |IO_L26P_1/A10         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|K22       |numSaida<44>  |IOB       |IO_L26P_1/A10         |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |L1        |              |DIFFSLR   |IO_L22N_3/IRDY2/LHCLK3|UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |L2        |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
 |L3        |              |DIFFSLR   |IO_L21N_3/LHCLK1      |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -301,11 +301,11 @@ Pinout by Pin Number:
 |L15       |              |DIFFMI_NDT|IP_L31P_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |L16       |              |DIFFSI_NDT|IP_L27N_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |L17       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
-|L18       |numSaida<31>  |IOB       |IO_L28P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|L19       |numSaida<43>  |IOB       |IO_L28N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|L20       |numSaida<49>  |IOB       |IO_L22N_1/TRDY1/RHCLK3|OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|L21       |numSaida<57>  |IOB       |IO_L22P_1/RHCLK2      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|L22       |numSaida<8>   |IOB       |IO_L21N_1/RHCLK1      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|L18       |numSaida<29>  |IOB       |IO_L28P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|L19       |numSaida<41>  |IOB       |IO_L28N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|L20       |numSaida<35>  |IOB       |IO_L22N_1/TRDY1/RHCLK3|OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|L21       |numSaida<40>  |IOB       |IO_L22P_1/RHCLK2      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|L22       |numSaida<51>  |IOB       |IO_L21N_1/RHCLK1      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |M1        |              |DIFFMLR   |IO_L24P_3/LHCLK4      |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |M2        |              |DIFFSLR   |IO_L24N_3/LHCLK5      |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |M3        |              |DIFFMLR   |IO_L25P_3/TRDY2/LHCLK6|UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -323,11 +323,11 @@ Pinout by Pin Number:
 |M15       |              |DIFFMI_NDT|IP_L27P_1/VREF_1      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |M16       |              |DIFFSI_NDT|IP_L23N_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |M17       |              |DIFFMI_NDT|IP_L23P_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|M18       |numSaida<12>  |IOB       |IO_L24P_1/RHCLK4      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|M18       |numSaida<60>  |IOB       |IO_L24P_1/RHCLK4      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |M19       |              |          |VCCAUX                |         |           |              |          |         |           |         |3.3      |          |           |                |
-|M20       |numSaida<25>  |IOB       |IO_L24N_1/RHCLK5      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|M20       |numSaida<37>  |IOB       |IO_L24N_1/RHCLK5      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |M21       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
-|M22       |numSaida<4>   |IOB       |IO_L21P_1/RHCLK0      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|M22       |numSaida<32>  |IOB       |IO_L21P_1/RHCLK0      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |N1        |              |DIFFMLR   |IO_L26P_3/VREF_3      |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |N2        |              |          |VCCO_3                |         |           |3             |          |         |           |         |any******|          |           |                |
 |N3        |              |DIFFSLR   |IO_L26N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -344,12 +344,12 @@ Pinout by Pin Number:
 |N14       |              |          |VCCINT                |         |           |              |          |         |           |         |1.2      |          |           |                |
 |N15       |              |DIFFMI_NDT|IP_L16P_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |N16       |              |DIFFSI_NDT|IP_L16N_1/VREF_1      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|N17       |numSaida<16>  |IOB       |IO_L20N_1/A9          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|N18       |numSaida<37>  |IOB       |IO_L20P_1/A8          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|N19       |numSaida<29>  |IOB       |IO_L19N_1/A7          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|N20       |numSaida<24>  |IOB       |IO_L19P_1/A6          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|N21       |numSaida<61>  |IOB       |IO_L18N_1/A5          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|N22       |numSaida<59>  |IOB       |IO_L18P_1/A4          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|N17       |numSaida<61>  |IOB       |IO_L20N_1/A9          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|N18       |numSaida<19>  |IOB       |IO_L20P_1/A8          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|N19       |numSaida<59>  |IOB       |IO_L19N_1/A7          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|N20       |numSaida<13>  |IOB       |IO_L19P_1/A6          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|N21       |numSaida<52>  |IOB       |IO_L18N_1/A5          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|N22       |numSaida<43>  |IOB       |IO_L18P_1/A4          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |P1        |              |DIFFMLR   |IO_L28P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P2        |              |DIFFSLR   |IO_L28N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |P3        |              |DIFFMLR   |IO_L29P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -367,11 +367,11 @@ Pinout by Pin Number:
 |P15       |numEntrada<30>|IBUF      |IP_L08P_1             |INPUT    |LVCMOS25*  |1             |          |         |           |IBUF     |         |UNLOCATED |NO         |NONE            |
 |P16       |numEntrada<31>|IBUF      |IP_L08N_1             |INPUT    |LVCMOS25*  |1             |          |         |           |IBUF     |         |UNLOCATED |NO         |NONE            |
 |P17       |              |          |VCCO_1                |         |           |1             |          |         |           |         |2.50     |          |           |                |
-|P18       |numSaida<42>  |IOB       |IO_L17N_1/A3          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|P18       |numSaida<25>  |IOB       |IO_L17N_1/A3          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |P19       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
 |P20       |numSaida<27>  |IOB       |IO_L15P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |P21       |              |          |VCCO_1                |         |           |1             |          |         |           |         |2.50     |          |           |                |
-|P22       |numSaida<1>   |IOB       |IO_L15N_1/VREF_1      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|P22       |numSaida<9>   |IOB       |IO_L15N_1/VREF_1      |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |R1        |              |DIFFMLR   |IO_L32P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |R2        |              |DIFFSLR   |IO_L32N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |R3        |              |DIFFMLR   |IO_L33P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -390,10 +390,10 @@ Pinout by Pin Number:
 |R16       |numEntrada<29>|IBUF      |IP_L04N_1/VREF_1      |INPUT    |LVCMOS25*  |1             |          |         |           |IBUF     |         |UNLOCATED |NO         |NONE            |
 |R17       |              |DIFFMI_NDT|IP_L12P_1             |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
 |R18       |              |DIFFSI_NDT|IP_L12N_1/VREF_1      |UNUSED   |           |1             |          |         |           |         |         |          |           |                |
-|R19       |numSaida<58>  |IOB       |IO_L17P_1/A2          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|R20       |numSaida<0>   |IOB       |IO_L13P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|R19       |numSaida<24>  |IOB       |IO_L17P_1/A2          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|R20       |numSaida<8>   |IOB       |IO_L13P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |R21       |numSaida<48>  |IOB       |IO_L14P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|R22       |numSaida<53>  |IOB       |IO_L14N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|R22       |numSaida<57>  |IOB       |IO_L14N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |T1        |              |DIFFMLR   |IO_L36P_3/VREF_3      |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |T2        |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
 |T3        |              |DIFFSLR   |IO_L36N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -410,12 +410,12 @@ Pinout by Pin Number:
 |T14       |              |IBUF      |IP_2                  |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |T15       |              |IBUF      |IP_2/VREF_2           |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |T16       |              |IBUF      |IP_2/VREF_2           |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|T17       |numSaida<39>  |IOB       |IO_L03P_1/A0          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|T18       |numSaida<23>  |IOB       |IO_L03N_1/A1          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|T17       |numSaida<4>   |IOB       |IO_L03P_1/A0          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |YES        |NONE            |
+|T18       |numSaida<1>   |IOB       |IO_L03N_1/A1          |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |YES        |NONE            |
 |T19       |numSaida<56>  |IOB       |IO_L13N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|T20       |numSaida<45>  |IOB       |IO_L11P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|T20       |numSaida<0>   |IOB       |IO_L11P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |YES        |NONE            |
 |T21       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
-|T22       |numSaida<21>  |IOB       |IO_L11N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|T22       |numSaida<17>  |IOB       |IO_L11N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |U1        |              |DIFFMLR   |IO_L37P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |U2        |              |DIFFSLR   |IO_L37N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |U3        |              |DIFFMLR   |IO_L41P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -434,10 +434,10 @@ Pinout by Pin Number:
 |U16       |              |          |NC                    |         |           |              |          |         |           |         |         |          |           |                |
 |U17       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
 |U18       |              |          |SUSPEND               |         |           |              |          |         |           |         |         |          |           |                |
-|U19       |numSaida<5>   |IOB       |IO_L10N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|U20       |numSaida<50>  |IOB       |IO_L10P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|U21       |numSaida<13>  |IOB       |IO_L09N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|U22       |numSaida<41>  |IOB       |IO_L09P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|U19       |numSaida<16>  |IOB       |IO_L10N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|U20       |numSaida<45>  |IOB       |IO_L10P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|U21       |numSaida<6>   |IOB       |IO_L09N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |YES        |NONE            |
+|U22       |numSaida<3>   |IOB       |IO_L09P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |YES        |NONE            |
 |V1        |              |DIFFMLR   |IO_L38P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |V2        |              |          |VCCO_3                |         |           |3             |          |         |           |         |any******|          |           |                |
 |V3        |              |DIFFSLR   |IO_L38N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -456,10 +456,10 @@ Pinout by Pin Number:
 |V16       |              |DIFFSTB   |IO_L31N_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V17       |              |DIFFSTB   |IO_L33N_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |V18       |              |          |VCCAUX                |         |           |              |          |         |           |         |3.3      |          |           |                |
-|V19       |numSaida<33>  |IOB       |IO_L06P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|V20       |numSaida<9>   |IOB       |IO_L06N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|V19       |numSaida<28>  |IOB       |IO_L06P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|V20       |numSaida<20>  |IOB       |IO_L06N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |V21       |              |          |VCCO_1                |         |           |1             |          |         |           |         |2.50     |          |           |                |
-|V22       |numSaida<34>  |IOB       |IO_L07N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|V22       |numSaida<11>  |IOB       |IO_L07N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 |W1        |              |DIFFMLR   |IO_L42P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |W2        |              |DIFFSLR   |IO_L42N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |W3        |              |DIFFSLR   |IO_L43N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
@@ -478,10 +478,10 @@ Pinout by Pin Number:
 |W16       |              |DIFFMTB   |IO_L31P_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |W17       |              |DIFFSTB   |IO_L34N_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
 |W18       |              |DIFFMTB   |IO_L33P_2             |UNUSED   |           |2             |          |         |           |         |         |          |           |                |
-|W19       |numSaida<2>   |IOB       |IO_L02P_1/LDC1        |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|W20       |numSaida<26>  |IOB       |IO_L02N_1/LDC0        |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|W21       |numSaida<10>  |IOB       |IO_L05N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|W22       |numSaida<17>  |IOB       |IO_L07P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|W19       |numSaida<7>   |IOB       |IO_L02P_1/LDC1        |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|W20       |numSaida<12>  |IOB       |IO_L02N_1/LDC0        |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|W21       |numSaida<2>   |IOB       |IO_L05N_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |YES        |NONE            |
+|W22       |numSaida<5>   |IOB       |IO_L07P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |YES        |NONE            |
 |Y1        |              |DIFFMLR   |IO_L44P_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |Y2        |              |DIFFSLR   |IO_L44N_3             |UNUSED   |           |3             |          |         |           |         |         |          |           |                |
 |Y3        |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
@@ -503,7 +503,7 @@ Pinout by Pin Number:
 |Y19       |              |          |DONE                  |         |           |              |          |         |           |         |         |          |           |                |
 |Y20       |              |          |GND                   |         |           |              |          |         |           |         |         |          |           |                |
 |Y21       |numSaida<15>  |IOB       |IO_L01N_1/LDC2        |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
-|Y22       |numSaida<18>  |IOB       |IO_L05P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
+|Y22       |numSaida<39>  |IOB       |IO_L05P_1             |OUTPUT   |LVCMOS25*  |1             |12        |SLOW     |NONE**     |         |         |UNLOCATED |NO         |NONE            |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 * Default value.

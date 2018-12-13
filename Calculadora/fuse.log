@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM_isim_beh.exe -prj /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM_beh.prj work.ConvertBCDToLCDNUM 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -relaunch -intstyle "ise" -incremental -o "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM_isim_beh.exe" -prj "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM_beh.prj" "work.ConvertBCDToLCDNUM" 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -6,8 +6,8 @@ Determining compilation order of HDL files
 Parsing VHDL file "/home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 85048 KB
-Fuse CPU Usage: 1540 ms
+Fuse Memory Usage: 85032 KB
+Fuse CPU Usage: 1510 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -16,6 +16,6 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 4 VHDL Units
 Built simulation executable /home/juan/Documents/SD_trabalho2/Trabalho2_SD/Calculadora/ConvertBCDToLCDNUM_isim_beh.exe
-Fuse Memory Usage: 657204 KB
-Fuse CPU Usage: 1620 ms
-GCC CPU Usage: 360 ms
+Fuse Memory Usage: 657188 KB
+Fuse CPU Usage: 1610 ms
+GCC CPU Usage: 130 ms

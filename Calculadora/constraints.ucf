@@ -1,6 +1,6 @@
 
 
-
+NET "rd_key_code" CLOCK_DEDICATED_ROUTE = FALSE;
 
 
 NET "clock"       		LOC = "E12"  | IOSTANDARD = LVCMOS33 | PERIOD = 20.000 ;

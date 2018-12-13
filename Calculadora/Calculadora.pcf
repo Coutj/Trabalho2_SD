@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Dec 08 18:57:24 2018
+// Written by: Map P.20131013 on Thu Dec 13 12:23:56 2018
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -29,6 +29,8 @@ COMP "LCD_DB<7>" LOCATE = SITE "Y15" LEVEL 1;
 COMP "operacao" LOCATE = SITE "V8" LEVEL 1;
 COMP "resetTeclado" LOCATE = SITE "U15" LEVEL 1;
 COMP "rd_key_code" LOCATE = SITE "T16" LEVEL 1;
+PIN rd_key_code_pin<0> = BEL "rd_key_code" PINNAME PAD;
+PIN "rd_key_code_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
 NET "clock_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
 SCHEMATIC END;
 
